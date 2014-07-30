@@ -1,0 +1,242 @@
+    94Jan27 22:22:32 pst From rusty @ The Fifth Dimension, Frisco
+i thought there was a trs-80 version of citadel called minibin or something 
+like that LONG ago... not EXACTLY as it is now, but was an offshoot of(or 
+citadel was an offshoot of it) of citadel.... 
+
+
+
+    94Jan30 05:22:51 pst From Brent Bottles @ The Anticlimactic Teleservice, 
+US/WA/KING, 206 000 0000
+Minibin was not an offshoot of Citadel, but a parallel development. 
+  
+  Well, not quite parallel, as it was after... 
+  
+  The story is that Glenn Gorman (who wrote Minibin) was told that he couldn't 
+make a Citadel-like BBS in BASIC, and Minibin was his proof that he could. 
+  
+  The thing took forever to save a message or change halls, though. 
+  
+  64BBS, running on Commodore's wonderful 1541 disk drive (and also written in 
+BASIC, though compiled, I think), was faster in those respects. 
+   
+  Which says something. 
+
+
+
+    94Feb05 23:17:44 pst From Bran Tregare @ StarShip Inconnu, Federal-Way 
+{Over the Mountains}, USA/WA/KING {At ONE-point ONE!}, (206)661-3664
+the ONLY CIT implimentation i've ever seen in BASIC was DARS... 
+
+
+
+    94Feb06 14:39:59 pst From Twoflower @ Milliways, U.S.A. {U.S.A.}, 
+(206)842-3211
+  
+ I'm sure 50 million people are gonna say this but, Minibin was written in 
+BASIC on TRS-80 equipment. 
+  
+ Last verson was running on several coco III's. 
+
+
+
+    94Feb08 17:52:19 pst From Brent Bottles @ The Anticlimactic Teleservice, 
+US/WA/KING, 206 000 0000
+and 64BBS (and therefore 128BBS) were both done in BASIC. 
+  
+  I know that one person ported 64BBS to the PC, but I don't think that it was 
+ever run on the PC. 
+  
+  And, we shouldn't forget Titan. Or, perhaps, we should forget Titan. 
+
+
+
+    94Feb09 03:14:36 pst From Richard Goldfinder
+ I found a hardcopy of Titan source a few weeks ago.  Don't really feel like 
+scanning it in, though. 
+
+
+
+    94Feb10 05:07:35 pst From Levendis @ Amber, US/WA/KING, (206) 781-2093
+	Question being, this morning, why did you guys write Cits of your own? 
+Kind of a `where are they now'. Minibin, Stonehenge, DragCit, these I know. But
+what became of yours? Am I looking at bits and pieces of them now? 
+
+
+
+    Lincoln's Birthday '94 02:37:04 pst From Richard Goldfinder
+ I've never written Citadel-type software from scratch -- I've always modified 
+something that already, to a fair extent, worked. 
+  
+ The cover sheet for my Titan61 source code includes "09/07/88  14:49:40" as 
+the file print date.  Most of the related print-outs are from 88Sep07 or 
+88Sep04.  I had been working on it for most of the summer, and a bit before 
+too.  Near the end of the month, I got hired at Microsoft and finally got 
+access to a PC.  Some time later (Titan 65?  I usually incremented the version 
+number after 1 or more changes), I got somewhat tired of the Atari. 
+  
+ Recently, Err Head found a Titan disk that I'd left at his home some time in 
+the past (perhaps The Shack).  Not sure where it is now, and I don't know where
+my BASIC XE is (nor most of my controllers and interfaces), so I couldn't look 
+at it even if I so desired (it's in tokenized form only). 
+  
+ From 90Dec13 (perhaps 90Dec12; it was a long day) to 92Jul25 I worked on ACit,
+making around 688 changes to the code that Matt gave me (he made DragCit 3.11 
+compilable by Microsoft C).  First thing was to make it disable call-waiting 
+when answering a call, which eventually evolved to the #DIAL_RING command.  
+There were a bunch of other things that I wanted to do, and I did many (perhaps
+most) of them.  There were some contributions, but I did maintained most of it,
+until later. 
+  
+ DragCit 3.12 was released, and Matt got interested.  He again made DragCit 
+compilable by Microsoft C, and started fixing bugs and adding features.  There 
+was a lot of development sharing between GremCit and ACit among the current 
+"GremCit Team".  I was fairly conservative with my changes, Brent was fairly 
+radical, and Matt took the middle road (still true today). 
+  
+ My job took a lot of my spare hours away, and the time I devoted to ACit 
+development dwindled.  Matt spent plenty of hours on GremCit development.  
+GremCit was getting developed faster than ACit, and some BBSes were switching.
+I finally gave up competing, and wrote a conversion program, telling the sysops
+still using ACit that they should switch to GremCit for the best support. 
+  
+ I still have ACit 688 source code here, if anyone wants a look at it. 
+
+
+
+    Lincoln's Birthday '94 08:41:35 pst From JayDee @ Loka, Tukwila, SeaWash, 
+USA, 206+439-||||"
+thanx for the history lesson, Richard 
+  
+  so there was/is a Cit for the Atari?! 
+  
+
+
+    Lincoln's Birthday '94 19:22:01 pst From Levendis @ Amber, US/WA/KING,
+(206) 781-2093
+	STadel. 
+
+
+
+
+    94Feb13 17:44:51 pst From Brent Bottles @ The Anticlimactic Teleservice, 
+US/WA/KING, 206 000 0000
+Levendis: STadel is for the Atari ST. 
+  
+  Titan, which Richard was referring to, is for the Atari 8-bit. 
+  
+  It was written (from scratch, I think...) by Peter Torkelson. (And if I 
+misspelled his last name, then that is good because it fits him so well.) 
+
+
+
+    94Feb13 17:50:34 pst From Brent Bottles @ The Anticlimactic Teleservice, 
+US/WA/KING, 206 000 0000
+And, in case someone wants a very clear picture of things, I started working on
+ACit one day when I decided that there should be some way to put the message 
+table in EMS, so I could run a large message base on my XT, which had 1920K of 
+EMS. 
+  
+ I also put the scroll-back buffer into ACit first, because Livia (who also ran
+ACit at the time) was claiming that it would be a neat feature. I guess she was
+right... 
+  
+  I think that those were the only two things that I put into ACit, but that's 
+my Citadel programming start. Whee. (Matt implemented the EMS/XMS code from 
+ACit in GremCit; I moved the scroll-back buffer over.) 
+
+
+
+
+    94Feb13 17:59:48 pst From Brent Bottles @ The Anticlimactic Teleservice, 
+US/WA/KING, 206 000 0000
+As for the question that Levendis posed in Citadel Q&A, "why did you guys write
+Cits of your own," there were a few reasons why I wrote Squiggle. 
+  
+ To start out with, I wanted some practice with programming. I had written lots
+of small little things, but never a full application of much size. For whatever
+reason (I have forgotten), a BBS appealed to me. Everyone knows that the only 
+BBS worth using is Citadel, so that is why I based mine on Citadel. 
+  
+  I might have just gotten Citadel code and played with it (as many others have
+done), but I did not own a C compiler, and I did not know C. I owned a BASIC 
+compiler, but I didn't want to write it in BASIC for various reasons. So, as I 
+also owned an assembler, I chose to write it in assembly. 
+  
+ So that's why I started. It got to be an actual usable BBS program in there 
+somewhere, though nobody ever ran a BBS with it (not even me). I started making
+it compatible with DragCit 1.0 networking, but then I got a job. 
+  
+  And that's why I stopped working on it; because I found that I had much less 
+free time on my hands when I was working full time. 
+  
+  I don't think that there is any code inside of Citadel that could be traced 
+back to Squiggle. I certainly cannot think of any right now. 
+
+
+
+    Valentine's Day '94 00:20:40 pst From Levendis @ Amber, US/WA/KING
+(206) 781-2093
+	Witing a board in assembly sounds a lot like carving a chair with a 
+nail file. 
+
+
+
+    94Feb13 21:43:55 pst From [Deal with it.] Little Nemo @ Slumberland, 
+USA/WA/KING {while you sleep}, 206.547-2629
+  
+ It would be interesting to see Squiggle. I think Jason has seen it; he said 
+the speed is amazing. Which is expected, I guess.  
+  
+ It would be neat if there was a Cit history archive library somewhere. The 
+library would keep one representative copy of each Citadel software, including 
+MacCitadel, Cit68k, Cit86, TwitCit, etc. Just for historical purposes. 
+
+
+
+
+    94Feb15 05:38:32 pst From Brent Bottles @ The Anticlimactic Teleservice, 
+US/WA/KING, 206 000 0000
+Actually, Richard, there is no such thing as Squiggle/86. 
+  
+  Upon load, it did processor type detection, and would claim that it was made 
+for that processor. But it was only one program. 
+  
+  That is, if run on an 8086, it would say "Squiggle/86" and if run on an 8088,
+it would way "Squiggle/88" and if run on an NEC V30 it would say "Squiggle/V30"
+and if run on an 80486 it would say "Squiggle/486" and so on. History time 
+again: Norman was the person who tested the 80486 detection code. You could 
+also override the processor type detection by specifying anything on the 
+command line starting with a /. It would take up to three characters after the 
+/ and append them to the name Squiggle. So, for example, you could have a 
+Squiggle/69 if you were err head... 
+  
+  Just one of the many cutting edge features of the truly cutting edge software
+that it was. 
+
+
+
+    94Feb24 14:37:05 pst From [Jolly Time] Just-George [244-8108] @ Blind Man's
+Bluff, Kirkland {Overlooking Lake Washington}, WA, USA {Eastside}, (206) 
+823-3744
+  
+ Richard, I have an 800XL with a BASIC XE cart. and several other paripherals. 
+What all was needed to run Titan or Titanic? I would like to see what those 
+older versions were like.  
+
+
+
+    94Feb25 04:05:52 pst From Richard Goldfinder
+ Just-George: I also had it running on an Avatex 1200 (non HC) through the P:R:
+Connection.  Hope you have an R:.  I think I might've used some SpartaDOS 
+capabilities and stored stuff on D8:, but the latter is probably set by a 
+configuration file. 
+  
+ I had 256K on my 800XL.  Since you have BASIC XE, you probably do too. 
+  
+ I think my message base was around 30K, mainly for testing. 
+  
+ Oh, and I think it even has call waiting disable for incoming calls (wow, such
+old technology!). 
+
+
+

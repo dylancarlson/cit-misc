@@ -1,0 +1,779 @@
+/*************************************************************************/
+/*                    __                                                 */
+/*                   /  ) __ ____     /|  / __        __                 */
+/*                  /     /   /  /|  / | / /_  |   / (_                  */
+/*                 (__/ _/_  /  /-| /  |/ /__  |/|/  __)                 */
+/*                                                                       */
+/*                The Electronic Newsletter for Citadels                 */
+/*                                                                       */
+/*                 Issue 10 - August 1991 - News9108.txt                 */
+/*                                                                       */
+/*************************************************************************/
+/* Editor:  Dominic Duvall @ The Quest (C86Net)                          */
+/*          dominic@quest.athenanet.com (Internet)                       */
+/*          uunet!nstar!pallas!quest!dominic (Usenet)                    */
+/*************************************************************************/
+
+
+ _____                                                                _____
+( ___ )--------------------------------------------------------------( ___ )
+ |   |                                   ||  Issue 10 - August 1991   |   |
+ |   |         />       Welcome to       |+===========================|   |
+ |   |        /<        CitaNews!        ||               _           |   |
+ |   | [\\\\\(O):::<===================- ||   ||    /__  / || || //   |   |
+ |   |        \<      The Electronic     ||   ||/\     |   || ||</    |   |
+ |   |         \>     Newsletter for     ||   ||  > \__/   || || \    |   |
+ |___|                   Citadels        ||      /                >   |___|
+(_____)--------------------------------------------------------------(_____)
+
+          (This issue's featured banner based upon The Quest's.)
+
+
+
+/*************************************************************************/
+/*                                                                       */
+/*                              ==========                               */
+/*                               Contents                                */
+/*                              ==========                               */
+/*                                                                       */
+/*                              Departments                              */
+/*                                                                       */
+/*            - What is CitaNews?                                        */
+/*            - Obligatory Editor's Column                               */
+/*            - A Look Back at Issues 1-9                                */
+/*            - CitaHistory This Month                                   */
+/*            - Registering Your BBS                                     */
+/*                                                                       */
+/*                               Features                                */
+/*                                                                       */
+/*            - Featured Software -- Citadel-68K v3.31.b2                */
+/*            - Featured System -- The Quest                             */
+/*            - Featured User -- Dominic Duvall @ The Quest              */
+/*            - Featured Door -- Empire (Amiga Citadel-68K)              */
+/*            - Featured Utility -- TOPOL (MS/DOS)                       */
+/*            - Featured Room -- CitaNews                                */
+/*            - Featured File -- RSYS*.LST                               */
+/*            - Featured Feature -- Backbones, Peons, Spines             */
+/*                                                                       */
+/*                                Special                                */
+/*                                                                       */
+/*            - USRobotics' 9600 Baud Modem Prices for Sysops            */
+/*            - AT&T's Reach-Out-World Plan                              */
+/*                                                                       */
+/*                                 Lists                                 */
+/*                                                                       */
+/*            - System Birth Notices and Obituaries                      */
+/*            - New Networked Rooms                                      */
+/*            - Directory of Boards Mentioned in this Issue              */
+/*            - Headquarter Systems for Citadel Software                 */
+/*            - Articles Planned for Next Issue                          */
+/*            - Articles Planned for Future Issues                       */
+/*                                                                       */
+/*   (All articles are written by the editor unless stated otherwise.)   */
+/*************************************************************************/
+
+
+
+/*************************************************************************/
+/*      Departments Departments Departments Departments Departments      */
+/*************************************************************************/
+
+                            ===================
+                             What is CitaNews?
+                            ===================
+
+     Greetings!  Welcome to the newly-reborn CitaNews!  This is an
+electronic newsletter for Citadel BBS systems and its many variants.  Its
+purpose is to disseminate information about Citadel to those who might not
+learn of it otherwise, to more-widely distribute important information, and
+to provide a more permanent record of items of historical worth.
+     This newsletter is freely-distributable and may be reproduced in any
+fashion, so long as appropriate credit is given.
+     Submissions are welcome (ie. desperately desired) and are due on the
+20th of each month.
+
+
+
+                       ============================
+                        Obligatory Editor's Column
+                       ============================
+
+     Okay, okay, so I'm actually writing every article in this issue and
+thus have no real need of an editor's column.  Well, I'm the editor, so if
+I say I get to have an editor's column, I do, so there!  :-)
+     Why revive CitaNews?  Well, I enjoy being late getting the SCA
+newsletter ready each month, so I figured I'd probably enjoy being late
+getting CitaNews ready as well.
+     My plans for CitaNews are rather nebulous, but I do have a few ideas
+of the direction I should try to take this thing.  First, the C86Net
+network works quite well at spreading information, so CitaNews should not
+simply duplicate what the network does much better.  There are some things
+which fit well in a newsletter, however -- information which deserves a
+wide distribution and information which should be preserved
+semi-permanently.
+     Information about the various variants of Citadel is often difficult
+to come by.  What is the difference between Citadel-86, Fortress,
+<fnord>adel, K2NE, STadel, Pseudodel, Stonehenge, STKeep, and the many
+other variants that keep popping up?  My intention is to highlight one
+variant each issue, as well as describe recent changes in other variants.
+This issue features Citadel-68K.
+     I would also like to highlight one BBS each issue, describing what
+rooms it carries, file capacity, etc.  Hopefully some of this information
+will be intriguing enough that the BBS will receive some new callers.  It
+should also help sysops who are looking for net connections.  This issue
+features my BBS, The Quest.
+     Are you beginning to see a pattern here?  In addition to featuring one
+Citadel software variant and one Citadel BBS each issue, I also plan on
+featuring a BANNER.BLB (as the "cover" illustration), a Citadel door, a
+Citadel utility, a user, a room, a file, and an important and/or confusing
+feature.
+     When new networked rooms are created, I plan on describing them here,
+including a list of which systems carry them.  This should make it easier
+for new rooms to attract more connections.  NOTE: I can't announce a new
+networked room if nobody tells me about it!
+     When a new Citadel starts up or an existing one shuts down, the
+appropriate birth announcement or obituary will be published.  NOTE: As
+with new networked rooms, I'll need help from my fellow Citadelians in
+order to learn of these events.
+     Lastly, I hope to take a peek into the past to show you what events in
+CitaHistory took place during this month in previous years.
+     This issue is decidedly provincial in scope: featured software is the
+software I use, featured BBS is mine, featured user is me, etc.  This is
+simply due to the fact that I haven't had the time to get info about others
+yet.  Future issues will rapidly expand ever farther from home.
+
+
+
+                        ===========================
+                         A Look Back at Issues 1-9
+                        ===========================
+
+     To many of today's Citadel users, "CitaNews" is simply the name of a
+networked room on the C86Net that is (sometimes) used for discussions of
+Citadel.  However, way back when, CitaNews was the name of a newsletter.
+The room was used as a means of distribution.  Alas, it has been many moons
+since CitaNews was published.  However, back issues are still available
+from many sources (including The Quest).
+     To my knowledge, there are only 9 previous issues of CitaNews.  The
+first 7 of these were edited by Steve Yelvington (George Jetson @ The
+Lake).  The 8th issue was edited by David Quick (The Badger @ Pell).  The
+9th issue was edited by Eric A. Griff.  These issues are:
+
+                 Filename         Month of Issue      Size
+                 -----------------------------------------
+                 News8704.txt ... April 1987 ......... 10K
+                 News8705.txt ... May 1987 ........... 10K
+                 News8706.txt ... June 1987 .......... 19K
+                 News8707.txt ... July/August 1987 ... 27K
+                 News8709.txt ... September 1987 ..... 33K
+                 News8803.txt ... March 1988 ......... 28K
+                 News8804.txt ... April 1988 ......... 39K
+                 News8805.txt ... May 1988 ...........  6K
+                 News8809.txt ... September 1988 ..... 10K
+
+     Much of the discussion in these early issues was about the growth of
+the still-fledgling C86Net.  For example, issue 9 describes what was then
+the newest nationally networked room, "Amiga"!  Now we see rooms sprouting
+up constantly.  How time flies!
+
+
+
+                         ========================
+                          CitaHistory This Month
+                         ========================
+
+HIGHLIGHT: Citadel-86 gained the ability to share rooms on August 19, 1986.
+      Thus, this month we are celebrating this event's FIFTH ANNIVERSARY!
+
+1985: Citadel-86 was presumably at version 2.03.  (Version 2.04 was
+      released in October 1985.)
+
+1986: Citadel-86 version 2.12 was released, featuring ROOM SHARING (!)
+      (before this release, C86Net supported only mail and file sharing),
+      the addition of CRC to XMODEM, room archiving, and the <O>utside
+      command for sysops.
+
+1987: Citadel-86 version 2.17 gained the <.R>ead <I>nvited command (to let
+      sysops see who has access to a private room) and the "sysop="
+      parameter (to specify who the sysop is).
+
+1988: Citadel-86 version 3.11 was released, featuring options to the
+      <.K>nown-rooms command, such as <D>irectory.
+
+1989: Citadel-86 versions 3.23 and 3.24 were released, featuring <.E>nter
+      <Z>modem and <.R>ead <Z>modem for messages, block paragraphs (ie.
+      paragraphs can be signaled by a blank line, rather than an
+      indentation), the ability for aides to <C>opy messages to other
+      rooms, message flow reversal while reading, external protocols (such
+      as stand-alone ZMODEM programs), and the <I>nformation command (to
+      provide information about the current room).
+
+1990: Citadel-86 versions 3.34 and 3.35 were released, featuring
+      backspacing of dot commands, sysop-netting of unnetted messages,
+      auto-<.G>oto when the user does a <.E>nter <H>eld-message command to
+      recall a message being editing when carrier was lost, and the
+      <.K>nown <I>nformation command (which displays the information
+      about all known rooms).
+
+
+
+                          ======================
+                           Registering Your BBS
+                          ======================
+
+     There is no official requirement to register your Citadel board with
+anyone.  Just grab the software and fire it up!  However, registering your
+BBS with some people will help in a couple of ways: (1) It will publicize
+your BBS, possibly attracting more users; (2) It will get your BBS included
+on various network maps, making such things as Mail delivery and network
+connections easier to manage.
+     So where should you register your BBS?  There are a few places.
+     1. Bill.K @ Sinkhole for the next RSYS*.LST file.  This is a monthly
+list of known Citadels.  Send him Mail asking to be added to the next
+edition.  Include your board's name, phone number, baud rates supported,
+software used (including version number), your name as sysop, and hours of
+operation.  (The RSYS*.LST file is the "Featured File" for this issue of
+CitaNews!  See the article below for more information.)
+     2. Hue, Jr. @ C-86 Test System for the next LINKS file.  This is an
+ASCII "picture" of the Citadel network, showing which boards are networking
+directly. If you are on the network, send him Mail asking to be added to
+the LINKS file.  He needs to know the state in which your board is located
+and with which boards you directly network.  (The LINKS file will be our
+"Featured File" in a future issue of CitaNews.)
+     3. Hue, Jr. @ C-86 Test System for the TOPOL data files.  This is a
+network topology program which makes it easier to locate problems in the
+network, such as vortexes (loops) and black holes (breaks).  (The TOPOL
+program is the "Featured Utility" for this issue of CitaNews!  See the
+article below for more information.)
+
+
+/*************************************************************************/
+/*    Features Features Features Features Features Features Features     */
+/*************************************************************************/
+
+                ===========================================
+                 Featured Software -- Citadel-68K v3.31.b2
+                ===========================================
+
+     Describing Citadel-68K is rather difficult for me, since it is the
+software I use most often and thus consider "normal".  The result is that
+I'm unsure what features differ from other versions.  Keeping that in mind,
+I'll describe Citadel-68K as the "normal" Citadel and will describe other
+variations in the future by nothing their differences from this version.
+     Citadel-68K runs on the Commodore-Amiga line of machines.  It is
+possible to run it on a machine with only 512K of RAM and a single floppy
+drive -- not pleasant, but possible.  Version 3.31.b2 is the most recent
+release and requires ROM/Kickstart version 1.3 of AmigaDOS.  (The most
+recent version that will work with ROM/Kickstart version 1.2 is 3.27.)
+     The software is a direct port of Citadel-86.  Jay Johnson, aka
+Stallion, ported the software way back when (remember version 2.14?).  Then
+an anonymous saint stepped forward and ported version 3.xx for us, turning
+over the support and subsequent porting functions to Jay.  To my knowledge,
+the identity of the anonymous porter has never been revealed.  Whoever you
+are, thanks!
+     Version 3.38 of Citadel-68K made it as far as beta testing before
+Jay's attention was called away by the non-Citadel world.  No release date
+for 3.38 has been announced.
+     Citadel-68K features the normal Citadel characteristics.  Rooms can be
+networked, hidden, anonymous, invitation-only, and/or archived.  Rooms can
+optionally be viewed in floor mode, allowing similar rooms to be grouped
+together.  Users can go to rooms, "ungoto" (ie. back up to a room and reset
+the message pointers as they were previously) rooms, skip rooms for later
+reading, forget rooms, and view a description of the current room's
+purpose.  Some systems allow users to create new, temporary rooms.
+     Users can read messages written by a particular user and/or messages
+containing a particular phrase.  They can also use the global option to
+read or search messages in all rooms.  While reading, they can reverse the
+message flow direction, enter a reply to the current conversation, or
+continue a reply started earlier.  If the user logs off or drops carrier
+before saving a message in progress, it will be held for the user to
+retrieve later.
+     File directories can be attached to rooms and can have file
+descriptions of up to 7,500 bytes per file.  Uploading and downloading of
+files and messages can be done using XMODEM, YMODEM, or WXMODEM, as well as
+any external protocols the sysop has installed (eg. ZMODEM, JMODEM, and
+Kermit).  If the proper programs are available, users can view or access
+the contents of files stored in ARC, ZOO, ZIP, and LZH formats.  Files
+uploaded in these formats can be automatically checked for integrity.
+     Doors (ie. external programs which the users can execute) are
+supported in two ways.  First, Citadel-68K will free up the serial port for
+any door which provides its own serial handling (eg. Empire).  Secondly,
+Citadel-68K supplies a software device, CTDLAUX:, which allows access to
+the serial port in shared mode, so any program which does all I/O via the
+stdio and stdout (ie. through the CLI) can have its I/O redirected through
+CTDLAUX:.
+     Networked mail can be sent to any system with which the BBS directly
+networks, or through intervening systems to the target system, but ONLY if
+the target system has been properly entered into the system using the
+ROUTMAIL utility.  The Citadel-86 concept of domains is not supported, nor
+is the STadel concept of "bang paths".
+     That's it for this issue.  In future issues we'll look at other
+variants of Citadel and compare how they differ from this.
+
+
+
+                      ==============================
+                       Featured System -- The Quest
+                      ==============================
+
+               +-------------------------------------------+
+               | Sysop .................... Dominic Duvall |
+               | Software ................. Citadel-68K    |
+               | Hours .................... 24 hrs/day     |
+               | Baud ..................... 3/12/2400      |
+               | Hardware ................. Amiga 2000     |
+               | Storage .................. 145Megs        |
+               | Message Base Size ........ 750K           |
+               | Avg. Msg Length .......... 460 bytes      |
+               | Rollover rate ............ 18 days        |
+               | Number of rooms .......... 66             |
+               | # of shared rooms ........ 59             |
+               | Pseudonyms allowed? ...... Yes            |
+               | User-created accounts? ... No             |
+               +-------------------------------------------+
+
+Systems networked with: Beach, Blade, Data Drum, Lunatic Haven, Lunatic
+     Fringe, Mars Hill, Synapse, The City of Brass, Wolf's Den
+
+Rooms Shared: /unix/stuff, AD&D, Adventure, Amiga, Anime/Comics, Astronomy,
+     BattleTech, BBS List, BlakeNet, Call of Cthulhu, Chess Plays, Citadel
+     68K, CitaHelp, CitaNews, Classifieds, Cyberpunks, Dark Shadows,
+     Dodson's Dungeon, Empire, Esoterica, GameInfo, Gossip, GURPS, IBM PC
+     (Virtual), Illuminatus!, Macintosh (Virtual), Map Updates, Martial
+     Arts, Miniatures, Modem Boardgames, Monty Python, Movies, Music, NASA
+     News, PaganNet, Play-by-Mail, Role Playing, Role-Playing-Story, RPG
+     Idea Central, SCA, Science Fiction, SF Tech, Shadowland, Shadowrun,
+     Spinward Marches, Star Trek Adventure, Story Master Says, Strahd,
+     Sysop Stuff, The Occult Scene, Traveller, TrekNet, Wargames,
+     Warhammer, WhoNet, Writers' Guild, Yrth
+
+Notes: Current home of CitaNews!  Will be upgrading to a 9600 baud dual
+     standard V.32/HST modem in a few months.
+
+
+
+               =============================================
+                Featured User -- Dominic Duvall @ The Quest
+               =============================================
+
+     My real name is Wally Hartshorn.  I first used the name "Dominic
+Duvall" for a character I used in D&D (Dungeons & Dragons, for those who
+don't know).  I later used the name as a pseudonym on the CDC Cyber
+mainframe at the University of Illinois in Urbana-Champaign.  I also used
+it as the name of my persona in the SCA (Society for Creative Anachronism,
+an international medieval recreation group).
+     I majored in Computer Science at the University of Illinois, but spent
+far too much time doing out-of-class computer projects, particularly
+programming a game called "ADVDND" (Advanced D&D).  ADVDND was a huge
+success, with nearly 200 players participating, but I ended up flunking out
+after 3 years.  (Whoops!)  Having learned that not going to class and not
+doing homework was NOT a good thing to do, I went to Western Illinois
+University and got my degree.
+     I then got a job as a programmer at the Illinois EPA here in
+Springfield, programming in COBOL (ugh) on an IBM 3090 mainframe.  My
+current Systems Analyst and I have recently begun working on a pilot
+project to implement GIS (Geographical Information Systems, eg. satellite
+photographs, maps, etc) using SPARC workstations and multi-disc CD ROM
+drives.
+     In my spare time I am president of ACES (a local Amiga user
+group), am chronicler (newsletter editor) for the Shire of Swordcliff (the
+local SCA group), run The Quest, write programs in Manx C for my Amiga,
+play Warhammer and MegaTraveller, and read F&SF as often as possible.
+
+
+
+               =============================================
+                Featured Door -- Empire (Amiga Citadel-68K)
+               =============================================
+
+     This is an excerpt from the documentation describing Empire, a game
+which you can run as a door program from Citadel-68K:  "Empire is a fairly
+rich simulation of international politics, economics and war.  It is played
+over a period of a few months by 2 or more people.  The Empire world
+consists of a toroidal grid of sectors consisting of regular land,
+mountains and water.  Players govern countries, which start out as a pair
+of adjacent sectors and soon spread into large areas requiring much
+management and protection.  Various sector types can be created which build
+ships, bridges, guns, shells, airplanes, and which make medical and
+technological breakthroughs.  Others are things like radar stations,
+weather stations, fortresses, highways, warehouses, etc.  A special
+country, the Deity, is available, which has godlike powers to modify
+sectors, ships, etc.  The Deity is responsible for fixing up any problems
+which occur during the game."
+     Empire is available for downloading from the "Empire" room on The
+Quest.
+
+
+
+              ===============================================
+               Featured Utility -- TOPOL (MS/DOS Citadel-86)
+              ===============================================
+
+     These area excerpts from the document describing TOPOL, a network
+topology manager for MS/DOS machines, written by Hue, Jr. @ C-86 Test
+System:
+     "The primary C86Net has grown large enough that attempts to "know" the
+net, in both the senses of rooms available and avoiding both vortexing and
+lack of connectedness, are failing more and more often, not only between
+widely separated installations, but even in local areas.  Therefore (if not
+exclusively because), the program TOPOL has been written.
+     "Topol's purpose is to digest a collection of data files describing
+the room sharing habits of some collection of systems and attempt to detect
+what systems, if any, will not "reach" other systems, and where vortexes
+might occur.  The input files can be produced automatically using utilities
+(or said utilities can be written) common to most Citadel-type
+installations, thus minimizing the amount of manual labor most sysops will
+have to go through.  The most difficult labor an ad-hoc network
+administrator may go through is actually obtaining said files from other
+systems, since some sysops don't seem to read their mail all that often.
+     "In order for Topol to become an effective utility, data files must be
+collected, updated, and distributed for a majority of the systems that are
+a part of C86Net.  Towards this end Citadel-86 Test System will open and
+maintain a room named Topology.  Hopefully, from time to time system
+operators will netsend or upload updates of their room sharing profiles to
+Test System, which will then become available to the public for use in
+tracking down room sharing problems."
+     The TOPOL program, a set of data files for it, and a 300K results file
+are available for downloading from C-86 Test System's "Topology" room.
+Note that this utility is not limited to tackling the entirety of the
+C86Net universe!  It can be used by sysops to manage a local section of the
+network, particularly in areas with a significant number of Citadels.
+
+
+
+                        ===========================
+                         Featured Room -- CitaNews
+                        ===========================
+
+Purpose: Discussion of Citadel, particularly from the users' point of view.
+     Also used, from time to time, for distribution of CitaNews, this
+     electronic newsletter.
+
+Nodes: Asylum, Atlantis, Backfence, Beach, Blade, Byteways, C-86 Test
+     System, CubNet, DISK, Data Drum, DogLink, ENY, Eagle's Roost II,
+     ElfBBS, Eye of the Storm, FROZEN Hut, Free Lunch, GatewayNJ,
+     HIL-Vancouver, Hidden Adventure, Hornet's Nest, Hotel, Images, JACS,
+     Jersey Devil, Junkyard, Kronos, Penhold, Kumquat Church, Labyrinth,
+     Lockheed, Lunatic Fringe, Lunatic Haven, MAST, MMTF, MVAFIX, NDP,
+     Norad, Nuuduitgaang, Omni, PC Tech, Inc, Power Alley, RockLand, SAC,
+     SJ Net House, Sanctuary, Sinkhole, TPT4, TWWOL, The City of Brass, The
+     Dungeon, The Expressway BBS, The Jungle, The Mars Hotel, The Quest,
+     The_HHQ, Ummagumma, Underground Univers, Utica College, Virtuality,
+     Wicca Citadel, Willie's Place, Wolf's Den, cocotel, devnull, dish,
+     maison de sante, overmind, swamp, undermind.
+
+
+
+                       ============================
+                        Featured File -- RSYS*.LST
+                       ============================
+
+     "What's the number for XYZ BBS?"  How often have you seen that
+question asked (or asked it yourself)?  There's usually an easy way to
+learn the answer -- check a recent edition of RSYS*.LST, the Room Oriented
+BBS List maintained by Bill Karpowicz (Bill.K @ Sinkhole).  This file is
+produced monthly and is named in the form "RSYSmmyy.LST", where "mmyy" are
+the current month and year (eg. "0891").  The June '91 edition lists 249
+entries and weighs in at 27K.  (However, the "RSYS0691.ARC" file is only
+12K in size.)  It can be downloaded from the CitaNews room on C-86 Test
+System and many other Citadel boards.
+     I *STRONGLY* encourage all Citadel sysops to add their own BBS
+information to the list!  To do so, send a message to Bill.K @ Sinkhole
+with your system's information in the format described below.  What follows
+is excerpted from the latest RSYS*.LST, with some minor editing:
+
+ (BEGIN EXCERPTED TEXT)
+
+ Node Name            C Phone Num.   S Ba Software     Sysop             Last
+ -------------------- - ------------ - -- ------------ ----------------- -----
+ Quest,The              217-546-7608 c 24 Cit68kV3.31  Dominic Duvall    91Aug
+                      ^              ^  ^                                 ^
+                    /                |  |_Baud                            |
+                  /                  |  12=1200, 24=2400                  |
+       Misc. codes:                  |  30=300, 96=9600                  /
+   #= headquarter system             |  19=19.2kb                  Date of
+   $= pay fee for access             |                             latest
+   &= strange hours           System access                        contact
+                              c - controlled (Mail to Sysop)
+                              o - open
+                              p - private (nominations)
+
+    Systems above are assumed to be up 24 hours unless otherwise noted.
+
+1. You must be the Sysop of the system in question. (If you are not the
+   Sysop, ask him/her to send the information.)
+
+2. I need *all* the information at once! (System name, phone number,
+   maximum baud, system software, and Sysop's name). If you can format it
+   to look the way it does in the list, that helps me too. (I currently
+   spend an awful lot of time re-formatting.)
+
+3. Deadline for submissions is the 20th of every month. Send your update
+   to me at one of the following addresses:
+
+4. It seems that when sysops pull the plug on their system, they fail to
+   let anyone know, so the new rule is, If you don't update your system
+   info at least once a year, and I get information that it's down by a
+   reliable source, like a sysop I have known for while..it will be taken
+   off the list.
+
+      Where I can be reached :
+
+                 System             Name/Alias
+              =================================
+                  Sinkhole          Bill.K
+                   Mast!Sinkhole!Bill.K
+                 devnull!Sinkhole!Bill.K
+
+       Also any system carrying Net.Gossip, Citanews or BBS List
+
+ As usual, constructive comments, suggestions, and ideas are welcome.
+
+ (END EXCERPTED TEXT)
+
+
+
+              ==============================================
+               Featured Feature -- Backbones, Peons, Spines
+              ==============================================
+
+     The terminology I'm using here is taken from Citadel-68K and
+Citadel-86.  I don't know how standard these terms are on other variants.
+     Vortexes (vortices?) and black holes.  They aren't intentional
+features of Citadel, but they do occur.  This article is an attempt to
+describe their causes and explain how to avoid them.
+     A "vortex" is a repetition of a message in a room.  A "black hole" is
+a system which doesn't share the messages which it receives.
+     A "spine" is a system which will be doing all of the calling.  Quite
+simply, if you share a room with a system which you mark as being a spine,
+your system will NEVER call that system.  Instead, you are relying upon
+that system to call you.  Generally this is the situation in networking
+with a long-distance system.  One of you agrees to do the calling (and thus
+pay the phone bill).  The system that will be doing the calling refers to
+itself (and is referred to by the other system) as a spine.  This setting
+has nothing to do with vortexes and black holes.
+     A "peon" is a system which will be calling the other peons sharing the
+current room, so your system never copies messages from one peon to another
+peon.  Peons get messages from other peons directly.
+     A "backbone" is a system which will NOT be calling any other system
+you share this room with, so your system shares all messages with this
+backbone.
+
+     Consider "ZorkNet", a hypothetical room for discussion of Zork.  Let's
+suppose it's carried by 3 systems.
+
+
+              +---------------------------------------------+
+              |                 Scenario A                  |
+              |                                             |
+              | Little Maze ----------------- Mountain King |
+              |            \                 /              |
+              |             \               /               |
+              |              Dimwit Flathead                |
+              |                                             |
+              +---------------------------------------------+
+
+     Each of these 3 systems considers the other 2 to be peons.  A message
+entered on Little Maze is shared by Little Maze directly with Dimwit
+Flathead and with Mountain King.  Since Dimwit Flathead knows that Little
+Maze will be calling Mountain King (ie. both are peons), it does copy
+messages it gets from Little Maze to Mountain King.
+
+
+               +-------------------------------------------+
+               |                Scenario B                 |
+               |                                           |
+               | Little Maze                 Mountain King |
+               |           \\               //             |
+               |            \\             //              |
+               |             Dimwit Flathead               |
+               |                                           |
+               +-------------------------------------------+
+
+     Little Maze and Mountain King don't share this room directly with one
+another.  Instead, they rely upon Dimwit Flathead to share messages entered
+on one system with the other.  All connections in this setup are backbones.
+A message entered on Little Maze would be shared with Dimwit Flathead,
+which would then share it with Mountain King.
+
+
+              +---------------------------------------------+
+              |                 Scenario C                  |
+              |                                             |
+              | Little Maze                   Mountain King |
+              |            \                 /              |
+              |             \               /               |
+              |              Dimwit Flathead                |
+              |                                             |
+              +---------------------------------------------+
+
+     In this situation, there's a problem.  Dimwit Flathead will act as a
+"black hole".  It considers Little Maze and Mountain King to be peons, and
+thus expects them to call one another, so messages from Little Maze won't
+be copied to Mountain King, and vice versa.
+     Who's fault is it?  That's hard to say.  Either Dimwit Flathead should
+consider the two systems as backbones or the two systems need to begin
+sharing the room directly.
+
+
+               +------------------------------------------ +
+               |                Scenario D                 |
+               |                                           |
+               | Little Maze =============== Mountain King |
+               |           \\               //             |
+               |            \\             //              |
+               |             Dimwit Flathead               |
+               |                                           |
+               +------------------------------------------ +
+
+     This scenario is an example of the infamous "black hole".  Each system
+shares the room as a backbone with the others, and thus copies all
+messages.  However, the messages are also sent directly by the system
+originating them, so they appear twice.
+     Who's fault is it?  Again, that's hard to say.  Somebody needs to stop
+calling someone else, or else all 3 systems need to start sharing the room
+as peons.
+
+
+
+/*************************************************************************/
+/*    Special Special Special Special Special Special Special Special    */
+/*************************************************************************/
+
+              ===============================================
+               USRobotics' 9600 Baud Modem Prices for Sysops
+              ===============================================
+
+     As many of you know, USRobotics has a program for sysops that offers
+their 9600 baud modems at greatly reduced prices.  I can't personally
+recommend these modems, since I don't have one, but I figured I might as
+well make this information available.  This information is NOT complete, so
+please call their BBS (708-982-5092) for the full story.
+     You must have been operating a BBS for at least 6 months, notify via a
+login bulletin that you are using a USRobotics modem, operate the BBS for
+at least another 6 months, and maintain a login account for USRobotics to
+allow them to verify these things.
+
+     Prices effective August 1, 1990, were:
+
+                   Courier HST 14.4 ........ $995 ... $399
+                   Courier V.32bis ......... $995 ... $449
+                   Courier HST/V.32bis
+                         Dual Standard ... $1,295 ... $499
+
+     If you have information about sysop prices or low-cost high-speed
+modems from other companies, let me know and I'll try to include it in a
+future issue.
+
+
+
+                       =============================
+                        AT&T's Reach Out World Plan
+                       =============================
+
+     Those of you who are calling Canada from the US probably should
+consider AT&T's Reach Out World Plan.  Calling Canada costs just 18 cents
+per minute, compared to 33 cents per minute for normal a normal AT&T call.
+That's a 45% reduction and makes international networking FAR more
+affordable.  Calls to other countries are reduced by less, an average of
+20%, but that's still significant.  For more information or to sign up,
+call 1-800-523-9675, extension 456.
+     If anyone has information about other long distance calling plans,
+either for international or national calls, please let me know.  The lower
+we can make the cost of LD networking, the wider C86Net will spread!
+
+
+
+                   =====================================
+                    System Birth Notices and Obituaries
+                   =====================================
+
+             -- Births --                        -- Deaths --
+
+   Brazil               309-786-5638            Acrylion-SLC
+   Synapse              217-525-6251*           Black Dog
+   Universal Writers    612-430-0549            Cheetah
+   Door into Markland   916-755-0838            Firth of Fifth
+   Bat Cave             609-723-2722            Flamingo, The
+   Iceman's Frozen Hut  609-893-6915            UCS3
+                                                Wonderland
+   *7PM-7AM only
+
+
+                           =====================
+                            New Networked Rooms
+                           =====================
+
+CoC Campaign: Carried by The Quest, Data Drum (virtual), Brazil.
+     Play-by-BBS game of Call of Cthulhu, GMed by "Keeper @ Brazil".
+
+GURPS: Carried by The Quest, Data Drum (virtual), The Mansion, The Dungeon,
+     Blade, Wolf's Den.  Discussion of the Generic Universal Role Playing
+     System.
+
+Monty Python: Carried by The Quest, Data Drum, Brazil.  Discussion of the
+     British comedy team, Monty Python's Flying Circus.
+
+
+
+               =============================================
+                Directory of Boards Mentioned in This Issue
+               =============================================
+
+                  Node Name          Phone Number   Baud
+                  ----------------   ------------   ----
+                  C-86 Test System   612-470-9635   9600
+                  Pell               DOWN
+                  Sinkhole           203-873-8518
+                  The Lake           DOWN
+                  The Quest          217-546-7608   2400
+
+
+
+                ==========================================
+                 Headquarter Systems for Citadel Software
+                ==========================================
+
+         Software       BBS Name              Phone Number   Baud
+         --------------------------------------------------------
+         <fnord>adel    Secret Service,The    403-425-1779   2400
+         Citadel-68K    Images at Twilight    612-884-7951   2400
+         Citadel-86     C-86 Test System      612-470-9635   9600
+         Citadel-86e    ENY                   914-735-9362   2400
+         Citadel-K2NE   Jersey Devil, The     609-893-2152   2400
+         Fortress/PC    undermind             404-521-0445   9600
+         IdeaTree       ProtoSoft             206-932-7125   1200
+         Mac Citadel    MacCitadel Test Sys   213-820-4320   9600
+         ST-Keep        ST-Keep BBS           916-729-2968   2400
+         Unidel         Bitsko's Bar & Gril   801-269-0670   19.2
+
+(Primary Source: RSYS0691.LST)
+
+
+
+                     =================================
+                      Articles Planned for Next Issue
+                     =================================
+
+     Submissions are welcome and are due on the 20th of each month.
+Planned articles for the September issue (News9109.txt) include:
+
+          Featured Software -- Citadel-86
+          Featured System -- C-86 Test System
+
+
+
+                   ====================================
+                    Articles Planned for Future Issues
+                   ====================================
+
+          Advice for New Sysops
+          Nettiquette:  How to Piss Off No More than Your Fair
+               Share of Citadelians
+          Ruggies and How to Defend Against Them
+          Networked Mail
+          Evolution of the Citadel "Personality"
+          Hall of [F|Sh]ame:  Requested "Feeping Creatures" that
+               Were Not Fulfilled
+
+                           ---=== The End ===---

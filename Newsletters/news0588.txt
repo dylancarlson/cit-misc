@@ -1,0 +1,221 @@
+*------------------------------------*
+*              CITANEWS              *
+* A national newsletter of room-based*
+* systems.                           *
+*------------------------------------*
+*   Editor: David A.P. Quick, Jr.    * 
+*------------------------------------*
+*           May 1988 Issue           *
+*------------------------------------*
+
+
+    A NEW EDITOR COMES TO CITANEWS        
+    
+ Well, here it is: David A. Quick, Jr. 
+(The  Badger)  is relieving  Steve  as 
+CitaNews editor.  Steve, now an expert 
+at the process (<grin>), has expressed 
+a  wish  to  be 'set  free'  from  his 
+position.  
+ So,  now  that  things  are  changing 
+hands,   format,   unfortunately,   is 
+changing  also.   Dave happens  to  be 
+running  a CP/M Kaypro  and  WordStar.  
+BUT,  Dave will reformat anything  you 
+send.   So, in any format you'd  like, 
+send him your new news at:
+     
+    The Badger@Pell
+               Test System
+               KAOS (NY) 
+               Aardvark !
+               SuperComp II
+               Images
+               Illusions 
+   -------------------------
+   David Quick@Utica College
+   -------------------------
+   David A.P. Quick Jr@USA
+
+    
+     We  hope to make this  transition 
+an easy one for all concerned.   Until 
+later....
+    
+    
+--------------------------------------
+      ANOTHER UNIX CITADEL!?!?!?
+    Could be.......maybe.....ahem.
+--------------------------------------
+ Lately,  the Citadel trend has  begun 
+to infect the "big boys'" computers  - 
+we  can net with UUCP through  STadel, 
+there's a VAX/VMS Citadel around  here 
+somewhere,  and  now  Unix  itself  is 
+being  hit upon as the OS of  Citadel.  
+ Peter Clark, a user of the C-86  Test 
+System, has ported C-86 into Xenix and 
+Unix System V via XUnixadel (??)....in 
+a mere six days (so states Mr. Clark).
+ The system has not been seen  running 
+by  yours truly, so I really  have  no 
+comment on style, etc. yet.  But, when 
+it  is brought to my attention  in  an 
+accessable  format  (North   America), 
+CitaNews will be there, on the cutting 
+edge   of   telecommunications    with 
+style....Citadel.
+
+--------------------------------------
+        CITADEL MODIFICATIONS
+      Cheers and Jeers for Ideas
+--------------------------------------
+ Citadel  is a kludge system  of  code 
+put  together by many  programmers  in 
+many  forms over many years.   And  it 
+continues to change.  Hue, Jr., writer 
+of the adaptation C-86, now considered 
+pretty   much  standard  Citadel,   is 
+constantly  modifying his  code.   And 
+yet, the ideas keep coming.
+ The  idea of giving the average  user 
+the ability to delete his own messages 
+has  recently  been  discussed.   This 
+would  allow  stupid  mistakes  to  be 
+avoided, even after being saved.   sir 
+Ector,  on the Test System,  suggested 
+also that you must delete the  message 
+during that login session.  R.R. feels 
+that this leads to lazy writers,  but, 
+in  the end, it's all up to  Hue,  Jr. 
+anyway....
+ As for captain's log, well.....
+--------------------------------------
+               OPINIONS
+    An Editorial By....The Editor
+--------------------------------------
+ Well, here's my little bit 'o' gossip 
+for the month.  Anything printed  here 
+is  the opinion of me alone,  and  any 
+quotes will be direct and unabridged.
+ It  seems that our beloved  Hue,  Jr. 
+feels  that  user Pat  Fish  of  Utica 
+College is "a loon again" in the field 
+of programming.  You Minnasoteans  are 
+just  catching on....we've  felt  that 
+way 'bout Pat for YEARS.....:)
+ KAOS (Utica, NY) has just made  entry 
+into  the net, with the addition of  a 
+30  Mb hard drive.  Sysop  Gary  Green 
+still    strives    for    signs    of 
+excellence....a higher AML and  better 
+textfiles......:)
+ There's  been  a rumor  going  around 
+that Cynbe ru Taren is lurking in  the 
+shadows of the net somewhere....if  he 
+catches this, we here at the  CitaNews 
+editing  desk would like him  to  know 
+he's  always got a home in our  hearts 
+and minds.....:)
+ Well, that's all the gossip for  this 
+month.   Have  a  little  tidbit  that 
+would  make us laugh, or give us  even 
+the  SLIGHTEST shred of  information??  
+Submit   an  article  or  message   to 
+CitaNews  Control.   We'll  DEFINITELY 
+print it!!
+--------------------------------------
+         !! CONTEST ALERT !!
+       CitaNews' First Contest
+--------------------------------------
+ Well,  with  a new editor  comes  new 
+features.   And,  one  of  them  is  a 
+contest section.  Each month, I'll  be 
+holding a contest of different  sorts, 
+and  the winner will win  some  paltry 
+prize of some sort or another.
+
+ So,  contest #1 begins.  The form  is 
+that  of  a  math  problem.   And  the 
+question is....
+ 
+If  you take the number of  CHARACTERS 
+in  the  name  of  the  alias  of  the 
+original   author   of   Citadel   and 
+multiply  it by the number of  LETTERS 
+in the name of the Citadel written  in 
+Turbo Pascal by Hue, Sr., what is  the 
+answer, in HEX??
+ 
+Send your answers to me, at any of the 
+addresses  at  the  beginning  of  the 
+letter, or send them via U.S. Mail to:
+
+         David A. Quick, Jr.
+              Box 191-C
+      Stittville, NY 13469-0191
+
+I'll  be  sure  to  write  back,   and 
+multiple   correct  answers  will   be 
+decided  by  a  random  drawing.   The 
+prize  of the month is 10 blank  DS/DD 
+5.25" floppies, so enter soon!!
+--------------------------------------
+              COMMENTS??
+            Let me know!!
+--------------------------------------
+ Would  you  like  to  see   something 
+specific in CitaNews??  Would you like 
+something taken out??  Would you  like 
+to     HELP?!?!?!?!?!??       (Foriegn 
+correspondents  are  SO hard  to  find 
+these  days....heh)   Just drop  me  a 
+line.    Buffers,   notes,   articles, 
+messages,  anything that you thing  is 
+pretty cool, give it to me.  I'll sort 
+out anything I can use.  BUT, I  can't 
+sort  if you don't send.   So  please, 
+help   a  16-year-old   with   graying 
+hair....
+--------------------------------------
+*------------------------------------*
+* CITANEWS (c) 1988 by Steve "George * 
+* Jetson" Yelvington of Minnesota.   *
+*------------------------------------*
+--------------------------------------
+End of transmission...................
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                

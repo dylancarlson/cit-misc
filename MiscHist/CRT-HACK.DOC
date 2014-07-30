@@ -1,0 +1,1127 @@
+//////////////////////////////////////////////////////////////////////////
+//				hack.doc				//
+// Copyright 1992 CurrenT Software -- See Gnu Public License for terms. //
+// Hacker's guide to CrTadel.						//
+//////////////////////////////////////////////////////////////////////////
+ 
+////////////////////////////////////////////////////////////////////////// 
+//				audience				//
+//                                                                      //   
+// This file describes the internal algorithms and datastructures used	//
+// by CrTadel, primarily for the benefit of people modifying the code.	//
+// Thus, the reader is assumed to be a proficient programmer familiar	//
+// with C++ and the general purpose and function of CrTadel.		//
+//									//
+//////////////////////////////////////////////////////////////////////////
+    
+////////////////////////////////////////////////////////////////////////// 
+//                              contents                                //   
+//                                                                      //   
+//	Acknowledgements						//
+//	Design Goals							//
+//	Overview							//
+//	Cards and cardfiles -- basic definitions.			//
+//		Card_ptr structure.					//
+//		Card structure. 					//
+//      Standard card-field types                                       //
+//	Authority under Crtadel 					//
+//      Multiple users under Crtadel                                    //
+//	Large Permanent Diskfiles					//
+//		text*.crd     Textcard queues (user posts).		//
+//		room_idx.crd  Roomcard index -- rooms by name.		//
+//		room*.crd     Roomcard files.				//
+//		map_idx.crd   Mapcard  index -- maps by name.		//
+//		map.crd       Mapcard  file.				//
+//		user_idx.crd  Usercard index -- users by name.		//
+//		user*.crd     Usercard file.				//
+//	Card-interface Classes						//
+//		gofer (card fetch/store class.) 			//
+//		clerk	  (card assemble/disassemble class.)		//
+//		roomcard  (room class.) 				//
+//		textcard  (post class.) 				//
+//		usercard  (user class.) 				//
+//      Other Classes                                                   //
+//              Glasses    Message-set filters -- hide selected msgs.   //   
+//              butlers  User command-parsing and output formatting.    //   
+//              user_context    Toplevel usertask.                      //   
+//      Programs                                                        //   
+//              crtinit (Initialize empty system.)                      //   
+//              crtfsck (Check and optionally repair CrTadel fileset.)  //   
+//              crtlogin (Log in new/known user.)                       //   
+//              crtread  (Usual read-postings process.)                 //  
+//              crtenter (Usual enter-posting process.)                 // 
+//									//
+//////////////////////////////////////////////////////////////////////////
+    
+//////////////////////////////////////////////////////////////////////////
+//                              history                                 // 
+//                                                                      //  
+// 91Apr03 CrT	"Authority" and "multi-user" sections.			//
+// 91Mar28 CrT	Make it all cards after consulting Aki	    The Sloth.	//
+// 91Mar27 CrT	Restructure rooms after consulting Joo-Sama The Dragon. //
+// 91Mar26 CrT	Touchup.						//
+// 91Mar24 CrT	Created.						//
+//////////////////////////////////////////////////////////////////////////
+  
+//////////////////////////////////////////////////////////////////////////  
+//				epigram 				//
+//                                                                      //  
+//		"The Source, Luke!  Trust the Source!"			//
+//////////////////////////////////////////////////////////////////////////
+
+
+ 
+//////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////
+//      Acknowledgements                                                //
+//////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////
+
+91Mar Octave-sized room files suggested by Kinomon Firestar / Peter Torkelson.
+91Mar Use of cards and rooms for generic data storage inspired by Bob Perigo.
+91Mar Rooms-as-cards suggested by Jerry Prothero.
+
+ 
+ 
+//////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////
+//      Design Goals                                                    //
+//////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////
+
+This is a rework of the basic Citadel design to accomodate ten years
+worth of changes in the BBS world.  The original Citadel design was
+targeted toward single-user 300 baud floppy-based CP/M systems called
+by users with typical screen widths of 40 to 64 chars, frequently
+uppercase-only.  Implementation was in BDS C, a fast, cheap compiler
+for a subset of K&R C.
+
+    Decade-overdue comment:  Citadel owes its existence, and I owe
+    many happy hours hacking, to Leor Zolman's talent, which let
+    him create a lightning-fast compiler on a floppy-based system
+    with a brain-dead instruction set (11 bytes to access a stack
+    var!), and to his generosity, which resulted in a BDS C I could
+    afford at the time.  Leor greeted bug reports with unfailing
+    good humor, and was even known to post favorable reviews of
+    competing compilers. (!)  Many long-overdue thanks, Leor!
+    :> I hereby nominate BDS C to the Heroic Hack Hall of Honor. <:
+
+This time around, the canonical target systems are
+
+  * Single- and multi-line DOS 286s under TurboC++ and
+  * Multi-user unix systems, either multi-line or on internet, under g++.
+
+The hope -- hardware permitting -- is to support:
+  a few dozen simultaneous users,
+  a few thousand total users,
+  a few hundred rooms,
+  a few tens of thousands of messages,
+  a more flexible user interface,
+  more graceful interaction with local extensions, and
+  neat things beyond belief. :)
+ 
+I also hope my additional decade of programming experience is reflected
+in the design... ;2)
+ 
+
+ 
+//////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////
+//      Overview                                                        //
+//////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////
+
+CrTadel is fundamentally a database into which callers can enter messages,
+and from which they can read messages.	The various diskfiles serve simply
+to hold the messages themselves, and to help users locate the messages they
+are interested in reading.
+
+Since CrTadel is implemented using object-oriented, message-passing
+programming techniques, to avoid confusion we call user messages
+"textcards" -- think of the 3x5 index cards posted on a cork bulletin
+board -- and use word "message" only in the object-oriented sense.
+ 
+Cards are the atomic addressable units of information on disk --
+CrTadel always reads and writes one complete card at a time.  Cards
+are the generic information currency in CrTadel -- they are used
+for much internal bookkeeping as well as normal user-visible
+messages.
+ 
+Logically, a card is a set of property-value pairs ("fields"),
+where each property is an ascii string and each value is an arbitrary
+byte sequence. A given property appears at most once in a given
+card.  Typical properties are FROM, identifying the author of
+a post, and TEXT, containing the main body of text in a post.
+
+A set of same-structure cards constitutes a "relation," in the
+mathematical/database sense.  One design goal of the system is to
+support simple relational-database-style queries over part or all
+of the entire CrTadel cardfile database, allowing flexible extraction
+of information from the system, initially for the sysop and perhaps
+eventually for users as well.
+ 
+Cards are stored in a variety of diskfiles, with a corresponding
+variety of card-lifetime policies.  Each cardfile contains a
+header record -- itself a card -- identifying the file management
+policy for that cardfile.  Cardfile names normally end in ".crd".
+ 
+In what follows, we will speak of various different kinds
+of cards -- textcards, roomcards, mapcards &tc.  These
+names are useful, as long as it is clearly understood that cards
+as such do *not* have types -- only fields have types.	Any card
+which contains all the fields expected of a textcard can be
+considered to be a textcard, and so forth for all other card types.
+Note that a card can have fields beyond those expected in a textcard,
+and still be used as a textcard -- CrTadel always ignores unneeded
+fields in a card.
+
+Textcards contain normal user posts, and are stored in files,
+conventionally named "text*.crd", which are managed as circular
+queues, with each new textcard entered overwriting the oldest
+textcard(s) in the file.  CrTadel can be configured to run with
+a single text*.crd file;  Use of more than one text*.crd file
+allows the sysop to give longer lifetimes to selected textcards.
+As an extreme case, it is possible to assign a different text*.crd
+file to every room, completely decoupling user-post lifetimes
+in the different rooms.  (Textcards in a given room are usually
+all stored in the same text*.crd file, but nothing in CrTadel
+depends on this, and in fact sysop movement of textcards (&tc)
+may result in arbitrary mixtures within a room.)
+
+A roomcard is a particular type of card, and among other things
+will contain a "PTRS_IN_ROOM" field.  This field identifies the
+textcards (user posts) currently "contained" in the room.
+Since the roomcard contains only *pointers* to the textcards
+"in" the room, a given textcard may in principle be "in" many
+different rooms.  Although this normally would have little point,
+it might happen if a message were cross-posted to several rooms.
+ 
+A PTRS_IN_ROOM field is logically an array of pointers to cards
+-- "card_ptr"s.  Similar possible or planned fields include
+a PTRS_IN_MAP field for lists of roomcards in mapcards
+(mapcards implement "hallways" and "floors") and a PTRS_IN_TEXT
+field linking textcards to each other (to implement "hypertext links").
+ 
+A card_ptr is simply a struct identifying the file the card is in,
+the location of the card within that file, and also the length of
+the card (so the card can be fetched in a single atomic file-read).
+ 
+At any given time, a user is usually sequentially reading the textcards
+"contained" in a particular roomcard.  Various kinds of filtering may
+make some textcards in the room invisible to the user. A textcard will
+normally be listed in only one roomcard, but *can* be entered into any
+number of rooms.  Roomcards are stored in the files room1.crd, room2.crd,
+room4.crd etc, indexed by the "room_idx.crd" file.  These files differ only
+in the maximum number of textcards/room, and are extended as needed --
+roomcards in these files must be explicitly deleted, they will not
+die of old age.
+ 
+Mapcards are simply sets of roomcards -- that is, each mapcard contains
+a PTRS_IN_MAP field referring to roomcards.  At any given time, a user
+can directly "see" and "goto" only the rooms in the currently selected
+mapcard. This is to avoid overwhelming users with hundreds of rooms on
+large systems by grouping them into meaningful clusters.  A small system
+may have only a single mapcard, listing all rooms;  A large system may
+have many maps, classifying rooms in various ways.  Mapcards are stored
+in the file map.crd, indexed by the "map_idx.crd" file. These files are
+extended as needed -- mapcards must be explicitly deleted.
+
+The "user.crd" file contains the primary per-user information in
+the system, such as encrypted password, messages seen, authority
+and so forth, stored in usercards. To avoid searching all of user.crd
+at login time, "user_idx.crd" provides a concise listing of user names.
+
+ 
+ 
+Some C++ classes used inside CrTadel:
+-------------------------------------
+  
+"Butlers" are interchangable user-interface modules.  Each implements
+a selected look-and-feel, converting user keystrokes into messages to 
+appropriate objects, and formatting the resulting output appropriately 
+on the screen.	Since each class of butler may need to store additional
+information on user preferences, in general each butler class has its
+own xxxx.crd file, indexed by the same card numbers as user.crd.
+
+"Glasses" (think of colored eyeglasses which vanish objects of certain
+colors :) are C++ filters which make selected messages within a room
+invisible.  Uses include exclusive messages, user-selected "kill" files,
+and twit control.
+  
+
+ 
+//////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////// 
+//      Cards and cardfiles -- basic definitions.                       //
+//////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////  
+
+   
+//////////////////////////////////////////////////////////////////////////
+//              Card_ptr structure.                                     //
+//////////////////////////////////////////////////////////////////////////
+
+A card_ptr is a pointer to an arbitrary card in the CrTadel cardfiles. 
+card_ptr is defined in card_ptr.h.  A card_ptr contains:  
+   
+    * cardfile, the name of the file containing the card.  
+    * where, the byte offset of the card within the cardfile.  
+    * byte_size, the length of the card in bytes, so that it can be  
+          read in a single atomic read.  
+    * card_id, a unique-in-the-cardfile number for the card, so that one  
+          can tell if the message has been overwritten.  (The card checksum  
+          field helps too!)  
+   
+(Rationale: this information is necessary and sufficient to efficiently  
+read each card in a single call (minimizing multi-user consistency  
+problems) and to verify the integrity of the card once read.)  
+   
+
+
+//////////////////////////////////////////////////////////////////////////
+//              Card structure.                                         //
+//////////////////////////////////////////////////////////////////////////
+   
+A card consists of some number of fields.
+  
+Each field consists of a null-terminated ASCII hex length (optionally
+followed by a fieldaide-list) followed by the field proper.  The bytecount
+includes the fieldaide-list (if present) but does not include the length
+itself.  (Rationale:  Using a bytecount rather than a null terminator 
+allows the inclusion of binary-data fields such as .GIF-format pictures.) 
+      
+Fieldaide lists grant increased local authority over the field instance to
+the indicated users. (One use is to implement room-aide authority.)
+A fieldaide list consists of a '\n' followed by triples of colon-separated
+hex numbers, one triple per line, the complete sequence terminated by a null:
+
+    "\n012:34:60\n56:7:60\n8:9:60\n\0"
+ 
+Each hextriple gives the user-id:userfile-offset:new-authority for
+a given user.
+ 
+All fields have the form "TYPE=data", where TYPE is an ASCII string, and 
+data is typically (but not necessarily) ASCII text terminated by a 
+newline and then a null.  TYPE is a word identifying the field type. 
+  
+Rationale: Sticking to text as much as possible minimizes portability
+problems due to byte-ordering etc, and simplifies debugging and disaster
+recovery. The "property=value" format is flexible and relatively
+self-documenting.  Efficiency issues should not be a serious problem.
+The terminal newline-null sequence is logically redundant, but is cheap,
+simplifies eyeball checking and C handling of the file, and will probably
+prevent a few bugs.
+      
+Every card contains, in the following order:
+
+    * a card id field such as "#=19e34\n\0";
+    * any number of arbitrary other fields;    
+    * a checksum field such as ".=128f\n\0";
+     
+Each card is read or written using a single system call. (Rationale:
+Since many operating systems, such as unix, make these calls atomic, 
+this helps reduce problems in multi-user systems.) This implies that 
+each message has to be stored contiguously -- not broken in the middle 
+when it comes time to wrap around the end of a cardfile.
+
+
+ 
+//////////////////////////////////////////////////////////////////////////
+//      Standard card-field types                                       //
+//////////////////////////////////////////////////////////////////////////
+   
+The following field types are predefined by CrTadel.  Except for the
+"#" and "." fields, all predefined CrTadel field types consists
+exclusively of uppercase letters and underscores.  All future
+internal CrTadel fields will likewise consist of uppercase letters
+and underscores.  Local extensions should avoid this namespace --
+please incorporate lowercase letters and/or nonalphabetic characters
+in all local field types.
+ 
+  
+Universal convention:
+---------------------
+   
+A field contains "card_ptr"s if and only if the fieldname starts
+with "PTRS_": "PTRS_IN_ROOM", "PTRS_IN_MAP" etc.  Fields which >do<
+contain card_ptrs contain >nothing but< card_ptrs.
+ 
+Rationale:  This lets simple-minded code reliably locate all pointers
+in a card or file.   Restricting card_ptrs to a single type of field
+would also accomplish this, but is too restrictive.
+ 
+ 
+  
+Universal card fields: 
+---------------------- 
+   
+NOTE:  The following two field are the *only* fields in a card which
+occur in a specific position or order within the card.	All other
+fields in a card may be re-ordered arbitrarily without affecting
+the system or the interpretation of the card.
+
+"#=%08x\n\0"
+    Card id number.  This is guaranteed unique within the given cardfile. 
+    A zero value is always invalid and usually means that gofer hasn't 
+    assigned the card a number yet.  The first field in any card is 
+    *always* a "#" field. 
+  
+".=%04x\n\0" 
+  The checksum is computed on a byte-by-byte basis (unsigned), to 16-bit 
+  precision, and written out with the format %04x: ".=0496\n\0". It covers  
+  all of the card fields except the checksum field itself, and is computed  
+  by code equivalent to:  
+    {   
+        unsigned char * p        = start_of_buffer;   
+        int             checksum = 0;   
+        int             i;   
+        for (i = bytes_to_checksum;   i --> 0;   )   checksum += *p++;   
+        sprintf( checksum_field, "%04x\n", checksum & 0xFFFF );   
+    }   
+  The last field in any card is *always* a "." field.  
+
+  
+ +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+ + NOTE: The following defines each predefined CrTadel field type, + 
+ +       giving the canonical card "type" in which each field is   + 
+ +       found. The field may be found in cards not listed, and    + 
+ +       cards may hold fields not listed here.  See elsewhere...  + 
+ +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+  
+   
+Textcard fields: 
+----------------   
+    
+"DATE=%s\n\0" 
+    Date message was entered. (What's the best format?) 
+  
+"FROM=%s\n\0" 
+    Name of person posting the message. 
+  
+"TEXT=%s\n\0" 
+    The main body of a user post.  Lines are separated by newlines  
+    -- ANSI linefeeds -- with no carriage-returns. 
+   
+"MAIL=%s\n\0"
+    Exactly like TEXT, but requires CRK_PRIVATE_MAIL privilege to 
+    be read -- used to implement private mail. 
+    
+"TO=%s\n\0"
+    Person(s) message is to.  This field is optional.  Multiple  
+    recipients are separated by newlines.  
+   
+"PTRS_IN_TEXT=..." 
+    Holds cross-references between textcards.  Not implemented yet.  
+   
+  
+   
+Headercard fields:  
+------------------  
+   
+All card-containing files in CrTadel contain a headercard at file offset 
+zero, with the following fields: 
+  
+"HEADER_LENGTH=%08x\n\0" 
+  Length of header record.  Currently 512 bytes.  This field is logically  
+  redundant, but is recorded explicitly for cleanliness.  Used to find the  
+  start of the regular (non-header) cards within the cardfile.  
+     
+"VALID=%08x\n\0"  
+  TRUE iff information in header is current.    
+      
+"FILE_HOLDING_HEADER=%s\n\0" 
+  Name of the file holding the headercard, minus ".crd" extension. 
+  Rationale:  Anyone doing a database search for headercard records 
+  needs to know the file each headercard came from.  (By contrast, 
+  non-header cards have meaning independent of the file they 
+  happen to have come from.)  Defends against accidental renaming 
+  of cardfiles.  Making the ".crd" implicit everywhere makes it a little 
+  harder for a cracker who finds a hole in CrTadel to clobber anything 
+  but the *.crd files on the system. 
+        
+"FILE_SIZE=%08x\n\0"  
+  Current length of file in bytes.    
+         
+"NEW_CARD_POLICY=%s\n\0"
+  Where should new cards be placed?  This field gives the strategy:
+  "CIRCULAR":  Wrap around at end of file, overwriting old cards.
+  "APPEND":    New cards are always written at end of file.
+  "LRU":       Least-Recently-Used card gets overwritten.
+ 
+         
+"MAX_FILE_SIZE=%08x\n\0"
+  Maximum permitted length of file in bytes. Zero => no limit.    
+        
+"MAX_CARD_SPACING=%08x\n\0" 
+  Maximum permitted spacing in bytes between starts of successive  
+  cards in file. Zero => no limit.   
+  
+"MIN_CARD_SPACING=%08x\n\0" 
+  Minimum permitted spacing in bytes between starts of successive 
+  cards in file. Zero => no limit.  
+  Usually either set to zero, or else to MAX_CARD_SPACING, to enforce 
+  an indexable-array-of-cards file layout. 
+  
+"NEXT_CARD_OFFSET=%08x\n\0" 
+  Next address at which to write a card. If next_offset is zero,     
+  cards are not being written circularly around the file.     
+          
+"NEXT_CARD_NUMBER=%08x\n\0" 
+  Next number to assign to a card. 
+  
+  
+Rationale:  Recording this information explicitly in the header 
+(rather than implicitly in the filename, say) reduces the number 
+of special-case hacks needed in the cardfile code.  Storing the 
+information in ascii makes it easier for the sysop to take a 
+quick peek for reassurance, and should never be an efficiency 
+problem.  Storing the header as a card eliminates some special 
+case code. 
+  
+   
+   
+Room-index card fields: 
+-----------------------   
+     
+"ROOM_NAMES=..."  
+   
+   This field fills most of room_idx.crd, and has the form:  
+   
+    struct {  
+        char name[ MAX_ROOM_NAME ]; // User-visible name of room.   //  
+    } name_index[ MAX_ROOMS ];  
+     
+"PTRS_IN_ROOM_INDEX=..." 
+    PTRS_IN_ROOM_INDEX[i] gives the roomcard for ROOM_NAMES[i].  
+   
+  
+   
+Room-card fields: 
+-----------------  
+     
+"PTRS_IN_ROOM" 
+   This field contains the textcards visible in the room. 
+   The last entry is the most recent one. 
+    
+"POST_COUNT=%x\n\0" 
+   This field contains a count of the total number of messages  
+   which have been posted in the room, summed over the entire  
+   lifetime of the room.  
+     
+"ROOM_NAME=%s\n\0"
+   This field contains the name of the room.  
+   
+"CARD_FILE=%s\n\0"  
+   This file contains the filename of the default cardfile in which to  
+   create textcards posted to this room.  The filename contains no  
+   path and no ".crd" extension.  
+   
+  
+  
+Map-index card fields: 
+-----------------------    
+      
+"MAP_NAMES=..."  
+    
+   This field fills most of map_idx.crd, and has the form:  
+    
+    struct {   
+        char name[ MAX_MAP_NAME ]; // User-visible name of room.   //  
+    } name_index[ MAX_MAPS ];  
+      
+"PTRS_IN_MAP_INDEX=..." 
+    PTRS_IN_MAP_INDEX[i] gives the mapcard for MAP_NAMES[i].  
+   
+  
+  
+Map-card fields: 
+----------------  
+      
+"MAP_NAME=%s\n\0"  
+   This field contains the name of the map.  
+    
+"PTRS_IN_MAP=..." 
+    PTRS_IN_MAP[i] gives the ith roomcard in the map.  
+  
+  
+  
+User-index card fields: 
+-----------------------    
+      
+"USER_NAMES=..." 
+    
+   This field fills most of user_idx.crd, and has the form: 
+    
+    struct {   
+        char name[ MAX_USER_NAME ]; // User name.   // 
+    } name_index[ MAX_USERS ]; 
+      
+"PTRS_IN_USER_INDEX=..." 
+    PTRS_IN_USER_INDEX[i] gives the usercard for USER_NAMES[i]. 
+  
+  
+  
+User-card fields: 
+----------------- 
+      
+"USER_NAME=%s\n\0" 
+   This field contains the name of the user.   
+      
+"USER_AUTHORITY=%x\n\0"
+   This field contains authorization level of the user.
+      
+"USER_PASSWORD=%s\n\0"
+   This field contains the encrypted password of the user. 
+     
+"LAST_POST=%x:%x:%x\n%x:%x:%x\n...\n\0"
+   This field contains the last post seen by the user in each room
+   known to the user.  It consists of a sequence of A:B:C triples, where
+     A is a hex number identifying the roomfile (1=room1,2=room2,4=room4...)
+     B is a hex number identifying the room	(card id within the file)
+     C is the last post (as measured by POST_COUNT) seen in that room.
+
+ 
+  
+//////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////
+//	Authority under Crtadel 					//
+//////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////
+
+Purpose
+------- 
+  
+"Authority," as used here, means deliberate, differential empowerment
+of specific users.  For example, on most systems sysops are authorized
+to do things forbidden to typical users.
+
+CrTadel needs a reliable, centrally implemented authority mechanism
+in order to prevent incompetent or malicious users from:
+ * Destroying information.
+ * Obtaining private information.
+ * Interfering with other users.
+ * Forging messages.
+ * ... add your favorites :-)
+
+
+ 
+Global vs Local Authority
+-------------------------
+   
+As a practical matter, it seems necessary to provide support for
+two types of authority mechanisms:
+ *  "Global authority" granting entire classes of users rights to to
+    entire classes of fields. (Unix file-access bits work like this.)
+ *  "Local authority" granting specific users powers over specific
+    field instances. (VMS access-control lists work like this.)
+
+Rationale:
+ *  Local authority is needed to implement things like room-aide
+    authority, which grants a specific (otherwise typical) person
+    authority over a specific instance of a field.
+ *  Global authority is needed because using local-authority lists for
+    everything would just be too inefficient, in terms of both computer
+    and sysop resources, and because the profusion of special-case
+    authorizations would likely lead to oversights.
+
+
+ 
+Global Authority
+---------------- 
+    
+CrTadel's global authority mechanism is based on the twin concepts of:
+
+ *  User authority.  Each user is assigned an integer authority level.
+ *  Field sensitivity.	Each field type is assigned two integer sensitivity
+    levels -- one for reading the field, one for modifying the field.
+    (We do not distinguish creation and modification of a field.)  In
+    order to read (write) a field, a user must have authority (either
+    local or global) greater than or equal to the read (write) sensitivity
+    of the field in question.
+
+Currently envisioned read (write) sensitivity levels are:
+   00	unrestricted  -- Anyone can read (write) it.
+   10	twit	      -- Have to be at least a twit to read (write) it.
+   20	user	      -- ...
+   30	aide	      --
+   40	sysop	      --
+   50	console sysop -- Must be sysop working from system console.
+   60	private mail  -- Read private mail.
+   70	forbidden     -- Must have broken the system to read (write) it :).
+
+"Console sysop" is for the really paranoid -- it makes the field safe
+even from crackers who have guessed the sysop password!
+  
+"Private mail" is not normally used as a global authority at all -- it
+is used as a local authorization granted to the intended recipient(s)
+of a private message.  Snoopy sysops can always hack their authority
+up to this level, of course...
+ 
+Since authorizations and sensitivities are in fact just integer fields,
+the above numbers are just conventions, which can be freely redefined
+on a given system.
+ 
+Rationale:
+ *   Authority must depend on the user in some way, because
+     different users must have different authorizations -- sysops and aides
+     must be allowed actions which less trusted callers are forbidden,
+     in most environments.
+ *   Authority must be computed on a per-field basis rather than, say,
+     a per-card basis, because we intend to allow relational-database
+     style queries eventually, which preserve the identities of fields
+     but not the identities of cards.
+ *   Using integer authorization and sensitivity levels allows easy
+     implementation of a range of different authority levels.
+
+
+ 
+Local Authority
+---------------
+     
+Local authority is provided by allowing specific users to be
+listed in a specific instance of a field.  Such users recieve,
+over that specific field instance, the maximum of their global
+authorization and the listed authorization.
+
+Fieldlists identify a user by a userlog card id number together
+with the user.crd file offset for that card.
+
+Rationale:
+ *   This allows renaming of users without accidental loss/gain of authority.
+ *   This prevents a new user from accidentally inheriting old authorizations
+     from a previous user of the same name.
+ 
+
+  
+Authority Implementation
+------------------------
+     
+The required authorization checks are enforced by the clerk class, since
+this provides a convenient central chokepoint which all access to the 
+diskfiles must negotiate. 
+  
+Rationale:
+ *   Implementing authority mechanisms in a small central kernel
+     (standard practice today) allows elaborate facilities to be 
+     implemented outside the authorization kernel without fear of 
+     compromising system security. 
+
+Problem:  It is not clear what to return when access to a field is forbidden,
+because we want users to be able to write sweeping queries without having 
+the query fail or be rejected because of a few of forbidden fields. 
+
+Problem:   None of the above addresses the question of who has the
+right to write cards to the various cardfiles.	It may not be necessary
+for the authority kernel code to worry about this at all -- this may
+be better handled with ad hoc code.
+ 
+Problem:  Somehow users without general rights to edit the message
+files must have the right to enter messages!  This can be handled
+by having a user grant itself local-authority rights while
+initially editing the textcard, then remove them before posting...
+maybe this should be automatic?
+
+ 
+ 
+//////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////
+//	Multiple users under Crtadel					//
+//////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////
+
+Each user will be served by an individual task.  A single central
+server will make all changes to the central message database.
+Under DOS, user tasks will write server requests into ramdisk files,
+one file per usertask.	Under Unix, user tasks will write server
+requests to a named pipe.
+ 
+Rationale:
+ *   A single multithreaded task serving all users could be
+     considerably more efficient due to reduced context-switch overhead,
+     but this would be unusual under both DOS and UNIX (meaning that
+     unexpected bugs and unsupported needs would be likely), and this
+     setup would also lack flexibility, since user threads cannot simply
+     exec (for example), a game or door program, the way a single-user
+     task can.
+ *   No file locking is needed because only one process ever has write
+     privileges to any single file.  This avoids problems with:
+       (1) Lack of standardization in file-lock calls.
+       (2) Inefficiency of locking on some systems.
+       (3) Hanging locks left after a task crashes.
+       (4) Buggy or missing lock support on some systems.
+     (The closest thing to a write-write conflict will be the dos
+     server-request files, which contain records marked FULL by
+     the user tasks and then EMPTY by the server.  Under this
+     protocol, there should never be any race conditions, and in
+     any event, mangling of the request queues will at worst result
+     in a message or two being lost or delayed, not in major corruption
+     of the entire system.  If desired, user tasks can wait for the
+     message to be successfully posted by the server before discarding
+     their own copy.)
+ *   Having some designated user task double as the server (in order
+     to save a task under dos) seems a poor idea, since user tasks
+     frequently exec utilities of various sorts, and folding the
+     server code into every such utility would be a nightmare.
+
+ 
+
+//////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////
+//      Large Permanent Diskfiles                                       //
+//////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////  
+   
+   
+   
+//////////////////////////////////////////////////////////////////////////
+//              text*.crd     Textcard queues (user posts).             //
+//////////////////////////////////////////////////////////////////////////
+  
+Textcards are sequentially numbered, and sequentially written into the
+textcard queue file.  When the end of the file is reached, the file
+wraps around and new textcards overwrite old ones.
+
+Thus, a typical layout of a textcard queue file looks like so:
+ 
+	+------------------+
+	|   Header record  |
+        +------------------+
+	|   Card 11678	   |
+        +------------------+ 
+	|   Card 11679	   |
+        +------------------+
+	|   Card 11680	   |
+        +------------------+
+	|      ...	   |
+ 
+	|      ...	   |
+        +------------------+
+	|   Card 12695	   |
+        +------------------+
+	|   Card 12696	   |  <-------- Most recent textcard.
+	+------------------+  <-------- Wrap around point
+	|   Card 10562	   |  <-------- Oldest textcard.
+        +------------------+
+	|   Card 10563	   |
+        +------------------+
+        |       ...        |
+
+        |       ...        |
+	+------------------+
+	|   Card 11677	   |
+	+------------------+  <-------- End of file
+
+
+
+A text*.crd queue is constructed by initially setting
+  VALID 	 = 1		   // Of course.
+  MAX_FILES_SIZE = something	   // Select max size file should grow to.
+  MIN_CARD_SIZE  = 0		   // No obvious lower limit.
+  MAX_CARD_SIZE  = 0		   // Or some sysop-selected limit.
+  FILE_SIZE      = HEADER_LENGTH   // File initially contains only header.
+  NEXT_OFFSET	 = HEADER_LENGTH   // Write first card after header.
+  NEXT_CARDNO	 = 2		   // Header itself is always card #1.
+  NEW_CARD_POLICY=CIRCULAR	   // Wrap around when max size is reached.
+
+
+ 
+//////////////////////////////////////////////////////////////////////////
+//              room_idx.crd  Roomcard index -- rooms by name.          //
+//////////////////////////////////////////////////////////////////////////
+
+This file holds the names of all the rooms in the system.
+Each name is paired with a card_ptr to the corresponding roomcard. 
+  
+This file contains only the headercard plus a single room-index card. 
+The index card contains a ROOM_NAMES field plus a PTRS_IN_ROOM_INDEX
+field.
+
+The rooms themselves are packed into roomfiles, each of which holds
+rooms of a given size.
+
+Rationale: Allowing only one room size per system is too limiting.
+Allocating one file per room (with several hundred rooms) is too messy
+and slow -- openfile and closefile are often inefficient operations,
+and multi-hundred file directories are hard on both os and sysop.
+
+The structures are defined in room_idx.h.
+ 
+ 
+ 
+//////////////////////////////////////////////////////////////////////////
+//              room*.crd     Roomcard files.                           //
+//////////////////////////////////////////////////////////////////////////
+
+A room is basically a collection of card_ptrs.
+  
+A typical CrTadel system will contain
+  
+  room1.crd   Rooms containing up to  100 textcards. 
+  room2.crd   Rooms containing up to  200 textcards. 
+  room4.crd   Rooms containing up to  400 textcards. 
+  room8.crd   Rooms containing up to  800 textcards. 
+  room16.crd  Rooms containing up to 1600 textcards. 
+  
+Each room*.crd file contains a headercard plus an array of same-size 
+roomcards, both documented in room.h.  These files differ 
+only in the maximum number of textcards per room.  Rooms can 
+be added to the end of each file as needed. 
+  
+Each roomcard contains: 
+ a ROOM_NAME field, giving the name of the room;  
+ a PTRS_IN_ROOM field giving the textcards in the room;
+ a CARD_FILE field giving the default file for new textcards. 
+ a POST_COUNT field giving lifetime post-count for room.
+
+Free roomcards have a null ROOM_NAME.
+The POST_COUNT field is needed to implement new-posts reasonably.
+
+(BUGGO: Eventually more fields are needed to record type of room 
+-- for private rooms etc -- roomaide name[s] etc. Upload/download 
+directory names &tc may also turn up...) 
+  
+The room record is defined in room.h. 
+
+ 
+ 
+//////////////////////////////////////////////////////////////////////////
+//              map_idx.crd   Mapcard  index -- maps by name.           //
+//////////////////////////////////////////////////////////////////////////
+This file holds the names of all the mapcards in the system.
+Each name is paired with a card_ptr to the corresponding mapcard. 
+   
+This file contains only the headercard plus a single map-index card. 
+The index card contains a MAP_NAMES field plus a PTRS_IN_MAP_INDEX field.
+
+//////////////////////////////////////////////////////////////////////////
+//              map.crd       Mapcard  file.                            //
+//////////////////////////////////////////////////////////////////////////
+
+A map is basically a collection of pointers to rooms.
+  
+Each mapcard contains:
+ a MAP_NAME field, giving the name of the map; 
+ a PTRS_IN_MAP field giving the roomcards in the map;
+ a "~" field padding it out to the appropriate length. 
+
+
+ 
+//////////////////////////////////////////////////////////////////////////
+//              user_idx.crd  Usercard index -- users by name.          //
+//////////////////////////////////////////////////////////////////////////
+
+This file holds the names of all the users in the system.
+Each name is paired with a card_ptr to the corresponding usercard.
+   
+This file contains only the headercard plus a single user-index card.
+The index card contains a USER_NAMES field plus a PTRS_IN_USER_INDEX field.
+
+ 
+
+//////////////////////////////////////////////////////////////////////////
+//              user*.crd     Usercard file.                            //
+//////////////////////////////////////////////////////////////////////////
+
+This file holds a header record followed by one record for each currently
+known user in the system.
+
+Each usercard contains:
+ a USER_NAME	 field, giving the name of the user;
+ a USER_PASSWORD field, giving the encrypted password of the user;
+ a LAST_POST     field, giving the last post seen in each room.
+
+(BUGGO: More fields will be needed to record privilege level etc.
+Eventually, users may need variable-length configuration files,
+one per user, in addition to the fixed-length user record.  Is
+it still worth worrying about formatting messages &tc?)
+ 
+The above structures are defined in usr_log.h.
+ 
+ 
+ 
+//////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////
+//      Card-interface Classes                                          //
+//////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////
+
+Some classes are needed to encapsulate the details of accessing cards:
+ 
+//////////////////////////////////////////////////////////////////////////
+//              gofer (card fetch/store class.)                         //
+//////////////////////////////////////////////////////////////////////////
+
+    get_card (false if it doesn't exist).  Takes an arbitrary
+	card_ptr as its argument.  (Which is to say, a single
+	instance of this class serves as the universal interface to
+	to all cardfiles, to simplify life for the rest of the
+	system.  This class also serves as a central chokepoint in
+	which privilege checking can be placed, to implement private
+	messages etc.)
+    put_card.  Need to specify the card and the destination cardfile.
+	Returns the resulting card_ptr.
+    get_headercard
+    put_headercard
+    get_first_card
+    get_next_card
+
+ 
+//////////////////////////////////////////////////////////////////////////
+//		clerk	  (card assemble/disassemble class.)		//
+//////////////////////////////////////////////////////////////////////////
+  
+Once a card has been fetched from disk, we need a class which
+abstracts the operations:
+
+    change_field
+    get_field
+    put_field
+    get_first_field	Return type of first field (excluding # .)
+    get_next_field	Return type of next  field (excluding # .)
+
+
+//////////////////////////////////////////////////////////////////////////
+//              roomcard  (room class.)                                 //
+//////////////////////////////////////////////////////////////////////////
+   
+A higher-level class will be needed to implement room operations, which 
+will in turn call class clerk to tweak the actual card image in ram.
+  
+//////////////////////////////////////////////////////////////////////////
+//              textcard  (post class.)                                 //
+//////////////////////////////////////////////////////////////////////////
+    
+A higher-level class will be needed to implement operations on posts, which
+will in turn call class clerk to tweak the actual card image in ram.
+   
+//////////////////////////////////////////////////////////////////////////
+//              usercard  (user class.)                                 //
+//////////////////////////////////////////////////////////////////////////
+    
+A higher-level class will be needed to implement user operations, which 
+will in turn call class clerk to tweak the actual card image in ram.
+   
+
+ 
+ 
+//////////////////////////////////////////////////////////////////////////
+--Classes may also be needed for individual field types.  This is
+not clear to me at the moment...
+//////////////////////////////////////////////////////////////////////////
+
+ 
+ 
+ 
+//////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////
+//      Other Classes                                                   //
+//////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////
+
+ 
+//////////////////////////////////////////////////////////////////////////
+//              Glasses    Message-set filters -- hide selected msgs.   //
+//////////////////////////////////////////////////////////////////////////
+
+A room is logically an ordered set of messages.  Users may want to
+skip messages of various sorts -- from given users etc.  Thus, all
+user requests to read messages from rooms should be indirected
+through glasses classes... a generic null glasses filter will be
+needed. Thus, a primary function of these filters is to make some
+messages invisible at any given time.
+  
+
+ 
+//////////////////////////////////////////////////////////////////////////
+//              butlers  User command-parsing and output formatting.    //
+//////////////////////////////////////////////////////////////////////////
+
+One or more classes are needed to translate user typing into
+messages to the appropriate class instances.  These will presumably
+typically allow a certain amount of configuration by setting
+switches, with radical configuration available by selecting a
+different class of butler.  Since the configuration info will
+vary according to the selected butler, each class of butler
+will need a separate userlog file, with each user indexed by the same
+card-slot-in-file used for the main user.crd file.
+
+Some sort of central database of commands available to the
+user will be needed;  It can be automatically extracted from
+the CrTadel source by a simple program which searches for
+specially-formated comments at the top of each user-callable
+fn/msg, specifying:
+   string encoding of required arguments.
+   one-line description of call.
+   one-paragraph description of call.
+ 
+Each butler can then have a separate database describing, for
+each command string / icon / whatever supported by the butler,
+which fn/call to invoke.
+ 
+One can imagine butlers which incorporate interpreters for even
+more flexibility... It is fun to re-invent emacs...
+ 
+
+ 
+//////////////////////////////////////////////////////////////////////////
+//              user_context    Toplevel usertask.                      //
+//////////////////////////////////////////////////////////////////////////
+
+Mainly to avoid accumulating too many global variables, a user_context
+object, for each active user (currently never more than one per process...
+this is partly in anticipation of multithreads under (say) Mach...),
+records:
+    the current user;
+    the current room_set_filter;
+    the current msg_set_filter;
+    the current butler;
+
+ 
+ 
+//////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////
+//      Programs                                                        //
+//////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////
+
+
+ 
+//////////////////////////////////////////////////////////////////////////
+//              crtinit (Initialize empty system.)                      //
+//////////////////////////////////////////////////////////////////////////
+
+Construct an empty system (all the major data files, etc.).
+ 
+
+ 
+//////////////////////////////////////////////////////////////////////////
+//              crtfsck (Check and optionally repair CrTadel fileset.)  //
+//////////////////////////////////////////////////////////////////////////
+
+File System ChecK.  Check and restablish the system invariants.  Check
+text*.crd file, room*.crd, etc.
+ 
+
+ 
+//////////////////////////////////////////////////////////////////////////
+//              crtlogin (Log in new/known user.)                       //
+//////////////////////////////////////////////////////////////////////////
+
+Login user.
+
+ 
+ 
+//////////////////////////////////////////////////////////////////////////
+//              crtread  (Usual read-postings process.)                 //
+//////////////////////////////////////////////////////////////////////////
+
+Read textcards.
+
+
+ 
+//////////////////////////////////////////////////////////////////////////
+//              crtenter (Usual enter-posting process.)                 //
+//////////////////////////////////////////////////////////////////////////
+
+Enter a textcard.
+

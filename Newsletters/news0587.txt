@@ -1,0 +1,239 @@
+ ************
+ CITANEWS.587 / A Citadel Newsletter -- May 1987
+ ************
+ 
+ Compiled by Steve Yelvington 
+             (George Jetson @ The Lake US 612 426 1374)
+  
+ In this issue:
+ * A national newsletter for room-based systems
+ * ST Citadels begin networking
+ * Feeping Creatures stalk Citadel-86
+ * Amiga Citadels appear across the country
+ ... and more! Read on...
+ 
+ A NATIONAL NEWSLETTER?
+   This began last month as an update for out-of-town ST
+Citadel sysops, where town == Minneapolis/St. Paul. Since
+then, there has been a lot of interest expressed in a
+nationwide newsletter for all room-based, Citadel-like
+systems.
+   Is this such a newsletter? Not really -- yet. But it can
+become one. We invite your participation. If you have
+written or used a variation of Citadel, write a synopsis and
+upload it to the CitaNews: room at the Lake (US 612 426
+1374). CitaNews messages are shared with several other
+Citadels via networking. If you would like to be added to
+the network (Citadel-86-compatible), let us know. Our
+networking time is currently 3-3:45 a.m. central daylight time.
+   Future newsletters may be compiled by editors in multiple
+locations. Andy Meyer has expressed an interest in compiling
+a newsletter. We may work out a way to collaborate, but
+haven't gotten around to it yet. Is anyone else interested?
+We particularly need info from Seattle.
+   If all this seems anarchic and disorganized, it is. But
+that's Citadel for you.
+
+   Here's a note from the CitaNews room...
+
+
+
+ 87Apr25 2:29 pm from Andy Meyer
+ Hmmm, ideas, ideas... I think y'all are too up on your new
+projects. I've seen people out there who're still hacking
+away at the 2.1x CP/M code. Not that that's bad, but I find
+myself wishing I'd cataloged the bugs I encountered 'along
+the way' as well as any 'enhancements'. 
+ Currently I've undertaken a 'National Room-oriented
+Systems' list, which includes all flavours of Citadel, plus
+StoneHenge, MiniBin, IdeaTree (ugh), etc. I'm having big
+troubles(!) keeping stuff straight, but I'm sure you'll
+like the format. 
+ As far as a newsletter, I've been thinking about using
+some sort of electronic mail to collect submissions as well
+as distribute the final product, (currently a monthly). The
+'tone' should be friendly and not so technical as to scare
+away newcomers, with anecdotes, hints and tips, etc. Code
+fragments to explain 'fixes' are a must, but I'm afraid
+y'all have modified yourselves into oblivion. 
+ My 'major sites' are currently: Seattle (the biggest, with
+about 50 room systems, naturally because that's where it
+all started), the Twin Cities, the metro New York City area
+(dunno about any in NYC, although K2NE's Cit-N128 is big in
+area 609), Dallas/Forth Worth (Maher's Gates of Mordecai,
+et. al.) and the latest "find" Sacramento, CA (which run
+some strange derivatives "ATKeep", "Acropolis" and Citadel
+2.5x versions). 
+ Comments, please. 
+
+  ------------
+
+ NETWORKING NOTES
+ Several mutations of Citadel have an ability to exchange
+messages or mail in one form or another. One such system was
+implemented in version 2 of Citadel-86 by Hue, Jr., in
+Minnesota's Twin Cities. The current version of that
+networking scheme allows netmail, shared rooms and
+sysop-requested automatic file transfers during a
+prearranged networking period.
+ The Amiga version implemented by Jay Johnson (Stallion and
+the Atari ST version implemented by David Parsons (orc) are
+directly derived from Citadel-86, and both (in their current
+versions) support the networking scheme. (One exception:
+The ST and Amiga versions cannot yet send unrequested files
+via the network, as the C-86 version can.)
+ NeoCitadel, a Turbo Pascal version written by Hue, Sr. (who
+remarkably enough happens to be Hue, Jr.'s father),
+currently supports netmail but isn't sharing rooms.
+ The current networking scheme works well enough, but it has
+some limitations. Primary among them is that every Citadel
+must contact every other Citadel individually -- data cannot
+be forwarded automatically from A to B to C. This makes it
+unlikely that any extensive networking can take place
+outside of the confines of a single toll-free telephone zone.
+ Therefore Hue, Jr., is working on a message-routing scheme.
+As of May 10, it works; a message from Spies (a New York
+Citadel) arrived at the Lake via Test System. You'll
+probably see routing in the ST and Amiga versions shortly.
+For details, contact Hue, Jr. @ C-86 Test System, US 612 866 1804.
+  
+ FLOOR TALK
+  Stonehenge and some Citadel mutations have implemented
+"hallways" that can be used to connect related rooms. Such
+an idea has cropped up in the Twin Cities periodically. Now
+things seem to be getting serious.
+  Hue, Jr. has strongly backed the concept of "floors" as a
+logical addition to "rooms." In his scheme, a sysop could
+choose to group related rooms onto a floor, thus keeping all
+the techie talk in one place, all the political discussions
+in another, all the writing and poetry in yet another, etc.
+  A major point of this scheme is that users could choose to
+either see the floor structure or to have Citadel appear "as
+usual" -- that is, just a single list of rooms. Why the
+option? Because although some sysops and users have asked
+for the feature, others have screamed bloody murder at the
+thought of complicating Citadel.
+  Some sort of floor scheme now seems likely to appear on
+future versions of Citadel-86, Citadel-68k (Amigados) and
+Citadel-68 (STadel).
+  Floor talk: (a shared room) exists on C-86 Test System,
+Pell, Phoenix and a couple of other Twin Cities systems.
+Stop by and contribute if you're interested.
+
+  Now, for system-specific news....
+   
+  CITADEL-86
+  This winter and spring must have been good for feeping
+creatures, because they're sprouting like mad. The latest
+versions of Citadel-86 sport:
+ *Invitation-only rooms. These are private rooms that you
+can't reach by guessing the roomname. (Also on ST and Amiga.)
+ *Anonymous rooms. No names or times on the messages, so
+users can make rude noises with impunity. This is an
+.aide-edit-room option. (Also on ST and Amiga.)
+ *Room moderators. Basically a one-room aide.
+ *Chat-to-disk. Good for recording chats or downloading
+ASCII. Control-R toggles it.
+ *Outside commands. A sysop can run another program from
+inside Citadel, if there's enough memory. (Also on ST).
+ *Remote sysoping. Full access to features normally
+restricted to the sysconsole, including outside commands.
+ Citadel-86 runs on PC clones and the Zenith Z-100.
+Source code and executables are in the public domain and are 
+re available from Citadel-86 Test System (US 612 866 1804)
+and most C-86 sysops.
+ 
+  NEOCITADEL
+  Hue, Sr.'s Turbo Pascal version has added room moderators
+and invitation-only rooms, and is netting mail. Room
+archiving (which creates a plain ASCII recording of a room's
+messages) and room sharing are coming Real Soon Now. For
+details, contact Supercomp II, US 612 431 1107.
+  
+  CITADEL-68K (AMIGADOS)
+  Jay Johnson's Amiga implementation has finally entered
+national distribution, with perhaps a dozen installations.
+It is highly similar to Citadel-86. Two features it has
+contributed are extended directory listings (with file
+descriptions) and the ability to insert a paragraph marker
+(return-space) while editing a message.
+  After a few early problems, networking seems to be
+debugged and fully compatible with Citadel-86 and the Atari
+ST version.
+  A couple of tips for prospective Amiga sysops:
+  *You MUST have a file called CTDLBAD.SYS. Apparently there
+doesn't have to be anything in it, but if it's not there,
+Citadel will not run.
+  *You MUST tell your operating system to reserve a stack of
+at least 20480.
+  The Amiga version runs under multitasking Amigados. You
+can run Citadel, roll the Citadel screen down out of the
+way, and run most other well-behaved programs (even a
+compiler) so long as they do not try to use the serial port.
+If you want to use the serial port, Citadel has a function
+that halts the program and "unhooks" the serial port
+temporarily. Thus you can use your favorite communications
+program without completely "folding up" Citadel. Just don't
+forget to hook things back up when you're done.
+  Dying to get your hands on Amiga Citadel? Home base is
+Phoenix, US 612 459 8095. The program also is on CompuServe
+and GEnie. If telecom charges scare you, contact Jay Johnson
+in private mail at Phoenix and he can arrange for you to
+obtain disks.
+  
+  CITADEL-68 (ST) also known as STadel
+  It's here, it's there, it's even in Canada. Yes, George
+Seto and Bruce MacKay have ST Citadels running in Nova
+Scotia. Are there any more? Please contact us with the number.
+  Orc's Atari ST Citadel is now in version 3.0b, which
+has just about everything that's in the current Citadel-86
+(see above) including the network. Version 3.0a doesn't
+network. By the time you read this, 3.0c probably will be
+out, with more file-transfer protocols and other goodies.
+  To convert from 2.?? to 3.0, you will need some conversion
+utilities as well as the program. Also, you will need to
+replace (or carefully rewrite) the CTDLCNFG.SYS file. There
+are numerous additions and deletions, and all numbers have
+been converted to decimal (the old version used some hex
+numbers). Be sure to make backups before attempting to
+convert to the new software.
+  In CTDLCNFG.SYS, you can now choose a prompted logon for
+users who don't have enough sense to hit a couple of
+carriage returns after the modems connect.
+  For other stuff, here's orc...
+
+   87May01 1:46 am from orc
+    Well, here they are, fresh off the presses; 3.0b.
+Aside from the network, 3.0b has chat capture (^R toggles
+it -- Citadel warns the user at the other end that his chat
+is being recorded.), it prints out the file PRELOG.BLB when
+you log in (this file can be found in the help directory)
+and it does the | format stuff with long descriptions in
+.RE 
+    Plus I've changed around the baud-rate detection code
+stuff; If you set AUTOBAUD to 0, SYSBAUD will be the
+baudrate of your system (0 == 300, 1 == 1200, 2 == 2400) If
+you want the system to ask the users to 'type return:', do
+'#define CONNECTPROMPT 1' in your ctdlcnfg.sys.  
+
+   87May01 1:50 am from orc
+   Oops, forgot the 'coming attractions' notice for the
+next release; 
+  STadel V3.0c will have Ymodem, (possibly) WXmodem,
+(possibly) Kermit, network sendfile, shared room & netmail
+routing, (possibly) room moderators, and (possibly) an
+arc-file-toc-reader. 
+  floors go into V3.1a, which will be a while. 
+  V3.0d will probably have the uucp driver, (possibly) an
+arpanet driver, and (not very likely) a fidonet
+interconnect.  I may also look at stonehenge networking and
+see if that's worth putting in.
+ -----
+
+  Well, that's enough for this edition. Next month we'll
+have some info on Citadel-like programs for eight-bit
+Commodores and Ataris and whatever comes in over the
+transom. Once again, uploads are welcomed at US 612 426 1374.
+       /* END OF FILE */
+                                                                       
+ 

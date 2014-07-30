@@ -1,0 +1,782 @@
+
+
+ ***********************************************************
+ CITANEWS/The national newsletter for room-based BBS systems
+ ***********************************************************
+ September 1987
+
+	CitaNews is compiled and occasionally even edited by
+Steve Yelvington (George Jetson), and is offered for free
+distribution. You're welcome to recycle this information in any
+form. Credit would be appreciated. If you have news for
+CitaNews, please post it as a networked message on any of the
+Twin Cities or New York Citadels that carry the CitaNews room.
+
+ In this issue:
+	* STadel gets "floors," goes to version 3.1
+	* Inner Sanctum gets Adventuresome
+	* "Rooms with Unread Messages," a CitaBook.
+	* History of Acropolis, a Turbo Pascal Citaclone
+	* Citadel-86 tests version 3 features
+	* Citadel-64 becomes "shareware"
+	* Jefferson Software runs STadel support BBS
+	* FCC access charge threat is still alive
+	* The Lake is going down the drain-o
+
+ ***********************************************************
+ STADEL VERSION 3.1
+ ***********************************************************
+
+	STadel, orc's Atari ST version of Citadel, has gone
+to version 3.1 with a number of major improvements. We've been
+beta-testing it at the Lake, and we're quite happy with the
+changes. 
+
+	The most obvious is "floors" -- an enhancement to the
+room structure that allows a sysop to associate related rooms.
+For example, a "Tech stuff" floor might include rooms devoted to
+Modula-2, C, BASIC and Pascal rooms; a "Literature" floor might
+include Shakespeare, Stephen King and Weekly World News.
+
+	A user's configuration can be set to either "see" or
+ignore the floors. In the latter case, the system looks like any
+"normal" Citadel. In "floor mode," the [K]nown Rooms command
+operates only on the current floor.
+
+	If you think of moving through Citadel rooms as going in
+a great circle, you might think of STadel's floor mode as a
+series of smaller circles. The first room on each floor functions
+somewhat like a lobby; when you've visited all the rooms on a
+given floor, you return to the first. The next [G]oto command
+pops you into the next floor where rooms have unread messages.
+
+	There also are new commands for moving directly among
+floors, listing known floors, etc. Floor-related commands are
+prefixed with a ! or a ; (as in !Known floors or ;Known floors).
+You also can use > and <, which "skip" to the next or previous
+floor.
+
+	Other enhancements:
+
+	MULTINET: Multiple networking sessions can be set
+up. This would allow, for instance, a "local net" timeframe
+and a separate "interstate net" session.
+
+	ALLNET AND AUTONET: A sysop can choose to enable
+net privileges for all users, instead of having to toggle
+the authority for each user. A related enhancement makes
+all messages in a room automatically net-messages.
+
+	CALLING OUT: In the [T]elephone call command from
+the sysop menu, if you type '?', you will be given a list
+of systems on the net.
+
+	DROPPED DTR: When a sysop ESCapes into console mode,
+STadel drops DTR. This keeps the modem from answering the
+telephone if anyone calls while the sysop is logged in.  
+
+	FASTER MODEMS: 9600 baud support is in.
+
+	FILE TRANSFERS: New protocols include Ymodem, Ymodem
+Batch for downloads and "Vanilla" ASCII for file transfers. 
+
+	INVITED USERS: A command to let the sysop check to
+see who has been invited to an invitation-only room.
+
+	LONG DISTANCE: L-D roomsharing routing.
+
+	MISCELLANEOUS: If you type ^T from the console, STadel
+will hang up the phone as soon as the current user logs off and
+beep at you for a minute, then reconnect the phone and go about
+its normal business. If you type ^P from the console, STadel
+will give you a status line listing who's logged in, what time
+it is, the phase of the moon, and many other useless features. 
+
+	UUCP INTERFACE: We described the plans for a UUCP
+interface in a previous issue, but here's a synopsis:
+
+	 UUCP is a Unix-to-Unix copy program that lets systems
+running that operating system transfer files and mail
+automatically. UUCP and similar programs for other
+mini/mainframe operating systems have been used to build a
+number of "wide area networks" such as Usenet, ARPAnet, Bitnet,
+CSnet, etc. If you're affiliated with a university or company
+"hooked into" such a net, you can get/send mail, including
+public discussions, and even electronic "magazines." These nets
+stretch across the United States and into several foreign
+countries.
+
+	Orc has built a companion program to STadel called UUCALL
+that contacts a Usenet node (with permission) and pretends to be
+a satellite Unix system, sending and receiving mail. The mail
+then is integrated with the Citadel database. Thus a user with
+the proper permission and credits can send mail from a Citadel
+node through Usenet to an ARPAnet gateway to a researcher at SRI,
+or receive the latest Atari technical news by "subscribing" to
+the comp.sys.atari digest.
+
+	In order to participate in such a transfer, an STadel
+sysop will need experience with UUCP and a good relationship
+with the operator of a registered network node.
+
+	Converting to STadel 3.1 requires a program that
+restructures the data files, plus a number of revisions to the
+ctdlcnfg.sys file including changes in the way networking is
+described. 
+
+	"OK," you say. "How do I get this nifty new program?"
+
+	The most foolproof and probably cheapest way is to send
+a couple of disks and a self-addressed, stamped envelope (or
+$5.00 and orc will buy the disks and the envelope) to:
+
+    David Parsons (orc)
+    2624 Bryant Ave S #2
+    Minneapolis, Minn 55408
+
+	STadel is no longer available for downloading from Pell,
+but you can contact orc there (US 612-377-9239).
+
+	By the way, orc has not solicited any payment for his
+work with STadel, but he probably would not object to a check,
+gold bullion or blonde in a red convertible delivered to the
+above address. :-) 
+
+
+ ***********************************************************
+ INNER SANCTUM STILL BETA-TESTING  
+ ***********************************************************
+
+	Inner Sanctum for the Atari ST has been "almost ready"
+for public release for a month or so, but at last word it was
+still being beta-tested. It also seemed to be mutating quite
+rapidly away from Citadel and along lines more familiar to
+Stonehenge users.
+
+	Inner Sanctum began with the STadel source code, most of
+which was converted from Alcyon to Mark Williams C by Ganelius
+of Seattle. Networking has not been implemented. The system 
+began to gain a number of distinctly non-Citadel features, the
+most prominent of which was on-line games using the Dave Betz
+ADVSYS adventure-authoring system. (Dave Betz is a senior editor
+of BIX, the electronic affiliate of Byte Magazine, and ADVSYS
+was profiled in the May 1987 issue of Byte.)
+
+	IS also gained "prompted" reading, similar to the .Read
+More option of STadel, except that it was redefined as the
+default. A "To:" field was added to the message header. Both of
+these features violate what is regarded as "Citadel design
+philosophy" in many circles; they are features that commonly are
+requested by users who are not familiar with Citadel.
+
+	By executing external programs, IS supports WXmodem,
+Ymodem and "kamikaze" Xmodem in which the sender doesn't wait
+for an ACK, and aborts if a single NAK is received. The enhanced
+protocols, added with the help of Thomas Zerucha of Southfield,
+Mich., are intended to overcome the delays inherent in
+packet-switched networks such as Telenet's PC Pursuit.
+
+	We chatted recently with Cheech Wizard of Dream Park BBS
+in California (US 916-638-4237), who is among several sysops
+beta-testing version 1.20 of IS. He reported that the adventure
+module has been deactivated pending the installation of "doors"
+as a method of running outside programs. Meanwhile, "hallways"
+and a .Read Userlog option have been added.
+
+	Hallways are quite different from floors; they connect
+rooms in multiple dimensions. A room can exist on multiple
+hallways (you can imagine it as an intersection), but [G]oto and
+[K]nown rooms will function only along the hallway you're
+currently using.
+
+	Depending on how a sysop arranges the halls, IS has a
+potential to be quite confusing.  We noticed messages in some of
+the rooms at Dream Park that complained of difficulty in finding
+some of the rooms.
+
+
+ ************************************************************
+ CITABOOK, "ROOMS WITH UNREAD MESSAGES"
+ ************************************************************
+
+	Lazarus Long (Kevin McLeod) of Minneapolis has been
+capturing discussions from Twin Cities Citadels for several
+years in the hopes of eventually assembling a book showing the
+best of what electronic communication can be.
+
+	In the following message, he describes the status of this
+monumental project.
+
+   87Aug29 9:20 pm from Lazarus Long to George Jetson
+
+	Over two years in the making, "Rooms With Unread
+Messages" is rapidly nearing completion. The so-called
+"Citabook" will be the first to chronicle the discussions and
+witticisms conducted on Minnesota Citadels.
+
+	Chapter one, "In Loco Parentis," features a passionate
+debate on the role of respect between a father and his teenage
+son. Subsequent chapters explore alternative forms of marriage,
+an eloborate hoax involving a phony BBS and a sorority, and the
+best way to wash (or eliminate) dishes. You can walk the streets
+of Berlin with Doug Bailey and eat lunch with C.J. Anderson.
+
+	At this writing seven chapters, over 152 pages are ready
+to be laserprinted and submitted to potential agents and
+publishers.
+
+	Although the project was stalled for some time by file
+conversion problems, these obstacles have been cleared and
+remaining chapters will soon be concluded.
+
+	"Rooms With Unread Messages" will be dedicated to the
+late Joe Summers, who was a prominent member of the Twin Cities
+Citadel community.
+
+
+ ***********************************************************
+ ACROPOLIS, A TURBO PASCAL CITACLONE
+ ***********************************************************
+
+	Borland's Turbo Pascal has not only been a smash hit in
+the world of software publishing, it has resulted in two Citadel
+workalikes. Robert Becquette provided this description of
+Acropolis. (DYM in this message refers to Dial-Your-Match).
+
+   87Jul29 6:10 am from Robert Bequette
+
+	Well, I just finally got copies of the CitaNews.  I had
+no idea of the network of Citadels and its "mutant" children.
+Since it was asked for in one of them I am here to tell about my
+particular "mutant": Acropolis.
+
+	I guess I should start with a little history: 
+
+	The following is not meant to offend anyone, if it does
+I'm sorry, but it is an important part of the history of
+Acropolis. 
+
+	It started out last September  as a question to me from
+another man (Will Bennett) on one of the local DYM's asking if I
+knew of any BBS for gays in Sacramento.  I replied that there
+were none and then the conversation evolved into a discussion of
+the need for one and the general shortcomings of DYM.  It
+started out with Will supplying the hardware and me writing a
+custom BBS for it.
+
+	Since I have been a fan of Citadel since first running
+into them about two years ago, it was natural for me to select
+it as the format of choice.  And on November 1, 1986 Acropolis,
+Sacramento's first and only BBS dedicated to the interests of
+gay and bisexual men, was up and running. As for one supplying
+the hardware and the other software, it no longer matters since
+on Acropolis's first month anniversary Will and I moved in
+together.  For those of you wondering where the name Acropolis
+comes from it means "A Greek Citadel" (there is a joke in there
+somewhere). 
+
+	Ok, enough of that.  The current incarnation of
+Acropolis (version 1.8) is essentially Citadel (the original)
+with extensive matchmaking capabilities; the current
+questionnaire (with 214 different test points!) is tailored to
+gay males but can easily be reworded to match all combinations.
+The only things missing are XModem transfers and the <.R>ead
+<G>lobol-New commands, both of which are being included in the
+first complete rewrite christened "version 2.0".  In addison to
+matchmaking, several other things have been in 1.8 or are being
+added to 2.0:
+
+	Multiple user levels being extended from four to eight.
+
+	<.R>ead <L>ocate <N>ew/<F>orward which search messages
+for a string. 
+
+	Users can delete their private mail. 
+
+	"Random" mail a message to someone, but you're not told
+who.  
+
+	All the sysop functions are being moved into the
+BBS itself. 
+
+	There are several new sysop functions including: Setting
+the function keys, undeleting an account, controlling a user's
+access to the board (time limit and so on), doing a password
+dump and so on. 
+
+	Several new type of room options: Auto-record message in
+a text file.  Disclaimer message printed on entry to a room.  A
+Sysop+> room like the Aide*> room; Sysop room is to Aides like
+private rooms are to regular users. Chats are automatically
+recorded to a text file. The only change to the Aide commands is
+that they no longer have the ability to delete accounts but they
+will be able to suspend access to it. 
+
+	There are lots of other little things, but then this
+message would be much too long.
+
+	Acropolis is currently running 24 hours a days with a 4
+Meg message base (we get A LOT of private mail), and about 150
+active (call at least once every three weeks) callers, 64 rooms
+(going to 128). The phone number is (916) 967-5817.
+
+	System configuration: IBM PC/AT clone, 30 Meg hard
+drive, 1.2 Meg floppy, 3.5" 720K floppy, Hayes Smartmodem 2400b.
+
+	Version 1.8 and below will not be released into public
+domain, but 2.0 and up will be released in two versions: one
+with and one without matchmaking.  Release will be in both
+executable and Turbo Pascal source.
+
+	What's in the future? 2.1 will support multi-user (under
+plain vanilla PC-DOS), and after that hopefully networking.
+Plains are also under way to port it over to the Macintosh and
+Amiga.  -- Robert Bequette 
+
+ ***********************************************************
+ CITADEL-86 TESTS VERSION 3 FEATURES
+ ***********************************************************
+
+	Citadel-86, for PC clones and Z-100s from Hue, Jr. of
+Minnesota, isn't standing still. As we reported in a previous
+issue, it has been converted to Borland's Turbo C and has
+suffered from some difficulties with bugs in Turbo (such as an
+apparent refusal on the part of the compiler to flush file
+buffers), but Hue's work has not been limited to bug-squishing.
+The following report, edited from a message Hue, Jr. posted in
+the networked CitaNews room, outlines the latest enhancements.
+
+   87Aug24 11:07 pm from Hue, Jr. @  C-86 Test System
+
+   C-86 just keeps slowly slogging it's way towards V3.  The
+features of V3 implemented and being tested here and at
+Illusions are: 
+
+ o Enable/disable modem when sysop is on.  When sysop hits ESC
+when there is no carrier, the modem will be disabled, and will
+only be re-enabled for chat, dialout, and putting the system
+back in MODEM mode. 
+
+ o Killed a kludge that made V2.17 very slow to load if it was a
+networking system. 
+
+ o Formally put the autobaud via modem result codes into
+CTDLCNFG.SYS.  Eric Brown @Primordial Ooze has graciously agreed
+to take a look at modifying the Z-100 modem handler so that
+Z-100s, in conjunction with a minor h/w mod, can also read modem
+result codes. 
+
+ o Consolidated NET_RECEPT_DIR and NET_RECEPT_DISK into
+NET_RECEPT_AREA, which makes it a lot more reasonable to
+comprehend. 
+
+ o The #event stuff is in and working, although I think there is
+a very minor problem with it on a rollover point.. 
+
+ o Multi-net handling is now in and working. 
+
+ o (Most recent) The
+catch-interrupted-message-on-carrier-loss-for-later-finishing
+feature.  If you're composing a message, and lose carrier
+(call-waiting, meddlesome cats, etc.), C-86 will grab that
+half-finished message and save it for the next time you login,
+so you can finish it. (Anyone interested in trying to name this
+feature?) 
+
+  Hmmmmm.  Anyone with a 9600 baud modem out there care to tell
+me if 4800 is normally supported on a 9600 baud modem? While I
+can't test it, it should be easy to put in 9600 support -- but
+should I put in 4800 support while I'm at it, then? 
+
+	(Hue said in a later message that he plans to include
+4800 support.)
+
+ ************************************************************
+ CITADEL HELPS JEFFERSON SOFTWARE SUPPORT MODULA-2
+ ************************************************************
+
+	Jefferson Software of Phoenix, Ariz., has set up a BBS
+running STadel as a support forum for its JS Modula-2
+programming language compiler. Kbad @ Phase BBS reports that the
+company, would like to establish a support network of Citadel
+systems sharing a Modula-2 room via PC Pursuit. A side benefit
+would be free updates to JS Modula for participating sysops, and
+entry into the registered user discount, in which registered
+users can purchase additional copies of JS Modula for 40% off
+list price, and can pass the savings on to their buddies, or
+make a few bucks for their trouble. 
+
+	Anyone who's interested in any of the above can contact
+JS BBS (US 602-276-6102.)
+
+	We asked Gary at Jefferson Software to provide a blurb
+explaining JS Modula-2, a remarkably low-priced compiler for the
+Atari ST. Here's his info:
+
+               Jefferson Software
+          Modula 2 Development System
+          New Release - Version 1.1
+ Features:
+     Dr. Wirth's latest definition of the language.
+     Fast, one-pass compiler and intelligent linker.
+     All the SOURCE to the libraries.
+     Includes GEM and standard Modula libraries.
+     Develop on a single-drive ST.
+     New libraries are faster and smaller including:
+          Line A library.
+          RealInOut
+          new Math libraries.
+     New updated user's manual to learn the ins and out
+     of programming in Modula 2 on the ST.
+     New easy to use environment.
+
+ Modula bindings available for registered owners of
+Beckemeyer's RTX shell.
+
+ Can link with other langauges, combine C and Modula.
+
+ We are currently working on an IDRIS version of JS Modula.
+
+ Disk version for $49.95 + 3.00 shipping includes everything 
+you need to use the system including library SOURCE CODE.
+
+ Enhanced version for $79.95 + 3.00 shipping.
+Enhanced version includes extensive printed documentation,
+more libraries and more example programs.
+
+ FREE copy of Programming in Modula 2, 3rd. Ed. by Dr. Wirth
+included with enhanced system. For a limited time get the
+book written by THE MAN who created both Pascal and Modula
+free with our system.
+
+ Order direct by sending cash, check or money order to:
+     Jefferson Software
+     12416 N. 28 Dr. #18-236
+     Phoenix, AZ 85029-2434
+     (602)243-3106 voice
+     (602)276-6102 JS Support BBS 1200/300 baud, PC Pursuitable
+
+ Call for COD or credit card. Dealer inquiries welcome.
+
+	Jefferson Software is trying something different with JS
+Modula. We do not charge a lot for updates, they are currently
+free. We get our users involved with what goes into the system,
+and help the ones that are learning as much as possable. We are
+using Citadel on our support bbs. The ideas designed into
+Citadel are ones we like. People can use the bbs to communicate
+about Modula, and we do have a few other rooms to have
+conversation on other topics. We think the bbs is a big help in
+making JS Modula more than another development system.
+
+	We would like to net a JS Modula support room. We are PC
+Pursuitable. Anyone interested contact JS BBS at US 602 276
+6102.
+
+
+
+ ***********************************************************
+ CITADEL-64 GOES SHAREWARE
+ ***********************************************************
+
+	Citadel-64, a commercial BBS system for the
+Commodore 64 that is based on Citadel but implemented in
+BASIC and machine language, has been released as a
+shareware product. Previously it was available only by
+prepayment.
+
+	Since the announcement (below) from K2NE Software,
+CitaNews has received a number of reports from prospective
+sysops who have been unable to get the program to run. Vince
+Quaresima of Jersey Devil Citadel advises that the problem
+is with the ARC packing method, and that all ARC'd versions
+should be destroyed. An alternate package packed by the LYNX
+program should work, or a ready-to-run disk can be obtained
+by purchase from K2NE.
+
+  87Jul19 6:55 am from Vince Quaresima 
+  To: All C64 BBS Sysops (and potential Sysops)  
+  Fr: K2NE Software  
+  Re: Citadel-64  
+  On: 87Jul18  
+
+	K2NE Software is pleased to announce the impending
+release of CITADEL-64 into the FREEware domain! 
+
+	In order to make this a worthwhile project for the
+C64 BBS Sysops and users, the Citadel-64 system has been
+specifically "patched" for the Commodore 1670 Modem-1200.
+In addition, sections of the original code have been
+re-designed and re-written in order to maximize speed and
+to support operation at a REAL 1200 bps, unlike most C64
+systems, which are closer to an 800bps thruput rate.  
+
+	For those unfamiliar with Citadel-64, it features
+most of what you have become accustomed to finding on a
+Citadel-style bulletin board.  Naturally, the hardware
+restrictions imposed by the C64 environment prevent a
+"full-blown" implementation, but we feel you will like what
+we have to offer to you, and certainly, the price is
+"right".
+
+	In keeping with FREEware practice, we are ONLY
+asking that you send a donation (no more than $15) IF you
+like it and USE it.  Feel free to swap it around to your
+friends, and to upload it to other bulletin board systems.
+The complete Citadel-64 package, in ARC'ed format, will
+begin appearing on the following systems approximately July
+24, 1987:
+
+	a) Jersey Devil Citadel 609-726-1565 
+	b) Galactic Keep 609-654-7468 
+	c) Morningstar Keep 609-268-9597 
+	d) Bit Bucket Citadel 609-888-4811
+	e) Pinelands BBS 609-859-1910
+	f) The Labyrinth Citadel 609-893-0497
+
+	In addition, the package will be uploaded to the
+CBMPRG SIG of CompuServe, where it will be available for
+downloading using either XMODEM or the CompuServe B
+Protocol. 
+
+	If you prefer to obtain yours as a "turn-key"
+system, with a "ready-to-run" boot-disk, please send your
+$15.00 donation to: K2NE Software PO Box 289 Chatsworth, NJ
+08019
+
+	Remember, FREEware is NOT "public domain".  You
+can swap it, or you can use it, but you can NOT sell it
+(other than for a minimal copy-fee to cover disk/postage).
+That is the Law! 
+
+ ***********************************************************
+ FCC "INFORMATION TAX" STILL ALIVE
+ ***********************************************************
+
+	Contrary to information from the publication
+"Bulletin Board Systems" that was quoted in the last issue
+of CitaNews, the Federal Communications Commission is still
+considering a proposal to slap a steep (about $5 per hour)
+"access fee" on interstate computer network connections
+with local telephone systems.
+
+	This so-called "information tax" would directly
+affect PC Pursuit, CompuServe, the Source, GEnie, Delphi,
+Dow Jones News/Retrieval and similar systems, including
+anything connected with Telenet or Tymnet.
+
+	The effect of this proposal on local bulletin board
+systems may not be obvious, but it is substantial. Most of
+the public-domain software you obtain from your local BBS
+was relayed across the country through the major networks.
+PC Pursuit, which allows many BBS users to call
+cross-country for a low monthly fee, would be just about
+wiped out.
+
+	Sy Borg of Images at Twilight in Bloomington, MN,
+relays the following data from PC Pursuit:
+
+	87Aug21 4:02 pm from Sy Borg@Images
+  
+  	Dear Pc Enthusiast: 
+
+	Six weeks ago we wrote to many of you about the
+Federal Communications Commisions' (FCC) proposal to extend
+carrier access charges to Telenet and other enhanced
+service providers.  In that letter, and in subsequent
+conversations with many of you, we promised to provide
+additional information when the FCC published its official
+notice - which occured on JULY 17. 
+
+	We have enclosed for you (1) a copy of the FCC's
+Notice of Proposed Rulemaking (NPRM) and (2) a paper that
+both analyzes the NPRM as it affects PC users and suggests
+steps that you can take to help defeat the access charge
+proposal, thus ensuring the continued availability of
+low-cost information and data communications services. 
+
+	Access charges would affect all interstate data
+communications utilizing local dial access to reach a
+public on-line computer service, e.g., a database or
+electronic mail service, home banking/shopping service or
+videotext service.  Access charges would also apply to
+services like PC Pursuit, provided by a value-added network
+(VAN) like Telenet, that utilize local dial access. 
+
+	These charges would add approximately $4.50 per
+hour to the cost of connections reaching involving only
+dial-in access (e.g. a PC dialing into the Telenet network
+to reach a database host), and would add approximately $7
+to $9 per hour to the cost of connections involving both
+dial-in and dial-out access (such as PC Pursuit involving
+PC-to-PC communications).  Further, unlike most
+communications prices, access charges have no discounts for
+evening and weekend hours.  Services currently priced at a
+flat monthly rate would have to be repriced on a n hourly
+basis under current access charges. 
+
+	For those of you who are current PC Pursuit
+subscribers, access charges would require Telenet to
+increase its prices (currently, a flat monthly rate of $25)
+to reflect the $7 or $9 per-hour access charge.  Of course,
+we expect that significantly higher prices would dampen
+demand for the service, so it is not clear whether Telenet
+could continue to make Pc Pursuit available even for those
+users willing to pay the higher price.  
+
+	PC users who subscribe to database services such as
+The Source, Compuserve, or Quantum would incur access
+charges on those services of approximately $4.50 per hour,
+effectively doubling the current rate for some services. 
+
+	This need not occur:  We can defeat the proposal
+with your help.  By writing a letter to the chairman of the
+FCC and sending copies to the other Commissioners, the
+Secretary, the Chief of the Common Carrier Bureau, and your
+Congressional representatives, you can affect the outcome
+of this issue.  Both the FCC and the Congress are receptive
+to your input.  Moreover, they need to hear from you in
+order to assess the impact of this proposal.  
+
+	Your letter should emphasize how access charges
+would affect you.  Tell the FCC, what database, Bulletin
+Board, or data communications services you use today and
+for what purposes, what you monthly usage level is, what
+you pay now, and how access charges (at approximately
+$4.540 per hour of use for database host access, and twice
+that for Pc Pursuit) would impact your use of these
+services. 
+
+	Our analysis paper includes the names and addresses
+of the relevent parties to whom you can write.  As
+indicated above, it is perfectly acceptable for you to
+write one letter to the Chairman of the Federal
+Communications Commission and to copy all other parties.
+Names and addresses of U.S. senators are included here.
+Telenet would appreciate having a blind copy of your letter
+for use in our lobbying efforts, and we have enclosed a
+business reply envelope for your convenience in sending us
+one.  
+
+	Please note that the FCC has EXTENDED the due dates for
+comments and reply comments in this proceeding to SEPTEMBER 24
+and OCTOBER 26 respectively.  You need not wait for this date,
+however; your letter can be sent immediately.  
+
+	The access charge proposal would greatly increase
+the cost of on-line computing and information services,
+hitting users of low-cost services (especially in the home
+and educational markets) especially hard.  Development of
+the market for such low-cost services would be stifled,
+depriving U.S.  consumers of affordable information
+services.  In addition, access charges would have a
+devastating effect on the Bulletin Board System (BBS)
+community due to the cost-increase by acccess charges. 
+
+	Letters should be addressed to the Honorable Dennis
+Patrick, Federal Communications Commission, Washington DC
+20554, with copies to the Secretary, Mr. William J.
+Tricarico; the Chief, Common Carrier Bureau, Mr. Gerald
+Brock, and to each of the other three commissioners: 
+
+	Commissioner James Quello 
+	Commissioner Mimi Weyforth Dawson 
+	Commissioner Patricia Diaz Dennis 
+
+	On the letter, indicate "RE: CC Docket 87-215" 
+
+	In addition, we strongly recommend that you send
+copies of your comments and replies and / or any
+correspondence to the FCC on this matter to your
+congressman, your two senators, and the Chairmen of the
+House and Senate Telecommunications Subcommittees.  (The
+names and addresses of your Congressional representatives
+can be obtained from your local library), chamber of
+commerce, or your local democratic or republican
+headquarters.) A cover letter should be attached, stressing
+the importance of the issue and asking the member of
+congress to express his / her concerns to the FCC.  The
+subcommittee chairmen are: 
+
+  
+   The Honorable Edward J. Markey, Chairman 
+   Subcommittee on Telecommuncations and Finance 
+   Committee of Energy and Commerce 
+   U.S. House of Representatives 
+   Washington, DC 20515 
+  
+   The Honorable Daniel K. Inouye, Chairman 
+   Subcommittee on Telecommunications 
+   Committee on Commerce, Science and Transportation 
+   U.S. Senate 
+   Washington, D.C. 20510 
+  
+   Please also forward a copy to Telenet's Regulatory Affairs Dept. 
+   12490 Sunrise Valley Drive 
+   Reston, VA 22096 
+   So that we will be aware of it in our lobbying efforts. 
+
+	Interested parties may discuss the issues in this
+docket with the FCC Commissioners and staff at any time
+prior to the FCC's issuance of a "Sunshine Notice" that it
+plans to consider the matter at it's next public meeting --
+which will probably occur sometime in November and
+December.  It is perfectly appropriate to contact the FCC
+now if you have any questions about the matter, but
+meetings and telephone calls for the purpose of lobbying
+your views are generally most effective after the two
+rounds of written comments are completed -- i.e. after
+October 26th. 
+
+	If you choose to follow-up your letter with a
+telephone call, such contacts should be focused on the four
+commissioners, the Common Carrier Bureau Chief, and the
+Chief of the Bureau's Policy Division.  Their phone numbers
+are: 
+
+  
+   Chairman Dennis Patrick:  202-632-6600 
+   Commissioner James Quello 202-632-7557 
+   Commissioner Mimi Dawson  202-632-6446 
+   Commissioner Patricia Dennis 202-632-6996 
+   Gerald Brock, Chief, Common Carrier Bureau 202-632-6910 
+   Thomas Sugrue, Policy Division, Common Carrier Bureau 202-632-9342 
+  
+ ***********************************************************  
+ THE LAKE IS GOING DOWN
+ ***********************************************************
+
+	Sad to say, The Lake, home of CitaNews, is going down.
+Running STadel has been fun and instructive, but there are 
+demands on a sysop's time and money other than BBSing, and it
+would nice to have easy access to one's own computer when the
+wife wants to play Wheel of Fortune or the Lake's official yard
+monster wants to play Winnie the Pooh in the Hundred Acre Wood.
+
+	We promise that the Lake will return immediately when we
+win the Publisher's Clearing House Sweepstakes, which voluminous
+mail assures us we "may already have won."
+
+	We'll keep the STadel software, and if you run a
+C86-compatible networking system, you may get an occasional
+surprise network file transfer from CitaNews Central.
+
+	CitaNews will continue to be published monthly, more or
+less, so long as there's sufficient interest and participation.
+We'll gather info by personal contacts, through the networked
+CitaNews room, and through both electronic and postal mail. Among
+the systems carrying the CitaNews room is Citadel-86 Test System,
+US 612-866-1804, where you can leave a message or private mail to
+George Jetson.
+
+	Or you can send a letter or disk to:
+	Steve Yelvington
+	1392 Brandlwood Road
+	White Bear Lake, MN 55110
+
+	(We can read MS-DOS 5.25 floppies, IBM PS/2 3.5 disks or
+Atari ST-formatted single-sided 3.5 disks.)
+
+ ************************************************************
+ END OF FILE
+ ************************************************************
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  

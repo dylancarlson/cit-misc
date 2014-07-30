@@ -1,0 +1,54 @@
+
+   94Oct21 5:53 pm from Hue, Jr. @ C-86 Test System _ MN
+
+    Iz: let's hammer the spec for a while -- it should prove a fine device for 
+raising blood pressure, pushing back hairlines, and all that rot.  And makes a 
+great way not to do anything of significance. 
+
+    First things first -- what major, strategic objectives should there be? 
+Here's what I can remember I started with, just offhand -- I wrote them down 
+but this is the wrong computer.... oh, no particular order, either. 
+
+ o "Citadel-like" - axiomatic. 
+ o Multiuser. 
+ o Functional on a LAN - meaning users can call call into any of a number of 
+computers and still get to the same database. 
+ o Distributed database -- meaning the entire database may be spread across 
+numerous computers. 
+ o Substantially compatible with v3.xx of Citadel-86 on the database level -- 
+i.e., I could move from this little DOS based C86 to the new version without* 
+substantial conversions -- just make the data available. 
+ o Implementation of system database(s) not constricted by C86 v3.xx 
+requirement. 
+ o "butler" support possible.  For those not in the know, "butler" is a term I 
+first saw from Jeff Prothero, aka Cynbe ru Taren, meaning the feature of a 
+user being able to select his interactive program of choice.  Some users might 
+like Citadel, others RBBS, Fido, WWIV ... or am I being redundant in those 
+last three? 
+ o No utility program should require the entire system be shutdown as it is 
+today. 
+ o Support of C86Net. 
+ o "Better" support of internetworking.  I.e., the method of getting messages 
+from another network -- Fido, etc -- is, well, satisfactory, but not really 
+satisfying, if you ken what I mean.  They look funny, information may be lost, 
+users can get heartsick over them, funky features may be lost... 
+ o Easy experimentation with different database schemes. 
+ o Finally, easy building of initial prototypes and system, with a 
+concommitant ability to add in new features, databases, etc, as time allows. 
+Since this is not a paying project, I didn't want the pressure of debugging a 
+gargantuan monolith --- everyone's features available immediately, etc. That's 
+a formula for failure, and if I'm not getting paid ... instead, I want to be 
+able to stick bits in as time and whim strike.  New way to store messages?  
+Yeah, spend a couple of hours cobbling it together, add it to an already 
+running system, maybe tell something to reconfigure on the fly, and then we're 
+off and running .. and if it core dumps, no big deal.  System maybe sends me 
+mail about the occurrence, tells users to stay out of that part of the system, 
+and nothing important goes away.  Cool. 
+ o Anything else I forgot. 
+
+
+
+
+
+
+ "A BBS is just a database with a front end on it."

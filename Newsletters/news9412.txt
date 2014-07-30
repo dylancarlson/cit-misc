@@ -1,0 +1,647 @@
+         Welcome to............
+         The Cita News!
+
+
+Now Playing at a Citadel Near you!
+Brought to you by
+Editor: Psychotic Killer
+The Letter C
+And by the number 9!
+
+               Issue #12
+               Editor Executive in Chief Big Guy in Charge: Psychotic Killer!
+               A.K.A. Mike Jones!
+               To complain to the editor you can write him at
+               MIKEJON@XMISSION.COM (internet)
+
+               or if you want to run up his LD bill, you can contact him
+               on citanet at
+               sinkhole!fluffadel!psychotic killer
+
+                sinkhole connects to c-86 test I think and a couple others
+
+                
+             
+               
+
+               Or if you don't connect to any of the systems listed just
+               post to him in the CitaNews Room!
+
+
+      The Cita News! Serving America's Citadels since 1987!
+
+
+
+                 Departments
+                 1. What is Cita News?
+                 2. Who is this Psychotic Killer guy?
+                 3. We want Bill.K!
+                 4. Editor's Column
+                 5. Back issue list
+
+
+ 
+              Section I Verse 5 Times 2 Lawsuit #42 Neener neener
+              Or to be more precise
+
+              Section I
+              Back in the 80's there was a software made that was called
+              citadel, I'm kind of hazy on who made the first citadel 
+              whether it was Hue Jr. or Orc or who. But I do know that in 
+              1987 there was a kind soul who decided that boards running
+              this type of software and it's variants needed a newsletter
+              this man's name was Steve Yelvington. He wrote the first 7
+              issues of the citanews, it was continued for one issue by
+              David Quick, Eric Griff, Dominic Duvall and Bill.K. But in 
+              April of 1993 Bill.K finished the last citanews and no one
+              decided to carry on the tradition. So here I am I who knows
+              little of cita-history carrying on the torch a Year and a half
+              later. I've tried my very best to get articles that I believe
+              you will enjoy. Because all citadellians deserve a citanews. 
+              <wipes tear from eyes>
+
+             
+
+
+      Section II
+      Who is this Psychotic Killer guy?
+
+       He's the one who is composing this newsletter. 
+
+      Why?
+      Because he likes citadels ok! But more importantly he wants to keep
+      the citadel tradition alive. PK is better known as Mike Jones, he 
+      runs a Fortress-PC (Stadel-PC variant) in Salt Lake City Utah
+      (the number is 1-801-278-0565). Ok time to stop referring to myself
+      in the 3rd person. I'll tell you my cita-story. I first logged on to
+      The Only BBS out in salt lake, it was a fnordadel and it was different
+      than those WWIV's I tried, the first thing I did was complain about the
+      lack of games which seemed to send the sysop off on a tirade against me.
+      But that did not keep me from calling like it would others, in a while
+      I grew to like the only bbs. Then I saw an ad on the only bbs for a 
+      new BBS called SDF-1, and that's where I fell in love with citadels
+      <flashbacks> a year later, I was running my own, and now I'm the writer
+      of the Citanews, I FEEL SO RIGHTEOUS!
+
+              
+      Section III
+      Where's Bill.K?
+      He Died
+
+      No He didn't?
+      What's your point
+
+      WHERE IS HE!
+      He still runs the sinkhole but stopped writing citanews
+
+      THANK YOU
+      You're welcome
+
+
+      Section IV
+      The Editorial Spouting off for the month!
+       I sure hope this newsletter doesn't reach the folks at Newsweek, they
+     might hail it as bigger than the 2nd coming (just because it is is not
+     the point) they seem to jump all over anything that has to do with the
+     internet or Computer related these days. They just like to ignore that 
+     it's been there for 20 years, it's nothing special, all it is is a 
+     cheaper, faster way to talk to someone. Anyway, Just my quick 2 cents.
+
+
+     Section V
+     Back issues
+ ---------------------=============================-----------------------
+
+  Index to back issues and their authors :
+
+   1-7 by Steve Yelvington (George Jetson @ The Lake).
+     8 by David Quick (The Badger @ Pell).
+     9 by Eric A. Griff.
+    10 by Wally Hartshorn (Dominic Duvall @ The Quest)
+
+ File name         Month of Issue      Size  Author
+ --------------------------------------------------------------------------
+ News8704.txt ... April 1987 ......... 10K  Steve Yelvington
+ News8705.txt ... May 1987 ........... 10K  Steve Yelvington
+ News8706.txt ... June 1987 .......... 19K  Steve Yelvington
+ News8707.txt ... July/August 1987 ... 27K  Steve Yelvington
+ News8709.txt ... September 1987 ..... 33K  Steve Yelvington
+ News8803.txt ... March 1988 ......... 28K  Steve Yelvington
+ News8804.txt ... April 1988 ......... 39K  Steve Yelvington
+ News8805.txt ... May 1988 ...........  6K  David Quick
+ News8809.txt ... September 1988 ..... 10K  Eric A. Griff
+ News9108.txt ... August 1991          42K  Dominic Duvall
+ News9304.txt ... April 1993           48K  Bill Karpocowitz
+
+
+
+  And now, The Columns!
+
+  Editor's Note: Many of the columns in this months edition are by 
+  Freejack@fluffadel, he seems to be the only one who wanted to send me 
+  anything!!
+
+  
+  Index
+  Column #1 Bad News for STKeep Fans
+  Column #2 Cita History (sings national anthem)
+  Column #3 Our Citadel Family Tree
+  Column #4 Citadel+ Sounds nifty don't it?
+  Column #5 A Short list of all cita variants
+  Column #6 Freejack Makes a shameless plug for his new board
+
+  All of the Above by Freejack
+  And below by PK
+
+  Featured Board: Fluffadel, PK's board, Hey! you can be featured when you
+  send me an article
+  Featured Software: Fortress, cause that's what it runs
+  
+
+
+
+  Column #1, STKeep, Uploaded by Freejack@Fluffadel
+
+                        "IS ST-KEEP NO MORE!?"
+
+   Well that may indeed be the case.  Andrew Studer has released his
+source code to ST-Keep as he can no longer support it's continued
+development.  Hopefully some dedicated sysop with the programming
+ability may decide to try and continue where Andrew left off.  This
+definitely would be a good thing as there are still a number of
+Atari users out there.
+ 
+   Here is the "1README.NOW" file from the source code archive...
+
+ -----
+ Subject:  ST-Keep GFA Source Code
+ From:  Andrew Studer, Author/Designer
+
+ I regret to inform you that I will no longer be supporting ST-Keep Bulletin
+ Board System in ANY form.  This includes updates for the future along with
+ bug fixes.
+
+ ST-Keep has been a part of my life for over 4 years, but my life has changed
+ enough recently that I no longer have time to work on the code.  Because of
+ this, I have decided to release the source code so that others may find
+ usefulness in it and possibly enhance the system.
+
+ I am not responsible for anything related to ST-Keep, the source code,
+ technical support, etc as of this release. 
+
+ If you modify the source code, I will not be able to help you support the
+ product.
+
+ If you call my BBS and leave me mail with specific questions that require
+ short responses, I will do my best to answer them.  I will not answer any
+ questions that will require me to do any research on my old code which I can
+ not readily obtain from memory. 
+ 
+ Good luck, thanks for the support and interest, so long...
+
+ -Andy
+ ST-Keep BBS       916-729-2968
+ -----
+
+   Best of luck to Andy with his future endeavours.  And if anyone plans
+on taking on further development of ST-Keep, drop us a line!
+ 
+ Column #2
+ Citadel History (also uploaded/written by Freejack@fluffadel)
+
+        "WHY WOULD ANYBODY WASTE TIME PRESERVING THIS?"
+
+   My first exposure to room-based systems came in 1987 when I received
+a copy of Stonehenge.  I promptly setup a dual-floppy BBS on my brand 
+new IBM compatible and had a blast being a sysop.  That lasted for 
+about a year before I brought down the system due to an overseas
+move.  In late 1993 being a Maximus sysop in the Denver area was quite
+enjoyable also.  Then I ran across a system running "Citadel" and I
+was immediately flooded with memories a few years past.  Needless to
+say Maximus was quickly slain from my computer and a fresh installation
+of Gremlin's Citadel replaced it.
+
+   One of the first things to catch my attention concerning the history
+of Citadel-based systems was a "family tree" posted on the network I
+participated in.  Being a curious person by nature I started gathering
+copies of different Citadel releases along with any source code I could
+find.  I quickly learned many things concerning the development of various
+Citadel "variants".  I also learned that the tree was slightly inaccurate
+and missing some information altogether.
+ 
+   So I began to tinker with it and try to add information that I thought
+my be interesting.  This quickly became an exercise in futility as there
+was much more information than could be accomodated in a simple ASCII 
+chart.  So I began an alphabetic listing of the Citadels I knew of that
+listed the authors and platforms they ran on.  Then I realized I wanted
+to be able to convey even more information that I possessed on some of
+the versions.
+
+   Thus was born my little pet project, the "BrickCitHouse".  That being
+the room name on my system of my Citadel historical archive.  I began 
+by keeping all of the various Citadels in my possession available for
+download in that room.  This was followed by including the revised
+"family tree" and alpha listing.  I will include the "verbose" listing
+soon as I am as about to close to completing it as possible.  That file
+itself will be approximately 150k to 200k in size.
+ 
+   My intention is to have a public repository of token copies of any
+room-based system as well as any information pertaining to them.  At
+this time my system, "Digital Free America", is following me across the
+country.  I'll have a permanent home for it in Feb95 at the latest.
+Until then I can be reached in the Citanews room and will soon, hopefully, 
+gate a "bbs history" room from the network I participate in.  Look for my
+requests for info or programs!
+ 
+ Column #3 Citadel Family Tree (uploaded by Freejack@fluffadel)
+  _________               (Cynbe ru Taren) 
+ |         |                Citadel 2.00 
+ | Citadel |                     | 
+ | Family  |              (David Mitchell) 
+ | Tree    |                Citadel 2.??
+ |_________|                     | 
+                        (Bruce King/T'an T'u) 
+                            Citadel 2.10 
+       _________________________/|\_____________________________ 
+      /          /               |               \              \
+      |     (Kerry Kyes)    (Caren Park)    (Maher Maso)    (Andy Meyer)
+      |     Citadel 2.28    Citadel 2.25    Citadel 2.11    Citadel 2.16s
+      |          \______________ | _____________/ \________________ 
+      |                         \|/                                \ 
+      |                          |                             (Bob Perigo) 
+      |                          |                               BabeCit
+      |               __________/ \_________________                | 
+      |              /               \              \  [6]     (John Luce)    
+  (Hue Jr.)    (David Bonn)  (ProtoSoft, Inc.)  (Many sites)   *CopperCit      
+ *Citadel-86    StoneHenge       Ideatree       *New York/NJ         
+      |             |                           *East coast    
+      |        ____/ \_________________________________       
+      |       /             \             \            \ 
+      |  (Grey Mouser)  (Scott S.)  (Major Chaos) (Kalen Bonn) 
+      |    Commons       NeoLith      IronHenge    StoneHenge 
+      | 
+      \__________________________________________________ 
+        \                   \         \        \         \ 
+  (Gary Meadows)     (David Parsons)  |    (Stallion)    |--(Robert Nelson) 
+    SacCit-80             STadel      |  (Tony Preston)  |   Citadel-86/TI 
+        :         _________/|         |   *Citadel-68K   | 
+   *Asgard-80    /          |         |         |        |--(Michele & Sifu) 
+   *Asgard-86   /       (Ganelius)    |    (Timelord,)   |      Macadel 
+               /\      Inner Sanctum  |    (Cap'N Dave)  | 
+       _______/  \                    |       AmiDel     |--(Brent Barrett) 
+      /    |      \------(Elim,)      |                  |    Novucivitas 
+   (b0b)   |          (Mr. Neutron)   |  (farokh irani)--|         |
+  b0badel  |          *<fnord>adel    |   *Citadel-86e   |   (Jeff Waltzer)
+           |                          |                  |     *Overcit 
+           |--(Eric A. Griff)   (The Gremlin)            |
+           |    STadel-Ami       Citadel 1.xx            \--(Vince Quaresima)
+           |                          |                        *Citadel:K2NE
+  (Christopher Camacho)               |\__________________________ 
+      Fortress-PC            ________/|                           \ 
+           |                /         |                        (Turtle!) 
+   (Draiden Bansted)        |         |                         M.O.D.E. 
+      Fortress-ST           |         |                            | 
+                      (The Dragon)    \__________________   (Mistress Mouse) 
+                         DragCit                         \     Citadel II 
+        ___________________/ \________________________    \ 
+       /     |                    \                   \    \ 
+    (Ray)    |---(Z'ton)     (The Gremlin)             \    \ 
+  *TurboCit  |   TwitCit   DragCit 3.11 for MSC         \    \ 
+      |      |                     |                     \   | 
+    (Fred)   |---(Maven)   (Richard Goldfinder)           \  | 
+   *FredCit  |  *MavenCit         ACit                     \ | 
+      |      |________________       \___________________  | | 
+  (Centauri) |      \         \                          \ | | 
+    CenCit   | (Zen Master)  (JJ)                        | | | 
+      |      |   *FrogCit  *Co-OpCit                 (The Gremlin) 
+   (Dargos)  |______________________                GremCit 3.20/xxx 
+   HoloCit   |           |          \                      |
+             |---(Andy)  |  (Captain James T Kirk)         |
+             |   Elegia  |    Captain's Citadel            |
+             |           \                                 |
+       (Angela Davis)  (Dan Lieberman)        (Anticlimactic Teleservices)
+           Atlas          NightCit                     *Citadel+ 
+  
+    * == Active (still developed, updated or supported) 
+   ____________________________________________________________________  
+  /                     Other Known Variants.....                      \ 
+  |~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~| 
+  | Name            , Platform   , Lang   , Author(s)                  | 
+  |~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~| 
+  |*Acropolis       , 80x86 (DOS), Pascal , Robert Bequette            | 
+  | AT-Keep         , Atari 800XL, BASICXE, Brent Barrett              | 
+  | Babel           , UNIX       , C      , T'an T'u                   |[5]
+  | Citamad/Lumadel , Apple II   , BASIC  , Lum the Mad                |
+  | Citadel Plus    , CP/M       , C      , Corvair                    |[3]
+  |*Citadel/UX      , UNIX       , C      , Art Cancro                 |
+  | Citadel-64      , C-64       , BASIC  , Vince Quaresima            |
+  | Citadel-128     , C-128      , BASIC  , Vince Quaresima            |
+  | CitSim          , WICAT      , ??     , ??                         |[1]
+  | dars            , Z80 (CP/M) , BASIC  , err head                   | 
+  | Digital Dungeon , 8088       , C, Asm , Jerry Ash                  |[3]
+  | D.T.J. BBS      , C64        , ??     , ??                         |[2]
+  |*ElfBBS          , 80x86 (DOS), Pascal , Dino Nardini               | 
+  | FUBARC          , ??         , ??     , ??                         |[1]
+  | MacCitadel      , Macintosh  , C ??   , Glen Heinz                 |[3]
+  | MiniBin         , TRS-80     , BASIC  , Glenn Gorman               | 
+  | NeoCitadel      , 80x86 (DOS), Pascal , Hue, Sr.                   | 
+  |*NYTI            , 80x86 (DOS), C      , Ford II                    |[3]
+  | Pseudodel       , Apple II   , BASIC  , Shadow Warrior             | 
+  | squiggle        , 80x86 (DOS), Asm    , Brent Bottles              | 
+  |*ST-Keep         , Atari ST   , BASIC  , Andrew Studer              |
+  | Titan           , Atari 800  , BASICXE, The Dragon                 |
+  | Titanic         , Atari 800XL, BASICXE, Richard Goldfinder         |
+  | Unidel          , UNIX       , C      , Ken MacLeod                |
+  \____________________________________________________________________/
+
+Notes:
+1. These are mentioned in Bill K.'s RSYS list but I've not seen any other
+   information on them from any other sources. These may not have been.   
+2. I have this system but have been unable to unarchive it. I need an
+   archiver known as LYNX for the C64. This may be Cit-64.
+3. These may belong up on the tree. 
+5. What is with this name!? I take it Bruce King ran some citadels under
+   UNIX and the system was called Babel at one time. I also take it BabeCit
+   was once called Babel also? So should this be listed as Babel?  or as
+   a Citadel variant (under UNIX)? And it should probably be listed off 
+   of Cit 2.10, as I assume that is where is evolved from?
+6. I assume this means continued development of Citadel itself out east?
+   Well I can't find any! They were apparently some that lasted awhile
+   reaching such 'versions' as 2.5x etc.... but any still up?
+
+ Column #4 Citadel+ (uploaded/written by Freejack@fluffadel)
+
+               "CITADEL+ OPENS TO RAVE REVIEWS!"
+
+   What is Citadel+ anyway?  Just another room-based system to come
+along as so many before?  Not according to the authors of this feature
+laden version previously known as Gremlin's Citadel.  Let's start with 
+the opening paragraph from the introduction in the Citadel+ manual.
+
+   "Citadel+ is the most configurable, most powerful, most supported, 
+    and all-around best variant of Citadel there is. If you have doubts 
+    about this, point us in the direction of a better Citadel and reasons 
+    why it is better; we will quickly incorporate any missing features 
+    into future versions of the software."
+
+   Wow!  How could anyone make such a claim!?  Well the people behind
+Anticlimactic Teleservices have no fear in doing such and simply point
+to their product as proof.  So first we'll take a look at their claim
+of being the most configurable Citadel.
+
+   I'll start from the SysOp's point of view.  Although you can setup a
+Citadel+ system with nothing but the executable and run a BBS with all
+it's defaults, one of the most enjoyable aspects of sysoping is creating
+a system that you desire.  Well with Citadel+ you will definitely want
+the manual as there are over 200 keywords that can be used just in the
+main configuration file.  
+ 
+   In addition there are other configuration files in which you can create
+a system like no other.  You can setup defaults for new users, which can
+definitely help with introducing the room-based concept to people who are
+may be used to other linear BBS software popular in your specific region.  
+One can custom tailor Citadel+'s response to codes returned from the modem, 
+which makes receiving FAXs a breeze.  You can even setup mailing lists that 
+support automatic subscription.  
+
+   There are internal protocols that can be used but of course support for 
+powerful external ones is extensive.  Doors can be configured in a number 
+of ways.  One can setup external editors or utilize various message 
+"filters" if they wish to.  And applictions can be tied in almost anywhere, 
+automatically or user triggered.  There is even a customization kit to 
+allow the changing of just about every string sent out by the system.
+ 
+   Citadel+ supports a variety of networking "protocols".  Of course all
+the DragCit types are available but Net6_9 being, by far, the most robust 
+is widely used.  It's use of bi-directional transfers cuts the costs of 
+networking significantly.  Also with this release there is support for 
+networking with Citadel-86 style systems that utilize the MSGADD and 
+MSGOUT utilities.  In fact the author of this article plans on being the 
+first stable Citadel+ on that network, if he isn't already. And there is 
+much much more that I really don't have the time to go on about.
+
+   Now as far as the user's ability to configure their own usage of the
+system.  The user's configuration screen is truely amazing.  User's can
+setup an amzing amount of items to their own desires.  Everything from
+screen attributes to automatic text replacement can be accomplished.  
+This version introduces a feature where users may "finger" anyone on the 
+network.  There are really too many features to try and touch on and 
+doing so is beyond the scope of this article.  
+
+   We now arrive at the "most powerful" claim.  This is a subjective
+statement but nonetheless if the above doesn't offer credence the 
+following may.  Citadel+ contains a robust script language.  There is 
+also the ability to run scripts just about anywhere at anytime.  Anything 
+from automated message postings to custom designed displays can be 
+accomplished from the more than 500 keywords/functions available.  I 
+think one could see where this feature alone can backup the claim of 
+being the most powerful Citadel ever.
+
+   The "most supported"?  This statement is truely subjective yet
+whole-heartedly backed by the sysops and users of the software.  The
+Anticlimactic Teleservices is the moniker the developers choose to use
+as the "author" of Citadel+.  This team consists of five very talented
+programmers, and they are: Brent Bottles, Richard Finegold, Matthew
+Pfleger, Elisabeth Perrin and Don Kimberlin.  This crew goes beyond what 
+is normally expected in "product support".  Yet, as the Citadels before 
+it, Citadel+ is true freeware.  It can be used in personal or commercial 
+environments.
+ 
+   Well now, isn't that a glowing review?  I must admit to being a 
+little biased as I myself run a Citadel+ system.  But I choose to for the 
+very reason a few people dislike it, the overwhelming amount of features 
+available to both the user and sysop.  This does of course require some 
+resource to accomplish but the "regular" version can be run on an XT type 
+system with 512k of RAM.  While that version is limited to approximately 
+32k of messages but the "auxmem" version, that utilizes memory above 640k, 
+has no practical limit.
+
+   To try and touch on all the available features is honestly much beyond 
+the scope of this article.  To drive that point home the manual itself, 
+which is not yet complete, is over 700k of text!  So, be the features 
+"useless and twitty" or definitely "citadelian" is somewhat irrelevant as 
+the sysop can tailor the system to a level not available with other software.
+
+   To see Citadel+ in action call the support board, The Anticlimactic
+Teleservice at (206) 562-9792.  Any questions will be promptly answered and, 
+most likely by Brent Bottles or Richard Finegold.  The latest release is 
+available there for download at 9600b or for 14.4kb speed call The Raft 
+at (206) 861-9936.
+
+
+ Column #5 a list of all cita-variants (uploaded by Freejack@fluffadel)
+ ACit                 Richard Goldfinder             MSDOS          C
+*Acropolis            Robert Boquette                MSDOS          Pascal
+ AmiDel               Timelord, Cap'N Dave           Amiga          C
+*Asgard-80            Gary Meadows                   CP/M           C
+*Asgard-86            Gary Meadows                   MSDOS          C
+ AT-Keep              Brent Barrett                  Atari 800XL    BASIC
+ Atlas                Angela Davis                   MSDOS          C
+ b0badel              b0b                            MSDOS          C
+ BabeCit              Bob Perigo                     CP/M           C
+ Babel                T'an T'u                       UNIX           C 
+ Captain's Citadel    Capt James T Kirk              MSDOS          C
+ CenCit               Centauri                       MSDOS          C
+ Citadel              Cynbe ru Taren                 CP/M           C
+ Citadel 2.16s        Andy Meyer                     CP/M (SONY)    C
+ Citadel II           Mistress Mouse                 MSDOS          C
+*Citadel+             Anticlimatic Teleservices Ltd  MSDOS          C++
+ Citadel Plus         Corvair                        CP/M           C
+*Citadel/UX           Art Cancro                     UNIX           C
+ Citadel-128          Vince Quaresima                Commodore 128  BASIC
+ Citadel-64           Vince Quaresima                Commodore 64   BASIC
+*Citadel-68K          Tony Preston                   Amiga          C
+*Citadel-86           Hue Jr.                        MSDOS          C
+ Citadel-86/TI        Robert Nelson                  TI             C
+*Citadel-86e          Farokh Irani                   MSDOS          C
+*Citadel:K2NE         Vince Quaresima                MSDOS          C 
+ Citamad/Lumadel      Lum the Mad                    Apple II       BASIC
+ CitSim               ??                             WICAT          ??
+*Co-op Citadel        JJ                             MSDOS          C      
+ Commons              Grey Mouser                    MSDOS          C 
+*CopperCit            John Luce                      MSDOS          C
+ dars                 err head                       CP/M           BASIC
+ Digital Dungeon      Jerry Ash                      MSDOS          C
+ DragCit              The Dragon                     MSDOS          C
+ Elegia               Andrew Quinn                   MSDOS          C 
+*ElfBBS               Dino Nardini                   MSDOS          Pascal
+ Fortress-PC          Chris Camacho                  MSDOS          C
+ Fortress-ST          Draiden Bansted                Atari ST       C
+*<fnord>adel          Arthur Dent                    Atari ST       C
+*FredCit              Fred McClain                   MSDOS          C
+*FrogCit              Zen Master                     MSDOS          C
+ FUBARC               ??                             ??             ??
+*GremCit              The Gremlin                    MSDOS          C
+ HoloCit              Dargos                         MSDOS          C
+ Idea Tree            ProtoSoft Inc.                 MSDOS          C
+ Inner Sanctum        Ganelius                       Atari ST       C
+ Ironhenge            Major Chaos                    MSDOS          C
+ M.O.D.E.             Turtle!                        MSDOS          C
+ Macadel              Michelle/Sifu                  Macintosh      C
+ MacCitadel           Glen Heinz                     Macintosh      C
+*MavenCit             The Maven                      MSDOS          C
+ MiniBin              Glenn Gorman                   TRS-80         BASIC
+ NeoCitadel           Hue Sr.                        MSDOS          Pascal
+ NeoLith              Scott S.                       MSDOS          C
+ NightCit             Dan Leiberman                  MSDOS          C
+*NYTI                 Ford II                        MSDOS          C
+ Novucivitas          Brent Barrett                  Atari ST       C
+ Pseudodel            Shadow Warrior                 Apple II       BASIC
+*Overcit              Jeff Waltzer                   MSDOS          C
+ SacCit-80            Gary Meadows                   CP/M           C
+ squiggle             Brent Bottles                  MSDOS          ASM
+*ST-Keep              Andrew Studer                  Atari ST       C
+ STadel               David Parsons                  Atari ST       C
+ STadel-Ami           Eric Griff                     Amiga          C
+ STadel-PC            David Parsons                  MSDOS          C
+ Stonehenge           David Bonn                     MSDOS          C
+ Titan                The Dragon                     Atari 800      BASIC
+ Titanic              Richard Goldfinder             Atari 800XL    BASIC
+*TurboCit             Ray Johnson                    MSDOS          C
+ TwitCit              Z'ton                          MSDOS          C
+ Unidel               Ken Macleod                    UNIX           C
+
+ Column #6 A Short list of all Files on Freejacks New Board (written by 
+ Freejack@fluffadel)
+
+This is the file listing from the "BrickCitHouse" room on
+Digital Free America. The board is not available to the public 
+at this time. (I'm moving!) If you would like to obtain any
+of these please try to contact Freejack on just about any
+of the citadel networks.
+
+Filename           Size  Comments
+a86-149.zip   1,214,881  Asgard-86 v1.49q Release Package (4/94)
+acit688.zip     272,624  ACit v3.11.00a/688 Source Code (7/92)
+atlas200.zip    255,944  Atlas v2.00.05a Source Code (5/92)
+b0b119s.zip     213,515  b0badel v1.19 Source Code (5/92)
+babe9209.zip    163,840  BabeCit v9-92 Source Code & Release Package (9/92)
+c68k342.lha     977,770  Citadel-68K v3.42.P15 Release Package (8/94)
+c86-346.zip     972,588  Citadel-86 v3.46 Release Package (7/94)
+c86e-218.zip    472,543  Citadel-86e v2.18 Release Package (12/94)
+c_ux32.zip      202,727  Citadel/UX v3.2 Source Code (7/94)
+capt100a.zip    241,195  Captain's Citadel v1.00a Source Code (6/92)
+cencit-s.zip    252,899  Centauri's Citadel v1.34 Source Code (9/92)
+cencit.zip      393,284  Centauri's Citadel v1.12 Release Package (7/91)
+cit86s.zip      399,773  Citadel-86 v3.45 Source Code (1/94)
+ctdl210.zip     124,270  Citadel v2.10 Source Code (circa 1984 by CrT)
+dc31102d.zip    192,445  Dragon's Citadel v3.11.02 Release Package (10/90)
+dcs31102.zip    180,084  Dragon's Citadel v3.11.02 Source Code (10/90)
+dtjbbs.zip      140,740  D.T.J. BBS v??? Release Package (10/91)
+fc41src.zip     275,411  FredCit v41 Source Code (11/91)
+fcit41.zip      650,238  FredCit v41 Release Package (11/91
+fnd132s.lzh     520,448  <fnord>adel v1.32 Source Code (1/91)
+fortress.zip    400,739  Fortress-PC v0.1a Release Package (4/90)
+gcit127.zip     111,556  Gremlin's Citadel v1.27 Release Package (5/87)
+gcit59s.zip     279,780  Gremlin's Citadel v/59 Source Code (7/92)
+gcit642.zip   1,130,613  Gremlin's Citadel v/64.2 Release Package (7/93)
+henge121.zip    138,207  Stonehenge v1.21 Release Package (9/85)
+k2ne608.zip     878,454  Citadel:K2NE v6.08 Release Package (7/93)
+k2ne608s.zip    309,265  Citadel:K2NE v6.08 Source Code (7/93)
+maccit13.sit    170,112  MacCitadel v1.3b Release Package (5/90)
+mcit314.zip   1,281,166  Maven's Citadel v3.14.00m/022 Release Package (7/93)
+nc050190.zip    462,630  Novucivitas v050190 Release Package (5/90)
+neo300s.zip     274,748  NeoCit v3.00 Source Code (7/90)
+nightcit.zip    212,208  NightCit v2.0 Release Package (12/91)
+oc-k12.zip      340,245  Overcit vK.12 Release Package (10/94)
+plus65t.zip   1,336,982  Citadel+ v/065.156 Public Test Release (12/94)
+s342i23.lha     335,569  Citadel-68k v3.42.i23 Source Code (5/93)
+src119j1.zip    198,656  CopperCit v1.19J1 Source Code (8/94)
+stk572.zip      652,085  ST-Keep v5.72 Release Package (11/94)
+stk5src.zip     117,709  ST-Keep v5.7 Source Code (7/94)
+unidel-s.zip    112,657  Unidel v1.0 Source Code (5/92)
+
+
+ Column #7: Featured Board for the Month, The Fluffadel BBS
+ Written by Psychotic Killer@Fluffadel
+
+ Hello all, it's your friendly editor again, The Fluffadel BBS has been online
+ 24 hours a day since October 11, 1992 (minus a few days between hacks), at
+ 801-278-0565, It wasn't always the Fluffadel. When I started the fluffadel
+ up I was running on an 8088 (yeah so?) with a 1200 baud modem (ick), with 
+ a 21 meg hard drive (icky) and I was running WWIV (HOW DID YOU SURVIVE!?!?).
+ We were up for a month and a half on that setup, until we got hacked, let me
+ tell you, if you've ever run a WWIV you'll be very paranoid. So we started 
+ back up on PcBoard (yuck) which I blew some more money on, I didn't like it
+ so I switched back to WWIV, and I got hacked again! Well, that's when a new
+ citadel was born! I got the software from Sub-Odeon(fluffadel!sdf-2!sub-odeon)
+ who has now moved to Washington State and got some help from Crazy Fox, and
+ the fluffadel came into town. Anyway, now we're up 24 hours a day on a 14.4
+ modem and a monster 486, it has it's problems but at least it hasn't been
+ hacked for a year and a half! What can you find on the fluffadel? Loads of
+ net rooms? Naaah, we do carry Citanews though, which is our only net room.
+ Loads of doors? naah, we have a few, Intelligent conversation? naah, The 
+ Fluffadel is as the name states, Pure fluff, 100% fluff, give us a call, and
+ maybe even upload an article into the citanews room (hint hint)
+
+ Column #8: Featured Software: Fortress-PC
+ Written by Psychotic Killer@fluffadel
+
+ Perhaps I'm not the best source to write an article on fortress, but as far
+ as I know The Fluffadel is the biggest Fortress in the country now that 
+ undermind died (that's not saying much, fortress-pc is a dying breed too).
+ Fortress is more advanced than some of the other citadels, I have yet to 
+ find another citadel that supports Ansi. Unfortunately it seems Fortress is
+ being Discontinued by CMC, I keep trying to get the source code from him but
+ I think my e-mail messages keep getting lost between here and his internet
+ host, so if any of you are able to talk to CMC let me know. But anyway, 
+ Fortress is actually a continuation of STadel-PC under a different name, it
+ was ported to ST by Draiden Bansted (who now runs Fortress-PC, so much for
+ support eh?) Fortress-PC (I don't know about ST) of course has all the 
+ regular features of Citadel (you know, Twit finger, citanetting), it has a
+ screwed up formatter though, but a couple fluffadel users (maalox moment@
+ fluffadel, king midas@fluffadel) are in the process of writing some new
+ citadel variants, I'm not sure about Midas's but I know Maalox's will fix
+ the formatter, more on his software in future issues :) Fortress can be
+ downloaded from the BBS softwares room on the Fluffadel at 801-278-0565
+
+ 
+Note about Citanews:
+  Citanews can be downloaded from the Citanews room on the Fluffadel BBS
+  at 801-278-0565 or you can subscribe to it at Mikejon@xmission.com, just
+  say (uh huh huh, I wanna, heh heh, subscribe to the..citanews.. whoa, 
+  blackouts rule!)
+  To contribute upload your columns to the citanews room on the fluffadel
+  or send them to Mikejon@xmission.com
+
+                                                                                                                          

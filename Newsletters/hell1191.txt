@@ -1,0 +1,548 @@
+ /************************************************************************/
+ /*                                                                      */
+ /*                                                                      */
+ /*        @@@@@@                       @    @           @@   @@         */
+ /*       @      @   @    @     @@@@    @    @   @@@@@    @    @         */
+ /*       @               @         @   @    @  @     @   @    @         */
+ /*       @         @@  @@@@@   @@@@@   @@@@@@  @@@@@@@   @    @         */
+ /*       @          @    @    @    @   @    @  @         @    @         */
+ /*       @      @   @    @    @    @   @    @  @     @   @    @         */
+ /*        @@@@@@   @@@   @@@   @@@@ @  @    @   @@@@@   @@@  @@@        */
+ /*                                                                      */
+ /*                 Issue Number One - November 12, 1991                 */
+ /*                                                                      */
+ /************************************************************************/
+ /*       The Underground News Source for Citadel and its variants!      */
+ /*                                                                      */
+ /*               Edited by Piouhgd @ Reality Cheque [WNC]               */
+ /*                    Machine @ Mach's Mach [MtNC]                      */
+ /*            An official Cheese Olfactory Workshop production.         */
+ /*         Send us lots of cash - small unmarked bills prefferred       */
+ /************************************************************************/
+
+ /************************************************************************/
+ /*                          Table of Contents                           */
+ /************************************************************************/
+./*                                                                      */
+ /* Departments:  Letter From The Editor                                 */
+ /*                                                                      */
+ /* Features:     PCPDIAL - The program we have all been waiting for!    */
+ /*               QUIP03A - A major help for Citadel-86/68k sysops!      */
+ /*               Monty Python - My favourite room!                      */
+ /*               Featured System - Reality Cheque                       */
+ /*                                                                      */
+ /* Lists:        PC Pursuitable Nodes based on the RSYS list by bill.K  */
+ /*               Roombased software (blatently stolen from bill.k)      */
+ /*               Home Systems of Citadel Varients                       */
+ /*                                                                      */
+ /************************************************************************/
+
+
+
+                          =======================
+                          Letter From The Editor!
+                          =======================
+ 
+     Well, this is it.  And no, it isn't a joke.  This is real.  I think I 
+ should start with the answer to the question you are probably asking.  
+ Why, you ask?
+ 
+     Well, why not?  The thirst for Citadel news is so great that it is 
+ non-exhaustive.  Two newsletters for Citadel (in my opinion) would barely 
+ even graze the history that so many have forged, or report the change that 
+ is so common in Citadel.  So, I decided to make an *alternative* to 
+ CitaNews.  I am not attempting to compete with or "mooch in" on CitaNews 
+ territory!  I simply wanted to provide a news source.
+
+     I have my own reasons, too.  I want to learn more about Citadel 
+ itself.  Where it came from.  Who this mystical "CrT" is. :)  What better 
+ way to learn more than to have a "deadline" to seek information?  Plus, it 
+ provides a forum for us to share our ideas, opinions, experiences, and 
+ maybe we can all* learn something.  Plus it gives me ample excuse to ask 
+ annoying questions!  Another one of my mad reasons is that I want to get 
+ more involved in Citadel, and this is one way of going about it.  I feel 
+ a need to "do my part" for the CitScene.
+  
+     I would like to see CitaHell evolve into a monthly publication, with 
+ information on Citadels from every viewpoint.  I would like to "interview" 
+ certain folk who have had a tremendous impact on Citadel and it's sysops.
+ I would like to feature new products for Citadel, new Citadels, old 
+ Citadels, and the like.  This month we will be delving into the innocuous
+ depths of "PC Pursuit" and what it can do for a Citadel sysop.
+
+     I would like to dedicate this document to my co-editor and best-friend 
+ Machine.  Without him, I would have never discovered Citadel.  I would 
+ still be a WWIViot, flailing madly in the annals of color and geek-fests.
+ Thank you for rescuing me, Machine.  I would also like to thank those 
+ who held my hand during those first weeks; Hue, Jr. and cmc.  And special 
+ thanks to DarkStar, my sysop-in-arms.  We especially showed THEM, eh?
+
+     Well, I hope you enjoy the first installation of CitaHell.  Hopefully 
+ you will see more of us.  And remember, we are always open to submissions, 
+ letters, questions (we will answer or do our damnedest to find someone who 
+ can), comments, criticisms, articles, interviews, ascii pics, etc etc.  
+ There is no real deadline, but if you want something in the NEXT one, get 
+ it in quick.
+
+     Later, Piouhgd.
+
+     Oh, if you are curious.  Piouhgd is pronouced "P.O.ed".  Right, pissed 
+ off.
+
+
+
+                 ==========================================
+                 PC Pursuit plays major role in networking!
+                 ==========================================
+                          Piouhgd @ Reality Cheque
+ 
+     When we first created our local network here in WNC, we had decided as 
+ a group that PC Pursuit would suit our needs the best.  Unfortunately, 
+ Zero Hour fell upon us quickly, and we had no external dialer.  With me 
+ knowing not more than a smidge of C, and everyone else not knowing how PC 
+ Pursuit worked, I panicked.  I scrambled around Citadels across the 
+ country for a week looking for a dialer for PCP.  Nobody had one.
+
+     PC Pursuit now plays a major role in how WNC networks thanks to the 
+ generosity of cmc @ overmind (and undermind, for that matter).  I talked 
+ to Christopher for no more than 10 minutes, and he said "Sure, I'll write 
+ one."  But in the lands of reality, most electronic promises are broken, 
+ so I did not get my hopes up.  I sought out to try to write one.  Two days 
+ later I get a call on my BBS from cmc, and he uploaded the program 
+ PCPDIAL.  I was literally stunned, and exceptionally satisfied with the 
+ results that came from cmc's efforts.  I am still in his gratitude.
+
+     PCPDIAL is a most excellent program.  It allows you to use PC Pursuit 
+ for networking purposes, and does so extraordinarily well.  It can redial 
+ the dialup number (if busy) however many times you wish.  It can redial 
+ the system number however many times you wish.  It even has a built in 
+ safety feature that won't allow a dialout until 10:00 pm - unless you use 
+ a "-f" command that forces it anyway.
+
+     The stabilization rate has been the only drawback, and cmc said he was 
+ working on a modification to allow the dialer to stabilize the call.  I 
+ have encountered a 90% success rate, though.  It has the most trouble 
+ (from what I have seen) with the cmc's own BBS, Fortress and Fortress-PC. 
+ This has prompted me to ask for a different "stabilization" code - to 
+ insure stabilization through packet networks.
+  
+     Allow me to explain a little about PC Pursuit, if you do not know.  
+ When you call a PCP dialup number, you connect to a local number.  Then, 
+ using your password and account number, the Telenet dialup you called 
+ connects to a "dialout" in another city.  When you finally have a 
+ connection from that dialout, you have four computers hooked together - 
+ you, the final destination computer system, and two "filters"!  That 
+ causes a 15% delay.  Not much, but volume counts!
+
+     I have asked Hue, Jr. for a "Stabilization" string as an addition.  
+ The system would act as normally - sending the three character code to 
+ initiate a network session.  If none was found, it would move to the 
+ Login prompt.  If the calling computer saw that there was a login prompt - 
+ it would send a string of characters such as "-@-#-NETWORK-#-@-", and the 
+ answering computer would attempt the three character string again.  Upon 
+ three unsuccessful tries, it would give up.  That would prevent lost PCP 
+ time - and greatly insure better stabilization rates.  I had one response 
+ from Hue, Jr. on the matter, but since haven't spoken with him about it.
+ Maybe, but who knows?  I think it would be an excellent addition, since it 
+ is time for Citadel to move into the PC Pursuit era!
+
+     PC Pursuit currently costs $50 a month for 60 free hours of long 
+ distance.  This is not bad!  The disadvantage is that PC Pursuit can't 
+ connect to every city in the country, only certain ones.  But there are a 
+ lot of Citadels that you can* network with - enough in two or three cities 
+ to fill up 4 or 5 megs worth of a message space quickly!
+  
+     At the end of CitaHell, I will list all of the PC Pursuitable Citadel 
+ systems based on bill.k's RSYS listing.  I am not sure of "Who To Call" to 
+ to become a subscriber.  Try a local Sprint office, or their 1-800 number.
+ By the time of publication, PCPDIAL should be available at Test System, 
+ and here at Cheque.
+
+
+
+
+                        ============================
+                        QUIP03 HELPS CITADEL SYSOPS!
+                        ============================
+
+     Ok, so maybe this is almost like an advertisement.  Maybe not.  But, I 
+ have found Quip to be an awesome utility for Citadel-86 and Citadel-68k.  
+ If you pick this program up, I think you will agree.
+
+     What exactly is Quip?  Quip is a program that can create the optional 
+ BANNER, LONOTICE, NOTICE, and CHAT files.  You know, the sixty files of 
+ each filename that act as "random" messages to users (BANNER.0 to 
+ BANNER.59, etc).
+
+     In my Citadel travels, I have yet to see a BBS that takes advantage of 
+ the function except Test System.  And it must be a pain to type them in, 
+ or else more sysops would be using it!  Quip solves that problem by 
+ reading a file sequentially (the one that comes with Quip has over 2000
+ little sayings) and putting the quotes into the appropriate file(s).
+
+     Reality Cheque currently has it's NOTICE files "randomized" with the 
+ famous ascii cows (a different one in each file), it's LONOTICE files with 
+ annoying sayings and it's CHAT files filled with different "I'm not here"
+ sayings.
+
+     One of the nicest things about Quip is that the data files are EASY to 
+ build.  All one needs is a good text editor and a little patience.  The 
+ only disadvantage to it is that it can only accept 1k of a quip, but that 
+ pales to the fact that quip is easy to use, and save a helluva lot of 
+ time!
+
+     Quip is the product of Machine's (@ Mach's Mach) genius and long 
+ tedious hours of C programming.  I helped in a very minor way with the
+ documentation and the MS-DOS compilation of the program.  There are a few 
+ other data files floating around.  Quip is available for the Amiga and the 
+ MS-DOS machines at Test System.
+
+     Since I wrote this, I found out some new information.  Quip04 will be 
+ released soon, pending the fixing of some bugs.  It speeds up processing 
+ of lengthy .DAT files by about 500% - damn good!  Quip04 will be using 
+ hash tables to increase effeciency, plus some extras.  It will be released 
+ with a few extra .DAT files, too.
+
+
+                        ============================
+                        Hue, Jr. Abducted by Aliens!
+                        ============================
+
+     Just kidding.  He's back now.
+
+ 
+                           ======================
+                           The Monty Python Room!
+                           ======================
+
+     I don't know where it has been, and don't know where it's going to.  
+ It's the MONTY PYTHON room!  I first picked up the room from Overmind, and 
+ am now passing it along to Nowhere.  Any Python fan would just love the 
+ discussions.  Well, ok.  They are not really discussions, they are banter 
+ with mostly quotes of Python.  But what could be more bleeding *FUN*????
+
+     A few weeks ago I stumbled into the Totally Missing Persons League 
+ (you know, of Zakureth@League fame) and ran across a Britcoms room.  It 
+ was an aberrant little directory room filled with 200k worth of files.  Lo 
+ and *behold* my good brothers, these were not mere ordinary files, these 
+ were PYTHON SCRIPTS!  Needless to say, I downloaded them all, and am now 
+ happily engaging in the activity of putting The Holy Grail into the Monty 
+ Python room.  And there was much rejoicing.
+ 
+     I now have a lot of stuff the quench the ever thirsty Python fan.  And 
+ several people have begun to start posting more Python scripts.  The 
+ Python room is a virtual plethora of Python information and worthless 
+ drivil!   And it has more cheese than anyone would ever want. NI!
+
+
+                      ================================
+                      Reality Cheque - Featured System
+                      ================================
+
+     Today's Featured System is Reality Cheque.  Why?  Because I want to 
+ push this CitaHell issue out the door and it is the system I know most 
+ about.
+
+          System Name: Reality Cheque
+               Domain: WNC (Western North Carolina)
+                Sysop: Piouhgd
+              Node ID: US (704) 523-2063
+          Hours of Op: 24 - Sporadic downtimes for writing.
+             Max Baud: 2400 BPS
+             Software: Citadel-86 3.40
+
+ Sharing Rooms:
+
+   Rocky Horror>  Whonet>  Author's Alcove>  Role Playing Games>  Charlotte  
+ Traffic>  PartyNet Sysops>  CitaNews>  ANIME/Comics>  AD&D>  traveller>   
+   Spinward Marches>  The Dork Squad>  Abortion>  Monty Python>  
+   Psychology>  C++>  CyberPunks>  Gateway>  Politica>  Strange Theories>
+   Blurred Reality>  The Occult Scene>  Of The Weird>  SCA>  net.music>
+   rec.humor.funny>  TrekNet>  Sysop Stuff>  Skepticism>  Shadowrun>  
+   GURPS>  Wargames>  RPG Idea Central>  Esoterica>  PaganNet>  Horror>
+   Ecology (Virtual)  Health (Virtual)  Computer Crime (Virtual)
+   Drug Discussion (Virtual)  Adult Discussion (Virtual)  Points to Ponder
+ (Virtual)  PeaceNet (Virtual)
+
+ There are a few local only rooms, Charlotte Traffic and PartyNet Sysops.
+ Rocky Horror is one of the latest additions to C-86 Net.  It is a 
+ discussion on the Rocky Horror Picture Show.
+
+
+                            ====================
+                            Upcoming Next Month:
+                            ====================
+
+     A meeting of the minds for the NC Domians Sysops!  December 7th, the 
+ NC sysops will be gathering in Greensboro, NC to discuss Citadel!  In
+ attendence will be Piouhgd@Reality Cheque_WNC, DarkStar@Schizo_WNC, 
+ Coppertop@Lunatic Fringe_NC, and Machine@Mach's Mach_MtNC (Well, ok, he 
+ will be there in spirit; we will most likely call him).  This is the first 
+ NC Citadel Meeting Of The Minds.  Next issue you will find out "Why in the 
+ hell are there three domains in NORTH CAROLINA".  We will tell you all the 
+ events of the day, some might be embarrassing.  Or not.
+
+     We will feature Lunatic Fringe next month, if I can get Coppertop to 
+ talk about his system, and his plans for the Fringe.  A rumor has been 
+ circulating that he might be changing to K2NE from Asgard.
+
+     We will have more inane articles.  Some might actually be interesting, 
+ so check it out.  I know this one is a tad bit short, but please bear with 
+ us.  This is our first production of it, and we are hurrying to get it out 
+ and get started on December's Issue which promises to be absolutely 
+ wonderful.  Like we have nothing better to do with our time.
+
+
+
+
+                        PCP Networkable Nodes List:
+                         Special thanks to Bill.K!
+                        The Room Oreiented BBS List
+                               November 1991
+ 
+ Node Name             Phone Num.   S Ba PCP Code      Sysop              Last
+ ----------            -----------  - -- --------      -----------------  ----
+ 3cpu                  503-246-9712 o ??  ORPOR        ?????????????????? 91Oct
+ 5150 Citadel          414-353-5062 o 12  WIMIL
+ 8th Demension         206-488-1290 c 12  WASEA        ???????            89May
+ 9 Hells               801-485-4355 o 96  UTSLC        Synical Sorcerer   91Jan
+ Acropolis             916-967-5817 o 24  CASAC        Robert Bequette    89Nov
+ AIE                   713-444-6972 o 24  TXHOU        Scott              90Sep
+ Amiga Archives, The   916-444-9982 o 24  CASAC        Donovan Colbert    90Aug
+ Amiga Link - line 1   916-682-8872 o 24  CASAC        Lindsey Fong       89Nov
+ Amiga Link - Line 1   916-447-3842 o 24  CASAC        Lindsey Fong       89Nov
+ Amiga Link - Line 2   916-682-8874 o 24  CASAC        Lindsey Fong       89Nov
+ Amiga Link - Line 2   916-991-8553 o 24  CASAC        Lindsey Fong       89Nov
+ Amiga Link - Line 2   916-447-3843 o 24  CASAC        Lindsey Fong       89Nov
+ Artificial Reality    612-774-3354 o ??  MNMIN        Thomas Katt        89Oct
+ Asylum II,The         916-363-3447 o 12  CASAC        ??????????         89Aug
+ Asylum Systems, Inc   801-943-2351 o 24  UTSLC        doc mike           90May
+ Asylum, The           206-439-7890 o 12  WASEA        ???????????        91Jun
+ atarwinII             503-288-8506 o ??  ORPOR        ?????????????????? 91Oct
+ Babel                 206-363-8969 o 24  WASEA        Bob Perigo         88Mar
+ BackFence             612-429-5001 p 24  MNMIN        Jimbo              91Oct
+ Bad Sector            612-377-6881 o 96  MNMIN        Biko Mack          91Aug
+ Badinage Mansion      317-576-0896 o ??  ININD        Jason Massey       91Aug
+ Bauhaus BBS           206-672-0956 o 24  WASEA        Devin Cook         89Dec
+ Bitsko's Bar & Gril   801-269-0670 o 19  UTSLC        Ken MacLeod        89Nov
+ Blade                 617-891-7338 o 12  MABOS        Laird Popkin       91May
+ Byteways              516-433-3309 o 24  NYHEM        Cyborg             91Aug
+ Cafe Dionysus & Co.   206-523-8874 o 30  WASEA
+ Callahan's            612-644-2551 o 24  MNMIN        Chilly Willy       91Aug
+ Caves of Chaos        206-641-0647 o 24  WASEA        Major Chaos        88Jan
+ Cheryl's Velvet Tou   206-937-2957 o 12  WASEA 
+ Chez' Spaz            612-895-8035 o 24  MNMIN        your Father        91Aug
+ Church                612-778-0343 o 24  MNMIN        Jammer 4           91Aug
+ Citadel-86 Test Sys   612-470-9635 o 96  MNMIN        Hue, Jr.           91Oct
+ City of Lankhmar      206-885-5266 o 12  WASEA        Grey Mouser
+ Class68               612-932-0743 o 24  MNMIN        Greg Forseth       91Jan
+ Cold Winter's Knigh   916-487-2819 o 24  CASAC        Yellow Dragon      89Nov
+ Cryptic Slaughter     206-432-6904 o 12  WASEA        Cryptic Slaughter  88Feb
+ Cuckoo's Nest, The    317-547-8868 c 24  ININD        Prince Artagel     90May
+ CyWorld               916-966-2704 c 24  CASAC        Cy                 90Jan
+ Dark Tower            206-244-1766 o 12  WASEA
+ DogLink               612-460-6056 c 24  MNMIN        K-9                91Oct
+ drac                  503-239-8918 o 24  ORPOR        Robin Hood         91Oct
+ Dragons Den II        916-635-1798 o 12  CASAC        Vince Seifert      89Aug
+ Dream Park            415-945-7799 o 24  CAOAK        Number Six         89Nov
+ DREAM WORLD           718-849-3232 o 24  NYNYO        Bill               91Jun
+ Earl's Castle         916-381-4127 o 12  CASAC        Jim Earl           89Aug
+ Earl's Castle (Alt)   916-967-1643 o 12  CASAC        Jim Earl           89Aug
+ Eclipse               916-725-0674 o ??  CASAC        Pinkerton Floyd    90Feb
+ Egads                 612-753-1622 o 30  MNMIN        Helper             87Jul
+ Electric Monk, The    415-967-6067 o 12  CAPAL        Droud              90Feb
+ ElfQuest              916-332-7945 o 24  CASAC        Elf                91Oct
+ Endless Power         317-575-9435 o ??  ININD        Jeff Neese         88Oct
+ Enterprise            718-646-4218 o 24  NYNYO        ??????????         91Mar
+ Exotic                206-367-8242 c 12  WASEA        The Ninja          87Jun
+ Expressway BBS        516-753-0392 o 96  NYHEM        Stan Schwartz      91Oct
+ Eye of the Storm      612-928-9726 o 24  MNMIN        Stormwolf          91Aug
+ Fifth Dimension,The   214-416-6833 o 24  TXDAL        Maher Maso         87Jun
+ Floydian Slip,The     602-246-8745 o 12  AZPHO        Bert               88Oct
+ Forge, The            206-827-1817 o 12  WASEA 
+ Foundation's Edge     916-454-5983 o 12  CASAC        Qwerty & Sonja     89Aug
+ Free Lunch            612-431-1107 o 24  MNMIN        Hue                91Oct
+ FWBBS                 303-469-4954 o 24  CODEN        Jeepster           91Sep
+ Greenlake Connectio   206-782-6669 o 12  WASEA
+ Greylien              612-753-6002 o 24  MNMIN        Greyman            91Aug
+ H-I-T-E-C             206-285-3382 o 12  WASEA
+ Hatzlacha             213-466-3861 o 12  CALAN        Roger Tuttle       87Jun
+ Health On Line        206-367-8726 o 12  WASEA        Rob C.             87Jun
+ HHQ                   713-376-6670 o 24  TXHOU        C.J. Mercer        90Sep
+ Hotel 86              916-927-7680 o 24  CASAC        Gary S. Meadows    90Feb
+ Hypercube             317-773-7757 o 24  ININD        Death by Torture   88Apr
+ Illusions             612-470-1882 o 24  MNMIN        mary mary          91Oct
+ Images                612-884-7951 o 24  MNMIN        Sy Borg            91Sep
+ Invisible Seattle     206-784-7685 o 12  WASEA        Mehitabel
+ Ivory Tower           612-425-0554 o 24  MNMIN        Topper             91Oct
+ Last Call, Jr.        612-546-4182 o 96  MNMIN        moi                91Oct
+ League                503-254-1754 o 24  ORPOR        Zakureth           91Oct
+ Library II            206-643-9965 o 24  WASEA
+ Lost Island Desktop   214-276-7499 o 24  TXDAL        Dennis Recla       88Dec
+ Luna Free State       317-298-8490 o 12  ININD        Mycroft Holmes     88Mar
+ MacCitadel Test Sys   213-820-4320 o 96  CALAN        Glen Heinz         90Jan
+ Mainframe             206-362-8158 o 12  WASEA   
+ Manila-Center         206-364-2529 o 12  WASEA        SpareCat           91Jun
+ Mars Hotel, The       612-332-5156 o 24  MIMIN        Daniel             91Aug
+ MAST                  612-472-6582 o 19  MNMIN        tacook             91Aug
+ Mayday I              206-523-0462 o 12  WASEA      
+ Mensa On-Line         612-780-2518 o 24  MNMIN        Star Child         90Dec
+ Metal CA              415-820-2177 o 24  CAOAK        Tormentor          89Nov
+ MIDI                  612-825-4296 o 24  MNMIN        Lydian Kev         90Feb
+ Milatari              414-476-9119 c 24  WIMIL        ???????????        90Aug
+ Mountain Man          303-797-6783 o 96  CODEN        Roy Bartee         91Apr
+ Muse                  916-923-1530 o 24  CASAC        Bob Carlstroem     89Aug
+ MythAdv               503-246-4048 o ??  ORPOR        ?????????????????? 91Oct
+ NDP                   415-276-3677 o 96  CAOAK        Portmaster         91May
+ Nightwing's Realm     206-784-5913 o 24  WASEA        Shade Nightwing    89Mar
+ NSCC Swamplands       206-527-3650 o 24  WASEA        ???????            89May
+ Nybble                916-487-2604 o 24  CASAC        Happy Hacker       89Aug
+ Omni                  916-386-2521 o 24  CASAC        Charles Meadows Jr 89Aug
+ Outer Limits          206-285-3210 o 30  WASEA        The Great Zod      87Jun
+ Overlord's Party      301-725-6920 o 24  DCWAS        Jeff Waltzer       91Jan
+ overmind              404-659-5720 o 19  GAATL        cmc                91May
+ Phantasie Land        206-874-2545 o 12  WASEA
+ Players               503-624-7303 o ??  ORPOR        ?????????????????? 91Oct
+ Polaris               214-750-6374 c 12  TXDAL        Clint Wheelock     87Jun
+ PolarServ             206-782-5022 o 30  WASEA        T'an T'u           87Apr
+ Post Office, The      206-546-9158 o 12  WASEA                           88Jan
+ Pot Of Gold,  The     303-761-4039 o 12  CODEN        Leprechaun Lord    87Dec
+ ProtoSoft             206-932-7125 o 12  WASEA   
+ PyroDyme              916-989-5136 o 24  CASAC        General Instrument 89Aug
+ robocity              503-255-1446 o ??  ORPOR        ?????????????????? 91Oct
+ SabreLine             612-896-2706 o ??  MNMIN        Sabre              91Jan
+ Sanctuary             206-747-6839 o 12  WASEA        Tempus             87Jun
+ santiago              503-282-3386 o ??  ORPOR        The Master of Time 91Oct
+ Satellite System      206-762-5141 o 12  WASEA        Jimbo Ryan         89Jan
+ Signals               206-545-4343 o 12  WASEA        John Shannon       89Mar
+ Skyline               206-628-3811 o 12  WASEA        Gremlin            88Jan
+ SLUG'S Hard Rock Ca   503-645-4915 o 24  ORPOR        SLUG!              91Oct
+ Small Citadel         612-377-2470 o 12  MNMIN        Shane Ziegler      89Aug
+ Snickersnack          206-869-8697 o 24  WASEA        Zair TL            91Aug
+ Spectrum              206-355-4340 o 12  WASEA
+ ST-Keep BBS           916-729-2968 o 24  CASAC        Andrew Studer      90Aug
+ Sudden Impact         206-361-1993 o 12  WASEA        ????????           88Jan
+ Synch                 612-929-3067 o 24  MNMIN        Sting              91May
+ Syntax Error          503-681-8232 o ??  ORPOR        ?????????????????? 91Oct
+ Sysop Central         916-363-1171 o 12  CASAC        Larry Reznick      89Aug
+ Tapestry              206-488-0115 o 12  WASEA        ??????????         89Jun
+ Tapestry              206-784-9014 o 12  WASEA        Inyanna            88Jan
+ Time Warp BBS, The    206-565-4310 o 24  WASEA        Riff Raff          91Feb
+ Touch Me Two          206-938-8234 o 12  WASEA 
+ TPT4                  408-255-6288 o 24  CASJO        Mike Leeling       91May
+ Tranquility Base      206-525-0497 o 30  WASEA 
+ TUG ECS               206-763-3116 o 12  WASEA  
+ TwitZone              503-681-8135 o 24  ORPOR        Parker Lewis       91Oct
+ Ultra-Net             612-536-8904 o 24  MNMIN        Tom Kirkland       91Oct
+ undermind             404-521-0445 o 96  GAATL        cmc                91May
+ Underworld            206-244-6252 o 24  WASEA        Grim Reaper        87Jun
+ V'ger                 214-727-8056 o 12  TXDAL        Malcolm Petcher    89Jun
+ WebHunt               916-456-8641 o 24  CASAC        Bill Belon         91Oct
+ WESCAC                206-781-6961 o 12  WASEA        Jack Fleming       89Jan
+ Wolf's Den            612-469-3296 o 24  MNMIN        Cryo Ruggie        91Sep
+ XAKEPOBO MECTO        206-324-0830 c 12  WASEA        M.Aichlmayr        89Feb
+ Xanadu                206-762-8667 c 12  WASEA        The Muse           87Jun
+ YT&T (YOYODYNE)       916-369-6702 o 24  CASAC        Pagan St. Flames   89Aug
+ Zorba Connection BB   713-946-5467 o 24  TXHOU        Phillip Keen       90Oct
+                                           
+                                    ^  ^                                  ^
+                                    |  |_Baud                             |
+                                    |  12=1200, 24=2400                   |
+                                    |  30=300, 96=9600                   /
+                                    |  19=19.2kb                  Date of
+                                    |                             last contact
+                              System access                       
+                              c - controlled (Mail to Sysop)               
+                              o - open                                     
+                              p - private (nominations)
+
+                                * * * * *
+ 
+ Disclamer: This list is provided for reference purposes only, and carries no
+ guarantees, implied or otherwise, with regard to the accuracy of the
+ the list.
+
+
+                           =====================
+                            Room Based Software
+                           As compiled by bill.k
+                           =====================
+
+     
+  Acropolis    Turbo Pascal room system.
+  AmiDel       Citadel for the Amiga  by Timelord &  Cap'n Dave
+  ATKeep       Atari 800XL room system.
+  Asgard-86    NEED ALL the information on this one...Please
+  Babel        runs under Unix on a Charles River Data Systems SuperBox V,
+               by T'an T'u of Seattle, WA. (multi-user?)
+  b0badel      STadel-PC 3.2 deriviative by b0b. Runs on any MS-DOS
+               machine with a FOSSIL driver.  Source availiable at Interface.
+  Cit          the original CP/M version 2.1x written by Cynbe ru Taren,
+               or some derivative there of. (catch-all category)
+  C86e         Citadel-86e for MS-DOS machines by Farokh Irani
+  Cit64        Citadel on Commodore 64? Need more input on this one.
+  Cit68k       Citadel for the Amiga by Stallion.
+  Cit86        Citadel-86 for MS-DOS systems, by Hue, Jr. of Minneapolis, MN
+               (Zenith Z-100 and PC clones) v2.xx indicates network capable.
+  CitGrem      Citadel for MS-DOS by Gremlin.
+  CitK2NE      Citadel:K2NE for MS-DOS Machines by Alan Bowen, Vince Quaresima,
+               and Brian Riley.  Nets with Cit86, STadel and FIDOnet boards.
+  Cit86TI3.38  Citadel for the TI PC. Hue, Jr.s' Citadel with drivers for the 
+               TI PC provided by Robert Nelson ?  <note the ?
+  CitSim/WICAT For use with the Wicat multi-user mini
+  DD           Digital Dungeon - Citadel for DOS ? NEED MORE INFO !!!
+  ElfBBS       C86 net compatable written by Dino Nardini, in Turbo Pascal.
+               Runs on DOS type system.  Still in Beta-development
+  Fortress     Citadel for DOS systems by Chris Camacho (cmc)
+  <fnord>adel  Citadel for the Atari ST by Elim & Mr. Neutron
+  FUBARC       Yet another variation..........
+  Henge        StoneHenge for MS-DOS systems, by David Bonn of Seattle, WA
+  IdeaTree     for MS-DOS systems? by ProtoSoft, Inc.
+  MiniBin      room system (in BASIC?) by Glenn Gorman of Seattle, WA
+  MacCitadel   Citadel for the Apple Mac - by  Glen Heinz     
+  Cit2.16s     CP/M Citadel for the SONY
+  neoCit       neoCitadel, written in Turbo Pascal by Hue, Sr
+  Novucivitas  NEED ALL the information on this one too ...
+  SAC CIT      Another one that needs to be updated...
+  STadel       Citadel for the Atari ST by orc.
+  STadel-PC    Citadel for DOS systems by orc                              
+  STadel-Ami   Citadel for Amiga systems by Eric A. Griff
+  ST-Keep      Citadel for the Atari ST, by Andrew Studer
+  Unidel       UNIX/UseNet news reader, multiuser bbs, & UseNet Gateway
+  pseudo       Pseudodel for Apple
+
+                 ==========================================
+                  Headquarter Systems for Citadel Software
+                 ==========================================
+     
+          Software       BBS Name              Phone Number   Baud
+          --------------------------------------------------------
+          <fnord>adel    Secret Service,The    403-425-1779   2400
+          Citadel-68K    Images at Twilight    612-884-7951   2400
+          Citadel-86     C-86 Test System      612-470-9635   9600
+          Citadel-86e    ENY                   914-735-9362   2400
+          Citadel-K2NE   Jersey Devil, The     609-893-2152   2400
+          Fortress/PC    undermind             404-521-0445   9600
+          IdeaTree       ProtoSoft             206-932-7125   1200
+          Mac Citadel    MacCitadel Test Sys   213-820-4320   9600
+          ST-Keep        ST-Keep BBS           916-729-2968   2400
+          Unidel         Bitsko's Bar & Gril   801-269-0670   19.2
+     
+ (Primary Source: RSYS0691.LST)
+ (CitaHell's Source: NEWS9108.TXT by Dominic Duvall)
+
+
+                              ===============
+                              Special Thanks!
+                              ===============
+
+
+     I would like to thank the following for the use of documents, etc. 
+ bill.k for the use of the RSYS list to show PCP nodes.  Thanks to Dominic 
+ Duvall for the list of "home systems".
+
+                                   -EOF!-
+ to show PCP nodes.  Thanks to Dominic 
+ Duvall for the list of "home systems".
+
+                                 

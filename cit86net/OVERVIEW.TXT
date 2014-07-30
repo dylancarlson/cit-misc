@@ -1,0 +1,16 @@
+Net69 <-> Cit 86 Networking
+
+this archive contains the following files....
+	MSG69.BAS -- converts incoming MSGOUT packs from Cit86
+	69MSG.BAS -- converts outgoing MSG.69 files to MSGADD packs
+ 	69MAIL.BAS -- converts outgoing MESG.TMP files to MSGADD packs
+
+you will need to whip up some other batch files also....
+	one for the Cit86 sysop, TEST.BAT example included
+	one for converting the 69 packets
+
+and then some events....
+	one for calling up the Cit86 and exchanging packets
+	one for fetching
+	one for incorporating
+

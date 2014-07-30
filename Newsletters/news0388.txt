@@ -1,0 +1,638 @@
+Ÿ/*
+ * CITANEWS / The national newsletter about room-based BBS systems
+ * March 1988
+ * Assembled by Steve Yelvington
+ *         C86: Steve Yelvington @ Test System    US 612 866 1804
+ *          ST: Steve Yelvington @ Pell           US 612 377 9239
+ *      Usenet: ihnp4!meccts!stag!pell!Steve_Yelvington
+ *      Delphi: YELVINGTON
+ *  CompuServe: Don't bother; I don't read my mail there anyway
+ * This newsletter may be distributed freely. Contributions for the
+ * next issue may be uploaded at Test System, posted as a net message
+ * in the CitaNews room of any participating Citadel, or posted as 
+ * a net message on the STadel network.
+ */
+
+/*
+ * CITANEWS RETURNS
+ * Editor caves in and churns out another copy
+ */
+ 
+   The last issue of CitaNews was sometime last autumn. Did we say 
+monthly? (slap--> face).... Your humble editor has tried to find another
+sucker to assemble this monster, and has received a couple of nibbles,
+but nobody took the hook and ran with the ball. (Gag). So here's another issue.
+The next one will come out as soon as your humble editor has enough
+material to put it together. Want it monthly? Want your favorite
+system/software mentioned? Put together an article and upload it.
+ We ESPECIALLY need information from Seattle, from Stonehenge systems,
+from Inner Sanctum, from CitGrem (Gremlin's MS-DOS Citadel), etc.
+
+/*
+ * PROMOTE YOUR BBS
+ * Be sure you're listed in the national BBS list
+ */
+  
+ The national list of room-based BBS systems has been taken over by
+Bill Karpowicz @ Sinkhole Utopia US 203-873-8518. The deadline for 
+the monthly list is the 20th. SYSOPS ONLY should leave a message
+for Bill and it should include the following information:
+
+System name           number         bps   software    sysop             date
+Aardvark !            902-454-0199 o 1200  Cit86 V3    Stuart Glen       87Dec
+                                   ^
+                                   policy: o for open, etc.
+
+  Bill can be contacted at Sinkhole Utopia, Pell (US 612-377-9239) or 
+Funny Farm (US 317-842-7564).
+  The list is distributed as RSYSxxxx.LST, where xxxx is the date
+(0388 for March 1988, for example.)
+ 
+/*
+ * WHAT'S UP IN MINNESOTA
+ * New versions of STadel, Citadel-86, Citadel Plus
+ */
+   
+  Since the last issue of CitaNews, both STadel and Citadel-86 have had
+several upgrades in the 3.xx version series. Both systems now feature
+optional floor organization of rooms, more uploading/downloading protocols
+and enhancements to the file access system. STadel now has a built-in
+archive table-of-contents reader; C86 now inserts a file description in 
+the message that is automatically posted in a room whenever a user uploads 
+a file. There have been other changes too numerous for us to digest at
+the moment. (Networking is discussed in another article in this issue.)
+
+  STadel, which runs on any Atari ST, is available by mail from the author.
+His note: "Send me three disks (single-sided disks; If your machine will handle 
+double-sided disks, all you need to do is send me two disks) and a SASE (or 
+$8.00 and I'll buy the disks and the envelope) and I'll send you all the 
+various bits of STadel." Write to:
+      David Parsons (orc) 
+      2624 Bryant Ave S #2 
+      Minneapolis, Minn 55408 
+
+  Citadel-86, which runs on PC clones and the Zenith Z100, is available
+by downloading from Test System or Illusions in the Twin Cities. Here's
+a note from Hue, Jr.:
+  -------- --------- ---------  -------- --------- ---------
+   88Feb25 10:18 pm from Hue, Jr. @ C-86 Test System
+   C-86 SYSOPS, I am almost ecstatic to announce that V3.03 is available.  Due 
+to the extended time between the release of 3.01 and 3.03, (caused by various 
+problems) MM and I have taken the liberty of making an ARC file of CTDL.EXE, 
+CONFG.EXE (which is now at 9.7, fixing a number of problems), INCREM.12 & 
+INCREM.13, a real, true Operator's Manual, and various other gunk.  
+Essentially, this ARC file is good for upgrading any system at V3, V3.01, 
+V3.02, or V3.03 -- if you are at V3, the ARC file contains SETUP31.ARC, which 
+you should absolutely run before you do almost anything else. 
+   So, where can you get this, says you?  Well, of course it is available on 
+Test System in Latest Citadel.  However*, if you are going to request this 
+via the network, I ask that you request it from the room Update] on 
+Illusions, (612) 470-0093 300/1200/2400 (nets from 3:00 to 3:45 Twin Cities 
+time), because Test System is very* heavily into traffic these days. 
+   In particular, if you are doing backboning, you should get this. 
+   The name of the file that is in both Latest Citadel on Test System and 
+Updateon Illusions is CTDL303.ARC.  It's about 250K. 
+   Good luck, and thank ghod that's over with! 
+  -------- --------- ---------  -------- --------- ---------
+
+  Jay Johnson's Amigados Citadel-68K continues to be frozen in version 2.14,
+unfortunately. We heard earlier this year that he had returned to the
+compiler with the latest version of Hue, Jr.'s C86 source code, but then
+we heard otherwise. Jay's system, the Phoenix, has a new number: 612-739-6953.
+Amigados Citadel is available for downloading there.
+
+  Corvair's Citadel Plus for the Commodore 128's CP/M mode is being 
+enhanced; Corvair is working to install C86-compatible networking.
+Corvair reports that the best way to get a copy is by contacting a beta
+tester, such as Janus @ Black Service US 612 774 0133. Corvair's
+Garage is down for the time being.
+
+  We haven't checked in awhile on the status of Hue, Sr.'s NeoCitadel,
+a Cit-alike written in Turbo Pascal. Maybe next issue. If you're interested
+in NeoCitadel, contact Hue, Sr. @ Supercomp II, US 612 431 1107.
+
+/*
+ * WHAT'S UP IN CALIFORNIA?
+ * Sacramento Citadel activity
+ */
+ 
+  A group of Sacramento BBS operators has been working on upgrading
+the old CP/M Citadel in the direction of Citadel-86. We had a note
+here about the project, but it seems to have slipped off the disk.
+Sacra-mentors: An article for CitaNews would be appreciated.
+
+/*
+ * MN-BASED CITADEL NETWORKS EXPAND AND DIVIDE
+ * Incompatibilities arise, but the message traffic still grows
+ */
+
+  It wasn't long ago that the first Citadel network message jumped
+across the Canadian-American border on a connection between STadel
+systems in Minnesota and Nova Scotia.
+
+  Now there's a steady flow of international message traffic,
+with STadel and Citadel-86 systems located throughout the United
+States communicating with their peers in several Canadian provinces.
+There's even a STadel node in Milan (Milano), Italy, called ST-Log
+that networks intermittently with Pell in Minneapolis.
+
+  Here are two network maps. The first is from STadel's point of view;
+the second is from Citadel-86 Test System. If your city should
+be indicated and isn't, contact CitaNews.
+
+.-----------------------------------------------------------------------------
+.
+.                Edmonton, Alberta --- Calgary, Alberta
+.                        \                    \
+.     Portland ___________\_________________ Mpls _______________ Connecticut
+.                                  /           |\         \            /
+.                                 /            | \     Lancaster, PA. /
+.               Salt Lake --- Denver           |  \                \ /
+.                 City          /              |   \ Indianapolis --\
+.                    \         /               |    \               New Jersey
+.                     \       /                |   Knoxville
+.                      Phoenix                  \_______________.... Milano
+.                                                                    Italy
+.-----------------------------------------------------------------------------
+.   Edmonton is:  The Secret Service, The RRrrrRRROck!, Computer Works,
+.                 Chaos II (C-86), and the Round Table.  These systems net
+.                 via Chaos II (2400 baud)
+.   Calgary is:   Poopsie (2400 baud)
+.   Mpls is:      C-68 Test System (C-86), Pell, **POOF**, Midiapolis,
+.                 Ewetwo, Images_Minnesota_US (C68K), The Phoenix (C68K),
+.                 Haven II (C68K), and First Rays. These systems net via
+.                 Pell (2400 baud), except for Edmonton, which nets via
+.                 C-86 Test System (2400 baud).
+.   Portland is:  smiley, 3cpu, Co-op, Amigaint (C-86), TGC (C-86). These
+.                 systems net via smiley (2400 baud).
+.   SLC is:       Gateway, Primordial Ooze (C-86) These systems net via
+.                 Gateway (2400 baud).
+.   Denver is:    FWBBS.DEN, The Pot of Gold.DEN.  These systems net via
+.                 FWBBS.DEN (2400 baud).
+.   Phoenix is:   JS BBS, BBR BBS.  These systems net via JS BBS (1200 baud).
+.   Connecticut is: Sinkhole Utopia (2400 baud).
+.   Indiana is:   The Funny Farm, Cuckoo's Nest (C68K), Luna Free State.
+.                 These systems net via the Funny Farm (2400 baud).
+.   Knoxville is: STone Ground (1200 baud).
+.   Lancaster is: Rabbit Hutch (1200 baud).
+.   New Jersey is:The Gateway (1200 baud).
+.   Milano, IT is:ST-log [the official Atari Italy BBS!] (1200 baud)
+.-----------------------------------------------------------------------------
+
+ <88Feb14>
+
+ Geographical topology in text "graphics"?  Ya gotta be kidding!  Oh, well,
+here goes...
+
+                --------
+               |Edmonton|
+                --------
+
+           Calgary
+                              _                                _/-\   ----
+ |---------------------------| |________/---                  /    / | NS |
+ |                                          \----------------/TJ's/   ----
+ |______                ---------      ------                    /
+ |      |              | TC Area |    | MICH |                  /
+ | OR   |               ---------  --  ------       ---------   |
+ |-------------                   |IN|   Island    | NY Area |  |
+ |      | UTAH |                   --               ---------   |
+ | CAL  |------           Saint                            -----|
+  \     |---------                                        | SNJ |
+   \    | AZ area |                                        -----|
+    \   |---------                                              |
+     \----------------                                          |
+                      \             ---------------------\      |
+
+
+ Island ==   The Island of Vanderbilt U. (is this up?) (C-86)
+ Edmonton ==
+             Chaos II (C-86)
+             The Round Table (STadel)
+             The Rock (STadel)
+             Secret Service (STadel)
+             Computer Works (STadel)
+ Calgary ==
+             Arkham Asylum (C-68K)
+ IN is Indiana ==
+             The Funny Farm (STadel)
+             The Cuckoo's Nest (C-68K)
+             Meadow Party (C-86)
+ CAL is the entirety of California ==
+             Compucations of Santa Barbara (C-68K) [down?]
+             The Onion Fields (C-86 [modified])
+             Kat's Alley (C-86)
+ OR is Oregon ==
+             3cpu (STadel)
+             smiley (STadel)
+             Co-op (STadel)
+             Great Corrupter (C-86)
+             Amiga Intuition (C-86)
+ TJ's ==     Trader Jack's of Rhode Island (C-68K)
+ Saint ==    Saint Citadel of Kansas City, MO (C-68K)
+ NS is Nova Scotia, Canada ==
+             Lair (STadel)
+             AARDVARK! (C-86)
+ MICH (616 Michigan area) == 
+             Pentacate3 (C-68K)
+             Beach (C-86)
+             Arcadia (C-68K)
+ AZ Area is Arizona (602) ==
+             JS BBS (STadel)
+             Bert's Place (STadel)
+ UTAH ==
+             GateWay (STadel)
+             Primordial Ooze (C-86)
+ SNJ Area is Southern New Jersey ==
+             MorningStar Keep (C-86)
+             Galactic Keep (C-86)
+             Gateway (STadel)
+             Blue Ridge (STadel)
+             <other CitaNet nodes>
+ NY Area  == Spies (C-86) [down]
+             Utica College (C-86)
+             Camelot II (STadel) [down]
+             Secret Citadel (C-86)
+ TC Area is Twin Cities of Minnesota ==
+             Test System (C-86)
+             Images at Twilight (C-68K)
+             DogLink (C-86)
+             BackFence (C-86)
+             Corvair's (C-86) (temp down)
+             The Phoenix (C-68K)
+             Bad Sector (C-86)
+             Illusions... (C-86)
+             SuperComp II (NeoCitadel)
+             Pell (STadel)
+             SynTel (C-86)
+             Sanctuary (C-86) [down?]
+             Rainbow Bridge (C-86)
+             Haven II (C-68K)
+             Avalon (C-68K)
+             First Rays (C-68K)
+             New Eden (C-68K)
+             MIDIapolis (STadel)
+             Poof (STadel)
+-----------------------------------------------------------------------------
+  With this growth, the network's rudimentary message-routing
+capabilities needed enhancement. Citadel-86 and STadel both have
+changed, and the changes have brought about some incompatibilities.
+
+  STadel's current incompatibilities with C86 networking are: 
+  * STadel can receive a net call without being in net mode
+  * System password works differently 
+  * Long-distance roomsharing is completely incompatible 
+  * STadel offers private mail routing; C86 doesn't
+ 
+  Room-sharing among local systems is not affected; an STadel can be
+a ``peon'' client of a C86 backbone and vice versa, but a C86 system
+cannot communicate with an STadel system as a backbone-to-backbone
+long-distance relationship.
+
+/*
+ * ACCESS LEVELS, TIME LIMITS AND DOWNLOADING
+ * How much should a Citadel system support?
+ */
+
+  Citadel programmers have shunned the ``accounting features''
+included in other BBS programs as a matter of philosophy. Where other
+programs seem obsessed with secrecy, security levels and discouraging
+various user practices, Citadel has provided an open environment,
+encouraging user participation.
+
+  With the strengthening of Citadel's file-transfer capabilities,
+however, a number of system operators have asked for some sort of
+controls over system use, especially downloading. A number of user
+groups have considered STadel as a download system, but have balked
+at not being able to place controls on the amount of downloading in a
+single session.
+
+  Hue, Jr., and orc have been working on various forms of limits.
+Hue's approach in C86 is to limit the amount of time a user can spend
+downloading files; orc's is to limit the number of kilobytes of data
+that a user can download.
+
+  Another possible change orc has mentioned: "The network may be
+modified a bit so that the receiving machine sends back a site ID --
+I've found that when I call a system at the same time as a system
+calls me (this happens at least once/night), I lose a call.  And it
+can't be guaranteed that the site I'm calling is the site that is
+calling me...."
+
+  On a somewhat related topic, Royce Howland in Alberta reports a
+dangerous side effect of the tremendous increase in network traffic:
+a system's temporary net files may overwhelm its disk capacity: 
+
+   His report: "My board recently got swamped by a huge net-transfer
+from Chaos II. Chaos apparently hadn't gotten through to Test System
+for a night or two, and thus when the connection was finally made,
+there was a huge amount of net traffic to be passed along.  Now,
+unfortunately, I didn't have enough free space in my net directory to
+handle the volume.  So things blew up.  Aide> never said a word about
+what had happened.  Since I'm a pretty savvy guy (:-), I figured out
+what had gone down.  But others might have trouble (indeed, one node
+of our swarm had exactly the same recurring problem, and didn't know
+what was going on...so the Sysop dropped off the net)." 
+
+  
+ 
+
+/* 
+ * UNIX CITADEL: ROOMS WITH MULTIPLE USERS? 
+ * Taking a port to multi-task 
+ */
+
+   No, Unix is not the word for those fat little guys who guard the
+harem.
+
+   Unix is a trademark for AT&T's multiuser, multitasking computer
+operating system. Versions and clones of Unix run on machines as big
+as the Cray-2 supercomputer and as small as a PC. It's especially
+popular in scientific/technical environments.
+
+   Unix has a legion of almost fantatical supporters who have been
+predicting for years that Unix would sweep the industry. Now they may
+be right. IBM's PS/2 and Microsoft's OS/2 have thrown the PC industry
+into disarray just as Unix-based systems preparing to bloom: Apple's
+Macintosh A/UX, Steve Jobs' NeXT system and a flood of (relatively)
+cheap high-powered workstations from Sun Microsystems. Atari Corp. is
+offering Idris for the ST and claims it will sell a 68020 or 030-based
+Unix box for networks, as well as its mysterious parallel-processing
+Abaq, which will run a Unix-like operating system called Helios.
+
+   Unix- and Xenix-based BBS systems are beginning to show up all
+over the United States. The quality of the BBS software varies rather
+widely. Some sysops, determined to reinvent the wheel, seem to be
+trying to make one that's square. We're seeing not only menus and
+numbered messages, but also disastrous attempts at implementing
+full-screen message editors.
+
+   Fortunately, there are reports of projects to port Citadel to
+Unix. It's a natural matchup. After all, the C programming language
+-- the basis of Citadel -- was invented so that the Unix operating
+system could be written.
+
+   David (orc) Parsons, author of STadel, has been tinkering with
+such a port for months. Now he has acquired an AT&T Unix PC and says
+he'll convert the latest version of STadel as soon as it's debugged.
+(He's also mentioned that he may create Amiga and Macintosh versions
+of STadel.)
+
+   We also recently saw this note about another Unix port:
+   --------   --------   --------   --------   --------   --------
+   88Mar02 3:22 pm from Peter Clark
+It's running on my private voice line right now.  I'm gonna set up a board 
+soon (a proper 24 hour one) in England, and you will all be able to call it.  
+As fer detecting CD there is no machine specific stuf, I initialise the modem 
+and set it into an endless loop like this: 
+  Start 
+  | KeyAtConsole 
+  |      | 
+  Y      N 
+  |      | 
+ IsQuit?  - IsMsgFrmModem? 
+  |               | 
+  Y  N           Y     N 
+  Q  ToStart   FndBaud  ToStart 
+
+   88Mar02 3:24 pm from Peter Clark
+Incase U didn't understand my msg, I loop round looking for key from console 
+or modem message.  It the key at console is quit then I drop to Unix/Xenix.  
+If the modem sent a message, then I look to see (in a user defined table) 
+what bauds are valid and what was reported.  Else, I just loop endlessly for 
+ever and ever and ever and ever waiting for a caller.  Else it's just a 
+normal Citadel-86.  
+   --------   --------   --------   --------   --------   --------
+
+   Unix is a multiuser system, but Citadel running under Unix would
+not necessarily support multiple users at once. Citadel and its
+derivatives are designed as single-user programs.
+
+   The Amiga version, Citadel-68K, runs in a multitasking
+environment, but only one caller can use the system at a time.
+Similarly, Citadel-86 can be run under DoubleDos on a PC Clone.
+We have had conflicting reports about running Citadel-86 under
+DesqView; we hope for a full report in the next issue of CitaNews.
+
+   STadel can be run in ``background'' under Amulti, a shareware
+multitasker, and probably under Beckemeyer Development Systems' Micro
+RTX as well. Jeffrey McArthur @ Gateway has volunteered to be a
+tester/victim running STadel as a background task under RTX/
+Multitasking C Shell and from Gulam with MX2, another freeware
+multitasker.
+
+   In these schemes, the system operator can run one or more other
+programs concurrently -- perhaps a text editor or a compiler.
+
+   Creating a true multiuser BBS that adheres to the Citadel command
+and room structure probably would require a major rewrite. That's the
+approach being taken by Morning Star in the Twin Cities:
+   --------   --------   --------   --------   --------   --------
+   88Feb23 2:11 am from Morning Star @Haven II
+   I have recieved various inquiries about my working on a new 
+Citadel program. To everyone wondering: Yes I'm working on a Unix Citadel 
+(unidel) and I am making progress on it. I'm not sure when it'll be 
+up, because I am doing the whole thing from scratch i've looked at the Citadel 
+source code (just once) promptly freaked, and decided 
+ if I wanted to learn C better, I needed a project.. 
+  well.. 
+  Another thing, various people have listed Grand Central Station as a bbs 
+ well its not (yet) it does answer the phone, but it's a Unix system and
+we have people that do* use it remotly. if you want to call it, log on as
+guest and leave me validation info. I'll be getting back to you when 
+the bbs goes up.. 
+ I just thought I'ld let everyone in... 
+   --------   --------   --------   --------   --------   --------
+   There probably are other, similar, projects under way. CitaNews
+would like to hear about them.
+
+/*
+ * TAPPING INTO A WORLDWIDE NETWORK
+ * STadel merges Usenet conference with Citadel structure
+ */
+
+   Networking bulletin board systems pale in comparison to the ``real
+nets'' -- Usenet, BITnet, ARPAnet and their relatives. These networks
+connect mainframes and minicomputers at literally thousands of
+universities, research centers and private businesse s. Usenet alone
+has more than 5,000 installations. Each of these networks has
+``gateways'' to the others, and collectively they constitute a truly
+global computer network.
+
+   What gets networked? Mail is an obvious answer, but, for many
+users, the most interesting part of these ``wide-area networks'' are
+the public conferences. There are conferences on a wide variety of
+subjects, many (but not all) related to computers. To participate in
+a conference, you ``subscribe'' by registering with a conference
+moderator, who puts you on an electronic mailing list. Thereafter,
+messages ``mailed'' to the conference are ``echoed'' to you, the
+subscriber. Some conferences are collected and edited into digests;
+some conferences are available only as digests (sort of like
+electronic magazines.)
+
+   Usenet, the wide-area network of Unix and compatible systems,
+consists of automated file transfers among machines running UUCP
+(Unix-Unix Copy Program) or a compatible ``mailer.''
+
+   Generally, these wide-area networks are available only to people
+with university or other connections to mainframe and large
+minicomputer systems. Recently several compatible programs (such as
+UUPC) have allowed personal computers to gain access to the nets.
+
+   STadel, the Atari ST version of Citadel, has had Usenet mailing
+capability for many months through UUCALL, an external program that
+STadel can run at scheduled times. Recently David (orc) Parsons added
+a feature that merges Usenet conference messages i nto a Citadel
+discussion room.
+
+   The feature was tested for a week in February 1988 as messages
+from Usenet's comp.sys.atari.st conference were channeled into a room
+of that name at Pell (US 612-426-1374). The UUCALL program cleans the
+messages of Usenet's long and complicated header fields, then enters
+them into the STadel message base as if they came in from another
+networked STadel system.
+
+   It was great, but there are drawbacks. Orc turned off the feature
+after the test, since the tremendous volume of messages can overwhelm
+the rest of the BBS. Another potential drawback is the responsibility
+a sysop must bear for the messages entered ont o the network. If
+public BBS systems develop a reputation as sources of problems for
+the network, it may become difficult or impossible to obtain a Usenet
+connection.
+
+   Many major cities have Unix user groups that can provide aid and
+advice on setting up a Usenet node. Another source of information is
+the computer science department of any university.
+
+   For those who already have Usenet connections, Parsons' network
+address is orc@pell.UUCP or ihnp4!meccts!stag!pell!orc
+
+
+/* 
+ * INFECTION, DESTRUCTION AND A MEDIA SCARE 
+ * Invasion of the computer viruses 
+ */
+
+    ``It could be a science-fiction nightmare come to life,'' warns
+the New York Times. Kevin Kelley, an editor of the Whole Earth
+Review, likens it to AIDS. What is it? The recent outbreak of
+``computer viruses'' embedded in public-domain and shareware
+programs. The outbreak has been getting headlines in newspapers that
+look like something out of the National Enquirer.
+
+   For years, system operators have been on the lookout for ``Trojan
+horse'' programs that pretend to be harmless utilities, then turn
+malevolent, performing such acts of vandalism as reformatting the
+user's hard disk.
+
+   Computer viruses are potentially even worse: Like biological
+viruses, they can replicate themselves and attach themselves to
+unsuspecting ``hosts,'' generally burrowing into the operating
+system. 
+
+   Two relatively innocuous virus-like programs have touched off a
+storm of news coverage recently.
+
+   The first, dubbed the ``Christmas virus,'' was really just an
+automated electronic chain letter, a Christmas greeting that
+instructed the user to type ``Christmas.'' That action prompted the
+program to dip into the user's mailing list and send copies o f
+itself to every name it found there. The Christmas card was written
+by a West German student; it migrated to North America via BITnet and
+eventually found its way into IBM Corp.'s private network, where it
+reportedly flooded the system with trash mail and brought the
+network to a virtual halt.
+
+   The Christmas card wasn't quite a virus because it didn't
+``infect'' other programs. The Macintosh ``Church of the SubGenius''
+virus, however, is real, if benign. It infects the system files of
+any Macintosh that is used to run the program it uses as i ts
+``disease vector.''
+
+   The SubGenius bug's programmers publish a magazine called MacMag
+in Montreal, Canada. On March 2, the virus is scheduled to become
+active and display this message: ``Richard Brandow, publisher of
+MacMag, and its entire staff would like to take this opp ortunity to
+convey their universal message of peace to all Macintosh users around
+the world.'' Programmer Peter Lount called the virus an artistic act
+intended to celebrate the anniversary of the introduction of the Mac
+II.
+
+   The programmers describe themselves as followers of the ``Church
+of the SubGenius;'' hence the name. Before you jump to conclusions
+about cults, you should know that there isn't any such thing; it's
+just a label that pops up occasionally, attached to v arious pranks.
+The ``church'' supposedly deifies a cartoon character named Bob who
+is something like Ward Cleaver with a lobotomy, and promotes a
+philosophy of life that is straight out of Zippy the Pinhead.
+
+   How did the Mac virus get distributed? The culprit was NEWAPP.STK,
+a Hypercard application that was available briefly on CompuServe. The
+virus supposedly detaches itself from the application, burrows into
+the system, and waits for March 2.
+
+   There have been vague reports of far more malevolent viruses
+attached to IBM-PC and Amiga software, and a lot of talk that viruses
+will bring an end to public-domain software distribution and threaten
+the existence of wide-area computer networks. Some corporations, such
+as Hewlett-Packard, are said to have banned PD and shareware.
+
+   Is this real? Or just a scare? If you've encountered any viruses,
+CitaNews would like to know.
+
+
+/*
+ * ON THE LIGHT SIDE
+ * Some daffynitions and doggerel
+ */
+
+ The following was brazenly stolen from ANUG.WIR, the Atex News Users
+Group newsletter.
+
+    COMPUTER GLOSSARY
+
+    BASIC: Computer language used for generating errors. Most billing
+programs are apparently written in BASIC.
+    Crunch: Noise made when putting a floppy into a disk drive.
+    EBCDIC: Security code for IBM computers. Means ``Erase, Backup,
+Chew Disk, Ignite Cards.''
+    Language: A system of organizing and defining syntax errors.
+    RAM: Acronym for ``randomize all memory.''
+    Scroll: What the instructions do when you are trying to read them.
+    State of the Art: Undefined.
+     
+     A POEM
+     ``Under a spreading computer room,
+    The operator stands.
+    The op, a slightly man is he,
+    With pale and delicate hands.
+    And the muscles of his scrawny arms
+    Are strong as rubber bands.''
+     
+    (Heard any good ones lately? Send 'em to CitaNews.)
+
+/*
+ * PARTING SHOT
+ */
+
+  Is CitaNews' publication schedule highly irregular? You bet! Want
+to see more? Write something. This works just like a BBS: You get out
+of it what you put into it.
+
+  CitaNews is especially interested in hearing from sysops and users
+of Protosoft and Stongehenge.
+
+  Upload your contribution to Citadel-86 Test System, US
+612-866-1804, or enter it as a net-message in the CitaNews room on
+any participating C86 network node. CitaNews also monitors the
+ST-networked STadel and net.gossip rooms, or you can send private
+mail to: 
+     Steve Yelvington @ Test System US 612 866 1804 (Citadel-86)
+     Steve Yelvington @ Pell US 377 3469 (STadel)
+     ihnp4!meccts!stag!pell!steve_yelvington (Usenet)
+
+
+/*
+ * END OF FILE
+ */
+                                                                                                        

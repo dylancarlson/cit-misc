@@ -1,0 +1,21 @@
+the following modifications are quite necessary...
+if you don't then may a thousand camels poop on your head...
+
+
+MSG69.BAS
+
+  line #50   -- name of the incoming filename
+  line #70   -- name of the incoming node
+  line #830  -- name of the incoming node
+  line #6160 -- our nodename
+
+
+69MAIL.BAS
+
+  line #60  -- outgoing nodename
+
+
+69MSG.BAS   
+
+  line #60  -- outgoing nodename
+  

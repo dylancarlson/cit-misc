@@ -1,0 +1,591 @@
+	********
+	CITANEWS/A national newsletter for room-based BBS systems
+	********
+	Issue No. 3
+	July/August 1987 (grand combined issue)
+	
+	Compiled and sort of edited by Steve Yelvington 
+	(George Jetson @ The Lake US 612 426 1374)
+	
+	In this issue:
+	
+	* FCC PROPOSAL THREATENS COMPUTER COMMUNICATIONS
+	* A CITADEL-LIKE SYSTEM FOR THE APPLE II
+	* A COMMERCIAL CITADEL FOR THE COMMODORE 128
+	* SECURITY FOR THE CITADEL-86 NETWORK
+	* TURBO HEAVEN AND BAD JUJU
+
+BUT FIRST, A NOTE ABOUT CITANEWS
+
+	This is the third "monthly" issue of CitaNews, an electronic
+newsletter for users and operators of room-based BBS systems.
+Submissions for the next issue may be made at the Lake (US
+612-426-1374), which maintains somewhat erratic hours but is up most
+of the time. The Lake is in networking mode (C86-compatible) from 3
+a.m. to 3:45 a.m. daily, and can handle net-uploads and downloads.
+For various reasons, this issue combines two months, but we hope
+to be better in the future.
+
+	We would like to run, in a future issue, a complete list of
+room-based BBS software, authors and where to obtain the programs. If
+you have written such a system, please contact us at the Lake.
+
+  
+...AND A PLUG FOR ANDY MEYER'S LIST
+
+	Andy Meyer is maintaining a comprehensive list of room-based
+BBS systems. If you're a sysop and you're not on the current RSYS
+list, you can contact Andy at Sony Technical Citadel, US
+201-930-6483. He also can be contacted through the shared sysops'
+room mentioned above. Andy wants to know the system's name, number,
+hours, policy (open, closed, etc.), and software including version
+number. For the preferred format, see the current RSYS list.
+
+FCC SETS ASIDE COMPUTER FEE PROPOSAL
+
+	In June, the Federal Communications Commission proposed -- in
+its words -- "elimination of interstate access charges exemption for
+enhanced service providers." That gobbledegook really meant that the
+FCC wanted to allow local telephone companies to collect an "access
+fee" from computer data transmission services and data retrieval
+systems (such as CompuServe, GEnie, Tymnet and PC Pursuit). This fee
+would be above and beyond the charges these services already pay for
+local telephone lines, and would have added $4.50 to $5.40 per hour
+to the cost of those services.
+
+	PC Pursuit, which lets folks like us call cross-country for a
+very low monthly fee, would simply have been shut down. Home and
+noncommercial computer users would have been economically booted out
+of nationwide telecommunications.
+
+	Thanks to a blizzard of paper from computer users directed
+against the proposal, the Federal Communications Commission has
+backed down for the time being, according to a Citadel network
+message from Vince Quaresima at K2NE Software. We'll continue to
+watch the situation.
+
+
+SETTING UP AN AMIGADOS CITADEL
+
+	If you have not been able to get Amigados Citadel-68K to run,
+try placing "Stack = 20480" in your startup sequence. This seems to be
+the single biggest stumbling block to the program. If you get an error
+message "unable to find ctdlbad.sys," ignore it; the file is not
+crucial. These two points have generated so much difficulty that Jay
+Johnson has added them to the opening banner at the Phoenix, the home
+base of Citadel-68K.
+
+	While the Phoenix continues to operate, Jay has withdrawn from
+active participation and the future of his Amiga Citadel program is unclear.
+
+
+MODEMS AND CITADEL ON THE ST
+
+	A number of new sysops have had difficulties getting their
+modems to work properly with Citadel-68 (st), more popularly known as
+STadel. The key usually is the fact that STadel relies on hardware
+for carrier detect and forces the modem to hang up by dropping the
+DTR (data terminal ready) signal. These signals are transmitted by
+dedicated pins in the serial connection.
+
+	Assuming that you have a proper cable for your modem, the
+first thing you should check is the DIP switches. Most modems are
+delivered with these functions disabled or "forced on," as they are
+not essential for calling out with most terminal programs.
+
+	If you have an Avatex HC modem, all the switches should be up
+(off) except for 3 and 8, which should be down (on).
+
+TURBO MAGIC AND BAD JUJU
+
+	Hue, Jr., author of Citadel-86 for PC compatibles and the
+Zenith Z-100, thought he had died and gone to heaven when he began
+converting the program from the C86 compiler to Borland's new Turbo C.
+Code size shrunk dramatically, the compiler ran like a rocket and the
+programming environment was a dream.
+
+	After a couple of weeks, it began to appear that heaven was
+not involved at all. Some installations reported savage bugs --
+private mail popping up in public rooms, for example. The new code
+would run perfectly on one machine, then go insane on another. It
+wasn't simply a matter of "IBM compatibility;" the Z-100 installations
+did not experience the worst of the problems. It was, Hue declared,
+Bad Juju.
+
+	Work is proceeding -- slowly -- on rooting out whatever Turbo
+library bugs or variations from C86 might be responsible for the
+problems. It has prompted Hue to threaten to spend the rest of the
+summer at the beach.
+
+ SECURITY FOR THE CITADEL-86 NETWORK
+
+ Citadels tend to be open systems with little or no "access level"
+and other "system security" nonsense. users for little purpose; BBS
+users are a much nicer group of people than the general public would
+believe.
+
+ However, it only takes one malevolent, socially retarded jerk to
+screw things up.  Such a twit recently surfaced in the Twin Cities,
+posting an obscene counterfeit network message using the name of
+another user.
+
+ As a result, the Citadel-86 network is being modified to allow
+(optionally) a secret system password requirement that is exchanged
+by each networking pair of Citadels. This modification is being
+installed in both Hue, Jr.'s Citadel-86 and orc's STadel software.
+
+  
+A BLURB ON BABEL 
+
+	T'an T'u is well-known to most Seattle users of Citadels;
+he's been a sysop about as long as anybody. He runs a multiline BBS
+called Polarserv; his software is called Babel, and it runs under the
+multitasking operating system Unix.  Here's a note he posted at the
+Lake.
+
+   87Jun05 12:05 am from T'an T'u
+  Hiya folks; saw the citanews on a local BBS here in Seattle, and thought I'd 
+drop a note on some work that I've been doing that might be interesting to 
+Citadel hackers.   
+   
+  There are several BBS networks out there that're running; one of the largest 
+in Seattle is the Stonehenge network, a net of Citadel derivatives that allows 
+the automatic xfer of files, messages and commands (to be executed on the 
+remote node) from one 'henge node to another.   
+ 
+  I 'ported Citadel to Unix 5 two years ago, and have been running a 
+timesharing system for the last 8 months with three Citadels online, serving 
+as the main message centers for technical stuff, conversations about games 
+(the main stock-in-trade of the system) and general topics.   
+
+  To increase the amount of interesting stuff on my system, I wrote a 'henge 
+net interface, so that my system could send & recieve messages from any 
+stonehenge node, and I've written a readnews parser to be able to input 
+messages from selected (Usenet) news groups into the message base.   
+
+  I'm interested in the uucp-compatible stuff.  What I'd like to do is get 
+someone with a unix machine in the midwest and the east coast both.  I get a 
+few hundred K of messages a week now from the hengenet & usenet, and keep them 
+online in citadel message format; is there any interest in having me bundle 
+these up into a message & xferring it to another system?  (I suppose we could 
+even mail them via Usenet, but I am loath to tie up usenet resources.  )  What 
+would work best is to find someone with a few meg (about 10) free, and 
+preferably a Unix machine, who's conversant with parsing and would like to do 
+some work with networking, and I'd feed them directly from my machine.  The 
+first step in a nationwide network with real response times.   
+
+  Comments? 
+  I can be reached at: 
+   
+  uw-beaver!microsoft!bruceki  
+  or, direct to polarserv,  
+  uw-beaver!tikal!camco!happym!polari!bruce (or root, or admin) 
+   
+  Or, voice, 206-782-4444 after 8pm pdt.  Y'all can probably guess where I 
+work; please do not call me there.   
+ 
+
+ AN AMIGA GATEWAY TO USENET
+
+	Compucations is an Amigados Citadel-68K system in California.
+Sysop Craig Lindstrom has developed a program that lets Citadel
+exchange messages with Usenet. 
+ 
+	 We don't have any feedback yet on how well it works.
+ Craig can be contacted at US 805 967-0895 at up to 2400 bps.
+
+ 	The following message was received at Images in Twilight, another
+Amiga system in Bloomington, Minn.
+ 
+   87Jun02 12:59 am from Craig Lindstrom @Compucations
+   ******* GREAT NEWS ******* 
+  I have set up a UUCP gateway for temporary testing.  It is up and
+running as of 06/02/87.  
+  The UUCP netserver will be running every morning from 3am - 4am
+PST. 
+  Here's how it works:  
+  To leave a message on UUCP all you have to do is put the
+routing(bang style) code in the message you want to go thru UUCP.
+("@%%" presage thru UUCP to Scott at Berkeley, all I have to do is put
+the following line IN the message (anywhere). 
+  @%%ucsbcsl!ucbvax!scott 
+  UCSBCSL must always be the starting route.  The "@%%" tells the
+netserver that the next set of characters is a UUCP address.  It then
+checks its validity and if its valid, it will submit the message thru
+UUCP. 
+  (This message will now be sent to ucsbcsl!ucbvax!scott, since I put
+a @%%<ADDRESS> in this message. 
+  You can do it in ANY room (if you want tos the message to SYSTEM,
+then put the address of the person ANYWHERE in the message using the
+@%% qualifier. 
+  This may seem a bit confusing (it is a little) especially when Im
+explaining it. 
+  People at Images: You may also send UUCP messages, Enter a NET
+MESSAGE on Images, and just place @%%<UUCP ADDRESS> anywhere in the
+message and the netserver will pick it up at 4am and send it.
+  MAKE SURE THAT "UCSBCSL" is the starting router node. 
+  If I put another UUCP address in: @%%ucsbcsl!ucbvax!kathy 
+  Now this message is going to go to Kathy on UCBVAX.. But I don't
+have any clue if Kathy is there, so I'll set it back to Scott.
+@%%ucsbcsl!ucbvax!scott The @%%<ADDRESS> will not appear in the UUCP
+message so don't worry about that. 
+  Now.... You can also send a message from UUCP to Compucations. 
+  The address for this BBS from UUCP is
+ucbvax!ucsbcsl!stiils!compucations 
+  You can direct a UUCP message to a particular person by putting a
+@%%n <USERNAME> from UUCP to Compucations, I would place a @%%nCraig
+Lindstrom. Anywhere in the UUCP message.  
+  It will then send it to Craig Lindstrom on Compucations in the
+Mail> room. 
+  You can also have it put a UUCP message in ANY room.  
+  Just place a @%%rLobby. anywhere in the 
+  A "." is the terminator for the @%%n specification. 
+  A "." is also the terminator for the @%%r specification. (It's Case
+insensitive by the way) 
+
+
+ 
+ 
+RUNNING CITADEL ON A COMMODORE 128
+
+	There are two ways to run Citadel on a Commodore 128: use the
+CP/M mode to run an upgraded version of Cynbe ru Taren's original
+Citadel, or get Citadel-128 from K2NE software.
+
+	Citadel-128 is not Citadel, strictly speaking; it's not
+written in C and it's not free. However, it looks a lot like Citadel
+and is very popular in New Jersey. The price is fairly low.
+
+	Vince Quaresima @ Jersey Devil Citadel provided the following
+description of the software:
+ ---
+ The Citadel-128 BBS software  is available for purchase for either floppy-
+disk- or hard disk-based Commodore 128 systems. The software is totally
+configurable by the system operator, at any time, and is virtually 100%
+self-contained. It includes a complete set of system utilities which may be
+called up from the system console, which eliminates the need to "take down"
+the BBS, or loading another program to perform system maintenance.
+ 
+FLOPPY VERSION:
+ 
+The floppy version will support up to 4 drives, at least one of which MUST
+be a Commodore-1571. The others may be 1541's or clones of the 1541.  We do
+not recommend the use of IEEE drives, but they MAY work (these have not yet
+been tested).
+ 
+The floppy version allows up to 26 room-slots, and supports "our version"
+of networking (see .help LOCALNET for more information).  Use of a printer
+is optional.
+ 
+Required hardware:
+ 
+     one Commodore C128,
+     at least one Commodore-1571 drive,
+     one of the following modems:
+          Commodore 1650, 1660, or 1670
+               -or-
+          an RS232 interface and
+          any RS232C Hayes-compatible* modem
+          (Hayes Smartmodem 1200, Volksmodem-12 and Avatex 1200HC
+          have all tested okay.)
+ 
+     * Hayes-compatibility requires result codes 0, 1, 3 and 5 in non-verbose
+       mode, and must support DTR for end-of-session disconnect.
+
+HARD-DISK VERSION:
+ 
+Required hardware:
+ 
+     one Commodore C128,
+     one Commodore-1571 floppy drive,
+     one (or more) ICT DataChief hard-disk units (10 meg minimum).
+     one RS232C interface board and
+     one Hayes-compatible modem (see above).
+ 
+Modem support for the hard-disk version is limited to RS232C modems only,
+although rumor has it that the Commodore-1670 does work (I have not person-
+ally seen this, but one of our systems has tried it and reports that it
+does work, but not as reliably as a "real" modem).
+ 
+Hard-disk version supports 51 room-slots, networking ("our" way), and use
+of a config-overlay to set the system as "private", "controlled", or "open"
+as in the CP/M or MS-DOS Citadels.
+ 
+GENERAL NOTES:
+ 
+Citadel-128 is an EMULATION of a mixture of CP/M CITADEL, CITADEL-86 and
+IDEATREE (sorry, but they DO have much better ".A" commands, and most of
+them have been incorporated here).  The system is coded using BASIC 7.0
+with several machine-code overlays to handle modem I/O and fileserving,
+in addition to a totally machine-code "online terminal" (we do not use
+CHATmode as the terminal...at least, not yet).
+ 
+The price for either version is $49.95, and owners of the floppy version
+may upgrade to the hard-disk version at NO COST provided they supply the
+disks.  Upgrades are provided free, and are normally available for
+XMODEM downloading (the ML overlays are not available online, which helps
+us eliminate 'pirate' systems, since the code is useless without them).
+The package is provided with NO copy-protection and we encourage backups.
+ 
+We accept personal checks as well as bank or postal money-orders.
+In the case of foreign orders, payment must be in U.S. funds.
+Please specify which version (floppy or hard-disk) when ordering.
+Write to:
+ 
+     K2NE Software
+     PO Box 289
+     Chatsworth NJ 08019
+ 
+Or for more information, call The Jersey Devil BBS: 609-726-1565
+  
+ ------------------------------------------------------------------------
+ 
+ ANOTHER CITADEL-LIKE PROGRAM FOR THE APPLE II
+
+	Pseudodel has been around Minnesota's Twin Cities for a
+couple of years, but isn't well-known nationwide. Here's a history
+written by the author of the program.
+
+ 
+ PSEUDODEL -- A SHORT HISTORY 
+ By Shadow Warrior 
+  
+     Pseudodel, a derivative of Citadel for the Apple, originally started out 
+in April of 1985 as a program that looked more like Apple-Net than Citadel.  
+It had a menu-based structure with a very extensive "main menu" and a 
+rather rudimentary set of board commands.  In July of 1985, since the message 
+subsystem needed some more commands for more flexibility, the basic New, Old, 
+Forward, Reverse, and Goto commands were added, and the message section was 
+revised to take out some of the "klunkiness".  By the end of the summer, many 
+of the basic single-key commands of Citadel were in place, although from a 
+sysop's point of view, the system was a bit difficult to run.  (For example, 
+old messages from each room had to be removed by hand with an editing 
+program.  Each room had a separate message file, and rooms had to be created 
+and edited by hand.)  That fall, changes were made to make things easy for the 
+sysop and aides, such as implementing a common message file that automatically 
+deleted the oldest messages to make room for new messages.  By January of 
+1986, the program had reached most of its present form. 
+  
+     At its present state, Pseudodel supports all of the single-key commands 
+of regular Citadel except for Zforget, and many of the extended commands.  
+However, uploading and downloading are not available because of space 
+limitations.  The sysop commands are vastly different from regular Citadel, as 
+are some of the aide commands, but it shouldn't matter to the regular user.  
+Because of the Apple's slow DOS, disk operations are somewhat slower than 
+regular Citadel. 
+  
+     There are four current operating nodes of Pseudodel.  Second City, 
+the oldest, started on April 7th, 1985 as Splinter of the Mind's Eye BBS.  It 
+has been rather popular since that time, although most of the users come from 
+other Twin Cities boards and not from the Citadels. Wolf's Den, the second 
+site, started in February of 1986 with Cryo Ruggie as the sysop.  It has been 
+popular with a younger crowd and it has gained a reputation for laid-back 
+activity and occasional ruggishness.  Pavilion of Dreams went up in June of 
+1986 with The Saint as sysop.  It went down in March of 1987, but it is now 
+back up.  Pavilion of Dreams has been a place of serious discussion and 
+reflection of life, and one of the features is a "friends list" -- users may 
+post their phone numbers on a list of "friends", and when they do so they can 
+get access to the list. Aaron Propes put up a fourth node of Pseudodel, called 
+The Monastery, in January of 1987, but the system has not been up very much 
+because of modem problems and abusive users. 
+   Phone numbers of Pseudodels: (all area codes 612)
+   Second City: 533-9103, 300/1200 baud, 24 hours 
+   Wolf's Den:         432-7929, 300/1200 baud, 24 hours 
+   Pavilion of Dreams: 439-9656, 300/1200 baud, evenings
+   The Monastery:      (temp down) 300 baud only 
+  
+ --------------------------------------------------------------------------
+ 
+
+ STADEL: A MINIMUM CONFIGURATION
+
+    It's possible to run Citadel on an Atari ST with a single disk drive.
+ At the Lake, we run a a RAMdisk-based system by using a boot disk with
+ a batch file. COMMAND.TOS, a PD command-line program, is installed
+ as a TOS application bound to a .BAT file type. Clicking on any .BAT file
+ then runs both the interpeter and the batch.
+  
+  
+  BOOT.BAT includes the following:
+  
+  rtc12        (a utility that resets the system clock)
+  deskinit     (a utility that sets screen colors without CONTROL.ACC) 
+  del d:*.*    (clears any junk out of the RAMdisk)
+  copy a:\*.sys d:   
+  	
+  We then remove the boot disk, insert the runtime disk with CITADEL.TOS,
+CONFIGUR.TOS (just in case) and the .blb and .mnu files, and click on 
+CITADEL.TOS. 
+  
+  After running Citadel, back up the RAMdisk by swapping back to the boot
+disk and running SHUTDOWN.BAT, which contains the following commands:
+  
+  del a:\*.sys
+  copy d:\*.* a:
+  
+  This procedure leaves enough room on A: for net files, if needed.
+
+  Here's a very different method from Ken Badertscher that takes advantage
+  of a feature of GEM and the Atari ST's operating system:  
+ 
+  
+ Running STadel on a "plain vanilla" 520ST system
+ --------------------------------------------------------------------
+ Notes on saving disk space     Ken Badertscher (kbad@JS BBS) 87Jun27
+ --------------------------------------------------------------------
+ 
+   When Bert L. Summer (sysop: BBR BBS, US 602 246 8745) expressed concern
+over how much disk space his Citadel was taking on his 512K single-sided
+single-drive 520ST, I felt moved to lend a hand.  After all, the Citadel
+executables, system files, and helpfiles take up just about all the space
+on a 400k format single sided disk.  He was afraid he'd run out of room if
+he added the net files.  On phase BBS, I had a convoluted configuration
+that allowed me a whole floppy full of downloads and a humongous ramdisk
+chock full of system files, so I figured I could come up with something.
+ 
+   The trick is to fool Citadel and Configur into thinking that there are
+actually 2 drives in the system.  Anyone who has tried to open drive B:
+on a single floppy ST system is familiar with the alert box that pops up
+asking you to 'insert disk B in drive A:'; this is a normal function of GEM.
+So how to get Citadel and Configur to use it?  Just change the extenders to
+.PRG!  Then you can set some of the directories in your CTDLCNFG.SYS to
+b:\whatever.  Here's the setup:
+ 
+   You need two disks for your "tiny Citadel".  One disk is the boot disk,
+and should be labeled "disk A".  The second is the message/net/download disk,
+and should be labeled "disk B".  On disk A, set up your AUTO folder to do
+whatever; mine starts up my clock chip, turns off write verify, installs
+Dave Mumper's three-key coldstart rebooter, and most importantly, installs a 
+YARD ramdisk as drive D:.  You do need a ramdisk, use whatever one you like, 
+but I prefer YARD since it survives a warmboot, and if you have problems,
+it's easy to recover the system files on the ramdisk.
+   The other files that go on disk A are your #helpDir (containing all your
+help files, shouldn't use much more than 40k), and #sysDir (containing the
+room and log files, with a 50 user log, this uses about 60k), and CITADEL.PRG,
+CONFIGUR.PRG, CTDLCNFG.SYS and CTDLTABL.SYS (after you've configured).
+DESKTOP.INF will probably be there too, but I don't recommend having any
+accessories on the boot disk (unless you're using the Intersect ramdisk).
+Your ramdisk will have to be big enough to hold the #helpDir and #sysDir:
+150k should be plenty.
+   On disk B, all you need is a folder for the net and message files.  If you
+want to have downloads (or net file-requests), you can make the message file
+small enough to leave room on the disk for other files.  Otherwise, your
+#msgDir and #netDir can just be set to "b:" in ctdlcnfg.sys.  Since your
+message file is on a physical disk, you don't have to timeout to back it up,
+but you will need to back up the #sysDir to disk A periodically.  This scheme
+also keeps the net files on a floppy where they belong.
+   With the disks set up, all you need to do is edit the ctdlcnfg.sys to
+suit your tastes.  If you don't want to bother with directory rooms, you can
+set up a fairly large message base, since the net files won't take up much
+space on disk B.  You should also experiment with different size userlogs
+to see what you can get to fit on your ramdisk (you should be able to go as
+high as 200 users).  An excerpt from the ctdlcnfg.sys I used for testing:
+ 
+ ...
+ #define LOGSIZE 100
+ ...
+ #define MESSAGEK 100
+ #helpDir "d:\help"
+ #sysDir "d:\log_room"
+ #msgDir "b:\msg_net" /* note: drive B: */
+ #define MIRRORMSG 0
+ #mirrorDir "d:"
+ #netDir "b:\msg_net" /* same as msgDir */
+ #define CALL-LOG 1 /* if you want */
+ #auditDir "d:"
+ ...
+ 
+   Now, just boot of disk A, create a #sysDir on your ramdisk (and make sure
+you have a #msgDir and #netDir created on b:, if they're folders, configur
+will not* create them).  Double click on CONFIGUR.PRG, and you're off!
+Configur will read in ctdlcnfg.sys, you'll get the alert box to insert disk B,
+and it'll go off and create the net and message files on disk B.  When it's
+done, the alert will pop up again; insert disk A, and Configur will write the
+ctdltabl.sys to your boot disk.  IMPORTANT: before you run CITADEL.PRG, be
+sure to copy the #sysDir back to disk A!  Also make sure you've copied your
+#helpDir to the ramdisk.
+   Once that's done, double-click on CITADEL.PRG.  It will read in and delete
+CTDLTABL.SYS, the alert box will pop up and tell you to put in disk B, and
+voila! Citadel is up and running.  Whenever you go to exit the program,
+GEM will give you the alert to stick disk A back in, so Citadel can write
+the CTDLTABL.SYS back.  Now that wasn't that hard, was it???
+
+   There are only 2 drawbacks to this scheme, one is that when you execute
+Citadel or Configur from the desktop, they don't clear the screen. Big fat
+hairy deal.  The other "problem" is that Citadel doesn't explicitly enable
+the TOS cursor when it starts, so you have no cursor in the BBS.  This can
+be a bit distracting, but it's easy to fix if you have the source and can
+recompile it. Just add a call to enable the cursor somewhere in the startup
+code.  Otherwise you'll just have to live with it. It's really not all
+that* horrible.
+  
+ --------------
+  
+
+OTHER ST CITADEL NOTES
+
+	After taking some time off to enjoy the improvement in scenery
+that arrives with summer when Minnesota women put their parkas and
+boots into storage, orc has returned to the keyboard and resumed work
+on version 3.1. He says his primary stumbling block at the moment is
+that he can't quite remember what he was going to put into it, but
+that will come back.
+
+	Because tech talk and downloading threatened to overrun both
+Pell (US 612 377 9239) and the Lake, the STadel code has been removed
+from public directory rooms. The best way to obtain STadel executables
+and source code is to log onto either Pell or the Lake, .goto Mail,
+and ask orc for his real name and address. For a paltry $5, he'll mail
+you the whole thing on disk. That's probably much cheaper than
+downloading anyway.
+
+	Meanwhile, off in the great State of Washington, where you
+know it's summer because the rain is warm, a mutant ST Citadel has
+been spawned. Ganelius @ Inner Sanctum (US 206 363 8592) has converted
+STadel 3.0c from Alcyon to Mark Williams C, and begun tinkering with
+its innards. 
+
+	The most obvious change is the grafting of Dave Betz' ADVINT
+adventure game interpreter onto Citadel. Betz' ADVSYS game-writing
+system was described in the May issue of Byte, and has been available
+for the ST and MS-DOS systems for more than a year. It is an
+object-oriented language that makes it relatively easy to write an
+Infocom-style text adventure game. A "compiler" crunches object and
+verb descriptions into a set of data structures that are interpreted
+by the runtime program.
+
+	An additional Citadel command (V) causes the program to
+execute ADVINT, with its output directed to the modem port. On our
+recent visit, the interpreter was running a game based (loosely) on
+Citadel itself.
+
+	This may be good or bad, depending on your view of BBSing in
+general and Citadels in particular. It certainly threatens to chew up
+a lot of system time, and many sysops regard on-line games as an
+attractive nuisance, like building a swimming pool. You never know
+what sort of person it's going to attract.
+
+	Ganelius also has modified the file-transfer commands so that
+Citadel can invoke an external program to perform the process. The
+external routines were provided by Tom Zerucha of Southfield, Mich.,
+author of several programs for the ST that provide Ymodem batch,
+"windowed" Xmodem and Zmodem protocols, plus a kamikaze Xmodem variant
+that sends an "ack" in advance to speed up transfers on packet
+networks. Because of the number of options, downloading on Ganelius'
+system is menu-driven rather than command-driven. 
+
+	The software currently is labeled Inner Sanctum, a switch made
+after it was discovered that the name Pseudodel was already taken.
+
+---------------
+  
+  COMING NEXT MONTH IN CITANEWS:
+  
+	Who knows? Uploads are welcome at US 612 426 1374.
+	Until then, we're off in search of "Rooms with unread messages."
+
+--------------
+(End of file)
+
+  
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              

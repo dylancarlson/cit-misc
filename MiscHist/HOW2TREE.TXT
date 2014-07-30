@@ -1,0 +1,75 @@
+    # 8,834 of 8,834
+    Source id # is:  27,278
+    Path followed:   tr.sea!dfa.dtw
+    Source software: Citadel+/065pà166
+    Monday 04/24/95 06:25.47 AM (EDT) From Richard Goldfinder @ The Raft, 
+Seattle, WA, US {USA/WA/KING}, +1 206 861 9936 In bbs history>
+ Yes, GremCit is primarily from DragCit 3.12, with some ACit code (and code 
+from other sources) thrown in.  That's what Matt started with. 
+  
+ Gee, you didn't like the way the tree looked?!? 
+  
+ I thought that PsychoCit (derived from FredCit) was only on use on one BBS 
+(its namesake).  Just like RealmCit (derived from GremCit). 
+  
+ The requirements for getting on the tree were: 
+  1) In use for at least one year on a single BBS, or 
+  2) In use on one or more BBSes simultaneously. 
+  
+ On the alpha list of software, "Anticlimactic Teleservices Ltd" should be 
+changed to "Anticlimactic Teleservices" (no longer Ltd).  Additionally, if 
+you're going to slash CP/M, you should hyphenate MS-DOS.  Also, "Fred McClain" 
+should be "Fred McLain".  "Capt James T Kirk" can be fully spelled. 
+  
+ You have "Common" on the tree, shouldn't it be "Commons"?  (Grey Mouser) 
+  
+ Seems like there should be a line between FrogCit and Co-OpCit, since they've 
+had so much code sharing with each other (and to a lesser extent with FredCit).
+  
+ Titan was used more on a 130XE than an 800, as I recall.  He was using BASIC 
+XL for a while but I could swear he switched to BASIC XE.  I know that Titanic 
+required BASIC XE (not just plain BASIC). 
+    # 9,034 of 9,034
+    Source id # is:  216,883
+    Path followed:   tat.sea!tr!dfa.dtw
+    Source software: Citadel+/065pà166
+    Wednesday 04/26/95 12:09.51 AM (EDT) From Brent Bottles @ The Anticlimactic
+Teleservice, Seattle, US/WA/KING, +1 206 562 9792 In bbs history>
+The main source of GremCit 3.20 is DragCit 3.12, not Matt's port of DragCit 
+3.11 to MSC. 
+  
+ The second (ranked in order of amount of code) source of GremCit 3.20 is ACit,
+whatever version number Richard was using. 
+  
+ The third (ranked in order of amount of code) source is Matt's Citadel 1.xx 
+which DragCit was derived from. 
+  
+ Actually, I think that there might be more Stonehenge code in there than 
+Citadel 1.xx code. I'm pretty sure that Matt took the screen width formatting 
+type code out of Stonehenge when he rewrote it in /064. 
+  
+ If you want to make the tree really ugly (but perhaps more accurate), you can 
+node that ACit took a significant amount of GremCit code and put it into ACit 
+(net 1.69). 
+  
+ The code that I can think of that came from ACit to GremCit is: Auxmem stuff, 
+scroll-back buffer, and a whole bunch of minor little improvements here and 
+there. (Stuff like better .Read By user, perhaps #WYSIWYG, etc.) 
+    # 9,036 of 9,036
+    Source id # is:  27,835
+    Path followed:   tr.sea!dfa.dtw
+    Source software: Citadel+/065pà166
+    Wednesday 04/26/95 06:26.25 AM (EDT) From Richard Goldfinder @ The Raft, 
+Seattle, WA, US {USA/WA/KING}, +1 206 861 9936 In bbs history>
+ Atlas is descended both ACit and GremCit 3.20, so it should be lower on the 
+tree (if at all*).  The line connecting it should go all the way to it. 
+  
+ Part of the confusion stems from only one version of DragCit instead of two.  
+Some Citadels (e.g. MavenCit and possibly Neon Pagoda) are descended from 3.12.
+FrogCit, Co-OpCit, are descended from 3.11 (or 3.10?).  TwitCit and Elegia and 
+DragCit Rev.B are from still earlier versions. 
+  
+ There was another way to get on the tree that I forgot to mention: 
+  3) It is a direct link (line of descent) between two softwares on the tree. 
+ That's why DragCit 3.11 for MSC is on (it really wasn't very popular). 
+

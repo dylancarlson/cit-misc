@@ -1,0 +1,1053 @@
+   94|12|12 23:27 from Marty Zsitvay 
+ if i remember correctly, bruce king's software on polarserve was called 
+babel. never called it much, but it wasn't a bad room system at the time. he 
+was running a charles river data systems superbox V and it was pretty fast 
+compared to dinse's system. 
+
+   94|12|13 20:47 from Mitch Robinson 
+ MiniBin was written in TRSBasic, which itself was hight EXTENDED by Glenn 
+Gorman and Robert Dinse (of Eskimo fame).  All the machine language routines 
+were actually extensions to the built-in basic, so MB itself was written 
+fully in BASIC.  Worked damn good, for what it was.  The printout listing of 
+the MINIBIN source (basic part) was less than 200 lines in its' entirety! 
+
+     94Dec05 04:36:43 AM From Blain Nelson @ Blain's World (not!) BBS, Ferndale
+Freejack -- Andy is available on the Internet.  I've traded e-mail with him 
+once or twice.  I think he's on the Cit mail-list.  If you can't get ahold of 
+him through there, I'll look for his address in my sent-mail folder. 
+
+    94Dec04 18:40:35 PM From Twoflower @ The Fourth Tower, Olympia
+  
+ I'll answer as many question as I can remember, Freejack. 
+  
+ Andy was cerebus. and he did write Elegia, which he eventually turned into a 
+Citadel-styled shell for linux.  I do not know if he is still working on it (I 
+really doubt it,) since he is currently in the process of putting up a mud (run
+a machine that is owned by Z'ton, author of TwitCit, in fact.) 
+  
+ TwitCit was a decendant from 3.10, and Elegia 3.11 (I think.)  Z'ton (real 
+name Lou) was good friends with the Dragon until they had a falling out... They
+used to work together on DragCit. 
+  
+ Joe Broxson ran TGLC (The Greenlake Connection) then changed his BBS to C' 
+Hacker's Forum and changed software from early GremCit to DragCit.  Eventually 
+he became involved in the DragCit development.  I'm sure he ran his own version
+of it on CHF. 
+===whack it===              
+<Continuous +>
+  
+ Red Dorakeen was teaching himself C while playing with DragCit source code.  
+He eventually felt that he had made enough changes to put his stamp on it, and 
+ran several different BBSes before moving in with Saphyre and taking his system
+down.  He now lives in Quilcene, WA (aknowleged as the Middle of Nowhere by a 
+leading Citadel developer.) 
+  
+ Turtle! was Shane Johnson. 
+  
+ Mistress Mouse and her husband (I cannot recall his name) took Citadel source 
+code and hacked many of the features to come up with Citadel ][.  Most users 
+used to "standard" Citadel were put off by the changes, and the fact that MM 
+and her husband planned to market the software through their hardware retail 
+business.  The software proved buggy and unpopular, and I believe they gave it 
+to Turtle! who created M.O.D.E. from it. 
+  
+ Zen master and Jeremiah Johnson work on Co-Op Cit.  Zen master also does 
+FrogCit, which may or may not be Co-Op Cit with another name.  You would have 
+to speak to them about getting source (which I'd really doubt, personally.) 
+  
+ Hope that's enough (and all correct...  after years of the soap opera that is 
+Citadel things get a bit fuzzy.) 
+
+    94Dec06 00:56:04 AM From Little Nemo @ Slumberland
+  
+ I don't know what z'ton's up to now, but Slumberland used to run TwitCit. For 
+quite a while, even. And Shari's board ran it until quite recently, though the 
+board wasn't up the whole time. 
+
+    94Dec06 03:55:58 AM From Livia @ Amber, Bellevue
+ and roscoecit was actually called "neon pagoda" 
+
+    94Dec06 14:08:55 PM From JayDee @ Loka, @ TukwilaHell
+  
+  wasn't that George's (Kid C's) version of Cit that Shades of Blue ran on? 
+
+    94Dec05 23:14:25 PM From Pun master @ Age of Aquarius
+ Freejack: to address your first message... 1. I think so.. Joe ran C' Hackers 
+Forum, using his own code, though he shared code with Dragon and Ray.  2. not 
+really; the code which was going to make 'Kremlin' unique was an alteration of 
+DRAGON.C (hard-coded border lines) to feature Willun instead of Dragon.  Fred 
+always listed it even though I think it was only compiled once. 
+
+    94Dec06 21:55:05 PM From Counselor @ Blind Man's Bluff, Kirkland
+  
+ i believe Mistress Mouse's husband's name was Vern Bear.   
+  
+ And, yes, JayDee.   
+
+    94Dec06 02:21:33 AM From Ren @ The Institute, Sacramento
+hreheh,, Citrus Heights is a little 'burb here in Sacto..... 
+
+    94Dec04 20:56:51 PM From Freejack @ Digital Free America, CyberHell
+ 
+  _________               (Cynbe ru Taren) 
+ |         |                Citadel 2.00 
+ | Citadel |                     | 
+ | Family  |              (David Mitchell) 
+ | Tree    |                Citadel 2.??
+ |_________|                     | 
+                        (Bruce King/T'an T'u) 
+                            Citadel 2.10 
+       _________________________/|\_____________________________ 
+      /          /               |               \              \
+      |     (Kerry Kyes)    (Caren Park)    (Maher Maso)    (Andy Meyer)
+      |     Citadel 2.28    Citadel 2.25    Citadel 2.11    Citadel 2.16s
+      |          \______________ | _____________/ \________________ 
+      |                         \|/                                \ 
+      |                          |                             (Bob Perigo) 
+      |                          |                               BabeCit
+      |               __________/ \_________________                | 
+      |              /               \              \  [6]     (John Luce)    
+  (Hue Jr.)    (David Bonn)  (ProtoSoft, Inc.)  (Many sites)   *CopperCit      
+ *Citadel-86    StoneHenge       Ideatree       *New York/NJ         
+      |             |                           *East coast    
+      |        ____/ \_________________________________       
+      |       /             \             \            \ 
+      |  (Grey Mouser)  (Scott S.)  (Major Chaos) (Kalen Bonn) 
+      |    Commons       NeoLith      IronHenge    StoneHenge 
+      | 
+      \__________________________________________________ 
+        \                   \         \        \         \ 
+  (Gary Meadows)     (David Parsons)  |    (Stallion)    |--(Robert Nelson) 
+    SacCit-80             STadel      |  (Tony Preston)  |   Citadel-86/TI 
+        :         _________/|         |   *Citadel-68K   | 
+   *Asgard-80    /          |         |         |        |--(Michele & Sifu) 
+   *Asgard-86   /       (Ganelius)    |    (Timelord,)   |      Macadel 
+               /\      Inner Sanctum  |    (Cap'N Dave)  | 
+       _______/  \                    |       AmiDel     |--(Brent Barrett) 
+      /    |      \------(Elim,)      |                  |    Novucivitas 
+   (b0b)   |          (Mr. Neutron)   |  (farokh irani)--|         |
+  b0badel  |          *<fnord>adel    |   *Citadel-86e   |   (Jeff Waltzer)
+           |                          |                  |     *Overcit 
+           |--(Eric A. Griff)   (The Gremlin)            |
+           |    STadel-Ami       Citadel 1.xx            \--(Vince Quaresima)
+           |                          |                        *Citadel:K2NE
+  (Christopher Camacho)               |\__________________________ 
+      Fortress-PC            ________/|                           \ 
+           |                /         |                        (Turtle!) 
+   (Draiden Bansted)        |         |                         M.O.D.E. 
+      Fortress-ST           |         |                            | 
+                      (The Dragon)    \__________________   (Mistress Mouse) 
+                         DragCit                         \     Citadel II 
+        ___________________/ \________________________    \ 
+       /     |                    \                   \    \ 
+    (Ray)    |---(Z'ton)     (The Gremlin)             \    \ 
+  *TurboCit  |   TwitCit   DragCit 3.11 for MSC         \    \ 
+      |      |                     |                     \   | 
+    (Fred)   |---(Maven)   (Richard Goldfinder)           \  | 
+   *FredCit  |  *MavenCit         ACit                     \ | 
+      |      |________________       \___________________  | | 
+  (Centauri) |      \         \                          \ | | 
+    CenCit   | (Zen Master)  (JJ)                        | | | 
+      |      |   *FrogCit  *Co-OpCit                 (The Gremlin) 
+   (Dargos)  |______________________               *GremCit 3.20/xxx 
+   HoloCit   |           |          \                      |
+             |---(Andy)  |  (Captain James T Kirk)         |
+             |   Elegia  |    Captain's Citadel            |
+             |           \                                 |
+       (Angela Davis)  (Dan Lieberman)        (Anticlimactic Teleservices Ltd)
+           Atlas          NightCit                     *Citadel+ 
+  
+    * == Active (still developed or updated) 
+   ____________________________________________________________________  
+  /                     Other Known Variants.....                      \ 
+  |~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~| 
+  | Name            , Platform   , Lang   , Author(s)                  | 
+  |~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~| 
+  |*Acropolis       , 80x86 (DOS), Pascal , Robert Bequette            | 
+  | AT-Keep         , Atari 800XL, BASICXE, Brent Barrett              | 
+  | Babel           , UNIX       , C      , T'an T'u                   |[5]
+  | Citamad/Lumadel , Apple II   , BASIC  , Lum the Mad                |
+  | Citadel Plus    , CP/M       , C      , Corvair                    |[3]
+  |*Citadel/UX      , UNIX       , C      , Art Cancro                 |
+  | Citadel-64      , C-64       , BASIC  , Vince Quaresima            |
+  | Citadel-128     , C-128      , BASIC  , Vince Quaresima            |
+  | CitSim          , WICAT      , ??     , ??                         |[1]
+  | dars            , Z80 (CP/M) , BASIC  , err head                   | 
+  | Digital Dungeon , 8088       , C, Asm , Jerry Ash                  |[3]
+  | D.T.J. BBS      , C64        , ??     , ??                         |[2]
+  |*ElfBBS          , 80x86 (DOS), Pascal , Dino Nardini               | 
+  | FUBARC          , ??         , ??     , ??                         |[1]
+  | MacCitadel      , Macintosh  , C ??   , Glen Heinz                 |[3]
+  | MiniBin         , TRS-80     , BASIC  , Glenn Gorman               | 
+  | NeoCitadel      , 80x86 (DOS), Pascal , Hue, Sr.                   | 
+  |*NYTI            , 80x86 (DOS), C      , Ford II                    |[3]
+  | Pseudodel       , Apple II   , BASIC  , Shadow Warrior             | 
+  | squiggle        , 80x86 (DOS), Asm    , Brent Bottles              | 
+  |*ST-Keep         , Atari ST   , BASIC  , Andrew Studer              |
+  | Titan           , Atari 800  , BASICXE, The Dragon                 |
+  | Titanic         , Atari 800XL, BASICXE, Richard Goldfinder         |
+  | Unidel          , UNIX       , C      , Ken MacLeod                |
+  \____________________________________________________________________/
+
+Notes:
+1. These are mentioned in Bill K.'s RSYS list but I've not seen any other
+   information on them from any other sources. These may not have been.   
+2. I have this system but have been unable to unarchive it. I need an
+   archiver known as LYNX for the C64. This may be Cit-64.
+3. These may belong up on the tree. 
+5. What is with this name!? I take it Bruce King ran some citadels under
+   UNIX and the system was called Babel at one time. Bob P. changed the
+   name of his CP/M cit due to this. So is it Babel or Citadel(under UNIX)?
+   And it should probably be listed off of Cit 2.10....
+6. I assume this means continued development of Citadel itself out east.
+   Well I can't find any! They were apparently some that lasted awhile
+   reaching such 'versions' as 2.5x etc.... 
+
+
+    94Dec04 21:00:24 PM From Freejack @ Digital Free America, CyberHell
+ The info file listing from the BrickCitHouse room on Digital Free America
+ 
+Filename           Size  Comments
+a86-149.zip   1,214,881  Asgard-86 v1.49q Release Package (4/94)
+acit.zip        235,520  ACit v3.11.00a/405 Source Code (9/91)
+atlas200.zip    255,944  Atlas v2.00.05a Source Code (5/92)
+b0b119s.zip     213,515  b0badel v1.19 Source Code (5/92)
+c68k342.lha     977,770  Citadel-68K v3.42.P20 Release Package (8/94)
+c86-346.zip     972,588  Citadel-86 v3.46 Release Package (7/94)
+c86e-218.zip    472,543  Citadel-86e v2.18 Release Package (12/94)
+c_ux32.zip      202,727  Citadel/UX v3.2 Source Code (7/94)
+capt100a.zip    241,195  Captain's Citadel v1.00a Source Code (6/92)
+cencit-s.zip    252,899  Centauri's Citadel v1.34 Source Code (9/92)
+cencit.zip      393,284  Centauri's Citadel v1.12 Release Package (7/91)
+cit86s.zip      399,773  Citadel-86 v3.45 Source Code (1/94)
+ctdl210.zip     124,270  Citadel v2.10 Source Code (circa 1984 by CrT)
+dc31102d.zip    192,445  Dragon's Citadel v3.11.02 Release Package (10/90)
+dcs31102.zip    180,084  Dragon's Citadel v3.11.02 Source Code (10/90)
+dtjbbs.zip      140,740  D.T.J. BBS v??? Release Package (10/91)
+fc41src.zip     275,411  FredCit v41 Source Code (11/91)
+fcit41.zip      650,238  FredCit v41 Release Package (11/91
+fnd132s.lzh     520,448  <fnord>adel v1.32 Source Code (1/91)
+fortress.zip    400,739  Fortress-PC v0.1a Release Package (4/90)
+gcit127.zip     111,556  Gremlin's Citadel v1.27 Release Package (5/87)
+gcit59s.zip     279,780  Gremlin's Citadel v/59 Source Code (7/92)
+gcit642.zip   1,130,613  Gremlin's Citadel v/64.2 Release Package (7/93)
+henge121.zip    138,207  Stonehenge v1.21 Release Package (9/85)
+k2ne608.zip     878,454  Citadel:K2NE v6.08 Release Package (7/93)
+k2ne608s.zip    309,265  Citadel:K2NE v6.08 Source Code (7/93)
+maccit13.sit    170,112  MacCitadel v1.3b Release Package (5/90)
+mcit314.zip   1,281,166  Maven's Citadel v3.14.00m/022 Release Package (7/93)
+nc050190.zip    462,630  Novucivitas v050190 Release Package (5/90)
+neo300s.zip     274,748  NeoCit v3.00 Source Code (7/90)
+nightcit.zip    212,208  NightCit v2.0 Release Package (12/91)
+oc-k12.zip      340,245  Overcit vK.12 Release Package (10/94)
+s342i23.lha     335,569  Citadel-68k v3.42.i23 Source Code (5/93)
+src119j1.zip    198,656  CopperCit v1.19J1 Source Code (8/94)
+stk572.zip      652,085  ST-Keep v5.72 Release Package (11/94)
+stk5src.zip     117,709  ST-Keep v5.7 Source Code (7/94)
+unidel-s.zip    112,657  Unidel v1.0 Source Code (5/92)
+
+
+    94Dec07 23:48:21 PM From Little Nemo @ Slumberland
+  
+ There is also a Macadel (not MacCitadel), a port of Cit86. It is quite evil 
+and non Mac-like. :) 
+
+    94Dec08 06:56:58 AM From Helix Quark @ Arlecchino Malbenvolio, University 
+District
+  
+ heck, I had the Quartz unix cit a while ago. 
+
+    94Dec08 13:44:41 PM From Ketamine @ Saltlick Of Desire
+  
+ Atlas was derived from GremCit source, not DragCit I believe. 
+  
+ All the good features were eventually moved into further versions of GremCit 
+as well. 
+
+    94Dec08 10:46:11 AM From dred @ Lost Archives, Custer
+you mean no one has written a cit in fortran?  :) 
+
+    94Dec08 12:48:41 PM From Blue Canary @ Succulent Shrimp BBS, Land of 
+Niftyness
+IF I make a cit, I'm going to call it SitUbuCit. 
+
+    94Dec07 14:33:05 PM From Twoflower @ The Fourth Tower, Olympia
+  
+ Z'ton's working with Andy at Skylight.  Last I heard he also was running Red 
+Dwarf as a unix system at the same old phone #.  Could have changed, though.  I
+think he moved out. 
+
+    94Dec07 19:26:08 PM From Freejack @ Digital Free America, CyberHell
+i've contacted Andy through Bable (sort of) and i was told that the tree needed
+a line from elegia to gremcit also. he says there is code from elegia in 
+gremcit... true? 
+
+    94Dec07 19:26:37 PM From Freejack @ Digital Free America, CyberHell
+btw, i've added BabeCit code and executables to the archive... 
+
+    94Dec09 10:23:58 AM From Bang The Nun Slowly @ Saltlick Of Desire
+ You hav Atlas source?  Hell, even I don't have Atlas source. 
+  
+  
+
+    94Dec09 06:34:50 AM From Helix Quark @ Arlecchino Malbenvolio, University 
+District
+  
+ last I heard there was an andy.c at one point or another ... 
+
+    94Dec10 13:38:07 PM From Brent Bottles @ The Anticlimactic Teleservice
+  Freejack: 
+  
+ DragCit Rev B and Joe Broxson did exist. Joe Broxson still does exist. (At 
+least, he did sometime within the last year. Well, I didn't actually talk to 
+him, but I talked to someone who said that she had talked to, and seen, him 
+several times.) The Greenlake Connection (later named C' Hacker's Forum) ran 
+it. (206)782-6669, I think. 
+  
+ I have never heard of Kremlin. 
+  
+ RoscoeCit was a very slightly modified DragCit 3.12, which then got renamed to
+Neon Pagoda and was very slightly modified a bit more.  I cannot think of what 
+he did to change it right now, other than changing the name. 
+  
+ Turtle!'s real name is Shane Johnson. He is responsible for M.O.D.E. (Modem 
+Oriented Download Environment), which was a very slightly modified Citadel 1.30
+from The Gremlin. 
+  
+ Dargos is, of course, the author of youAreHere()!!!!!!!!!!!!!!!!!!!!!!!!!!!! 
+  
+ Andy is Andy Quinn, who has used several nyms in his life. cerebus. would 
+probably be his most famous. I doubt that Elegia is still being developed. I 
+lost his phone number, but still remember how to drive to his house, unless he 
+has moved in the last couple of years. 
+  
+ John at SOD is Angela Davis. 
+  
+ Mistress Mouse is responsible for ruining M.O.D.E. and creating Citadel II, in
+which they changed all of the command keys around, just because they could. 
+  
+ Z'Ton is Louis Ericson, or Mad Lou. He and Peter (The Dragon) were close, and 
+co-worked on DragCit for some time. 
+  
+ I was not aware that there was a previous Citadel Plus. 
+  
+  
+  Richard: 
+  
+ The profiler doesn't tell you must about memory. Actually, it tells you 
+nothing. 
+  
+ With multiple comparisons, it would be faster and smaller to assign a 
+temporary variable and do comparisons on it, rather than repeatedly calling 
+GetContextSensitiveText, of course. 
+  
+  
+  Twoflower: 
+  
+ Shane gave M.O.D.E. to Mistress Mouse, not the other way around. 
+  
+ Other than that, you have as much accuracy as I have. 
+  
+  
+  Counselor: 
+  
+ Yes, I remember his name as Vern Bear, as well. 
+  
+  
+  Freejack: 
+  
+ Drop the Ltd on Anticlimactic Teleservices. 
+  
+ drop the * on GremCit 3.20/xxx. 
+  
+ Citadel 1.27 was never called GremCit officially. 
+  
+ I have 1.30 executables and source around here somewhere. I'll try to remember
+to look for them some time. 
+  
+  
+  Ketamine: 
+  
+ As I remember it, John did to Atlases, one based on ACit, and one based on 
+GremCit. 
+  
+  
+  dred: 
+  
+ Malcolm Petcher made a Citadel 1.27 trap-file analyzer some time in the late 
+80s which he wrote in Fortran. That's about as close as Fortran has come to 
+Citadel, I believe. 
+  
+  
+  Freejack: 
+  
+ Andy() in andy.cpp is a slightly modified routine directly from Elegia.  If 
+one routine counts, then go ahead and put a line in if you want. That's the 
+only elegia code that I can think of that is in Citadel+. (It was put in when 
+it was called GremCit, though, so if you put in the line, put it in there.) 
+
+    94Dec10 13:42:39 PM From Brent Bottles @ The Anticlimactic Teleservice
+// Citadel: Andy.CPP
+//
+// This is Andy's function
+ 
+#include "ctdl.h"
+#pragma hdrstop
+#include "pragmas.h"
+ 
+// --------------------------------------------------------------------------
+// Contents
+//
+// Andy()               This is it
+ 
+ 
+// --------------------------------------------------------------------------
+// Andy(): This is it.
+//
+// Notes:
+//  This code is based highly on Andy's mdformat function, which I guess he
+//  wrote for Elegia. I updated it to work with Citadel's output routines and
+//  added '^' and '\' as special characters. I also put in the %[...]x stuff.
+ 
+static int Brent(const char **Format, int *colCount, char *collect)
+    {
+    char thisFormat = **Format;
+    char toOutput = thisFormat;
+ 
+    if (thisFormat == '^')
+        {
+        toOutput = *(++(*Format));
+ 
+        if (toupper(toOutput) >= 'A' && toupper(toOutput) <= 'Z')
+            {
+            toOutput = (char) toupper(toOutput) - 64;
+            }
+ 
+        }
+    else if (thisFormat == '\\')
+        {
+        toOutput = *(++(*Format));
+ 
+        switch (toupper(toOutput))
+            {
+            case 'N':
+                {
+                if (*colCount)
+                    {
+                    collect[*colCount] = 0;
+                    mFormat(collect);
+                    *colCount = 0;
+                    }
+ 
+                TI()OC.Formatting = TRUE;
+                doCR();
+                TI()OC.Formatting = FALSE;
+ 
+                toOutput = 0;
+                break;
+                }
+ 
+            case 'T':
+                {
+                toOutput = '\t';
+                break;
+                }
+ 
+            case 'B':
+                {
+                toOutput = '\b';
+                break;
+                }
+            }
+        }
+ 
+    if (toOutput)
+        {
+        collect[(*colCount)++] = toOutput;
+        }
+ 
+    return (**Format);
+    }
+ 
+void cdecl Andy(const char *Format, const char *Codes, ...)
+    {
+    char *Vals[32], collect[512];
+    const char *Code, *Include;
+    int n, CodeCount, colCount;
+    va_list ap;
+ 
+    va_start(ap, Codes);
+ 
+    for (n = 0, CodeCount = strlen(Codes); n < CodeCount && n < 32; ++n)
+        {
+        Vals[n] = va_arg(ap, char *);
+        }
+ 
+    va_end(ap);
+ 
+    for (colCount = 0; *Format != '\0'; ++Format)
+        {
+        if (*Format != '%')
+            {
+            if (!Brent(&Format, &colCount, collect))
+                {
+                break;
+                }
+            continue;
+            }
+ 
+        if (*(++Format) == '\0')
+            {
+            break;
+            }
+ 
+        if (*Format == '%')
+            {
+            collect[colCount++] = *Format;
+            continue;
+            }
+ 
+        // not stuff
+        if (*Format == '[')
+            {
+            // Scan for close and include-location.
+            for (Code = Format, Include = NULL;
+                    *Code != '\0' && *Code != ']'; ++Code);
+ 
+            if (*Code == '\0')
+                {
+                break;
+                }
+ 
+            if ((n = strpos(*(Code + 1), Codes)) != 0)
+                {
+                if (Vals[n - 1][0] == '\0')
+                    {
+                    for (++Format; Format < Code; ++Format)
+                        {
+                        if (!Brent(&Format, &colCount, collect))
+                            {
+                            break;
+                            }
+                        }
+ 
+                    if (*For    t++;
+                    }
+           }
+                else
+          Forma                        }
+ 
+            continue;
+            }
+ 
+        iformCodes)) != 0)
+    
+                    {
+ collect[colCount] = 0;
+                    mFormat(collect);
+                    colCount = 0;
+             -   }
+ 
+     nue;
+            }
+ 
+   cde-location.
+        for (Code = Format, Includ        {
+            if (*CodeCode;
+                }
+            }
+ 
+        if (*Code == '\0')
+            {
+            break;
+            }
+ 
+        if (Include == NULL)
+            {
+            if ((n = strpos(*(Code + 1), Codes)) != 0)
+                {
+                if (Vals[n - 1][0] != '\0')
+                    {
+                    if (colCount)
+                        {
+                        collect[colCount] = 0;
+                        mFormat(collect);
+                        colCount = 0;
+                        }
+ 
+                    for (++Format; Format < Code; ++Format)
+                        {
+                        if (!Brent(&Format, &colCount, collect))
+                            {
+                            break;
+                            }
+                        }
+ 
+                    if (*Format)
+                        {
+                        Format++;
+                        }
+                    }
+                else
+                    {
+                    Format = Code + 1;
+                    }
+                }
+            }
+        else
+            {
+            if ((n = strpos(*(Code + 1), Codes)) != 0)
+                {
+                if (Vals[n - 1][0] != '\0')
+                    {
+                    if (colCount)
+                        {
+                        collect[colCount] = 0;
+                        mFormat(collect);
+                        colCount = 0;
+                        }
+ 
+                    for (++Format; Format < Include; ++Format)
+                        {
+                        if (!Brent(&Format, &colCount, collect))
+                            {
+                            break;
+                            }
+                        }
+ 
+                    if (colCount)
+                        {
+                        collect[colCount] = 0;
+                        mFormat(collect);
+                        colCount = 0;
+                        }
+ 
+                    mFormat(Vals[n - 1]);
+ 
+                    for (++Format; Format < Code; ++Format)
+                        {
+                        if (!Brent(&Format, &colCount, collect))
+                            {
+                            break;
+                            }
+                        }
+ 
+                    if (*Format)
+                        {
+                        Format++;
+                        }
+                    }
+                else
+                    {
+                    Format = Code + 1;
+                    }
+                }
+            }
+        }
+ 
+    if (colCount)
+        {
+        collect[colCount] = 0;
+        mFormat(collect);
+        }
+    }
+
+
+    94Dec08 06:54:57 AM From Twoflower @ The Fourth Tower, Olympia
+   
+ ideas were taken from Elegia to the new GremCit, but I don't know if the code 
+was the same or if the ideas were rewritten.  you'd have to ask brent. 
+
+    94Dec08 16:38:46 PM From Twoflower @ The Fourth Tower, Olympia
+  
+ yeah, counselor, that sounds right.  i didn't get along with MM too well. 
+
+    94Dec08 15:24:24 PM From Freejack @ Digital Free America, CyberHell
+Little Nemo - could you get a copy of TwitCit? 
+
+    94Dec10 18:07:30 PM From Little Nemo @ Slumberland
+  
+ FreeJack: I'm not sure if I have a copy anymore. Twilight Eyes probably still 
+has it, though. If we can get her on the net we can find out... (or I'll call 
+her.) 
+
+    94Dec09 04:19:44 AM From darth puppy @ Vert-Beans Online, FERNDALE
+What a bout Puppycit! 
+
+    94Dec11 04:49:35 AM From Richard Goldfinder
+ I seem to recall being at Z'ton's house one day and seeing an Apple ][ and 
+being told that Z'ton (Mad Lou at the time) was writing a room system for it.
+ 
+ If this existed, what was its name?  Any relation to Lumadel? 
+  
+  
+ Oh, and if one routine counts, maybe you should draw a line from Stonehenge as
+well, for those wonderful BitBag routines. 
+
+    94Dec09 21:04:46 PM From Twoflower @ The Fourth Tower, Olympia
+   
+ no cits in cobol, fortran, ML, ada, or lisp that i know of. 
+  
+ also, no one has created a cit in dos batch. 
+  
+ and definately not in SAP-1 machine language. 
+
+    94Dec11 02:44:04 AM From Livia @ Amber, Bellevue
+ not much of a function 
+
+    94Dec10 08:40:17 AM From akira @ beggars banquet, damn
+Little Nemo: Macadel? where might i get this Macadel? i have someone up here 
+interested in Citadel (he's got a Mac)... can you help? 
+
+    94Dec10 08:42:26 AM From akira @ beggars banquet, damn
+is there any Citadel source for the Macintosh? 
+
+    94Dec11 08:03:14 AM From Helix Quark @ Arlecchino Malbenvolio, University 
+District
+  
+ Twi still has twitcit. 
+  
+ I con't get the net to net with her so you'd best talk to her voice. 
+
+    94Dec11 20:00:55 PM From Brent Bottles @ The Anticlimactic Teleservice
+I have rewritten Stonehenge's stolen bitbag routines. 
+  
+ Though the Bitbag Access Engine (ho ho ho) remains the same. 
+
+    94Dec11 20:02:19 PM From Brent Bottles @ The Anticlimactic Teleservice
+(I converted them from some slightly sloppy routines into a truly beautiful 
+class, that just makes me happy as poop to read.) 
+
+    94Dec11 19:07:51 PM From Little Nemo @ Slumberland
+  
+ Akira: you don't want Macadel. Trust me on this. It is evil. MacCitadel is 
+slightly better but crashes easily and it not 32
+M From ;40m @ Th What exactly doe "not oy pointers get 9401 PM Fro;40mdredhere is puppy33;40m
+    94Dec10 [31mgold40m Golden Spud's Grepycit is not inot complete! 
+
+    9mood Crack s37;40m
+    5;40mHeli[0;0;37;40mistrict
+  
+ rather, the question is INDEED then where >is< puppycit? 
+
+    94Dec12 18:25:47 PM From Brent Bottles @ The Anticlimactic Teleservice
+The original macintosh was based on the 68000 CPU. The 68000 CPU has only 24 
+address lines. However, pointers were 32 bits. 
+  
+ Apple looked at this, and saw that they had 8 bits to play with in every 
+pointer for storing some stuff. (I don't have reference books here, or I'd be 
+able to tell you exactly what gets stored in them. It has to do with whether 
+the memory block is locked in place, and other memory-management issues like 
+that.) 
+  
+ However, they also knew that at some time in the future, they may want to use 
+all 32 bits for addresses. (They used the unused 8 bits in the 32 bit addresses
+instead of just allocating another byte for it because the original Macintosh 
+had 128K of RAM. That's not much.) 
+  
+ So, they created functions in the OS for accessing the extra 8 bits of 
+information stored in the 32-bit addresses. 
+  
+  However, doing bit-manipulation directly is quite a bit faster than calling 
+an OS function to do it for you. (Obviously.) 
+  
+ So, some software writers played with the bits directly, in the interest of 
+creating faster (and smaller) programs. 
+  
+ Guess what happened to those programs when Apple started using all 32 bits for
+memory addresses? 
+  
+  Bad things. 
+  
+  From what I remember, you have to reboot your computer and turn off 32 bit 
+access to run such programs. This limits you to 8M of RAM. (8M of RAM? Bit 24 
+address lines gives you 16M! That's because in the 24-bit memory model, ROM 
+started at the 8M barrier, and the OS needs RAM to be contiguous. I don't 
+remember where ROM starts in the 32-bit memory model, but it is somewhere up in
+the gigabytes.) 
+
+    94Dec12 04:00:51 AM From akira @ beggars banquet, damn
+Little Nemo: ok... i guess maybe i wont switch to a Mac, since i cant run a 
+Citadel :(   
+
+    94Dec13 00:48:34 AM From Bang The Nun Slowly @ Saltlick Of Desire
+ Thanks for that explanation, Brent. 
+
+    94Dec12 19:29:06 PM From Helix Quark @ Arlecchino Malbenvolio, University 
+District
+  
+ hey, that's pretty cool. 
+  
+ okay, you can have this toy to play with. Now give it back, thanks. 
+
+    94Dec10 08:10:22 AM From Freejack @ Digital Free America, CyberHell
+an old Citanews refers to a COBOL-based citadel. i think they may have been 
+talking about that CitSim for the WICAT multi-user mini, but i've been unable 
+to unearth more info at this time. but i'm getting pretty adept at digging this
+stuff up so hopefully it won't be long till i know for sure. 
+
+    94Dec11 19:25:21 PM From dred @ Holiday Inn, Lynden
+I believe I hear a rumor that gs was going to work on a Cit for his graphing 
+calculator. 
+
+    94Dec12 23:03:30 PM From golden spud @ Golden Spud's Greasehouse, Custer
+dred> same rumor about Lab Rat. 
+
+    94Dec12 23:03:49 PM From golden spud @ Golden Spud's Greasehouse, Custer
+although it would probably work better on his seeings how he has a HP and I 
+have a TI :( 
+
+    94Dec12 21:59:09 PM From Blain Nelson @ Blain's World (not!) BBS, Ferndale
+I was considering writing a console only (but nettable) Cit in WordPerfect's 
+macro language. 
+
+    94Dec13 14:03:41 PM From Flying Wombat @ Blind Man's Bluff, Kirkland
+ I was thinking of writing a Citadel in Ratfor for the HP 1000, but haven't 
+done anything about it.  according to the boasters at Microsoft, one could 
+write just about anything in Foxpro.. including Windows itself.  heh. 
+
+    94Dec13 19:08:22 PM From Lab Rat @ The Laboratory, Multithreading Hell
+ I was thinking about writing a citadel in the sand down by the beach.  there'd
+be one big long section of sand in which people could write their messages with
+their names and what rooms they went in, and other people could come along and 
+read the messages the other people left. 
+ But I never got around to it.  It probably would have just washed away anyhow.
+  
+ But yes, I think my HP48GX with it's 128k ram and actual serial port plug 
+could probably do better service as a cit than the TI-8x.  Especially since my 
+HP48GX has it's own assembly language (assuming I could get Brent to code for 
+it of course...) 
+
+    94Dec11 13:09:10 PM From Freejack @ Digital Free America, CyberHell
+ from what i can tell by looking at the Atlas source it comes from DragCit... 
+ and if the "tree" were to include branches back and forth between all the 
+ DragCit descendants, it would look quite silly, considering the amount of 
+ sharing between all the developers. 
+
+    94Dec14 04:28:51 AM From Livia @ Amber, Bellevue
+ atlas comes from the version of gremcit which came from dragcit (which came 
+from an earlier version of gremcit) 
+  
+ woo hoo 
+
+    94Dec12 06:50:07 AM From Freejack @ Digital Free America, CyberHell
+ thanks for all those answers Brent! (and to think i've been talking to 
+ Z'Ton on Bob P's system and not even knowing it...) 
+  
+ i plan on redoing the tree to reflect parallel developments but not by 
+ putting in lines to and fro everywhere. (i think that would look quite 
+ silly...) 
+  
+ i'm not going to try and maintain a BBS list any longer. i will forward 
+ any info to Bill K. who maintains the large one. i may even gate the 
+ bbslist room from the cit86 net after i start netting it. 
+  
+ i'm going to submit an article and try to help a sysop on that net to 
+ revive Citanews with info on Cit+. (which i've proudly gabbed about on 
+ that network anyway...) 
+  
+ and now i'm going to finish reading new messages so i can then go out 
+ in the cold and replace the muffler on my car. 
+
+    94Dec12 06:52:20 AM From Freejack @ Digital Free America, CyberHell
+ um, if Dargos is the author of youAreHere()!!!!!!!!!!!!!!!!!!!!!!!!!!!!! 
+ does that make him truely evil? 
+
+    94Dec13 17:38:10 PM From Captain James T Kirk @ Starfleet Academy, Olympia
+Which calculator?  i 've thought of writing one for the HP48...  it has a 
+serial port...  (it'll even do 9600 baud...and internal xmodem..) 
+
+    94Dec14 12:01:23 PM From Bang The Nun Slowly @ Saltlick Of Desire
+ Atlas isn't even a distinct product.  It's just GremCit.  Angela Davis is a 
+plagerist.  Take the damn thing off the tree! 
+
+    94Dec13 23:26:29 PM From Little Nemo @ Slumberland
+  
+ No, switch to a Mac for everything else, just save your old PC for the 
+Citadel.  :) Anyway, Brent's explanation is good. In MacCitadel's  case, it 
+just crashes if you try to run it with 32-bit addressing turned on. 
+
+    94Dec14 11:34:40 AM From Alpha Wolf @ Palace of the Miniken, Kirkland
+youarehere()? 
+ that little thing. 
+  
+  save the size of the source and the executeable 
+  and take it out...  
+  
+ hmm... who originally put in networking in citadels? 
+
+    94Dec14 17:39:51 PM From dred @ Holiday Inn, Lynden
+LR is/was writing a Cit for his calculator as well?  I have a Sharp, it has 
+internal BASIC, maybe it'd work. 
+
+    94Dec14 18:59:34 PM From Captain James T Kirk @ Starfleet Academy, Olympia
+Someone has figgured out how to program the TI85 in asm...  So there should be 
+many interesting programs comming out for it in the near future...  (but i'll 
+bet it'll be a while befor it can do 4-shade grey-scales like the HP48 can....)
+
+
+    94Dec14 19:01:47 PM From Captain James T Kirk @ Starfleet Academy, Olympia
+I've always wondered...why isn't ROM stuck at the start of the address space?  
+then you don't have to work around it...   
+
+    94Dec16 05:05:55 AM From Richard Goldfinder
+ Captain James T Kirk: on some CPUs (e.g. Motorola 6502), there are 
+instructions for accessing the lowest area of memory with fewer bytes (since 
+high address bits are assumed to be zero). 
+ On an Intel 8086, the lowest 1024 bytes is used for an interrupt jump table, 
+and a reset tells the CPU to go to FFFF:0000. 
+
+    94Dec16 15:52:45 PM From scorpio @ Dystopia ][, Bellingham
+ alpha wolf.. 
+ i think it was errhead... 
+ who else would call it NET69? 
+ :) 
+
+    94Dec17 06:05:03 AM From Livia @ Amber, Bellevue
+ err head designed net69 (matt implemented it) 
+  
+ but there was networking in citadels long before that 
+
+    94Dec17 14:41:20 PM From Brent Bottles @ The Anticlimactic Teleservice
+Captain James T Kirk: Where would you put the interrupt vector table on the 
+80x86, if you started ROM at 0000:0000? 
+  
+ Suppose you redesigned the chip to put the IVT at the last 1K of the 1M space 
+of the 8086. 
+  
+ What happens when you introduce the 80286 with its 16M address space? Or the 
+80386 with its 4G address space? You get non-contiguous memory usage. 
+  
+ Or, suppose that you don't worry about future chips, and you put the 1K IVT at
+the end of the 1M address space, and put ROM in the first 64K of the 1M address
+space. 
+  
+ What happens when you add some more routines to your ROM, and it takes 65K to 
+store it? You get... noncontiguous memory! 
+
+    94Dec17 15:18:08 PM From Akira @ beggars banquet, damn
+Little Nemo: What makes 'Macadel' so evil? what is the software itself like? is
+it fairly new? does it operate alright?... please tell me. 
+
+    94Dec17 15:19:33 PM From Akira @ beggars banquet, damn
+ is Cit+ the Only Citadel being developed? 
+  
+ Or being worked on? 
+
+    94Dec18 15:58:41 PM From Joe
+        j/h^m from a dos standpoint. Ray is ditching turbocit and is in fact 
+giving away his source code to registered users. I must admit that I am not 
+interested in it, but whom ever is can ask him for it. If I ever get my hands 
+on a unix cit, I'll compile it and see what gives. 
+
+    94Dec18 14:39:20 PM From Flying Wombat @ Critter Haven
+ Akira: not at all. 
+
+    94Dec18 10:22:50 AM From Scaramouche Steinberg @ Arlecchino Malbenvolio, 
+University District
+  
+  "who knowzh?" 
+  what a question. 
+
+    94Dec18 13:42:56 PM From Helix Quark @ Arlecchino Malbenvolio, University 
+District
+  
+ ((clap-clap)) GOOD ANSWER! GOOD ANSWER! 
+
+    94Dec19 00:26:38 AM From Little Nemo @ Slumberland
+  
+ Akira: Macadel is a port of Cit-86. The interface sucks. It is completely 
+unsuited for the mac, and it's very difficult to set up and get it to work. I 
+thought it sucked mightily, to be frank... 
+
+    94Dec16 23:45:38 PM From golden spud @ Golden Spud's Greasehouse, Custer
+I want to progarm my TI85 in ASM! 
+
+    94Dec16 18:30:20 PM From Captain James T Kirk @ Starfleet Academy, Olympia
+Lab Rat>>  a GX?  lucky you...  i could only afford a G...  i'm thinking about 
+upgrading it to 256k...  (i have a file with instructions on how to add two 
+128k chips to it...)...   
+
+    94Dec18 14:00:17 PM From FRuG @ Dystopia ][, Bellingham
+SpudCit is also being developed. 
+
+    94Dec18 16:17:21 PM From golden spud @ Golden Spud's Greasehouse, Custer
+Lab Rat offered to show me his manhood (read calculator) 
+  
+ But I declined, I was in a hurry to leave the get-together. 
+  
+  
+ Akira> Cit+ is definately not the only Cit being developed. As most people 
+already know, I am working on Golden Spud's Citadel (SpudCit). Since I only 
+started writing it a couple months ago, it is by far not as capable of Cit+ and
+will probably never try to clone everything in it. It will have a separate 
+identity. 
+  
+ There was some confusion as to whether or not I was serious about the whole 
+thing at the beginning. 
+  
+ Now people (more and more of them) have actually seen it or even used it 
+(experienced what little it does at this point) so now people are waiting for 
+me to release it :) 
+
+    94Dec19 17:32:48 PM From Phil @ modigliani, Kirkland
+ PhilCit (Citadel/UX + Ansi) is under development. mandrake belladonna 
+connection is moving to linux, so fortress is out and Cit/UX in. but i couldn't
+stand the lack of color, so i'm adding it. 
+
+    94Dec20 16:13:47 PM From Cloister the Stupid @ Amber, Bellevue
+    Hot darn, Phil-i-kins. 
+    Now, dear, tell me what you are doing up there... 
+
+    94Dec19 16:00:40 PM From Captain James T Kirk @ Starfleet Academy, Olympia
+golden spud>> the ti85 can be programmed in asm...  read the 
+bit.listserv.calc-ti newsgroup...(or i supose you could subscribe to the 
+list....) 
+
+    94Dec20 00:30:52 AM From Lab Rat @ The Laboratory, Bellingham Twit Hell
+ speaking of calculators... 
+  
+ I found, in the form of a useless-due-to-incompatibility cdrom to sound board 
+wire, a plug capable of fitting onto my serial port on the HP48GX and being 
+easily spliced into a handy-dandy 25-pin serial plug I have lying around at 
+school. 
+ since I'm home, unfortunately, Brent's long-awaited call to my calculator will
+have to wait until I get back. 
+  
+ but I will begin writing messagebase routines immediately. 
+
+    94Dec20 14:22:17 PM From golden spud @ Golden Spud's Greasehouse, @ 
+matt.com
+cjtk> please, PLEASE tell me how to subscribe to the list. 
+  
+ I'm naive when it comes to mailing lists on the net. 
+  
+ I really want to impress my friends even more at school! :) 
+
+    94Dec20 15:07:22 PM From Lab Rat @ The Laboratory, Bellingham Twit Hell
+ ahh, yes, I bet it could. 
+  
+ that would be some heavy wizardry. 
+  
+ you'd have to make a cable interface to plug into TI's idiotic phone-jack 
+intercalc transmission system, but it could be done. 
+  
+ or do they somehow actually enter it into the calculator, with an assembler to
+process the source in-calc? 
+
+    94Dec20 00:27:15 AM From darth puppy @ Vert-Beans Online, FERNDALE
+Puppycit is also being developed!   
+
+    94Dec20 00:27:54 AM From mytee mouse @ Vert-Beans Online, FERNDALE
+Cann I devlop a raciumthomascit for my applesoft computer or is that two many 
+letters? 
+
+    94Dec20 12:42:25 PM From dred @ Holiday Inn, Lynden
+I've logged into SpudCit! 
+
+    94Dec21 03:00:40 AM From BK @ Blind Man's Bluff, Kirkland
+what is SpudCit like? 
+ and might i aquire a copy of it? 
+
+*-BBS History> [BBS'ing]: Goto Bug Reports
+

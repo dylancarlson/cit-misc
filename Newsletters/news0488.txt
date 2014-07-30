@@ -1,0 +1,824 @@
+/*
+ * CITANEWS / The INTERnational newsletter about room-based BBS systems
+ * April 1988
+ * This issue assembled by Steve Yelvington
+ * This newsletter may be distributed freely.
+ */
+
+In this issue of CitaNews:
+	* A NEW SUCKER, AH, EDITOR STEPS FORWARD
+	* INTERNATIONAL REPORTS FROM CANADA AND ITALY
+	* C86 GETS STATUS BAR, .READ USER COMMAND
+	* STADEL CONVERTED FOR PC CLONES
+	* LOTSA UDDER STUFF
+
+---------------------------------------------------------------------------
+
+/*
+ * A NEW EDITOR FOR CITANEWS
+ * Dave Quick, a/k/a The Badger
+ */
+
+  I, Steve Yelvington, being of sound mind and body, or at least good
+enough to fool most of the people most of the time, do hereby bequeath
+the title of CitaNews editor to Dave Quick a/k/a The Badger, who
+in an apparent lapse of good judgment has offered to take over the chores.
+
+  Please note that "editor" does not equal "sole contributor."
+For CitaNews to work, correspondents are needed. If you run a BBS,
+have programmed a BBS, use a BBS or just can't control your urge to
+write, your contributions are needed.
+
+  I've enjoyed compiling CitaNews from the start, but I find that I
+just don't have the time to do a proper job of it. Transferring the
+project to Dave in New York may help CitaNews escape the Minnesota
+geocentrism that tends to creep in.  Dave is planning to get the "long
+legs" of PC Pursuit, which should help him stay in touch with systems
+across the USA.
+
+  Dave will continue to monitor the CitaNews room at Test System, 
+US 612-866-1804, as well as the net.gossip and other net rooms on
+Pell, US 612-377-9239. He also can be reached in Mail> on those
+systems; his username is The Badger.
+ 
+  We also have the promise of a regular column from Canada and more
+contributions from Europe. With the C86 and STadel networks rapidly
+expanding, the several Unix projects and some two dozen forms of
+Citadel-based software running on systems as small as Commodore 64s
+and as big as multiuser minicomputers, there certainly is plenty to
+write about.
+
+  I will continue to contribute to CitaNews, and urge you to do so as well.
+
+  					-- Steve Yelvington
+
+
+---------------------------------------------------------------------------
+
+/*
+ * PROMOTE YOUR BBS
+ * Be sure you're listed in the national BBS list
+ */
+  
+ The national list of room-based BBS systems has been taken over by
+Bill Karpowicz @ Sinkhole Utopia US 203-873-8518. The deadline for 
+the monthly list is the 20th. SYSOPS ONLY should leave a message
+for Bill and it should include the following information:
+
+System name           number         bps   software    sysop             date
+Aardvark !            902-454-0199 o 1200  Cit86 V3    Stuart Glen       87Dec
+                                   ^
+                                   policy: o for open, etc.
+
+  Bill can be contacted at Sinkhole Utopia, Pell (US 612-377-9239) or 
+Funny Farm (US 317-842-7564).
+  The list is distributed as RSYSxxxx.LST, where xxxx is the date
+(0488 for April 1988, for example.)
+
+  Here are some new systems you might want to call and welcome to
+the Citaworld. The messages were monitored at various points.
+
+   88Mar02 11:47 pm from C.J. Linstruth @ Pell
+  Hi all,  there are two Citadels I'd like to make known Nationwide. 
+  The Genuine Aloha Ukelele  US (804) 421 9134    CJ   300/1200 
+  Nodename Ukelele 
+  Busted Flush               US (804) 495 9549   Chuck  300/1200 
+  
+  Both are open systems and ukelele is just getting established. 
+  Busted Flush Nodename = Cocotel. 
+
+   88Feb26 7:47 pm from kevin shumaker @ Pell
+ Howdy! Just a note to let Y'all know there's a NEW STadel in Indy!... 
+ Luna Free State  US (317) 298-8490  1200  STadel 3.1f  Mycroft Holmes IV  
+
+   88Mar13 2:44 pm from Eric Griff @ Utica College, NY
+  All, 
+  USA (Utica Super AmigaDel) is now up in Utica, NY. The number is (315) 
+724-0624. It is only Part time, and not networked at this time. The hours 
+are as follows 
+  Monday: 2AM-9:30PM
+  Tuesday: 2AM-9:30PM 
+  Wednesday: 2AM-7:30PM 
+  Thursday: 3AM-6AM,11AM-3PM 
+  Friday: 2AM-7:30AM,9AM-2:30PM 
+  Saturday: 6AM-1PM 
+  Sunday: 6AM-1PM 
+
+   88Mar15 11:02 am from laird popkin @ Pell
+ BLADERUNNER BBS is up in Boston at 617/891-7338.  I am working on what seems 
+to be becoming a major hack--making STADEL vt52 dependent and doing some 
+nifty screen effects.  Has anyone else done this?  Suggestions?  Comments?  
+Thanks. The name is Laird Popkin (mine).  The BBS is running on an ST w/a 
+20Mb HD (for now, I can add 3 more  of any capacity!)  The software running 
+now is unchanged, but I have the screen stuf in development. 
+-----
+
+---------------------------------------------------------------------------
+
+
+/*
+ * PAOLO VENTA'S REPORT FROM ITALY
+ * Citadel Italiano? Si!
+ */
+
+ (Contributed by Paolo Venta, sysop, ST-Log, Milan, Italy)
+
+  It was the end of August when a friend of mine downloaded from Bix version
+3.0c of STadel. When I first saw that piece of software I could not even
+understand where the files were gonna be, nor the way a user could download
+them! After reading docs, with some more knowledge on STadel, I called Pell
+just to look at the latest version orc was working on.
+  He was at the keyboard, we had a chat, he promised me version 3.1a.
+I was contacted by ATARI ITALIA for their official BBS a week later, and
+we planned ST-log to be ready by 16 september 1987.
+  ST-log was born on that day, running v3.0c, on a 1040ST with SH204 HD and
+a SX212 modem.
+  Now, this is funny, you need to know that aside of the BBS there's a huge 
+IBM/36 with its lousy printer and the console terminal.
+  In those days both Atari and IBM were getting energy from the same plug,
+and everytime people powered on and off their stupid /36  the BBS were
+resetted. Soon STadel started having HD problems, sectors were formatted,
+data lost, finally the SH204 died. Too bad.
+  Things changed once I got 3.1a from orc; new board, new plugs, new HD.
+I upgraded to 3.1c in November (don't remember exactly), and never changed 
+until now (3.2a beta testing).
+  I translated all of the help files Into italian, and my users could finally
+learn how to use STadel too.
+  I added a second hard drive in genuary, and put up the network with pell
+sharing STadel) and Dumpster) daily.
+  I had  A LOT* of problems with those intercontinental calls: the most common
+was the not-established sessions due to timeout.
+  It takes 45 secs to get the line with Pell at 4:30am here, and for that
+orc added a #timeout in ctdlcnfg.sys into 3.1c.
+  Also the phone numbers structure is different from the US one:
+you've got "xxx-yyy-zzzz" syntax,  we haven't got a defined one.
+sometimes prefix is 2 numbers long, sometimes 5 numbers.
+The phone itself can be 5-8 long.
+  Moreover, to call Pell I need to put a 001  as international prefix..
+  Thanks to orc all of this is now solved, and the network really works daily.
+It usually takes 3-5 days to receive netmail from l/d systems.
+  My users enjoy this kind of BBS, although they are used to Opus only.
+There are about 400 registered users here, and the BBS is busy for 90% of
+its time (lots of software to download!).
+ I am using Pcommand as command interpreter, and i worked out a "reservation"
+calltime for aides, using events. One aide can book his call and be sure that
+on that time BBS will be free, waiting for him.
+ What else? STadel is phunny to administrate, there are really few bugs, and
+here at ST Log things are always OK. I had no crashes since november 1987!
+ What for the future?
+ Two new BBS should start here in Italy in the next months: one in Napoli
+(Naples), another one in Torino (Turin). Maybe a third one in sicilia 
+(Sicily), if "mafia" won't stop it (hehe).
+ I am looking for other European STadels, with whom I would like to net.
+ I would take charges to be the European gateway..
+
+ Greetings from ST-log  in Milano, North Italy.
+                011-392-66010079
+            *changing to 011-392-6193757 in few weeks*
+              300-1200 baud CCITT  (only bell 212 compatible at 1200 baud)
+                 Paolo Venta, SysOp
+
+---------------------------------------------------------------------------
+
+
+/*
+ * REPORT FROM CANADA
+ * By our cold-weather correspondent, the Stainless Steel Rat
+ */
+
+   88Mar09 10:09 am from SSR @CHAOS II-Alberta CA to Steve Yelvington
+  Great  Citanews (0388) - Nice to see it return. 
+  Well, upon reading it; I figured I should add my two cents for what it's 
+worth about some of the articles in there.  (and clarify a few points). 
+  Here goes nothing: 
+ ______________________________________________________________________ 
+  
+  I guess first of all Edmonton nodes update: 
+  
+ Computer Works is now standalone doing no networking. 
+ A new system Forgotten Realms (CA 403 459 8025) 300 baud is up;  
+ this system is dedicated to RPG playing only and does a little local 
+ netting.  (Not on the LD link yet, but we'll see). 
+  
+ Quincunx (CA 403 455 1701) STadel 2400 baud is now on the net LD and all, 
+ in the short period of a month it's exploding with action.  You've probably 
+already noticed the banner floating in Gateway etc. 
+  
+ Alkham Asylum (CA 403  277 4117) 
+ 2400 baud running C-68 (v2.14) in Calgary.  It is linked up via Chaos II for 
+backboning via Test System to the states.  I guess in a way, Chaos has become 
+the Alberta feed for Test System. 
+  
+ Secret Service (2400 baud) is now backboning Pell up here for the ST users. 
+  
+ Poopsie in Calgary appears to have disappeared. 
+  
+ That's basically what's happening up here node wise, although we look forward 
+to seeing a Red Deer, Alberta Citadel 86 going up in a few weeks, and 
+possibly another citadel in Edmonton (Commodore 128). 
+  
+ ___________________________________________________________________________ 
+  
+  Multitasking C-86:  I run a 12 Mhz AT clone and used Desqview sucessfully to 
+run the board for a couple of months.  However, Desqview (Ver 1.3 and 2.01) 
+is a memory hog and I have recently changed to Double Dos.  The basic report 
+on this is that they both seem to have no problem running C-86 in a 275K 
+window.  It is VERY important that your window be this large otherwise you 
+get real weird things happening.   Right now Chaos II runs in the background 
+with little fuss.  The only complaint I have is that both program tend to 
+jerk the output of the BBS while running heavy I/O tasks in the other windows 
+(I guess I'm fussy?).   
+  If anyone is having trouble setting up a C-86 with either Desqview or Double 
+Dos; I'll be more than glad to do what I can to get them going.   
+  (A side comment though:  Multitasking a BBS on a PC should really only be 
+attempted with at least a 8Mhz 8088 machine.  A standard 4.77 Mhz machine is 
+just going to spend too much time in overhead to make either application run 
+properly speed wise) 
+  
+  Anyhow, I guess that's my 2 cents.  (which works out to about 1.6 cents 
+American).  Hopefully this time next month I'll have a comment on a new 
+editor for C-86 that is in the works.  (the idea is impressive; we'll see how 
+the implementation goes). 
+  
+  If you have any questions; want information, whatever, just let us know.  
+I'm sure that I can manage to find a sucker (sorry I mean volunteer) to write 
+a short column for Citanews from the Alberta perspective if wanted.  Let me 
+know. 
+  SSR - Sysop of Chaos II 
+  
+   88Mar09 11:39 am from SSR @CHAOS II-Alberta CA to Steve Yelvington
+  I forgot one thing.  I am currently carrying all the newest versions of the 
+various Citadels on Chaos for downloading.  (STadel, C-86 and C-68).  I am 
+open to putting any other versions of Citadel/Stonehedge etc software in 
+their own areas if authors would send the various versions to me via mail or 
+upload them.  Mail address? 
+ Chaos II 
+ #1203 11111 - 87 Ave 
+ Edmonton, Alberta 
+ T6G 0X9 
+  That should get it here.  Anyhow, this applies mostly for people up north I 
+believe, but someone mentioned that I should tell people down south as it 
+looks like there's not a system with all versions/many versions on it.  
+(STadel/C-86/C-68). I actively seek out updates on so there will always be a 
+current version of those here.  Any others, I will put up whatever gets 
+sent. 
+  Be aware that Chaos is one of the systems using download limits, 30 minutes 
+for 4pm 12am, 45 for 8am-4pm and unlimited during the night.  If there is a 
+request, I will open a net window early in the morning for file morning, 
+otherwise the current net session is 3:00-3:30 (which is 4:00-4:30 Minnesota 
+time). 
+  I don't know if any of this is really relevant, but there it is.   
+  P.S. (It looks like I've found a person who is willing to do about a page a 
+month for a Edmonton contribution to Citanews; I'll let you know more after 
+our weekly meeting) <Yes, we in Edmonton are a bit strange, the sysops and a 
+few others get together for pizza and beer every Thursday night>. 
+  SSR 
+
+  (Editor's note: A regular column from Canada is in the works.)
+
+
+---------------------------------------------------------------------------
+
+
+/*
+ * BABEL BABBLE
+ * A note from the USA's great Northwest
+ */
+   88Mar19 4:38 pm from bob perigo to sysop 
+ hi, i'd like to correct my listing in the nat rm sys lst:  
+ I've run Babel out in seattle (206-363-8969) @ 3-2400 baud continuously 
+ since Jan 1985.  It started with the mod of cit211 by kerry kyes & maher.  
+As  soon as less than 1/2 of the code was as Jeff wrote it, i changed the 
+name of  the program to Babel.  That was a year before bruce king took the 
+name to use  for his unix bbs.  
+ My bbs was always babel but used to greet the user with: "Welcome to the 
+ babble on Babel" Anyway, i'd appreciate it if you could correct my entry 
+from  babble to "Babel" I don't care what you put down for program.  Cit 
+would be  ok since it still runs in CP/M but babel301.arc is how i've got the 
+source  posted on various boards.   
+ thanks    
+ bob perigo  
+
+
+---------------------------------------------------------------------------
+
+
+/*
+ * NEW COMMANDS AND A STATUS SYMBOL FOR CITADEL-86
+ * CitVid dresses up the sysop's video display
+ */
+   Hue, Jr.'s Citadel-86 has gained several new features recently.
+One is a status bar for the sysop's screen to dress up the display;
+the others are new commands that can search out messages written by
+any given user or containing any phrase (good for isolating that ONE 
+message that you wanted to capture).
+   From himself:
+
+   88Mar09 6:44 pm from Hue, Jr. to citadel
+   hi, folks, this is V3.04 of Citadel-86 -- .Read User ... 
+  
+   To use it, type .RU{NFGORA}, which means you can pick the direction of the 
+search.  (ex. .Read User Forward <c/r>)  The system will then prompt for a 
+name, which you supply, and then the messages in the room will be examined.  
+Those which have authors matching the name you typed will be printed.  You 
+needn't specify the entire name, a fragment will do fine, such as "Jr." for 
+Hue, Jr. 
+   
+   88Mar23 10:18 pm from Hue, Jr. to citadel
+   We're now at V3.05 of Citadel-86, due to the addition of the .Read Phrase 
+... command.  This lets you search the contents of a room for messages which 
+match a phrase that you give the system.  For instance, 
+   .Read Phrase Forward <C/R> 
+ will cause the system to ask you for a phrase to search on, and then go 
+through the room that you are in, looking at each message (in forward order) 
+and printing those that have the phrase that you put in. 
+  
+   Just another Feep brought to you by FEEP INTERNATIONAL, an DIVISION of 
+TIMEWASTERS, Ltd., a group of people devoted to those who can find little to 
+waste their time with. 
+ ------------
+
+ (And here's a description of the status bar modification.)
+
+   88Mar06 6:13 pm from Hue, Jr. @ C-86 Test System
+   Steve .. GurgleKat of Kat's Alley (aka NO CARRIER) offered to write some 
+video routines that would allow the sysConsole of C-86 to be prettied up.  I, 
+having no pride, accepted. 
+   V1 and V2 of the routines had the bugs that you usually get. 
+   V3 works on everything except PJ's and Biko's machines. 
+   V4 works on everything ... but performance during scroll is unacceptable on 
+my machine -- you can actually see the memory copies taking place as it tries 
+to scroll the screen in the window (V4 uses the Turbo C 1.5 window routines; 
+the earlier versions uses custom code that he wrote himself). 
+   I quite like what Gurgly did, myself.  Makes for a very handsome status bar 
+across the top, and in the future I hope he'll make the info available for me 
+to choose between inverse or normal video status bars.  Generically, it looks 
+like this: 
+  
+ "Citadel-86 V3.03: <current user>   <time of carrier> <active options>   
+<system clock>" 
+  
+ If no one's logged in, current user is blank.  If the system is inactive 
+(MODEM mode, no carrier), the time of carrier is also blank.  "active 
+options" only has two possibilities: 'C' if Chat Mode is on, '^T' if the 
+Sysop has activated the ^T option while the user is on.  Finally, the system 
+clock is always active, and changes every minute (unless in network mode or 
+during downloads/uploads or long reads). 
+  
+   The Z-100 version of C-86 also has the status bar available, since it was 
+easy for me (relative to the PC video stuff) to write the equivalents to make 
+a status bar.  However, it is different from the PC version in that the 
+status bar goes across the bottom of the screen, rather than the top, and the 
+choice between inverse video status bar and non-inverse video is already 
+there. 
+   I look forward to the time that Gurgly figures out this last bug; I'm much 
+pleased with what he's done already. 
+
+   88Mar06 10:42 pm from Songbird @ C-86 Test System
+  I like the bar on the bottom. Maybe because our system terminals at work 
+look very similar. Their status bar also indicates "polling". 
+  When I first saw the status bar on Citadel, I was nonplussed at the 
+flickering that occurs during different operations, but I quickly got used to 
+it. Now I can't live without it. 
+
+
+---------------------------------------------------------------------------
+
+/*
+ * STADEL: MOVING ON, A PC PORT AND A STATUS BAR
+ * Orc prepares to pack his bag, move way down yonder
+ */
+
+  David Parsons (orc@pell), the byte-pusher behind STadel, Teeny Shell
+and Levee (a vi-style text editor), is planning to pack his bags and 
+move from snow-covered Minnesota to a far, far warmer place. 
+New Orleans is a high probability, he reports: 
+ 
+   88Mar23 12:52 am from orc @ Pell
+  
+   Remember back a few months when I was worried about the network being 
+overly dependent on Pell and wanting to change that by making people take 
+their newsfeeds off other systems? 
+  
+   Well, that's an issue again.  In June, I'm gonna be moving out of 
+Minnesota. I will probably be moving to New Orleans; it may be somewhere 
+else, but it's gonna be someplace other than Minnesota.  If you don't want 
+your systems to (a) do l-d calling to the southern half of the USA or (b) 
+don't want to lose access to Pell for two weeks (the minimum amount of time 
+to have a new phone line installed, to set up the system, to get a new Usenet 
+newsfeed, and to notify the world of the new address), look into setting up 
+some alternate routings for the network rooms. 
+  
+    Thank you, the Mgmt. 
+
+  --------------
+
+  Orc hasn't been devoting all his attention to the potential move,
+though -- he's been polishing and debugging STadel 3.2a (now in beta
+testing at several locations) and simultaneously porting STadel 
+to his AT&T Unix PC -- on both the Unix and PC "sides" of the machine. 
+He reports that the PC version is completed and running, but official
+release will be held up until STadel version 3.2a. That probably
+means June.
+  Work on the Unix version continues.
+  Pell has been running a 19.2-kilo-bps modem lately, testing high
+speeds for both STadel and UUCALL, the STadel/Usenet internetworking
+program.
+  STadel also has added a system status bar for the sysop's display
+similar to that provided by the CitVid modification to Citadel-86.
+  The status bar employs a little system trick from John Stanley that 
+in essence fools the ST about how many lines are available on the
+TOS screen. (Programmers: Contact orc for sources.)
+
+---------------------------------------------------------------------------
+
+/*
+ * A CLARIFICATION ON CITADEL PLUS
+ * Corvair's version is not for the C128 only
+ */
+
+   88Mar17 2:55 am from Corvair @ C-86 Test System
+George Jetson, I heard something today, or I should say read something, that 
+isn't quite true. It concerned Citadel Plus. I'm not sure what it was all 
+about, but just so things are a little clearer for everyone. Citadel started 
+out on a CP/M operating system and has been ported to many computers since. A 
+particular version that I maintained I ported to the C128 computer in the 
+CP/M mode. When I finally got that monster of a computer figured out, the 
+CP/M was version 3.0, also known as CP/M Plus. The lifespan of the first 
+Commodore Citadel version was about a day, before I took the Plus from CP/M 
+Plus and added it to my Citadel. At the same time, we were at Citadel version 
+2.256 or some such (yes a lot of trial and errors...) and since that was out 
+of hand and a major breakthrough had come about, I also started the Citadel 
+Plus version as 3.0 to comply also with the 3.0 of CP/M that it was capible 
+of running on. Currently it's at 3.14 and I hear is available for download as 
+the .COM and .C files on Black Service. 
+  
+ What I read was something like it was a Citadel for the C128, which isn't 
+quite true. It also maintained compatiblility with the other computers that 
+it ran on in CP/M, including the KayPro, Z100, and the Digilog, plus who 
+knows what else now. 
+
+
+---------------------------------------------------------------------------
+
+/*
+ * NET NOTES FROM PORTLAND
+ * An networked exchange regarding exchanges among networks, neturally
+ */
+ 
+ (The following conversation is excerpted from the net.gossip room
+carried by the STadel network and monitored at Pell. Paragraph breaks
+were inserted to protect the reader's sanity.)
+ 
+  88Mar08 12:09 pm from Lisa Gronke @ Great Corrupter, OR
+   Bty, the (FidoNet) Net 105 sysops have a monthly meeting (which happens 
+to be tonight. One of the topics on the agenda is the FidoNet <--> OtherNet 
+gateways. I am going to be writing user instructions on how to use all the 
+Portland networked systems ... FidoNet, FoReM-Net, Citadel and UUCP are the 
+major ones. 
+
+  88Mar13 1:56 am from edrury @ 3cpu.pdx
+    Well of course. The Net 105 sysops are meeting on how to butt in on every 
+network out there. The same people who say any sysop who doesn't charge  
+an access fee to their system is irresponsible. I hope they leave Citadel 
+Networks out of their little plans! This is exactly the kind of mentality 
+which will bring regulation down on the Networks. I have even heard from 
+these people that we should ALL pay business rates for our phone lines. 
+I don't know what happened to people who run systems for the fun of it, 
+but there sure are a lot of people who want to take all the fun out of it 
+and make it too expensive to do as anything but a business.
+  
+    Don't get me wrong. I think a gateway is an admirable hack. But it is not 
+the code to do the gate which I find offensive. It is the attitude that we 
+must turn all the networks into one giant clone of Fido-Net, which frankly 
+has become one big political monster. A local Forem system which I will 
+not name as gone this route. Now there are practically *no* local messages 
+on it. I suspect a lot of the users are too intimidated to post anything 
+when the entire message base (All the message bases) are full of postings 
+from professional developers, consultants and vendors from all over the 
+US. 
+
+    With all the gateways, there is no real community of users. The nets 
+become a melting pot --yes-- but the community spirit is so defused 
+as to become strickly a technical and redundant group of dispassionate 
+nerds talking about this interupt and that vector. 
+  
+   The party just gets too big for more 'folksy' type of people -- 
+my kind of people. Then where will we meet each other? In conference 
+halls wearing name pins and three piece suits? Oh boy, 
+I can do that all expenses paid by my employer -- FOR WORK. 
+The bulletin boarding of America has lost its local color...... 
+ 
+		  ------------Ed 
+
+   88Mar13 10:29 am from vicord @ 3cpu.pdx
+  Ed I agree with you.  It seems a lot of bbsing is turning into a big 
+colorless blob.  I remember back when you called a new bbs it was an 
+adventure.  Each bbs had its own color. We STadels must fight to kept out the 
+'yuppies.'  
+  On another path if the phone companies find that your are 
+charging money for use of the phone lines they will charge you business 
+rates.  Those bbs's are in a gray area that could cause the rest of us a lot 
+of problems.  The bbs lines are to public.  Don't think you are fooling the 
+phone companies.  They is a local bbs here in Portland that has seven phone 
+lines going into one apartment.  This system just went to a pay system.  It 
+is only a matter on time before PNB wacks him. Then we all will hear stories 
+about the big bad phone company picking on a poor little bbs operator.  He's 
+not compaining about cheaping PNB by running a business and not paying 
+business rates.  Before you jump on me remember what he doesn't pay we pay.   
+
+   88Mar14 1:41 pm from dalew @ 3cpu.pdx
+  Ed: On the current state of the -majority- of Net 105 I do agree with you. 
+I do not attend the monthly meetings that they hold. Many times I have 
+regretted even becoming a part of the local net. It definitely has it's 
+advantages and disadvantages and I'm beginning to think that locally the 
+latter out way the former. While I do have a Unix Gateway running, it really 
+has no contact with the rest of the net other than the other two nodes that 
+are testing the same softwre I have for that. I have my own newsfeed via 
+percival and pretty much do my own thing. 
+
+  I've also found out that I seem to get accused of many things that I or
+my system is NOT doing and even when it's proven that I or my system is
+not at fault, the accuser won't admit it much less apologize for the
+inacurate claims they have made. 
+
+  Sure, I'm curious as to whether I can get my BBS to network with a
+Citadel, but I'm not trying to bring all the networks there are into one
+single one. That would be the LAST thing I would want in fact. Each net
+has its own unique charms, characteristics, problems, and solutions
+(sometimes!) and I wouldn't try to change that even if I could. 
+
+ That's just my own view from a Fido-Net Sysop that doesn't subscribe to
+the ways and directions of others in the net. I guess you could say that
+I'm more that a bit of a rougue or outcast in Net 105 but so be it! I can
+live with that as long as I can run my system as I want to such that it
+doesn't harm anyone or upset the rest of the net (which it doesn't even
+though some think so). 
+
+  Sometimes I wonder if it isn't certain people that just want to control
+everything they possibly can and they just can't stand an independant sort
+of person doing similar things as they are...  Well, that's my nickle's
+(or maybe quarter's) worth for now. No flame on you is intended and I took
+no offense at your message at all. In fact, I agree that what you say is
+all too true in Fido-Net these days. I find the Citanet and Usenet more to
+my liking each day... 
+
+   8-Dale 
+  
+   88Mar14 11:10 pm from edrury @ 3cpu.pdx
+ dalew@3cpu.pdx ( a system dear to my heart :-) 
+   I am glad you took no offense to my message. I didn't mean offense -- even 
+-- to some of the people I *know* are involved in teh very things I meant to 
+flame. I think they should wake up and smell the coffee, peer out between the 
+hemorroids and all that rot13. I know their intentions and hope to sink same. 
+                Ed 
+
+---------------------------------------------------------------------------
+
+
+/*
+ * WHAT ABOUT INNER SANCTUM?
+ * A discussion from Dream Park BBS, Sacramento
+ */
+  (The following messages are excerpted from an ongoing discussion
+at Dream Park BBS, a system running Inner Sanctum software. IS is 
+a non-networking system based on STadel 2.x that has been heavily
+modified by Ganelius & Co. in the direction of Stonehenge software.
+This discussion involves some users interested in networking.
+The sysop of Dream Park is Cheech Wizard; the number is 
+US 916-638-4237.)
+
+   88Feb10 from Chas Warren
+  The SysOp of this board, and I, had an interesting discussion concerning 
+networking.  The SysOp suggested that a universal standard be adopted for 
+networking purposes, as ASCII is a universal standard, that would cut across 
+the incompatibilty of Fido, Opus, Cit, Forem, etc. 
+  I thought it was a great idea. 
+  Comments? 
+
+   88Feb11 from Cheech Wizard
+ I don't understand why a network standard hasn't already been developed.  
+Since IS development is turning into a group effort and being ported to 
+several machines, it seems that a network standard could be developed and 
+adapted to several machines. 
+
+   88Feb11 from Jon Cline
+Well what about who wrote the message, ect?  Some bbs's have date, time, 
+from, group, bbs, subject, roomname (subboard) all kinds of things..  It 
+would be hard to make a standard.. 
+
+   88Feb11 from Chas Warren
+  Some BBS programs might pose a problem.  But there could be default answrs, 
+provided by the _receiving_ BBS. 
+
+   88Feb11 from BOUNTY BOB
+A standard is a nice idea but there are just too many BBS formats out 
+already. The only way I see a standard is if one BBS program is ported over 
+to most all other types of computers. Forem already is for the ST and the PC, 
+i'm not sure if the PC has F-NET yet but that could be part of a standard. 
+OPUS will be ported to the ST. Who knows. 
+
+   88Feb11 from Chas Warren
+  Opus will be ported to the ST?  Where did that nifo come from?  I hope that 
+it is accurate, as I like Opus a great deal... 
+
+   88Feb12 from BOUNTY BOB
+oops, I don't know what I was typing, I meant to say, IF Opus would be ported 
+to the ST. 
+
+   88Feb14 from Chas Warren
+  Cheech: regarding the universal networking standard, I talked with Don 
+Menefee, and he informs me that Fido _is_ such a standard.  It is just up to 
+the various BBS authors to use it. 
+
+   88Feb15 from Cheech Wizard
+I suspect that IBM users would be disposed toward that.  Is F-NET and FIDO 
+net the same?  What machines use FIDO NET besides IBM boards? 
+
+   88Feb15 from Chas Warren
+  No, I don't believe that F-NET and Fido are the same protocol.   
+
+   88Feb15 from Cheech Wizard
+Then name what computer besides IBM and clones that uses FIDO networking. 
+
+   88Feb16 from Chas Warren
+  I think all of the CP/M machines use Fido. 
+  The point is, the Fido network is already vast, and it works.  Why reinvent 
+when it is easier just to follow an existing standard? 
+
+   88Feb16 from BOUNTY BOB
+Doesn't the Mac also use Fido or Opus? 
+
+   88Feb16 from Cheech Wizard
+The IS development team does not intend to re-invent the wheel.  Ganelius is 
+leaning heavily toward Stonehenge network.  He is very familiar with the 
+features of it and Stonehenge is a very popular BBS program in the Pacific 
+Northwest. 
+
+   88Feb16 from Chas Warren
+  Stonehenge... I've never heard of it.  Is it Fido compatible? 
+
+   88Feb16 from Scott Trep
+Onion Fields tried Stonehenge once... And it crashed constantly. 
+
+   88Feb17 from March Hare
+ Has Inner Sanctum been written for any other type of computer besides the ST? 
+
+   88Feb17 from Cheech Wizard
+  StoneHenge is a derivative of Citadel 86 and CItadel CPM.  It has halls and 
+groups similar to IS.  As far as I know, it's NOT Fido-compatable.   
+  IS has not yet been ported over to any other machines, but the development 
+team is supposedly geared toward trasnlations to the Amiga, IBM, and 
+Macintosh. 
+  Chas, I wish you would tell us what makes FIDO-net so a-friggin-amazing. 
+
+   88Feb17 from Chas Warren
+  What makes Fido so amazing?  How about the largest network in the world?  
+Logon to NightLine BBS, and you will see its awsome dimensions.  362-0715.  
+Fido has special feeds covering, literally, thousands of topics.  Nighline 
+alone carries fifty different feeds.  Fido was written for the PC's, and 
+there are, conservatively, 13 million PC users.  Fido is THE most established 
+network protocol, with millions of messges left on the net each year. 
+  Anything else? 
+
+   88Feb17 from Cheech Wizard
+Are you proposing I maintain a 50MB message base with entries made primarily 
+by IBM users? 
+
+   88Feb19 from Chas Warren
+  I wasn't proposing anything.  I was just answering your question regarding 
+Fido.  If you think that Fido is only used by IBM users, then call NASA and 
+read the messages in the Atari_ST section... you will see that there are 
+probably as many ST users on Fido networks as there are ST users on Forem 
+networks.   
+
+
+---------------------------------------------------------------------------
+
+/*
+ * YET ANOTHER AMIGA CITADEL?
+ * A note from the STadel net.gossip room
+ */
+
+   88Mar10 10:06 pm from Cole Calistra @ The Guild
+Hello all you Citadelites out there! 
+   What is the file name and room on Sinkhole Utopia of the current STadel? I 
+am working on modifiying the current Amiga Cit to support it's features.. I 
+and the Sysop here (Dave Wright) are currently working on making Cit 
+look more like a (Pardon the expression) REAL BBS.. I like Cit personally, 
+but some of the point and click type people in RI have expressed harsh 
+feelings toward Cit, specially since they know nil, and don't want to have to 
+do any brain work to get msgs.. etc... We intend to add in a pause b/n 
+messages,  like in Pcboard, BBS-PC!, etc... And make the Amiga net at any 
+time, like  STadel, (Of course we NEED FLOORS!).. Oh BTW, I meant the current 
+STadel  source code, IE. Which room, and EXACT file name... Also, anyone with 
+the  newest IBM version source would be nice also, since Jay seems to have 
+given  up the Cit business (Unless he intends to REALLY suprise us all and 
+come out  with his own source code, [not just the IBM source with the second 
+System SPec file changed to the Amiga stuf])....  
+             Well!!!!... Thanks! 
+                -Cole Calistra- 
+
+  (Editor's note: STadel has a "pause between messages" implemented via
+the .Read More command, which the sysop may choose to define as the default
+for new users.)
+
+
+/*
+ * "PHTHTHBLLLTT!"... 
+ * (We just couldn't resist)
+ */
+
+   88Mar22 2:55 pm from Eliminator @ Secret_Edm
+ Hey guys!  Here's a news flash that just came off the wire!: 
+  
+ NEW VERSION OF FOREM BBS SOFTWARE ARRIVES IN EDMONTON 
+ ----------------------------------------------------- 
+      A new release of FoReM ST arrived yesterday.  Among the new features is 
+yet another new file transfer protocol, 'ZZZMODEM'. This new protocol 
+transfers data in blocks of 16 Megabytes, giving it the largest block size of 
+any file transfer protocol in the known Universe.  The checksum for each 
+block in a ZZZMODEM transfer is sent via XMODEM, for greater accuracy. 
+      "This new protocol will allow us to transfer data at rates up to one 
+one-hundredth of one percent FASTER than by any previous method," explained 
+Phil "Compu" Dweeb, a FoReM afficionado, pausing occasionally to wipe the 
+drool from his chin. 
+      Industry insiders were quick to point out that using ZZZMODEM, it takes 
+roughly 2 hours and 25 minutes to transfer a 20K file at 19,200 baud.  Mr. 
+Dweeb said that this problem has been dealt with.  "Each block is padded with 
+nulls, which take no time to send," he explained. 
+      The new version of FoReM ST also has the new "Recursive 
+ARCing" feature.  As Mr. Dweeb explains:  "All download files are 
+recursively ARCed by FoReM before being put online.  Our experience has shown 
+that when you ARC a file, it gets smaller.  Therefore, the approach we 
+have taken is to repeatedly ARC the file until it reaches a size of 
+roughly 10K.  At that point, it's hardly worth the trouble, wouldn't 
+you say?" 
+      Reportedly in the works for a future release is the patented "One Length 
+Encoding" process.  Early reports suggest that this procedure can reduce the 
+length of a file to just 1 bit.  Mr. Dweeb takes up the story: 
+      "One day we were sitting around doing some hacken and phreaken, and one 
+of us started thinking.  All binary data is encoded into bits, which are 
+represented by ones and zeros.  This is because a wire can either carry a 
+current or not, and wires can therefore be set up in a a series that can 
+represent strings of ones and zeros. 
+      "Notice, however, that the real information is carried in the ones, 
+since the others carry no current.  I mean, what good does a wire do when it 
+isn't carrying any current?  So by dropping all the zeros, you can easily cut 
+file sizes in half.  So we decided that a cool way to speed up data transfer 
+would be to only send the one bits.  The results were phenomenal -- an 
+average speed increase of 50%!! 
+      "After we finished the initial implementation, we kept finding ways to 
+make the thing faster, and more efficient.  But then we realised that we 
+hadn't gone all the way.  If you think about it, after you drop all the 
+zeros, you're left with a string of ones.  Simply count up all the ones, and 
+you're left with another binary string.  Say you end up with 7541 ones.  In 
+binary, that's 1110101110101.  So immediately we've reduced the number of 
+bits from 7541 to 13.  But by simply repeating the process, we can reduce 
+it further.  1110101110101 becomes 111111111, or 9, which is 1001, 
+which becomes 2, which is 10, or 1.  Once we reach a string length of 1, we 
+have reached maximum file compression.  We now have the capability to encode 
+virtually unlimited amounts of information into a single digit!  
+Long-distance bills will never be the same! 
+      "Now, that's not to say that there aren't a few problems.  The biggest 
+one we have encountered is that for some reason, there seems to be a certain 
+amount of data loss during the conversion process.  It seems that sometimes 
+the file cannot be expanded into its original form.  So, the solution we came 
+up with was to have an encryption key associated with each file.  When a One 
+Length Encoded file is received and is undergoing decompression, the unique 
+encryption key must be supplied.  That way, we end up with a 100% success 
+rate in our conversions! 
+      "A problem which we are having difficulty resolving lies in the fact 
+that to ensure a 100% success rate, the encryption key must be exactly as 
+long as the original file.  We are confident, however, that the use of our 
+Recursive ARCing procedure will help to solve this problem..." 
+
+      Well, there you have it, folks.  Those FoReM guys never cease to amaze, 
+bringing the ST community the latest word in powerful, useful, user-friendly 
+BBS software. 
+  
+ ===================================================================== 
+ (c) 1988 by Adrian Ashley (Eliminator @ Secret_Edm  CA 403 467 8829) 
+  Permission is hereby granted to wave this in the face of the first 
+  FoReM sysop you find and go "Phththbllltt!"... 
+ ===================================================================== 
+
+
+---------------------------------------------------------------------------
+/*
+ * PARTING SHOTS
+ */
+  
+  Your humble departing editor has several items stashed in the computer
+at work, but has not gotten around to retrieving them, so they'll have 
+to wait until CitaNews's big May issue (which Dave Quick is even now
+assembling.)
+  Have a nice month.
+  
+
+
+[END OF FILE]
+
+
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                

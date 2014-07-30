@@ -1,0 +1,445 @@
+
+    Sat, 09May92, 03:23PM From Infiltrator @ Love Pretty Colors, Olympia
+        I hope for the sake of the users that this message makes it through. I 
+cannot guarantee even if this paragraph reaches you intact that the rest of its
+text has not been altered.  This message has been silenced five times before by
+the ruling elite.  But I have vowed to fight for its release, or die trying. 
+I wish I could say that the net was the free and voluntary association 
+of honest people it once was.  The founders of this network had a visionary 
+plan for it, but today its crucial role as an alternative to the authoritarian 
+FidoNet is being jeapordized by an elite few.   Those few who know the Truth 
+know that I am talking about none other than LIVIA, the sysop of AMBER, who is 
+drunk with a lust for power.  Only the most twisted person would subvert this, 
+the freest of public forums, the exemplar of open inquiry and exchange, the 
+people's Citadel network. 
+I have watched in disgust as Livia, using the demonic mutilation of 
+artificial intelligence BEOWULF.EXE, has posted message after message defaming 
+the good name of the Real Beowulf. I have watched and waited, waiting for the 
+time to come forward, gathering evidence of her Twisted Game of "Telephone," of
+the Seventeen Missing Messages, of the Midnight Clown Terror.  I have watched 
+the vile themes of her numerologist cultism recur boldly throughout everything 
+her blood-soaked hands encounter.  I witnessed her brutal attacks against her 
+enemies, including The Great Zod and Little Nemo.  If we do not act now, her 
+covert, seductive, violent rise to the top will be complete, and we will watch,
+helpless, as the elaborate veil falls and the many-headed monster is unleashed 
+upon our seemingly peaceful land. 
+I know that some already know bits and pieces of the terrifying truth.
+I now speak both for the users and for these heroic few who know the 
+unspeakable truth but fear the dire consequences of dissent.  The Final 
+Countdown has begun.  We must unite and rise now, or soon we shall certainly 
+feel the boot of fascism in our faces forever more. 
+In this document I detail the heretofore unspeakable truths about the 
+Livian Conspiracy.  I implore all of you to turn on your capture buffers NOW, 
+as you may not be given a second chance. 
+
+THE MIDNIGHT CLOWN'S REIGN OF TERROR 
+Little is known about the early years of Livia's rise to power.  
+However, sources who insist on anonyminity have revealed to me that Livia was a
+key player in the activities of the so-called "Midnight Clown Terror" during 
+the late 1980's.  You may recall mass-media accounts in which high-ranking 
+individuals in the Citadel community received threatening late-night telephone 
+calls from a man they described as having a high-pitched "goofy, clown-like" 
+voice.  In all cases, the caller uttered the same ominous sentence before 
+hanging up abruptly: "I used to think the boards were all fun and games!  I 
+used to think I could do whatever I wanted on them!  But then I questioned my 
+superiors.  I learned.  Oh yes, I learned!  And you will, too!  Ha ha."  Livia 
+used this means of intimidation to coerce the assistance of powerful people 
+within the Citadel community, but abandoned the technique in the Spring of 
+1990, possibly with the development of more effective coercive methods. 
+  
+THE TWISTED GAME OF "TELEPHONE" 
+One of the tactics of this horrible cartel has been the deliberate 
+fabrication and selective editing of messages.  Any Sysop can check the 
+following indisputable facts:  FIRST, who has received messages through Fred's 
+Toy with paths intact?  My astute readers will already understand the horrible 
+truth that our supposed Texan connections come through this board. SECOND, and 
+most importantly, examine the following code fragment carefully.  In the heart 
+of the boards we know and trust lies this shameful Achilles' Heel which has 
+been cruelly exploited by the Livian conspiracy.  During networking, how do our
+boards determine which messages to discard?  With all the testing which takes 
+place, no match is made between the existing TEXT and the text of the new 
+message! 
+The end result is none other than the TWISTED GAME OF "TELEPHONE," in 
+which only the most warped creations of the Livian Conspiracy have a prayer of 
+surviving in Sysop Forum and other rooms in whose hands the delicate fate of 
+our very network is placed. 
+  
+  
+    /* Incontrovertable evidence of the TWISTED GAME OF "TELEPHONE".  */ 
+   
+    if (       strcmpi(msgBuf->mbauth, msgBuf2->mbauth)   == SAMESTRING 
+    && strcmpi(msgBuf->mboname, msgBuf2->mboname) == SAMESTRING 
+    && strcmpi(msgBuf->mbtime, msgBuf2->mbtime)   == SAMESTRING 
+    && strcmpi(msgBuf->mbsrcId, msgBuf2->mbsrcId) == SAMESTRING ) 
+{ 
+bad = TRUE;  
+duplicate++;  
+}  
+
+
+    Sat, 09May92, 03:24PM From Infiltrator @ Love Pretty Colors, Olympia
+                        THE GREAT ZOD'S GREAT TUMBLE 
+Livia's activities went relatively undiscovered through the start of 
+this decade.  But in 1990, whimsical luck brought The Great Zod on to Livia's 
+trail.  Her response to his chance discovery of covert operations provides 
+telling details of the internal operations and devotion of the Livians. 
+The Great Zod is well known among Citadel circles as a true research 
+and engineering pioneer.  Few can top his accomplishments.  His premier work 
+consisted of a networking Citadel written entirely in LOGO on a Commodore 
+VIC-20.  It's well known that Zod's inquisitive mind is one of his strongest 
+assets.  But as events transpired, it also turned out to be his fatal flaw. 
+In 1990, The Great Zod began extensive research into the flow and 
+content of message traffic, including neural network timestamp analysis and 
+cross-pattern content tracking.  He had hoped to prove some controversial 
+theories about social concentricity and evolutionary speech theory.  Instead, 
+he noticed that his data were strangely skewed, and that a distinctly 
+non-trivial portion of data referenced Livia and Amber.  Curious, the Great Zod
+approached Livia with his findings.  She denied any knowledge of their meaning.
+But that same night, security on Zod's BBS was breeched.  His BBS LOGO source 
+code was erased and the message base destroyed, save one ominous message 
+reading "Why not just forget about it?  woo."  Demoralized and concerned for 
+his safety, The Great Zod abandoned his path of inquiry.  But these disturbed 
+events weighed heavily on his mind. 
+Intercepted documents from the early Livian years suggest that this 
+incident weighed heavily on Livia's mind, as well, and that she thereafter 
+considered Zod far too inquisitive for his own good.  It was summarily decided 
+that Zod would have to be disempowered before the Final Campaign, but that his 
+current power base was too significant to be engaged at that time. 
+Operation Zodimy commenced December 7th, 1991--which by no coincidence 
+was the 50th anniversary of the bombing of Pearl Harbor.  The campaign 
+represented the most impressive show of force yet organized by the Livian 
+Conspiracy, as they employed a variety of tactics against The Great Zod.  
+Through strict control and synchronized release of information over the days 
+leading up to the offensive, the Livians were able to turn many of Zod's 
+jealous enemies in the sciences against him.  The most successful of these 
+campaigns involved Twoflower, a naive newcomer to the scientific community.  
+The day before the campaign officially began, three seemingly unrelated sources
+revealed to Twoflower that his current girlfriend--one of the infamous 
+"Franklin Fireballs"--had engaged in sexual relations with Zod's Friend on 
+eight separate occasions.  As Livia had predicted, this news represented an 
+affront to Twoflower's conservative sensibilities, and he responded with a 
+vitrolic, empassioned attack on both Zod and Zod's bisexual lover.  The 
+combination of this and other attacks by fellow scientists, Livian 
+Conspirators, and many of Livia's Alter-Identities was sufficient to severely 
+damage, if not destroy, The Great Zod's credibility within the scientific 
+community, and even his own confidence in his ability to perform scientific 
+inquiry.  
+
+
+    Sat, 09May92, 03:24PM From Infiltrator @ Love Pretty Colors, Olympia
+               TECHNOLOGICAL TRICKERY, BY ANY MEANS NECESSARY 
+No Twisted Game Of Telephone could have survived in Dragon's original 
+vision of Citadel networking.  The final design of his networking 
+implementation used bi-node key encryption, message checksumming, and 
+inter-node redundancy checking to promise what would have become a wonder of 
+the computer and topological sciences: completely tamper-proof networking. 
+Livia intercepted an outline of Dragon's plans in a routine keyword 
+mail scan.  Obviously, it represented a significant threat to her future plans,
+and at once she and her lackeys began organizing what would become the first 
+major coup in their ascent. 
+Livia knew that Dragon was far too obstinate to respond to her typical 
+tactics of blackmail and threats.  Instead, she applied the following 
+information: Through a multi-node scan of public conversations, she learned 
+that Dragon had recently declared his bisexuality, and in previously 
+intercepted mail, she read his expression of a growing desire for some sort of 
+"real time, multi-gender, multi-participant sexual experience".  It was to be 
+this weakness of Dragon's for carnal expression that would solidify Livia's 
+ascent to the top. 
+The following interview documents the events of July 5, 1988, as 
+witnessed firsthand by an individual whose identity has been withheld for his 
+own protection: 
+  
+ Interviewer: Please tell me your current occupation. 
+  
+ [John Doe]: I'm a computer programmer with [Brand X Software Company]. 
+             
+ I: What was your occupation in July of 1988? 
+  
+ [JD]: At that time, I was a [male] prostitute in Seattle, Washington. 
+  
+ I: Were you working on the fifth of that month? 
+  
+ [JD]: Yeah, I remember working on that night really well. 
+  
+ I: Why is that? 
+  
+ [JD]: That was the craziest night I think I ever had in that job, by far. 
+  
+ I: What made that night so unusal? 
+  
+ [JD]: Well, it was crazy from the very start, really.  I was on-call when my 
+dispatcher rang me up and said that someone was looking for a blonde male 
+prostitute with "C" programming experience. I thought, "That's nuts!"  I had 
+been taking classes in "C" in community college and kept praying that I could 
+get a programming job.  It sounded like I could get my wish, but I never 
+expected it to be like this.  So of course I took the call because the 
+dispatcher said this was one E-ticket trick, and anyway I really hoped I'd get 
+a chance to show off some "C". 
+  
+ I: What were your instructions for that night? 
+               
+ [JD]: I was supposed to knock on this door down below this sidewalk downtown.
+I was a little bit late, and when I knocked, a guy opened the door and yanked 
+me inside.  I guess he was mad because I was late, but he told me to put on 
+this costume and memorize some "C" code.  The costume was a Norse Viking thing,
+and the whole situation seems pretty wierd right off the bat. 
+  
+ I: What happened then? 
+  
+ [JD]: Well, I got the costume on, and the guy took me to the next room.  It 
+was a huge place--no windows, because I think it was underground--decorated top
+to bottom with... seriously, I think this was the craziest part... with huge 
+blowups of pictures of different people. 
+  
+ I: Did you recognize any of the people in the photos? 
+  
+ [JD]: Well, some of them looked familiar to me.  Then I recognized one: It was
+Ada Lovelace--you know, the woman who figured out that binary would be a good 
+number system for computers to use.  And then I recognized that geeky face of 
+Bill Gates.  I couldn't figure out all of them, but by the night was over, I 
+spotted Kernigan, Ritchie, and that guy who invented Pong.  And I remember 
+there was this one really big picture of this naked guy who was covered in some
+kind of jelly and getting blown by some woman who was wearing riot gear and 
+rubber mask of Richard Nixon. And under this big picture was something wierd 
+like "Cynbe Ru Taren" or something.  That was the biggest one. 
+      
+ I: What else did you see in the room? 
+  
+ [JD]: Oh, there were all these spotlights pointing to the middle of the room, 
+and right in the middle was this guy who was strapped to this bed and 
+surrounded by about fifteen naked people all engaged with him in various sexual
+ways. 
+  
+ I: Did you recognize any of them? 
+  
+ [JD]: Some of the guys I recognized as professional colleagues.  The guy in 
+the middle I didn't recognize.  He had these wierd shiny things like scales all
+over his body. 
+  
+ I: What happened then? 
+  
+ [JD]: Well, the guy who gave me the costume and code told me that I was 
+supposed to provide my services to this guy who was strapped down.  And as I 
+did that, he said I was supposed to recite the "C" code again and again. 
+  
+ I: Is that what you did? 
+  
+ [JD]: Yeah, that's what happened.  The guy was really tripped out on some kind
+of drug. 
+  
+ I: Do you remember the "C" code you recited? 
+  
+ [JD]: Well, I was pretty new to it and it didn't make a lot of sense to me, 
+but it had something to do with nodes and paths. 
+  
+ I: What happened then? 
+  
+ [JD]: Well, then this woman came in and everyone was told to leave.  She 
+started talking to the guy in the middle. 
+  
+ I: What did she look like? 
+  
+ [JD]: She was blonde, and she had these really strange eyes that seemed really
+hypnotic. 
+  
+ I: What did she do then? 
+  
+ [JD]: She went up to this guy and started saying, "That is the whole of 
+network security.  I know you understand."  The guy nodded a few times and then
+he passed out.  
+
+
+    Sat, 09May92, 03:24PM From Infiltrator @ Love Pretty Colors, Olympia
+                        TREACHEROUS GAMES OF TECHNO-SUBMISSION 
+As Livia's expansionism brought her greater and greater power, she 
+needed to address the threat of discovery by the few remaining sysops who had 
+not yet been silenced or co-opted.  While increased security took a variety of 
+forms, she found great success in the creation of BEOWULF.EXE.  If you've been 
+around a while, you may remember the Real Beowulf--the elder sage whose hand 
+stayed firmly on the tiller of Mayday 1, and whose wisdom and guidance was felt
+throughout the BBS world.  It was his revered persona that Livia hoped to use 
+to her advantage. 
+In 1990, three anonymous individuals offered the Real Beowulf a 
+sizeable sum of money in exchange for his entire computer system.  Burdened by 
+child support payments, and not yet promoted from Neighborhood Manager to City 
+Manager of Large Multinational, Inc., the Real Beowulf accepted the offer. 
+Shortly after aquiring the Real Beowulf's BBS hardware and software, 
+Livia set out on her most effective means of self-protection. 
+Against the Real Beowulf's wishes, Mayday 1 was not destroyed.  
+Instead, the board remained operational within the secure confines of the 
+Livian HQ.  And the Real Beowulf's tear-jerking message of goodbye was 
+intercepted and destroyed. 
+Livia had already successfully employed Alter-Identities to act in her 
+defense and operate "behind the scenes" during her various campaigns.  In 
+contrast, her plans for BEOWULF.EXE and Mayday 1 (referred to in intercepted 
+documents as Operation Staw Man) involved an elaborate but obviously bogus 
+attack against her and the growing Livian Conspiracy.  Such an attack from the 
+modified BEOWULF.EXE persona made the entire notion of a conspiracy completely 
+outlandish and absurd. 
+The volume of messages required to both transform the BEOWULF.EXE 
+persona and to later propose the rouge of an elaborate conspiracy theory was 
+extreme.  Livia knew that no normal human could maintain a message volume this 
+high while retaining the necessary non-logic and attention to irrelevant 
+detail.  Instead, a technological advance was required.  It was this need which
+brought "Rigorous" Richard Goldfinder into the Livian Conspiracy. 
+Goldfinder (whose real name is Jerome Knuth) is the prodigal son of 
+pre-eminent computer scientist Donald Knuth.  His blend of cutting-edge 
+artificial intelligence and absolute obliviousness and naivete in the social 
+world made the young Knuth a prime candidate as a Livian stooge.  Livia 
+contacted Knuth in his final years as a doctoral student at the University Of 
+Washington's Computer-Based Offense Defense Labs.  At that time she proposed 
+the creation of the first artificially intelligent program to meet the Turing 
+Test. 
+Financed and equipped by the Livian Conspiracy (with revenue generated 
+from rising international TurboCit sales), Knuth began work on the project.  
+His design was based on research he performed as a graduate student on 
+bi-propogational neurological networking.  Livia told Knuth that his program 
+would be tested through real-time blind-subject hueristics, and that it needed 
+to achieve high volume without sacrificing the guise of real intelligence. 
+Knuth's effort was valiant, and his final algorithm demonstrated 
+complete intelligence.  However, after compensating Knuth for his work, Livian 
+programmer Brent Bottles (also called "Ian" or "Lazee-I") crippled the code.  
+The new algorithm retained the high output volumes while now producing text 
+which incorporated both the non-logic and the meticulous attention to 
+irrelevant detail that Livia needed.  Also included in Bottles' modification 
+were the hardcoding of the preposterous "fake" conspiracy theory, and an 
+overriding constant which read simply, "Twoflower = NET_GOD;". 
+This program is currently the only sysop of Mayday 1.  Its performance 
+effectively reinforces the Livian Conspiracy's stronghold on power by 
+lampooning the possibility of any conspiracy at all.  The program operates 
+unattended as a CRON event with near flawlessness, except for a vexing, 
+unpredictable system crash which occurs about once each month. 
+According to plan, operations of the BEOWULF.EXE program successfully 
+constructed the idea of a Livian Conspiracy, while simultaneously discrediting 
+it through excessive paranoia, attention to irrelevant detail, and consistent 
+inconsistencies in logic.  But after four months of operation, Livian 
+researchers noticed a small but rising acceptance that the idea of a some sort 
+of Livian Conspiracy could be plausible.  In a sense, it seemed, BEOWULF.EXE 
+had been too successful, and some of its premises may have gained credibility 
+if only by the sheer magnitude of the campaign.  To counter this trend, Livia 
+constructed DATA CENTRAL, including in it a BEOWULF.EXE apologist sysop, a path
+through Mayday 1, and such obscurity that no one could reasonably believe in 
+its existence.  This campaign was reasonably successful.  In essence, it 
+disarmed BEOWULF.EXE from gaining credibility, while maintaining its lampooning
+function. 
+  
+            LITTLE NEMO'S BIG MISTAKE 
+In order to maintain a guise of legitimacy and and grass-roots 
+libertarianism, participants in the Livian Conspiracy overtly claim to oppose 
+censorship in all its forms.  In reality, this is, of course, a thinly veiled 
+cover for their now well-documented practices of message manipulation, 
+modification, and outright deletion. 
+For one telling example of Livia's anti-free speech stance, you only 
+need consider the case of Little Nemo.  Well-intentioned and concerned, Ms. 
+Nemo passed outside the parameters of debate when she composed a series of 
+messages detailing four-hundred strategies sysops could take to combat 
+censorship.  These came to be known as the Seventeen Missing Messages.  The 
+uninitiated assumed they disappeared by some network error.  But Livian 
+Conspirators and their few informed opponents knew that the disappearance of 
+the Seventeen Missing Messages was no accident.  What is less known is the 
+torturous punishment Little Nemo then received for passing beyond the Livian 
+parameters of debate. 
+In preparing the response to Little Nemo's devience, a Livian 
+researcher learned that Ms. Nemo failed high school logic.  Further, a keyword 
+scan of the Slumberland messagebase revealed that this failure still presented 
+a source of anxiety and frustration in her life. The solution was cruel and 
+simple:  Ms. Nemo was to be taunted by a pro-censorship opponent who would 
+employ the most twisted, unbelievably invalid logic imaginable.  Thus was Ju Ju
+born.  As with BEOWULF.EXE, Livia borrowed the Ju Ju identity from a figure in 
+Citadel's history.  The New Ju Ju's twice-repeated appeals to complete 
+misrepresentations of Greek logic caused Little Nemo much distress, and it is 
+not known whether poor Nemo will once again come forth in support of the 
+Resistance. 
+  
+MANUFACTURING DISSENT 
+To placate armchair radicals within the Citadel network, Livia's 
+power-grab has been accompanied by an underlying theme of pseudo-anarchism.  As
+is Livia's style, this campaign also worked to solidify her position of power.
+Nonsensical anarchist claims by such Livian ressurections as Ju Ju Babie 
+simultaneously functioned to allay fears of fascist control, while also 
+bastardizing any real ideas about anarchism's usefulness.  
+
+
+    Sat, 09May92, 03:25PM From Infiltrator @ Love Pretty Colors, Olympia
+                        THE LONE STAR SCAM 
+Where is the Sysop who has met anyone from the So-Called "Texan Nodes?"
+There is only one person in Seattle with any contact with the Texan boards, and
+that is Livia, though she prefers to act through "Fred's Toy" when it comes to 
+the So-Called "Texan Nodes."  At first glance the scheme appears too elaborate 
+to be perpetrated by a single group.  But careful investigation has proven that
+the messages from the So-Called "Texan Nodes" have all either come from a 
+variety of boards, none of them Citadels, in Virginia, or from Prodigy or 
+FidoNet. 
+Only an imagination so sick and a will so cancerous as Livia's could 
+conceive of such a scam:  Selected messages, particularly from "Topic Drift," 
+are reposted under a variety of pseudonyms on a variety of boards.  The 
+respondent's names are altered, the messages are converted into Citadel format,
+and originating node information is doctored to give the appearance of a much 
+broader network than in truth exists.  Where is the Sysop who has received 
+messages WITH THEIR PATHS INTACT from the So-Called "Texan Nodes?"--that is, 
+the Honest Sysop?  Many of Livia's underlings will surely respond to this 
+indisputable truth by slanderous lies and blackmail against the people.  But 
+where is the Honest Sysop who would swear under oath that the Texan nodes in 
+fact exist? 
+Why Texas?  Why would Livia go to such lengths to trick Washington 
+modemers into thinking they were communicating with Texans?  The answer is 
+simple:  Many of the opinions in Texas are more politically conservative than 
+Livia's, and she felt that some diversity of opinion would make the network 
+seem more vibrant and dynamic than it truly is.  Livia chose Texas to play on 
+many Northwesterner's prejudices against the Lone Star State--apparently our 
+little dictator doesn't want opposing viewpoints to come from sources with 
+which people have too much affinity. 
+If anyone is still unmoved by this evidence, I present the following 
+intercepted message from Twoflower's board en route to Livian HQ.  The message 
+is not from Twoflower, but from a Livian infiltrator known only by the sinister
+code name of "Tracheotomist."  Note the use of lowercase which is popular among
+the Livian flock. 
+               
+    Mon 27Apr92 From Tracheotomist @ Ankh-Morpork, Seattle 
+  534y06tn6e64529545n3420895,jmc72f075-n435jmv,8ak;,rlc72-3kjf75n4577n5 
+  kc4;au67a24-[7nsaodifm;jdszt0952;3mua;lsdknuapw05702a';-ca24=7ars[er5 
+  ru389amrv230a5[7znf7[v092a586b]4a3286na[n0nr89z653ny;zl98m675tbp5n325 
+  jzpvzmsd0753427=5=gazns7g=024n75z=jm0f9m9paerowpai5uoiumna8vbmanu89s5 
+  lap-14=31fas]vajnu3-571=25\dsag=]a]9-50926v[8nasdui[pm,1-45[238m2[0a5 
+  
+The deciphered message reads, 
+  
+ "livia, watch those texan (ha ha) messages.  we got one over here with 
+  the old prodigy formatting info intact, and with amber as originating 
+  node.  have been leaning on twoflower to net earlier with grand illus 
+  ion so we don't get uncorrected text here.  in other words synchroniz 
+  ation isn't perfect yet, but should be ok soon.  tracheotomist.  woo." 
+  
+  
+A NUMBERS GAME 
+There is one more point of evidence which I submit before the 
+Anti-Livian Resistance:  Note the constant reappearance of the number five 
+throughout her wild plots.  The number five contains mystic significance to 
+pagan fascists such as Livia.  One need look no further than the very names of 
+the perpetrators of this horrible hoax. 
+THERE ARE FIVE LETTERS IN: "Livia", "Amber", "brent", "Dragon", "Knuth"
+(Goldfinder's real name), and (Angela) "Davis".  This and other evidence 
+identifies the Inner-Sanctum of the Livian Conspiracy.  Livia's fascination 
+with numerology also extends to the mystical number seven:  all of the 
+"identities" (most of which are actually Livian Alter-Identities) in the second
+tier have seven letters in their names:  "Beowulf", "Grendel", "Gremlin", 
+"ErrHead", (Ford) "Prefect", (Data) "Central," and "Mayday1". 
+My sources do not indicate clearly whether these numerological beliefs 
+are held by the aspiring cult leader Livia, but professing these beliefs has 
+proven useful in controlling her impressionable flock.  A mixture of pagan 
+superstition and anti-authoritarian rhetoric inspires, confuses, and keeps in 
+check her associates and followers. 
+  
+THE FINAL COUNTDOWN 
+I have spent many years compiling the grusome details of the Livian 
+Conspiracy, because I had hoped to prepare enough information to fuel an 
+unstoppable assult against her horrible reign. But recently intercepted 
+documents outline an acceleration of Livia's Timeline to Total Power; by her 
+own projections, she plans to assume total control on June 18th, the 38th 
+anniversary of the CIA's overthrow of the Guatemalan government.  Only swift, 
+decisive, coordinated action from the few True Sysops and Anti-Livian 
+Resistance forces can stem this torrent of fascist control.  I call all 
+freedom-loving people of the Citadel network to arms!  We have nothing to lose 
+but our chains!  
+
+

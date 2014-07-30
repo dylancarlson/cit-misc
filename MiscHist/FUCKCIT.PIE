@@ -1,0 +1,139 @@
+
+    95Apr17 From golden spud @ Golden Spud's Greasehouse, matt.org
+Also,  
+  
+ BRENT. After you left the "not-together", DP, scorpio, and I wrote a Citadel 
+in less than 30 minutes on FRuG's computer, in Borland C++. 
+  
+ We aptly named it FuckCitPie release 5.12, and everybody else that was still 
+there challenged us to run two instances of it at the same time and see if it 
+would multitask. 
+  
+ I loaded up Windows, loaded up two copies of it, and sure enough, it worked! 
+  
+ Here's the source for it. I'm going to try to have a version ready by the end 
+of the week that will support rooms, halls, user accounts, and groups. It will 
+still be multiuser. 
+
+    95Apr17 From golden spud @ Golden Spud's Greasehouse, matt.org
+/*
+ *	fuckcitpie
+ *      written in only 30 minutes by macrowave
+ */
+
+#include <stdio.h>
+#include <conio.h>
+#include <ctype.h>
+#include <string.h>
+
+char user[55];
+char message[128];
+
+void hello(void);
+void pseudorandomterminate(void);
+void writemessage(void);
+void readmesssages(void);
+
+
+int main(int argc, char **argv)
+{
+	hello();
+} // main
+
+
+void hello(void)
+{
+	textattr(5);
+	cprintf("Welcome to alt password dot com\r\n"
+		"running FuckCitPie general release version 5.12\r\n"
+		"\r\n"
+		"5 messages\r\n"
+		"12 new.\r\n"
+		"");
+
+	cprintf("Login please: ");
+	gets(user);
+
+	cprintf("\r\n\r\n");
+	textattr(10);
+	cprintf("Booby>> ");
+	while (1) {
+		cprintf("Booby>> ");
+		int ch = toupper(getch());
+		switch (ch) {
+			case 'W':
+				readmesssages();
+				break;
+			case 'R':
+				writemessage();
+				break;
+			case 'P':
+				pseudorandomterminate();
+				return;
+				break;
+			default:
+				cprintf("\a\r\n\n ERROR\a =\a= \aTRUE \a\r\n");
+				break;
+		} // switch
+	} // while
+} // hello
+
+
+#ifdef TRUE
+#undef TRUE
+#endif
+#ifdef FALSE
+#undef FALSE
+#endif
+#define TRUE fopen("message.fuk", "a")
+#define FALSE fopen("message.fuk", "r")
+//    macrowave branded macro!!!!
+
+void writemessage(void)
+{
+	cprintf("Rite Message\r\n");
+	textattr(12);
+	cprintf("   From %s @ alt password dot COM\r\n", user);
+	gets(message);
+
+	FILE *messagefile = TRUE;
+
+	fprintf(messagefile, "   From %s @ alt password dot COM\n", user);
+	fprintf(messagefile, "%s\n", message);
+
+	cprintf("\r\n\n\n");
+	fclose(messagefile);
+} // entermessage
+
+void readmesssages(void)
+{
+	cprintf("Wread Messages\r\n");
+
+	textattr(12);
+	FILE *messagefile = FALSE;
+
+	cprintf("\r\n");
+	char *message2;
+	while ((message2 = fgets(message, 127, messagefile)) != NULL) {
+		cprintf("%s\r", message2);
+	} // while
+
+	cprintf("\r\n\n\n");
+	fclose(messagefile);
+} // readmesssages
+
+
+void pseudorandomterminate(void)
+{
+	cprintf("Pseudo-Random_TurMinate\r\n");
+	cprintf("\r\n");
+	cprintf("If you're so goodo, you entered five messages.\r\n"
+			" see you l8r, d00d\r\n"
+			" remember, fuckcitpie r00l-ez\r\n"
+			" and dragcit derivatives suck!!!\r\n");
+} // pseudo...
+
+
+    95Apr17 From golden spud @ Golden Spud's Greasehouse, matt.org
+enjoy... 
+

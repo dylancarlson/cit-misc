@@ -1,0 +1,39 @@
+ The file "HISTORY" has all changes I made to ACit, and also all of the
+changes I was planning to make (at the time, anyway).  I=internal, E=external.
+ 
+ 
+ The file "CHANGES.TXT" has major changes made to GremCit (now called
+Citadel+).
+  bb=Brent Bottles (resident)
+  eh=Don Kimberlin (err head)
+  ep=Elisabeth Perrin (Livia)
+  mp=Matthew Pfleger (The Gremlin)  
+  rg=Richard Finegold (Richard Goldfinder)
+ Current release is 64.2, which goes up to line 558 (and also end paragraphs).
+Oh, and btw, GremCit is now mostly C++.  There are classes for the main
+objects (messages, rooms, halls, groups, users).  It's quite arguably the
+most configurable Citadel, both from a user point of view (type .EC on
+my system) and a sysop point of view (over 160 parameters just in CONFIG.CIT,
+most with defaults).
+  
+ 
+ The file "REMINISC" has excerpts from a couple of rooms on my BBS (The Raft).
+All messages are still there in the Citadel Q & A and BBS History rooms,
+if you want more context.  I've added extra linefeeds between messages for
+easier reading.
+ 
+ 
+ Oh, also: in that Citadel Family Tree, a couple of lines should be
+added in the "lost" section:
+  | Titan           , Atari 800  , BASICXE, The Dragon                 |
+  | Titanic         , Atari 800XL, BASICXE, Richard Goldfinder         |
+ I forgot to credit myself when I incorporated the East Coast tree.
+ 
+ 
+ Feel free to redistribute these files.
+
+
+
+
+
+

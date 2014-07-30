@@ -1,0 +1,206 @@
+September 5, 1988 @ 11:24PM
+
+   Well, here it is, maybe not the official version, but at least a
+version. Apparently, Dave Quick is supposed to be doing it, but hasn't, and
+supposedly Steve Hall is supposed to be taking over, but not till Dave does
+the last one. So, well, after seeing it hasn't been done for several
+months, and on my LD travels (via US Sprint), and being asked many a time,
+when's the next Citanews going to be out, I decided earlier tonight was the
+last I wanted to be asked. Ah, boring you, huh, sorry. Well anything I
+could think of, is here, provided I could think of it. Any ideas for a
+future release (maybe NEWS1088.TXT) will be appreciated. I will do it, as
+long as no-one else does.
+
+   Considering I am not with much for ideas, this may indeed be small,
+and may even seem a little tied to things I've been working on (happens in
+a spur of the moment decision to do it in the first place). Probably in a
+totally wrong format too. Oh well here go's.
+
+                           Eric A. Griff
+
+
+              What happened to Citanews, and why? ;-)
+              ---------------------------------------
+   Well, first of all, as we all know, David Quick took over the 'Job'
+from Steve Yelvington (right?). He released NEWS0588.TXT (right again?).
+Anyway since then he has said he'd have it out for the next edition a few
+days late, but didn't. Then a similar comment came the next month. But
+nothing. One rumor, was that he has a new Girlfriend, and doesn't have the
+time. Fine, though too bad he didn't say something, so someone else could
+take it over.
+   Next, Steve Hall told me he was going to take it over, and to tell him
+about the Amiga room, and how it came to be where it was at that point.
+Then a few days later, he said Dave Quick was going to do one last one,
+then he was taking over. Oh well, that was about a month ago, and still
+nothing. 
+   So here I am, getting comments, like where's the latest Citanews?
+Could you upload it to us? So I'd explain it.
+
+               The newest National net room: Amiga!
+               ------------------------------------
+   About 2-4 months ago, between me, and Mike Gritten (SysOp of
+BrainStorm Citadel, in Canada, now down temporarily), while in chat,
+discussed the possibility of getting a national net room going, supporting
+our machines. James Bearce and me were already netting such a room (though
+only 2 systems). I mentioned it to James Bearce too, and he liked it too.
+So we all mentioned it to Vince Quaresima in mail on Jersey Devil (Since we
+were all netting with him anyway, at the time). He said sure, so it had
+it's start. Though at this point ours was still a baby.
+   There was already a going Amiga room, in the Twin Cities area, and we
+thought maybe we could get it connected to that somehow, and then thought,
+Jersey Devil was netting with Utica College, and Utica College with Test
+System. So I mentioned it to Thom Brown, and he at that point, would at
+least get it from Jersey Devil.
+   At about this time, an Amiga room formed on the STadel net as well. So
+we set forth to figuring out how to get that link, too. At this point, at
+least one other South Jersey node had gotten onto our smaller Amiga net. 
+   At that point, I typed a large message and put it in all 3 nets,
+trying to find nodes interested in getting this going. Though at that time,
+Thom Brown agreed to net it with Test System, so the Cities, and ours were
+connected. 
+   The connection to the ST net's Amiga room, followed shortly. When Gary
+Green (SysOp of KAOS) said he'd get it from Utica College. And at the same
+time, from THE_LAND. So that is how it has come to be. 
+   For the Amiga Users out there, there is now definatly a place for
+those unanswered Questions, as well as much info on new Software/Hardware 
+and questions, you may be able to answer. Anything Amiga.
+
+
+                         Atari Corp online now!
+                         ----------------------
+   Atari Corporation is now running a STadel, and netting on the ST Net.
+They are netting Atari ST, C, Modula-2, STadel and several other rooms.
+Talk about support. From what I hear, you won't get Tramiel on it, but Tech
+support is supposed to be watching. kbad (I think that's the name), is the
+one I've seen with messages from the system at Atari. Anyway, they are
+netting with THE_LAND. 
+
+
+                        Expansions on Citadel-86
+                        ------------------------
+   Citadel get's bigger daily. Now Vince Quaresima is even adding things
+from his  Citadel-128 BBS program, to Citadel-86. He has now also added
+Doors, and a new, and neat method of mail routing, that leaves very little
+for the user to do. Just like entering a net message. I have yet to try it,
+but from speaking to Vince in chat, is definatly sounds like a good method.
+Among other goodies he added, is the '<', '>', '+', and '-' room/floor
+movement commands, he originally put in his Citadel-128.
+   What's up next, Vince? Keep up the good work.
+   By the way, those interested in getting a better look at Citadel-
+86:K2NE, can find it in Citadel] on Jersey Devil at (609) 893-2152.
+
+
+           Hue is finally taking, a long needed brake. I think.
+           ----------------------------------------------------
+   According to a message I read a few weeks ago, Hue, Jr may be taking
+somewhat a break from his development of Citadel-86. From the tone of a few
+messages prior to it, I'd suspect that it might be needed. Hue, get your
+break, it'll leave you feeling much better later, and probably up to more
+major break throughs in the future, with Citadel-86. 
+
+
+               Beware, there is a BAD SysOp on the prowel.
+               -------------------------------------------
+   There is a text file, on Test System, with GIF Format photograph of a
+SysOp that is in the business of ripping people off. I guess he is also
+wanted by the FBI. Call Test System, and grab it. I think it's in Uploads,
+or something like that. 
+   Apparently this guy was in Minneapolis, or was it St. Paul? Anyway, he
+has skipped town there. Better get a look, he may be headed your way next.
+
+
+         Some rooms, of interest to some, available at the land.
+         -------------------------------------------------------
+   There are several rooms, available for netting from THE_LAND, that may
+be of some interest to many. The main one is NASA NEWS. UR-LORD (SysOp of
+THE_LAND) spends good time, keeping the latest news on NASA in there.
+Updates every few days (in the event it isn't every day, as it get's some
+times). 
+   The other 2 rooms, are ST Report, and Amiga Report. They are both on
+the systems they're named after. I guess they come from either Delphi, or
+GEnie. Weekly updates. 
+   In the room called tele-talk, there is a monthly newsletter available,
+on telecommunications. Called tele-talk. Really interesting. 
+   THE_LAND can be reached at (513) 254-6811.
+
+
+Saying of the month. Well, something after all the boredom that preceded
+------------------------------------------------------------------------
+   Gary Green has just changed his notice, to a interesting one.
+
+   Gravity, it's not just a word;  It's the Law!
+      (Something like that. Someone quote it, please!)
+
+
+
+   Well, as I said, may help to get you less bored with me!
+
+
+             STadel-Ami, now words, soon to be reality!
+             ------------------------------------------
+   I am currently porting STadel 3.3a to the Amiga. Those that are
+interested keep watching. Should be beta-ing in a week. Surely less than a
+month. Anything that STadel 3.3a has, STadel-Ami will have. Orc has been
+very helpful, in anyway he could, in this getting done. Even been there for
+a few good suggestions. 
+   Another person that has been good for some suggestions, as far as door
+coding, was Cap'N Dave at The Guild (AmiDel development).
+
+
+                 Pell is down. Mother Nature done it!
+                 ------------------------------------
+   Due to lightning hitting Orc's IBM PC Clone, Pell is down. He is going
+to be moving again, and then setting back up, at where-ever he moves to.
+   In the mean-time, we'll be looking for him.
+
+
+            Bix members. Check out the js.online group there.
+            -------------------------------------------------
+   js.online is a group (that the word for it?) on Bix, run by UR-LORD,
+and Orc supporting STadel, I think. Anyway, check it out. 
+   For more info on Bix, you can contact UR-LORD at THE_LAND ((513) 254-
+6811).
+
+
+                   Award->Busiest Cit I've ever called
+                   -----------------------------------
+   Another boredom Breaker. I must say, that Images Minnesota, is the
+busiest board I've ever called. Sheez, I haven't been able to get through,
+now for a month. Sy Borg, keep up the work, they love you, or something.
+Running Citadel-68K.
+
+
+                         The End!.....For now.
+                         ---------------------
+   Well, like I said, small. I have no experience in writing news-
+letters, of any kind. And one covering Citadels, is well, a very
+large thing to do.
+   I may do one next month, if I don't see any other in the making.
+   So catcha at the same time, same station, don't touch that room! Well,
+at least that slightly fit. Used to have an instructor that would always
+say that (not referring to rooms).
+
+   As far as suggestions for next month, I can be reached in Mail on the
+following systems (name:Eric A. Griff).
+
+MVAFIX             (315) 732-8598
+THE_LAND           (513) 254-6811
+Airbase Amiga      (201) 446-2852
+Utica College      (315) 792-3187
+Images             (612) 884-7951 (If I ever get through)
+Enchanted Toilet   (609) 795-8926
+The Gateway        (609) 931-3014
+Jersey Devil       (609) 893-2152
+The Guild          (401) 274-1695
+Cracked            (315) 724-0624 (Seldom up, it's my own)
+KAOS               (315) 735-0545 (Home of Gary Green Madness)
+Power Alley        (315) 738-1504
+
+
+   So long.....till next time!
+
+September 6, 1988 @ 12:53AM
+
+   PS: Thank God this has a spelling checker. There are 1645 words above
+the PS Section.
+                                                                              

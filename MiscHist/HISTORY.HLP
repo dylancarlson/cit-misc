@@ -1,0 +1,819 @@
+         HISTORY.HLP
+ 
+  3Future changes:0
+ 2Commands0
+  ~ doesn't toggle ANSI
+  .A/.S done by "[console user]" when not logged in
+  .AE: show what was toggled, not just outcome, in aide msg
+  .AE: if 'W', turn on shared
+  .AE: if 'E', ask for net ID
+  .AH: allow partial room names
+ *.AH: Change room or hall? (R/H/A)[R]
+  .AL: should ask for group on second line
+  .AI/.AK: put message number in aide message
+ *.AQ: Multiple message marking (Clear, Del/Ins, List, Sort, V+)
+  .AR puts file description message in new room
+  B, J doesn't give correct number of new messages
+  .D/.U, Ask if logoff after batch transfer
+  .EC: toggle for borders
+  .EC: unlisted doesn't take effect immediately
+  .EC: surname/title toggle shouldn't work if globally turned off
+  .EE u@n{@,}r{@,}c
+  .EE sysop@unknown should not work
+ *.EO: should erase last posted message, move into editor
+  .ER: shouldn't need to be logged in
+  .ER: put first message in room ("Room %s created by %s")
+  .ES: if surnames off, still display ".Enter Surnames/Titles"
+  .E*: put room name in message, make sure file exists
+  .K#, .KV: indent each room's line
+  .KP: known Permanent rooms
+  .KY: known anonYmous rooms
+  .RC: don't show title/surname visibility if globally turned off
+  .RD: put filename prompt on next line
+  .RND, .ROD: Allow sorting of directories by date/time
+  .RI: put filename prompt on next line
+  .RLU: allow for locked groups
+  .RU: flags in front
+  .RVT: if not found, show "No file", not "No helpfile"
+  .RU: pauses at end for Brent, why?
+  .RU: put aide/sysop flags at beginning of line, not end
+  .RVU: even out lines, date width
+  .RVU, .RVVU: should have 30 chars for username
+  .RZ: use FV or RV or MAD
+  .RZ: put filename prompt on next line
+  .SCE: check against CRON.TAB
+  .SCF: ? should act like .SCL (similar to .G?=K)
+  .SE: split into .SEG, .SEC, .SEE; remove .SCE (tiny module)
+  .SHF: use "in the hall name" partial hall ability
+  .SN: shouldn't work on open-access system
+  .SU: should have proper default for user name
+  .SU: when account becomes node, remove from Null group
+  .SU: when account is denoded, add to Null group
+  .S!, .S@: send modem str if #OFFHOOK when shelling, setup str after return
+  .S!, .S@: close print file (ALT+P) if open
+  <K> should delete networked email (don't let it go out)
+  F8 should exit chat mode / dial-out mode, reduce delay
+  Command for heapwalk (what's FredCit's mem?)
+ 2Message entry0
+  Entry cmd: Upload     -- just set %f=something, append it
+  Entry cmd: Group/Limited
+  Entry cmd: Exclusive/Mail
+  Entry cmd: _ (signature line)
+  Don't allow backspacing over ^A (del two characters)
+ *Show ^A while editing, not while reading/Printing
+  Show prompts while entering email (e.g. To: username, etc).
+  Messages entered in group-only room are group-only???
+ 2Networking/Cron0
+  30 character room names look funny in message gathering and cleanup
+  Check NODES.CIT only if node has userlog entry
+  Make sure node name matches before adding region (NET.C/GetMessage)
+  Duplicate messages should net out (.AI, printmessage)
+  File-linked messages should net out
+  #DEFAULT_ROUTE (for unknown nodes)
+  #HOURS/#DAYS should be bitfields (netting)
+  #DIRECTORY for err head: send all files in this directory
+  #FILELIST: name of file in transpath containing list of files to send
+  Make "crazy network" mode where Retry=0 for everything, calls until
+all networking done
+  If overflowing on path, change some nodes to !'s
+  Trap circularly routed mail
+  Add FredCit Cron stuff (commands, CRON.TAB)
+ 2Screen appearance0
+  Make sysop command for anon messages
+  Offset time in anon messages
+  Rcht/rcht on status line should blink
+  ^A when not acceptable should print nothing instead of space
+  fix UW ANSI screen screw-ups (dial_out mode), for Livia
+  Colors in dial-out mode
+  Put in ANSI-MONO terminal type
+  Change <Verb> to (Verb) or make it configurable
+  Fix screen pause for new users
+ 2Config.Cit0
+  Crashout() should use va_args, etc
+  Only redo files if necessary
+  Create recursive makedir function
+  Opt to create directories when config'ing
+  #ALIAS "six letters"
+  #KILL: remove
+  #NOPWECHO 0 should echo what user types
+  #NOPWECHO 1 should echo nothing
+  #NOPWECHO 2-31, 127+ should not be allowed
+  #OFFHOOK should be configurable
+  Separate #TWITFEATURES keywords
+ 2Unlogged users0
+  Countdown timer 30 seconds before auto-log-off
+ 2Users0
+ *By user: make bold/underline/etc have configurable colors
+           make individual signature lines
+ *Partial user name recognition
+  Allow "ANSI" in title/surname
+ 2Miscellaneous0
+  -E command line switch for partial reconfigure
+  -L command line switch for local mode (for subboard/door)
+  Read borders from CONFIG.CIT, GremCit-style
+  Make partialgroup do like Goto: exact, starting, substring
+  Use only one function for displaying the message header
+  Allow LABELSIZE characters for various fields (instead of NAMESIZE)
+  Limit amount of time spent as a new user (stupid scripts)
+  Limit amount of idle time in chat mode (one hour)
+  Chat: display CHAT.BLB, rotate it.
+  Allow replies to "Sysop" mail, author=sysop
+  Allow replies to "Aide" mail, author=aide
+ *Implement hall descriptions
+  INT 2Fh call while idle (for Windows, OS/2, power mgmt, etc)
+  Put all messages into an external file
+ *Look for both verbose and non-verbose result codes simultaneously
+  Put terminal width init into GLOB.H, not CFGCFG.C
+ *Reduce message table size (bytes/message)
+  Don't ask for reply to email to Sysop @ remotenode, only localnode or !node
+ 
+  3Current changes (i=internal, e=external)0
+ e92Jul25 Stop reading msgs when config'ing if nulls (CFG.C/msgInit)
+ i92Jul24?Fixed GRPDATA.CIT #DAYS ANY corruption bug (CFGREAD.C/readaccount)
+ i92Jul24?Ibid, cls to white when new ETC.DAT (INIT.C/initCitadel)
+ i92Jul24?No alloc before reconfig'ing when ETC.DAT changes (LIB.C/readTables)
+ i92Jul24?Added null checking to all net funcs (NET*.C)
+ i92Jul24 Moved setio() from INPUT.C to OUT.C, no params (PROT.H)
+ e92Jul24?.S#: allow <M>, <K> (ROOM2.C/readbymsgno)
+ e92Jul24 .K{ADGLS}: changed "room:" to "rooms:" (ROOM.C/listRooms)
+ e92Jul24 .KH: changed period to colon (GRPH.C/knownhalls)
+ i92Jul24 Removed #KILL (CFGCFG.C/readconfig, MSG.C/mAbort, CTDL.H, KEY.H)
+ i92Jul24 Moved ctrl_c() from MISC.C to INIT.C, disabled (PROT.H)
+ i92Jul24 Moved NULL checking out of CTDL.C (MISC.C/checknull, PROT.H)
+ e92Jul24?Display "Zapped" for zapped event (CRON.C/list_event)
+ i92Jul24?Simplified boolean logic (FILE.C/attributes)
+ i92Jul24 Removed unused function (CFG.C/showtypemsg)
+ i92Jul17?Fixed 'a' flag problem (MSG.C/getMessage, NETGMSG.C/GetMessage)
+ i92Jun18?Ouput unsigned, not signed (APLC.C/writeAplFile)
+ i92Jun06*Pass unknown fields, thanks Brent (MSG.C, NETGMSG.C, NETPMSG.C)
+ e92Jun06?If got null pointer error, trap and stop checking (CTDL.C/main)
+ i92Jun06 Ibid (NET_OUT.C/n_dial,wait_for, WIND.C/outCon,doccr,clreol)
+ i92Jun06 Ibid (MDM.C/fkey,KBReady, MISC2.C/chat,dial_out, INPUT.C/iChar)
+ i92Jun06 Changed getch, putch, kbhit to GETCON, PUTCON, STATCON (CTDL.C/main)
+ e92Jun06 P = Poop! (CTDL.C/doRegular,getCommand)
+ e92Jun06 M = .EE (CTDL.C/doRegular)
+ e92Jun06 .ET<cr> doesn't ask for comments (UPDNLD.C/entertextfile)
+ e92Jun06 .AN uses defaults (SYS.C/msgNym)
+ e92Jun06 .KL shows local rooms (CTDL.C/doKnown)
+ e92Jun06!.KV shows net IDs (ROOM.C/printroomVer)
+ e92Jun06 K: list excluded rooms in proper section (ROOM.C/listRooms)
+ e92Jun06 .AH aide message is group-only for room's group (SYSH.C/xhallfunc)
+ e92Jun06?.RS can be aborted before message counting (MISC2.C/systat)
+ e92Jun06 .SGN asks for description of new group (SYSG.C/newgroup)
+ i92Jun06 Nuked two bogus rooms at end of Net 1.69 transfer (NETSTR.C/GetStr)
+ e92Jun06 If .ER fails, go to current room (ROOM2.C/makeRoom)
+ i92Jun04 Moved IdExists from NETPMSG.C to NETID.C
+ e92May27 Fixed 1 day uptime .RS bug (TIME.C/diffstamp)
+ i92May27 Moved crunchMsgTab from MSG2.C to MSGTAB.C, sped up, thanks Brent
+ e92May25 Made .EG's message header "only" when editing (EDIT.C/putheader)
+ e92May25 Fixed delay in determining baud rate (MDM.C/smartbaud)
+ i92May25 Using SPAWNO 4.1
+ i92May15 Fixed -C requirement by init'ing cfg.version (INIT.C/initCitadel)
+ i92May15 Better EMS error handling diagnosing, thanks Brent! (MSGTAB.C)
+ e92May15 .RS gives proper avg msg len, thanks Brent! (MISC2.C/systat)
+ i92May15 CTS checking, thanks Brent (PORT.C, CFGCFG.C, KEY.H, PROT.H, CTDL.H)
+ i92May11 Fixed hash counting bug (MISC.C/hash)
+ i92May11 Moved netcanseeroom from NETPMSG.C to avoid thrashing (NETSTR.C)
+ i92May11 Use _fmemcpy instead of memcpy (NETGMSG.C/ReadMsgFl)
+ e92May11 Unlogged users can read msgs if #READOK 1 (Ibid,mayseemsg)
+ e92May11 Fixed email bug (MSG2.C/mayseeindexmsg)
+ e92May11?"Message base initialized" in Lobby when init'd (CFG.C/zapMsgFile)
+ i92May10?Working message table, over 65536 messages, thanks Brent!
+ i92May10 Code cleanup, 19.2K/38.4Kbps, thanks Brent!
+ e92May05 .RVS in debug mode displays messagetable stats (MISC2.C/SYSTAT)
+ e92May03 .S!: put _ in prompt (APLC.C/apsystem)
+ i92May03 Keywords don't keep '#' in memory (KEY.H, NETKEY.H)
+ e92May03 .RRS: reverse timestamps (TIME.C/diffstamp, MISC2.C/systat)
+ e92May03 .RK does keyword search (DO_R.C, MSG3.C/printMessage,showMessages)
+ e92May03?Ibid (DO_E.C/doEnter, INIT.C/initCitadel, DOWN.C)
+ e92May03?Put in doors, .ED (CFGREAD.C/readprotocols, APLC.C/execDoor)
+ e92May03 .EDhall moved to .ECD (LOG3.C/configure)
+ i92May03 Now using SPAWNO 4.0
+ i92May03 Split MISC.C into MISC.C and INIT.C and DOWN.C
+ e92May03 Implemented phone number field in networked messages (Many)
+ e92May03 .SGR: says hit CR for same name (SYSG.C/renamegroup)
+ e92May03?Implement Auto-Add groups (Ibid, LOG2.C/newlog)
+ e92May03 Do group descriptions (SYSG.C/listgroup,newgroup,renamegroup) 
+ e92May03 .KG = .KL (CTDL.C/doKnown)
+ e92May03 New trap type: CRON (CTDL.H, CFGCFG.C/readconfig, CRON.C/do_event)
+ e92May03 .SCR unzaps event (CRON.C/reset_event)
+ e92May03 .SCZ toggles zappedness of event (CRON.C)
+ e92May03 various code cleanups, thanks Brent!
+ e92May03 Net 1.69 implemented, thanks Matt! (NET*.C)
+ e92May01 No 19 character limits in CONFIG.CIT (Ibid)
+ e92May01 No more #MAXTEXT, #MAXWARN in CONFIG.CIT (CFGCFG.C/readconfig)
+ e92May01 Put in most of GremCit networking (NET*.C, PROT.H, GLOB.H, CTDL.H)
+ e92Apr30 Fewer linefeeds for .H (FILE.C/tutorial, CTDL.C/doHelp)
+ i92Apr30 removed mtorigin from message table (MSGTAB.C, MSG.C, MSG2.C)
+ i92Apr29?Cron event+1 bug fix, thanks Matt! (CRON.C/do_cron)
+ i92Apr29 formatSummary uses own buffer (ROOM2.C)
+ e92Apr29 .AE: aide message group only (ROOM2.C/renameRoom)
+ e92Apr29 .AK, .ELR: aide message group only (ROOM2.C/killroom,makeRoom)
+ e92Apr29 <K>, .AI: aide message group only (MSG3.C/deleteMessage)
+ e92Apr29?.AG: aide message group only (SYSG.C/groupfunc)
+ e92Apr29?.SGG, .SGU: aide message group only (SYSG.C/globalgroup,globaluser)
+ e92Apr29?.SHG: aide message group only (SYSH.C/globalhall)
+ i92Apr29 Aide msgs can be group-only (MISC.C/SaveAideMess, MSG.C/aideMessage)
+ e92Apr09 .EO: don't ask, just do it (MSG4.C/makeMessage)
+ e92Apr29 Switched to GremCit .S# (ROOM2.C/readbymsgno)
+ e92Apr28 Fixed doubling problem (NETGMSG.C/ReadMsgFl)
+ e92Apr25?Does #NEWUSERAPP if not empty string and #PRIVATE 0 (LOG2.C/login)
+ e92Apr25 #ENTER_NYM (CTDL.H, KEY.H, CFGCFG.C, LOG2.C/newUser)
+ e92Apr25 Ibid (APLC.C, CFG.C, CFGCFG.C, CTDL.C, EDIT.C, FMT.C, LIB.C)
+ e92Apr25 Ibid (NETGMSG.C, NETPMSG.C, MISC.C, MISC2.C, MSG.C, MSG2.C, MSG3.C)
+ e92Apr25 Ibid (ROOM2.C, SYSG.C, WIND.C, VRSN.C)
+ e92Apr24 Ibid (PROT.H, CTDL.H, GLOB.H, KEY.H, AUXMEM.ASM, MSGTAB.C)
+ e92Apr24 Use EMS/XMS/disk for msgtable, optimized, thanks Brent! (SER.ASM)
+ e92Apr18*Changed line spacing on .EP
+ e92Apr18 Require -C if ETC.DAT missing (CTDL.C/main, MISC.C/initCitadel)
+ i92Apr18 Split LOG3.C into LOG3.C, SYSL.C
+ i92Apr18 Split CTDL.C into CTDL.C, DO_A.C, DO_E.C, DO_R.C, DO_S.C
+ i92Apr18 Split MSG3.C into MSG3.C, MSG4.C
+ e92Apr16 <V> twice in .RD (FILE.C/dir)
+ e92Apr16?If line too long in EXTERNAL.CIT, don't crash (CFG.C/readprotocols)
+ e92Apr16 <J>,<N>,<S>,<M>,<K>,<V> should look okay now (MSG.C/mAbort)
+ e92Apr15 <K><S>, <M><S> work while reading (MSG3.C/showMessages)
+ e92Apr15 <V>erbose toggle (MSG.C/mAbort, LOG3.C/Readlog, MSG3.C/showMessages)
+ i92Apr15 Fixed .RI, .RZ* for verbosity (INFO2.C/readinfofile, ZIP.C/readzip)
+ i92Apr14?Put in function to copy a file, thanks Matt/Peter (FILE.C/copyfile)
+ i92Apr14 Ibid (NETGMSG.C/makeRoomReq,master, NETDC15.C)
+ i92Apr14 Make function to avoid code duplication (NETPMSG.C/fetchmsgs,slave)
+ e92Apr14 Implement Net 1.5 (NETDC15.C, NET_IN.C, NET_OUT.C, NETNODE.C)
+ i92Apr14 Put in global variables for Net 1.5/1.6 (GLOB.H)
+ e92Apr14 Put in keywords for Net 1.5/1.6/etc (KEY.H, NETKEY.H)
+ i92Apr14 Expanded node structure for Net 1.5 (CTDL.H)
+ e92Apr12 Fixed Mother's day to be in May, not April (TIME.C/sstrftime)
+ i92Apr12 Ibid (ACCT.C, FILE.C)
+ i92Apr12 Ibid (MISC2.C/systat, MSG3.C/printheader,printMessage,showMessages)
+ i92Apr12 Ibid (ROOM.C/printroomVer,listrooms, LOG2.C/terminate)
+ i92Apr12 Ibid (UPDNLD.C/readtextfile,textdown, LOG3.C/Readlog)
+ i92Apr12 Ibid (INFO2.C/readinfofile, ZIP.C/readzip,zipview)
+ i92Apr12 Functions use global verbose flag, not param (PROT.H)
+ i92Apr12 Functions use global verbose flag (CTDL.C/doKnown,doLogout,doRead)
+ e92Apr12 #PRIVATE 1 won't repeatedly ask for inits;pw (LOG2.C/login)
+ e92Apr12 login and doLogin functions return a value (LOG2.C, CTDL.C, PROT.H)
+ e92Apr10 Show message slots in .RS, simplify msg count (MISC2.C/systat)
+ e92Mar31 Show room names if invalid room .AE'd and not sysop (Ibid)
+ e92Mar31 .AE: Anon, Hidden, BIO bits togglable for Lobby (ROOM2.C/renameRoom)
+ e92Mar24?.SC{ADFNRZ}: don't allow if no events (CRON.C/cron_commands)
+ e92Mar24?Trap init;pw if hung up on login, for Livia (LOG2.C/login)
+ e92Mar24 .AE, .KI, .RS: show netID (ROOM2.C/formatSummary)
+ e92Mar24 When logging in, period for verb if debug off (NET_OUT.C/n_login)
+ e92Mar24 Barf when error occurs when zapping msg base (CFG.C/zapMsgFile)
+ e92Mar24?If 'a' field in netted message, alter mbauth (NETGMSG.C/GetMessage)
+ e92Mar24 .K#, .K: Use 30 chars for room name (ROOM.C/printroomVer)
+ i92Mar24 When reconfiguring, set cfg.version = cfgver (CFGCFG.C/readconfig)
+ e92Mar24 If cfg.version != cfgver, reconfig (MISC.C/initCitadel)
+ i92Mar24 Put CONFIG.CIT version constant (cfgver) in VRSN.C
+ e92Mar24 Save room name in message (Ibid)
+ i92Mar24 Use function to change @ to \0 (MSG3.C/makeMessage)
+ i92Mar24 Date string (%x) uses faster, smaller code (TIME.C/sstrftime)
+ e92Mar15 Quack! command (CTDL.C/doRegular)
+ e92Mar12 Only configure room table if necessary (Ibid)
+ e92Mar12 Only configure userlog table if necessary (Ibid)
+ e92Mar12?Only configure message table if necessary (CFG.C/msgInit)
+ e92Mar12 After configuring MSG.DAT, show low/high msg #s (CFG.C/msgInit)
+ e92Mar09 .EEnodename sends email to "Sysop", not "SysOp" (MSG3.C/msgmake)
+ e92Mar09?COM3/COM4 support, thanks Brent! (SER.ASM)
+ e92Mar06 E in .EC changes terminal emulation (LOG3.C/configure)
+ i92Feb28 Hopefully fixed resizing message base smaller (RESIZE.C/resizemsg)
+ i92Feb24 .ER: show blurb before prompting for room (ROOM2.C/makeRoom)
+ i92Feb24?Hopefully fixed #OLDCOUNT, thanks Gremlin! (LOG2.C/newlog)
+ i92Feb20 Only reinitialize userlog table if not resizing (CFG.C/zapLogFile)
+ i92Feb20 Went back to old overwrite func for bug fix in msg resize (MSG2.C)
+ i92Feb20 Made an array static to fix resize bug (CFG.C/initfiles)
+ i92Feb20 Use filelength instead of fstat (CFG.C/checkresize)
+ e92Feb18 Fixed room name in email (MSG.C/putMessage)
+ e92Feb13 Only say can't change to directory if logged in (MISC.C/changedir)
+ e92Feb13 Open old/new MSG.DAT once, not for each entry (RESIZE.C/resizemsg)
+ e92Feb13 Open old/new LOG.DAT once, not for each entry (RESIZE.C/resizelog)
+ e92Feb13 If need to resize, do it (CFG.C/configcit)
+ e92Feb13 Call checkresize before initializing (CFG.C/initfiles)
+ e92Feb13 New resize functions from GremCit (CFG.C, RESIZE.C)
+ e92Feb12!If can't change to room directory, don't .U (UPDNLD.C/textup)
+ e92Feb12 Don't say "doesn't exist" for .AED (ROOM2.C/renameRoom)
+ e92Feb12 Don't say "Invalid pathname" for .AM dest (INFO2.C/moveFile)
+ e92Feb12 If can't change to room directory, don't .RD (FILE.C/dir)
+ e92Feb12 If can't change to directory, say so (MISC.C/changedir)
+ e92Jan28 Put room name into netmail (MSG.C/putMessage)
+ e92Jan28 .EC doesn't show menu initially if expert (LOG3.C/configure)
+ e92Jan28 Halls can be made enterRoom-able (SYSH.C/newhall,renamehall)
+ e92Jan28 If hall has enterRoom, users can create rooms in it (CTDL.C/doEnter)
+ i92Jan28 Added bit for room entry to hallway structure (CTDL.H)
+ e92Jan14 Fixed MESSAGE.APL wordwrapping (EDIT.C/xPutStr,xPutLine)
+ e92Jan13 When spawning editor, wordwrap MESSAGE.APL (EDIT.C/xPutStr,xPutLine)
+ i92Jan13 Made verbose flag global (GLOB.H)
+ e92Jan13?Prevent negative numbers in stats (GLOB.H)
+ e92Jan13 .AL doesn't take a long time to abort (SYSG.C/listgroup)
+ e92Jan13 Cursor position not incremented for beep (OUT.C/updcrtpos)
+ e92Jan13 .RS doesn't take a long time for message counting (MISC2.C/systat)
+ e92Jan07 .RS won't do message counting if aborted early (MISC2.C/systat)
+ e92Jan07 .RS displays logged in time (MISC2.C/systat)
+ e92Jan07 Search/replace won't show on console for email (INPUT.C/getString)
+ e92Jan07 Underline email recipient/forwardee when entering (EDIT.C/putheader)
+ e92Jan07 Underline email recipient/forwardee when reading (MSG3.C/printheader)
+ e92Jan07 Fixed dial_out mode exit (MISC2.C/dial_out)
+ i92Jan07!Fixed poorly pointed variable (OUT.C/getWord)
+ e92Jan06 Status line doesn't display extra space (WIND.C/update25)
+ i92Jan01 Removed unused variable (MSG.C/buildroom)
+ i92Jan01 Localized vars (GLOB.H, APLC.C/readAplFile, WIND.C)
+ i92Jan01 Localized vars (GLOB.H, MSG3.C, CTDL.C/doGoto,main, CFG.C)
+ e92Jan01 Partially remove unused function (CFG.C/showtypemsg)
+ e92Jan01 When building room table, show endpoint (CFG.C/RoomTabBld)
+ e92Jan01 Use "fuel bar" when making message table (CFG.C/msgInit)
+ e92Jan01 When building log table, show endpoint (CFG.C/logInit)
+ e92Jan01 When building hall file, show endpoint (CFG.C/buildhalls)
+ i92Jan01 buildcopies has const function outside loop (CFG.C)
+ e91Dec23 ^Q exits dial-out mode if no carrier (MISC2.C/dial_out)
+ e91Dec23 Sysops can respond to messages to "Sysop" (MSG3.C/showMessages)
+ e91Dec23 Aides can respond to messages to "Aide" (MSG3.C/showMessages)
+ e91Dec23?Aides can see msgs from "Aide" (MSG2.C/mayseeindexmsg,mayseemsg)
+ e91Dec23?Sysops can see msgs from "Sysop" (MSG2.C/mayseeindexmsg,mayseemsg)
+ e91Dec23?Doesn't prompt to release msgs in Aide/Dump (MSG3.C/showMessages)
+ e91Dec23 ALT+222 exits dial-out mode (MISC2.C/dial_out)
+ e91Dec23 .AE has proper default for Name of room (ROOM2.C/renameRoom)
+ e91Dec23 Fixed diskspace count (FILE.C/bytesfree)
+ e91Dec20 For bunny, divide by 10 instead of multiply (MSG3.C/makeMessage)
+ i91Dec20 Faster message reading when reconfiguring (CFG.C/msgInit)
+ e91Nov22 Put _ in front of prompt in super shell (APLC.C/apsystem)
+ e91Nov22 Display greeting for subboard users (CTDL.C/main)
+ e91Nov22 Exit to MS-DOS when finished with subboard (LOG2.C/terminate)
+ i91Nov21 NODES.CIT #BAUD uses digitbaud function (NETNODE.C/getnode)
+ i91Nov21 CTDL -B uses digitbaud function (CTDL.C/main)
+ i91Nov21 Created digitbaud function to calculate baud rate (MDM.C, PROT.H)
+ e91Nov21 Input from modem when starting slave mode (CTDL.C/main)
+ e91Nov10 Messages word wrapped at terminal width (MSG3.C/printMessage)
+ e91Nov10 Allow marking/killing messages while in header (MSG3.C/printMessage)
+ e91Nov10 Slightly improved .RRS (MISC2.C/systat)
+ e91Nov10 Fixed #HELPAIDE/#HELPSYSOP (FILE.C/checkfilename)
+ e91Nov10 Better bad login string trapping (NET_OUT.C/n_login)
+ e91Nov10 Fixed #SHOWMOVED (MSG3.C/printheader)
+ i91Nov10 Don't reallocate tables after .S& (CFGCFG.C/readconfig)
+ e91Oct31*Now using Microsoft C 6.00AX (VRSN.C)
+ e91Oct31 If invalid initials;password, record to trap file (LOG2.C/login)
+ e91Oct31 If #SHOWMOVED 1, show where msg was from (MSG3.C/printheader)
+ e91Oct31 Hopfully finally fixed unlisted users (LOG3.C/Readlog)
+ e91Oct31 If can't find helpfile and #HELPPATH2, look there (FILE.C/tutorial)
+ e91Oct31 If entered 1 msg, singularize when terminating (LOG2.C/terminate)
+ e91Oct31 If #HELPSYSOP 0, can't do .h SYSOP, for Livia (FILE.C/checkfilename)
+ e91Oct31 If #HELPAIDE 0, can't do .h AIDE, for Livia (FILE.C/checkfilename)
+ e91Oct31 If borders=2 or 3, must be aide or sysop to edit (MISC.C/editBorder)
+ i91Oct31 Hopefully fixed CTDL -? (CTDL.C/main)
+ i91Oct31 Moved configcit to CFGCFG.C (CFG.C)
+ i91Oct31 Remove unnecessary references to KEY.H (CTDL.C, NETGMSG.C)
+ i91Oct31 Put references to KEY.H in own modules (NETNODE.C, CRON.C)
+ i91Oct31 Reorganized link response file (RESPONSE)
+ i91Oct31 Moved fakeFullCase to MSG3.C, made static (EDIT.C, PROT.H)
+ i91Oct29 Made OLDaNDnEW default for reading messages (MSG3.C/showMessages)
+ i91Oct27 Net dup check: src ID, nodename | author, date (NETGMSG.C/ReadMsgFl)
+ i91Oct18 Made twit keywords enums (KEY.H, CFG.C/readconfig)
+ e91Oct18 Made them CONFIG.CIT variables (KEY.H, CFG.C/readconfig)
+ e91Oct18 Added helpaide, helpsysop, helppath2, showmoved, color vars (CTDL.H)
+ e91Oct18 Made .RRS work (MISC2.C/systat,rmPrintf, GLOB.H, CTDL.C/doRead)
+ e91Oct18 Maximum word length is terminal width (OUT.C/mFormat)
+ e91Oct18 Hopefully fixed ^A bug (OUT.C/getWord)
+ e91Oct18 Made %I in datestamp work, thanks Angela Davis (TIME.C/sstrftime)
+ e91Oct17 Only show <Mark>, <Kill> in msg (MSG3.C/printMessage,MSG.C/mAbort)
+ e91Oct17?Implemented baud option (PORT.C/Initport)
+ e91Oct17 Lists usage when using unknown option (CTDL.C/main)
+ e91Oct17 Added Baud option, -B (Ibid, GLOB.H)
+ e91Oct17 Added Door option, -A (CTDL.C/main)
+ e91Oct17 Hangup and Initport aren't done in door mode (PORT.C/Hangup,Initport)
+ i91Oct17 Crashing/exiting calls hang up routine (MISC.C/crashout,exitcitadel)
+ i91Oct17 Added slv_door, slv_baud, slv_net, slv_node variables (GLOB.H)
+ e91Oct17?One room in NODES.CIT #ROOM, thanks Matt! (NETGMSG.C/get_next_room)
+ e91Oct15 In .EP, must enter old initials;pw before changing (LOG3.C/newPW)
+ e91Oct15 Sysop can make user's name 30 characters long (LOG3.C/userEdit)
+ e91Oct15 Go offhook when exiting dialout only if logged in (MISC2.C/dial_out)
+ e91Oct15 Network IDs (NetID in structure) are editable (ROOM2.C/renameRoom)
+ e91Oct15 If message is over 90% uppercase, bunny it (MSG3.C/makeMessage)
+ e91Oct15 Don't make aide message if user killed own message (Ibid)
+ e91Oct15 When killing message, tell room in Aide msg (MSG3.C/deleteMessage)
+ e91Oct15 .AS puts changed file description in room (INFO.C/setfileinfo)
+ e91Oct15 .AF puts new file descriptions in room (CTDL.C/doAide)
+ i91Oct15 Removed duplicate definition for entered and mread (GLOB.H)
+ i91Oct14?Use boolean comparisons for private node (LOG2.C/login)
+ e91Oct14 If no group specified, mf.mfLim=FALSE (GRPH.C/getgroup)
+ i91Oct14 Second parameter for u_match is const char * (FMT.C, PROT.H)
+ i91Oct14 Beautified cclasss function, returns const char * (FMT.C)
+ i91Oct14 Comments for what letters in menus are functional (CTDL.C)
+ e91Oct14 .RG is the same as .RL (CTDL.C/doRead)
+ e91Oct14 .EG is the same as .EL (CTDL.C/doEnter)
+ i91Oct14 Made doChat function take no parameters (CTDL.C)
+ i91Oct14 Made main function type static void (PROT.H, CTDL.C)
+ e91Oct14 Made missing CONFIG.CIT keyword message say so (Ibid)
+ e91Oct14 Made some items non-rescannable (Ibid)
+ i91Oct14 Changed sscanf calls to atof calls (CFG.C/readconfig)
+ i91Oct14 Removed configurable but unused cost1200, cost2400 (CTDL.H)
+ e91Oct14 Removed #cost1200, #cost2400, #alldone (CFG.C/readconfig,KEY.H)
+ e91Oct14 Added .S& reread CONFIG.CIT option (CTDL.C/doSysop)
+ i91Oct14 Made readconfig global, takes rescan parameter (CFG.C, GLOB.H)
+ e91Oct14 Added default case for bad GRPDATA.CIT keywords (Ibid)
+ i91Oct14 Changed sscanf calls to atof calls (CFG.C/readaccount)
+ i91Oct14 Changed sscanf calls to atol calls (CFG.C/msgInit)
+ e91Sep30*Net mail goes in proper room (NETGMSG.C/NfindRoom)
+ i91Sep30 Removed unneeded local variable (MSG2.C/putMsgStr)
+ i91Sep30 Don't change directory to uppercase (MISC.C/changedir)
+ i91Sep30 Changed NAMESIZE to 30 (CTDL.H)
+ i91Sep30 Cleaned headers, function prototypes (SYSH.C,TIME.C,UPDNLD.C,WIND.C)
+ e91Sep30 Changed three letter "Thur" to "Thu" (TIME.C)
+ i91Sep29 Cleaned headers, function prototypes (ROOM2.C, SYSG.C)
+ e91Sep29 Changed order of .SG? menu (SYSG.C/do_SysopGroup)
+ i91Sep29 Rearranged room edit case statements (ROOM2.C/renameRoom)
+ i91Sep29 Make sure string can't get too long (ROOM2.C/formatSummary)
+ e91Sep29 If can't find EXTERNAL.CIT, don't say ROUTE.CIT (ROOM2.C/directory_l)
+ i91Sep27 Cleaned headers, function prototypes (NET?????.C, OUT.C, ROOM.C)
+ i91Sep27 Cleaned headers, function prototypes (MSG.C, MSG2.C, MSG3.C)
+ i91Sep27 Cleaned headers, function prototypes (LOG2.C, LOG3.C, MDM.C, MISC.C)
+ i91Sep27 Cleaned headers, function prototypes (INFO2.C, INPUT.C, LIB.C,LOG.C)
+ e91Sep27 Tell console if no node entry when logging in (NET_IN.C/net_slave)
+ i91Sep27 Split NET.C into six parts, for better overlaying
+ i91Sep27 Removed notelogmessage function (MSG2.C)
+ e91Sep27 When marking/killing messages, verb shows up (MSG.C/mAbort)
+ i91Sep27 Eliminated one-line once-used function (MDM.C/ringdetectbaud)
+ i91Sep27 Rearranged user edit case statements (LOG3.C/userEdit,configure)
+ i91Sep26 Cleaned headers, function prototypes (GRPH.C, INFO.C)
+ i91Sep26 Took unused #define out of INFO.C
+ i91Sep26 Moved .ED function to GRPH.C (SYSH.C/defaulthall)
+ i91Sep26 Directories can be cron sorted and reversed (FILE.C/readdirectory)
+ i91Sep26 Dirs can be cron sorted and reversed (FILE.C/dir,filldirectory)
+ i91Sep26 Used prewritten functions for less code (FILE.C/bytesfree)
+ i91Sep26 Used prewritten functions for less code (FILE.C/ambig,checkfilename)
+ i91Sep26 Removed unused variables from GLOB.H
+ i91Sep19 Cleaned headers, function prototypes (CTDL.C, EDIT.C, FILE.C, FMT.C)
+ i91Sep19 Cleaned headers, function prototypes (ACCT.C, APLC.C, CFG.C, CRON.C)
+ i91Sep19 Removed asciitable function (OUT.C, PROT.H)
+ i91Sep19 Removed asciitable calls (Ibid, MISC.C/initCitadel)
+ i91Sep19 Used pointer instead of index (EDIT.C/GetFileMessage)
+ i91Sep19 Removed unneeded variable from wordcount routine (EDIT.C)
+ e91Sep19 Turn off cursor while config'ing (CFG.C/configcit,illegal)
+ i91Sep19 Moved buildroom function from CFG.C to MSG.C, for overlaying
+ e91Sep19 Don't display command line when xfering w/debug (APLC.C/wxsnd,wxrcv)
+ e91Sep19 When supershelling, tell user to wait (APLC.C/apsystem)
+ e91Sep19 Author of msg is underlined+bold (Ibid, EDIT.C/putheader)
+ e91Sep19 Surname of msg is bold when reading (MSG3.C/printheader)
+ i91Sep11 Took CRCs out of VRSN.C
+ e91Sep09*Don't write "Ring" to trap file (INPUT.C/iChar)
+ e91Aug27 Author of msg is underlined+bold when reading (MSG3.C/printheader)
+ e91Aug24*ANSI attribs on local screen can be bold/flashing (OUT.C/termCap)
+ i91Aug23 Removed repeated calculation (MSG2.C/crunchmsgTab)
+ e91Aug23!Null-only messages (group 0) never seen by nodes (MSG2.C/mayseemsg)
+ e91Aug23 No more ^A at the end of a word (MSG2.C/dGetWord)
+ e91Aug23 If resized MSG.DAT, overwrite check doesn't rewind (MSG2.C/overwrite)
+ e91Aug23 If #OFFHOOK 1, phone off hook after dialing out (MISC2.C/dial_out)
+ e91Aug23 Always show title/surname for message when entering (Ibid)
+ e91Aug23 Author of message is underlined when editing (EDIT.C/putheader)
+ e91Aug23 Author of message is underlined when reading (Ibid)
+ i91Aug23 Only calculate message's posted time if not anon (Ibid)
+ e91Aug23 Make [problem user] flash (MSG3.C/printheader)
+ i91Aug23 Use pointers instead of indexing for efficiency (Ibid)
+ e91Aug23 No more ^A at the end of a word (OUT.C/getWord)
+ e91Aug23 .RC does not show initials;password (LOG.C/showconfig)
+ e91Aug23 Installed swapping supershell (Ibid)
+ i91Aug23 Made batch applics use spawnvp instead of system (APLC.C/apsystem)
+ e91Aug23 Update status line clock only once per second (INPUT.C/iChar)
+ i91Aug23 Used Row instead of readpos (OUT.C/cCPrintf)
+ i91Aug23 Used Row instead of readpos (MISC.C/ctrl_c, MISC2.C/ringSystemREQ)
+ i91Aug23 Removed redundant cursor saving code (WIND.C/update25)
+ i91Aug23 Used positionW, added vars where more efficient (WIND.C)
+ i91Aug23 Removed local variables from functions (WIND.C/doccr,help,)
+ i91Aug23 Removed unused home code (Ibid)
+ i91Aug23 Combined no output conditions for displaying (WIND.C/doccr)
+ i91Aug23 Added variables for checking cursor location quickly (WIND.C)
+ e91Aug23 Allow escape processing in local mode, for Err Head, *.??@ (Ibid)
+ i91Aug23 Combine no output conditions for displaying (WIND.C/outCon)
+ e91Aug23 Help window lines complement status bar lines (WIND.C/updatehelp)
+ i91Aug23 Don't need to save cursor when scrolling screen (WIND.C/scroll)
+ i91Aug23 Optimized some assembly code (WIND.C/position, scroll, bioschar)
+ i91Aug23 Optimized some assembly code (WIND.C/cursoff, curson, gmode)
+ i91Aug23 Call clearline only once at a time (WIND.C/help,ScreenFree)
+ i91Aug23 Rewrote clearline to clear four lines instead of one (WIND.C)
+ i91Aug23 Made CONFIG.CIT keywords private to CFG.C (Ibid)
+ i91Aug23 Changed #define's to enumerated types (KEY.H)
+ i91Aug21 Moved outCon, doccr to WIND.C (MDM.C)
+ i91Aug21 Redid bioschar in inline assembly (Ibid)
+ i91Aug20 Recoded directstring to use pointers instead of indexing (WIND.C)
+ i91Aug20 Use local variable for number of lines (WIND.C/updatehelp)
+ e91Aug20 Allow 30 character names for users in status line (WIND.C/update25)
+ i91Aug20 Coded clearline entirely in inline assembly (Ibid)
+ i91Aug20 Coded curson entirely in inline assembly (WIND.C)
+ i91Aug20 Made CrtRows a volatile * const (Ibid)
+ i91Aug20 Use gmode to determine mono vs color (WIND.C/setscreen)
+ i91Aug20 Use inline assembly for gmode (WIND.C)
+ i91Aug20 Removed dirnams[], diropp[] from KEY.H; not used
+ i91Aug20 Removed loginkeywords[] from KEY.H; they weren't used
+ i91Aug06 Recreated PROT.H
+ i91Aug06 Moved do_SysopHall from CTDL.C to SYSH.C
+ i91Aug06 Moved do_SysopGroup from CTDL.C to SYSG.C
+ i91Aug06 Uninit'd var ich='\0' (UPDNLD.C/download,upload)
+ i91Aug06 Uninit'd var retval=0 (UPDNLD.C/textdown)
+ i91Aug06 Uninit'd var accessible=1 (SYSH.C/defaulthall)
+ i91Aug06 Uninit'd var baudrate=2 (PORT.C/portInit)
+ i91Aug06 Use memset function instead of zero-ing string manually (Ibid)
+ i91Aug06 Moved time check into while loop (NET.C/wait_for)
+ i91Aug06 Uninit'd var toReturn=FALSE (MSG.C/mAbort)
+ i91Aug06 Uninit'd var from=0 (MISC2.C/chat)
+ i91Aug06 Uninit'd var semicolon=FALSE (LOG2.C/newUser
+ i91Aug06 Uninit'd var accessible=0 (GRPH.C/enterhall)
+ i91Aug06 Eliminated unused code from strpos (FMT.C)
+ i91Aug06 Uninit'd var ich='\0' in many functions (CTDL.C)
+ i91Aug06 Uninit'd var neg=FALSE (ACCT.C/calc_trans)
+ e91Jul26 .SHR uses partialgroup instead of groupexists (SYSH.C/renamehall)
+ e91Jul26 .SHN uses partialgroup instead of groupexists (SYSH.C/newhall)
+ e91Jul26 .SGR uses partialgroup instead of groupexists (SYSG.C/renamegroup)
+ i91Jul26 .AL only calls partialgroup, not groupexists (SYSG.C/listgroup)
+ e91Jul26 .SGK uses partialgroup instead of groupexists (SYSG.C/killgroup)
+ i91Jul26 .SGG only calls partialgroup, not groupexists (SYSG.C/globalgroup)
+ i91Jul26 .AG only calls partialgroup, not groupexists (SYSG.C/groupfunc)
+ e91Jul26 .AEG uses partialgroup instead of groupexists (ROOM2.C/renameRoom)
+ i91Jul26 .ELR only calls partialgroup, not groupexists (ROOM2.C/makeRoom)
+ i91Jul26 .EL only calls partialgroup, not groupexists (MSG3.C/makeMessage)
+ e91Jul26 .RLU uses partialgroup instead of groupexists (LOG3.C/Readlog)
+ i91Jul26 .RL only calls partialgroup, not groupexists (GRPH.C/getgroup)
+ i91Jul26 partialhall calls hallexists, can replace function calls (GRPH.C)
+ i91Jul26 partialgroup calls groupexists, can replace function calls (GRPH.C)
+ e91Jul26 Set marked message ID to 0 when logging in (LOG2.C/login)
+ e91Jul26 If message ID is 0, can't .AI (MSG3.C/copymessage)
+ e91Jul26 Can't toggle title/surname off without nulling own (LOG3.C/configure)
+ e91Jul26 If user has surname, display surnames in messages (Ibid)
+ e91Jul26 If user has title, display titles in messages (MSG3.C/printheader)
+ e91Jul26 If invalid login string, tell sysop (NET.C/n_login)
+ e91Jul26 Alt+T only works if carrier is detected, for Livia (MDM.C/fkey)
+ e91Jul26 Check keyboard while waiting for/getting msgs (NET.C/master,slave)
+ e91Jul26 Hitting <CR> to abort Cron commands should work (INPUT.C/getNumber)
+ i91Jul26 Changed how i is incremented, checked [bugfix] (Ibid)
+ e91Jul26 Display sent string when logging in (NET.C/n_login)
+ i91Jul26 Changed all occurences of _fmemmove to memcpy (NET.C)
+ i91Jul24 Compiling with PWB, for debugging purposes
+ e91Jul23 Don't show maximum inactive time in .RS (MISC2.C/systat)
+ i91Jul19 Use _nullcheck() function for null pointer check (CTDL.C/main)
+ e91Jul18 Only update status line while idling when no carrier (INPUT.C/iChar)
+ i91Jul14 Made #NOPWECHO=0 work--moved "if" condition (INPUT.C/getString)
+ i91Jul02 Separated SYS.C into SYS.C, SYSG.C, SYSH.C for overlaying
+ i91Jul02 Removed some private functions in UPDNLD.C from PROT.H
+ i91Jul02 Moved some functions from FILE.C to UPDNLD.C, changed make files
+ i91Jul02 Removed strlower() from PROT.H
+ i91Jul02 Use strlwr() std.C function instead of strlower (FILE.C/entrymake)
+ e91Jul01 Software field now includes version number (NET.C/PutMessage)
+ i91Jun28 Defined string constant for string too long errors (NET.C/getnode)
+ e91Jun28!In NODES.CIT #ROOM entry, if no 2nd room name, same as first (Ibid)
+ e91Jun28?Cut NODES.CIT #ROOM entries to LABELSIZE (NET.C/get_next_room)
+ e91Jun28 If "@TLC" within origin country, nuke field (NET.C/GetMessage)
+ e91Jun28 Don't display origin country in non-verbose read (Ibid)
+ e91Jun28 Display destination country in verbose read (MSG3.C/printheader)
+ e91Jun28 Make NOCHAT blurbs rotate (CTDL.C/doChat)
+ i91Jun28 Changed char to uchar for input character (INPUT.C/iChar)
+ e91Jun28 Change corner (L) characters from +'s to /'s (XLATE.C)
+ e91Jun12 Don't display blank line in .EC? if t/s disabled (LOG3.C/configure)
+ e91Jun11 Display actual baud rate in debug mode (NET.C/net_slave,net_master)
+ i91Jun11 Made J/N/S verbs into static char pointers (Ibid)
+ e91Jun11 Added highlighting to <Jump>/<Next>/<Stop> (MSG.C/mAbort)
+ e91Jun11 Don't show title/surname when editing if don't want them (Ibid)
+ e91Jun11 Don't show subject when editing if don't want it (EDIT.C/putheader)
+ e91Jun11 Don't read subject if don't want it (Ibid)
+ e91Jun11 Don't read title/surname if don't want them (MSG3.C/printheader)
+ e91Jun11 Don't read signature if don't want it (MSG3.C/printMessage)
+ e91Jun11 Add T/s, subJects, siGnatures toggles to .EC menu (Ibid)
+ e91Jun11 Add T/s, subJects, siGnatures to .EC ? menu (Ibid)
+ e91Jun11 Add highlighting to each letter of .EC (Ibid)
+ e91Jun11 Use '~' for .EC terminal type toggle (LOG3.C/configure)
+ e91Jun11 Set to show t/s, subjects, signatures for new users (LOG2.C/newlog)
+ e91Jun11 Tell if titles/surnames, subjects, signatures are displayed (Ibid)
+ i91Jun11 Simplified .RC code on Display/Do not display (LOG.C/showconfig)
+ e91Jun11 Set to display t/s, subjects, signatures by default (Ibid)
+ e91Jun11 Make last old on new default to on (LOG.C/setdefaultconfig)
+ i91Jun11 Only copy 30 bytes when adding info (INFO2.C/addinfo)
+ i91Jun11 Only copy 30 bytes when updating fInfo.uploader (INFO.C/updateFile)
+ i91Jun11 Change fInfo.uploader[20] to 30 bytes (CTDL.H)
+ i91Jun11 Check NULL (66 bytes) at each room prompt (CTDL.C/main)
+ e91Jun11 Only process ANSI escape sequences in callout mode (MDM.C/outCon)
+ i91Jun11 Made str[80] static, should speed up ansi function (WIND.C)
+ i91Jun11 Took unused case statements (for colors) out of termCap (OUTPUT.C)
+ i91Jun11 In dial-out mode, set characters to 0 only if changed (Ibid)
+ e91Jun11 In dial-out mode, display more Ctrl commands (MISC2.C/dial_out)
+ e91Jun11 Update status line more often (INPUT.C/iChar)
+ e91Jun11 Implemented #OLDCOUNT, using to Matt's newlog function (LOG2.C)
+ e91Jun11 Display BULLETIN.BLB for new users, for Livia (LOG2.C/login)
+ i91Jun11 Compiled everything with /Gm /Gt
+ i91Jun11 Added DISPLAYTS,SUBJECTS,SIGNATURES to logBuf (CTDL.H)
+ e91Jun07 Read MESSAGE.APL from aplicpath (EDIT.C/editText)
+ i91Jun07 Fixed WIND.C warnings
+ e91Jun07 Changed how ALT+Z works (INPUT.C/iChar, TIME.C/systimeout)
+ e91Jun07 Fixed unlisted userlog bit (LOG3.C/Readlog)
+ e91Jun07 Don't change directory for .APL files (APLC.C)
+ i91Jun07 Erase OUTPUT.APL in readAplFile instead of apsystem (APLC.C)
+ e91Jun07!Changed shell to use swap(), using FredCit code (APLC.C/apsystem)
+ e91Jun07 Limited download filespec to 80 characters (FILE.C/download)
+ e91Jun05 Updated MSC version number to 6.00A (VRSN.C)
+ e91Jun03 Hopefully fixed semicolon
+ e91May30 Changed Shakespeare quote to a goltar quote (VRSN.C)
+ i91May29 Simplified ANSI starting code (WIND.C/ansi)
+ i91May29 clearline uses uchar instead of uint for rows (PROT.H, WIND.C)
+ i91May29 Assembly for screen routines (WIND.C/cursoff,curson,position,etc.)
+ e91May29 Override feature for .SHK in non-empty hall (Ibid)
+ e91May29 .SHK lists rooms still in hall if not empty (SYS.C/killhall)
+ e91May29 .SHR defaults to current hallway name (SYS.C/renamehall)
+ e91May29 CTRL+Z won't say it's saving a 0 length message (EDIT.C/getText)
+ i91May29 Overflow length in NODES.CIT fields is LABELSIZE (NET.C/getnode)
+ e91May29 K allows jumping (ROOM.C/listRooms)
+ e91May29 One more try on tiny MESSAGE.APL's (APLC.C/readAplFile)
+ e91May29 Hopefully fixed semicolon command (CTDL.C/doComment)
+ i91May22 Recompile with default optimization, C 6.0
+ i91May22 Cast output characters to unsigned before filtering (OUT.C/oChar)
+ i91May15 When getting a word, don't strip high bits (OUT.C/getWord)
+ e91May15 Filter strings on input (INPUT.C/getString)
+ e91May15 Make IBM graphics characters configurable (LOG3.C/configure)
+ e91May15 Make IBM Graphics default off for new users (LOG2.C/newlog)
+ e91May15 Display IBM Graphics status in .RC (LOG.C/showconfig)
+ e91May15 Translate IBM Graphics characters on output (OUT.C/oChar)
+ i91May15 Don't recreate ASCII filtering table (OUT.C/asciitable)
+ i91May15 Don't worry about surname mangling (LOG2.C/minibin)
+ e91May15 Don't filter input messages (EDIT.C/GetFileMessage)
+ i91May15 Changed tfilter[] to filt_in[] (GLOB.H, MISC2.C/chat,dial_out)
+ e91May15 Input IBM Graphics characters (INPUT.C/iChar)
+ e91May15 ALT+Z does speedy timeout (INPUT.C/iChar, MDM.C/fkey, GLOB.H)
+ e91May15 .RB also uses node, region, country, forward addr (MSG2.C/mayseemsg)
+ i91May15 Took function out of .RS message counting loop (MISC2.C/systat)
+ e91May15 ; command (CTDL.C/doRegular,doComment)
+ e91May15 Corrected known spelling errors (CRON.C,CTDL.C,LOG3.C,MSG3.C,ROOM2.C)
+ i91May15 Defined string constants for .APL files, "%s\\%s" (APLC.C)
+ e91May15 Made EXIT prompt say to exit to softname (APLC.C/apsystem)
+ e91May15 Change to APPLICPATH before reading files (Ibid)
+ e91May15 One more try at tiny MESSAGE.APL's (APLC.C/readAplFile)
+ e91May12 Reply to netted message copies region/country (MSG3.C/makeMessage)
+ e91May07 Added .SCN/.SCF to .SC? menu (CRON.C/cron_commands)
+ e91May07 Close/reopen trap file when terminating (LOG2.C/terminate)
+ i91May07 Removed duplicated calculation (CFG.C/slidemsgTab)
+ e91May06 Saves/restores 25 lines on screen (WIND.C/save_screen,restore_screen)
+ e91May06 ? before application doesn't write OUTPUT.APL (APLC.C/apsystem)
+ e91May06 Change to various paths when creating ETC.DAT (CFG.C/readconfig)
+ e91May06 Changed #APPLICATION to #APPLICPATH (KEY.H)
+ e91May06 Don't post < 3 character-length MESSAGE.APL's (APLC.C/readAplFile)
+ e91May06 Added .SCN (CRON.C/cron_commands,next_event_set; PROT.H)
+ e91Apr23 Fixed bold character in message header, Anon (MSG3.C/printheader)
+ e91Apr23 Hopefully fixed .SGN (SYS.C/newgroup)
+ e91Apr22 Put in version number (VRSN.C)
+ e91Apr22 restore_screen restores all at bottom of screen  (Ibid)
+ e91Apr22 save_screen saves entire screen in EGA modes (WIND.C)
+ e91Apr22 S/N/J while reading show little <verb>s (MSG.C/mAbort)
+ e91Apr22 Src #, other first lines, date not in Anon msgs (MSG3.C/printheader)
+ e91Apr22 Don't post zero-length MESSAGE.APL's (APLC.C/readAplFile)
+ i91Apr22 Shortened (unsigned) to (uint) in slidemsgTab (CFG.C)
+ e91Apr22 Checks proper #EXTERNAL fields for overflow (Ibid)
+ i91Apr22 Used (exttoolong) throughout EXTERNAL.CIT reading (Ibid)
+ e91Apr22 EXTERNAL.CIT lines can be up to 120 characters (CFG.C/readprotocols)
+ i91Apr22 Used (toolong) throughout CONFIG.CIT reading (CFG.C/readconfig)
+ i91Apr22 Hopefully fixed DIRPATH for directory rooms (ROOM2.C/renameRoom)
+ e91Apr22 Display free disk space for upload command (FILE.C/upload)
+ e91Apr22 Expanded download filespec to 256 characters (FILE.C/download)
+ e91Apr14 Added COMMAND cron type (CRON.C/do_event,do_cmd_event, PROT.H)
+ e91Apr14 Added .SCF (CRON.C/cron_commands,force_event; PROT.H)
+ e91Apr14 .RS displays oldest (and newest) message numbers (MISC2.C/systat)
+ e91Apr14 Only sends DIAL_RING if proper hour (INPUT.C/iChar)
+ e91Apr14 Added #HOURS parsing (CFG.C/readconfig)
+ i91Apr14 Added hours to ETC.DAT (CTDL.H)
+ e91Apr14 Added #HOURS, cron COMMAND to KEY.H
+ e91Apr10 Hopefully fixed G crashes (ROOM.C/gotoRoom)
+ e91Apr10 .RBM not allowed in anon rooms (MSG3.C/showMessages)
+ e91Apr10 In anon rooms, Read displays anonauthor (MSG3.C/printheader)
+ e91Apr10 Displays ANSI for non-zero message merging stats (Ibid)
+ e91Apr10 Erases MESG.TMP after networking (NET.C/cleanup)
+ e91Apr10 Added ANSI to login debugging info (NET.C/n_login,n_dial)
+ e91Apr10 Sends linefeeds when dialing out (NET.C/n_dial)
+ e91Apr10 Cleaned up node info (NET.C/net_slave,net_master)
+ i91Apr09 Used strstr() function in strpos() (FMT.C)
+ i91Apr09?Tiny optimization on ctrl character parsing (FMT.C/qtext)
+ e91Apr09 < and >: displays Not in a windowed room (GRPH.C/stephall)
+ 91Apr09 Set ansiOn=TRUE after terminating (LOG2.C/terminate)
+ 91Apr09 Set ansiOn=FALSE in default configuration (LOG.C/setdefaultconfig)
+ 91Apr09 Display date/time on status line when not logged in (Ibid)
+ 91Apr09 Switch order of "N" and "U" flags on status line (WIND.C/update25)
+ 91Apr09 .SGN adds group creator (SYS.C/newgroup)
+ 91Apr09?#SUBHUBS 2 works DragCit style; visits empty windows (Ibid)
+ 91Apr09 G/B start from current room, not first room (ROOM.C/gotoRoom)
+ 91Apr09 When editing dir room, initial path is dirpath (ROOM2.C/renameRoom)
+ 91Apr09 Tries to change to temp/msg/help/room/apl/trans/dirpath (Ibid)
+ 91Apr09 Correct error msg if can't allocate room table (MISC.C/initCitadel)
+ 91Apr09 Use transpath when saving outgoing mail (NET.C/save_mail)
+ 91Apr09 Use transpath when erasing sent mail file (NET.C/cleanup)
+ 91Apr09 Display modem I/O while dialing, waiting for carrier (NET.C/n_dial)
+ 91Apr09 Use transpath for sending mail file (NET.C/slave)
+ 91Apr09 Display node info if calling out and debug on (NET.C/net_master)
+ 91Apr09 Minor TRUE/FALSE optimizations (NET.C/net_slave,net_master)
+ 91Apr09 amPrintf author's name for routeless mail (NET.C/ReadMsgFl)
+ 91Apr09 Took sizetable() call out of for() loop (NET.C/NewRoom)
+ 91Apr09 Changed msgBuf->foo[0] to *msgBuf->foo in several places (NET.C)
+ 91Apr09 Made GetStr() identical to CoOpCit's (NET.C)
+ 91Apr09 When writing msg to file, preceed LF's with CR's (EDIT.C/xPutStr)
+ 91Apr09!I's uppercased if surrounded by punctuation (EDIT.C/fakeFullCase)
+ 91Apr09 Entry cmd:P always displays author, no anon check (EDIT.C/putheader)
+ 91Apr09 Entry cmd:* works for non-sysop but not for name (EDIT.C/editText)
+ 91Apr09 .SU can remove titles/surnames with a space (LOG3.C/userEdit)
+ 91Apr09 Changed order or .RU flags for aides, now ATPNUSMVDm (Ibid)
+ 91Apr09 .RRU should work (LOG3.C/Readlog)
+ 91Apr09 .RU's function uses Reverse parameter (CTDL.C/doRead, PROT.H)
+ 91Apr09 At room prompt, '=' works same as '+' (CTDL.C/doRegular)
+ 91Apr09 .E<cr> is doublespaced for Livia (CTDL.C/doEnter)
+ 91Apr09 Removed copyToFile function. Now must use ALT+P (MSG3.C)
+ 91Apr09 Show locally who replied mail is for (Ibid)
+ 91Apr09 Redefine high/low limits when reversing direction for Livia (Ibid)
+ 91Apr09 Show reverse direction, minimally optimize reversing (Ibid)
+ 91Apr09 Can't copy a file (MSG3.C/showmessages, MSG.C/mAbort)
+ 91Apr09 Changed strcpy(msgBuf->foo, "") to *msgBuf->foo='\0' (Ibid)
+ 91Apr09 Author=#ANONAUTHOR if msg created in anon room (MSG3.C/makeMessage)
+ 91Apr09 Added K_ANONAUTHOR, K_DIRPATH, K_TRANSPATH (Ibid)
+ 91Apr09 Took K_HOURS out (CFG.C/readconfig)
+ 91Apr09 Added grpDataFile[]="GRPDATA.CIT", used in CFG.C/readaccount
+ 91Apr09 Modified illegal() to take variable arguments (CFG.C)
+ 91Apr09 Added toolong[] constant to CFG.C, for use with illegal()
+ 91Apr09 Removed #HOURS, Added #ANONAUTHOR,#TRANSPATH,#DIRPATH (KEY.H)
+ 91Apr09 Added anonauthor, dirpath to CTDL.H
+ 91Apr09 Removed hours from CTDL.H
+ 91Apr07 Took old substr() out of FMT.C (there were two fns with same name)
+ 91Apr01 Added _fheapmin back in (APLC.C/apsystem)
+ 91Mar21 Make message header end in ANSI_NORMAL (MSG3.C/printheader)
+ 91Mar21 Don't note in Aide room for user-killed msgs (MSG3.C/deleteMessage)
+ 91Mar21 Don't print trailing spaces on .RU for non-aide/node (LOG3.C/Readlog)
+ 91Mar21 In local screen scrolling, use current ANSI colors (MDM.C/doccr)
+ 91Mar21 Put - (instead of +) next to failed events (CRON.C/list_event)
+ 91Mar21 Only list DL/UL-only in .AE if Group and Dir (ROOM2.C/renameRoom)
+ 91Mar21 .SZ leaves empty directory/applic/shared/windows (ROOM.C/indexRooms)
+ 91Mar21 Don't make ^A display a space (EDIT.C/getText)
+ 91Mar17 Put in CrT's code adjustment (FMT.C/sformat)
+ 91Mar08 Make #EXPIRE work for postdated messages (NET.C/ReadMsgFl)
+ 91Mar08 Made .RVU not show surnames/titles, .RVVU show them (LOG3.C/Readlog)
+ 91Mar08 Multiple V's in .R increment verbosity (CTDL.C/doRead)
+ 91Mar08 Fix subhubs so won't goto if others have new (ROOM.C/gotoRoom)
+ 91Mar08 Made signature and subject correct length in structure (CTDL.H)
+ 91Mar08 Added user signature lines (pass/display) (MSG3.C,MSG.C,NET.C)
+ 91Mar04 Gave name to unlogged users (LOG2.C/terminate)
+ 91Mar04 Unlogged users can read messages (MSG3.C/showMessages)
+ 91Mar04 .RVS prints DOS version, memory free (CTDL.C/doRead, MISC2.C/systat)
+ 91Mar04 .RVT formats files (CTDL.C/doRead, FILE.C/readtextfile/textdown)
+ 91Mar04 Even more brief .RVU w/titles/surnames (LOG3.C/Readlog)
+ 91Mar04 Fixed extra backspacing space in message entry (EDIT.C/getText)
+ 91Mar03 Put timeout in .RS ("Maximum inactive time:") (MISC2.C/systat)
+ 91Mar03 Only display original room name in verbose read (MSG3.C/printheader)
+ 91Mar03 Puts stats in trapfile for call-out networking (NET.C/net_callout)
+ 91Mar03 Added dangling pointer checks (APLC,FILE,INFO2,LIB,WIND,ZIP.C)
+ 91Feb27 Print signatures DragCit-style (MSG3.C/printMessage)
+ 91Feb26 Can use more/less than 25 lines on EGA/VGA (WIND.C)
+ 91Feb25 Change to temppath before unlinking ROOM.* (NET.C/slave)
+ 91Feb25 Display what columns mean after networking (NET.C/cleanup)
+ 91Feb25 Change to cfg.aplpath before renaming files (NET.C/master)
+ 91Feb25 Made .RVU w/titles/surnames briefer (LOG3.C/Readlog)
+ 91Feb25 All .APL files written to cfg.aplpath (APLC.C/writeAplFile)
+ 91Feb25 Only changes to cfg.aplpath after spawning (not before)
+ 91Feb24 Need two <CR>'s on Entry cmd: Continue (EDIT.C/getText)
+ 91Feb24 termCap(TERM_BOLD) after displaying name (EDIT.C/putheader)
+ 91Feb24 termCap(TERM_BOLD) after displaying name (MSG3.C/printheader)
+ 91Feb24 Made Cron List look better (CRON.C/list_event)
+ 91Feb24 Use better algorithm for %y and %Y (TIME.C/sstrftime)
+ 91Feb24 Made %{HIjmMUW} time fields zero-aligned (TIME.C/sstrftime)
+ 91Feb24 Call setscreen() after spawning (APLC.C/apsystem)
+ 91Feb24 Display subject in Entry cmd> Print formatted (EDIT.C/putheader)
+ 91Feb24 Don't always enable modem after networking (CTDL.C/doRegular)
+ 91Feb24 changedir(cfg.aplpath) before/after spawning (APLC.C/apsystem)
+ 91Feb23 Went back to old (!) APLC.C backup
+ 91Feb23 Print signature double-spaced normally (MSG3.C/printMessage)
+ 91Feb23 Print <R>everse in helpful hints msg read (MSG3.C/showMessages)
+ 91Feb23 Shortened .RS attribution 
+ 91Feb23 Removed last occurence of DragCit (changed to softname[])
+ 91Feb23 Fixed quotation marks in INFO2.C (Not a %s directory)
+ 91Feb23 Went to backup of CTDL.C (no _fheapmin call). Might stop crashing
+ 91Feb23 Fixed #HOURS parsing bug
+ 91Feb14 Signatures are <80 bytes, subject <72
+ 91Feb14 Does _fheapmin() between commands (CTDL.C)
+ 91Feb14 Should send twitregion, twitcountry, signature on netted msgs
+ 91Feb14 Added #TWITREGION, #TWITCOUNTRY, #SIGNATURE, #HOURS
+ 91Feb14 Should send software field on netted messages (NET.C)
+ 91Feb14 Finished converting "DragCit" to softname[]
+ 91Feb12 Put in swapping supershell, tested
+ 91Feb07 Removed last traces of WC protocol (all protocols external now)
+ 91Feb05 Continue eats up whitespace at end of message (EDIT.C/editText)
+ 91Feb05 Cleaned up boldfacing in .K (ROOM.C/listRooms)
+ 91Feb05 Back to old GetFileMessage, should solve file input probs.
+ 91Feb05 Prints last 128 characters of cont'd message + ANSI (editText)
+ 91Feb05 Added "Topic" option to Entry menu (EDIT.C/editText)
+ 91Feb05 Opens ndmailtmp file in "ab" mode before netting (zero length)
+ 91Feb04 Removed .EW,.RW (CTDL.C), dialout xmodem (MISC2.C)
+ 91Feb04 Removed Xmodem (FILE.C/enterwc,readwc,wcup,wcdown)
+ 91Feb04 Removed Xmodem (WC.C/xsend,xreceive,xget,xput)
+ 91Feb04 Prints subject and signature always, software in verbose mode
+ 91Feb04 Prints configurable region/country in verbose reading mode
+ 91Feb04 Added #DIAL_RING, cfg.dialring; only if modem enabled
+ 91Feb04 Added length error reports to NODES.CIT reading (NET.C/getnode)
+ 91Feb04 Changed mbfpath for 256 characters
+ 91Feb02 Changed Cron List to display success time instead of redo/retry
+ 91Jan29 Full recompile, Jj.Bs fields should be passing through now
+ 91Jan21 Added #NODECOUNTRY, made Q field print out
+ 91Jan21 Tried to add Jj.Bs fields, failed
+ 91Jan05 Made EDIT.C/getFileMessage more like NET.C/GetStr
+ 91Jan04 Added _fheapmin to .RS (MISC2.C/systat)
+ 91Jan03 Made msg Cont. print header/message (EDIT.C/editText)
+ 91Jan03 Added ISO color ANSI (OUT.C/termCap,EDIT.C/getText)
+ 91Jan?? Added messages read/entered to .RS (MISC2.C/systat)
+ 90Dec25 Added holidays (TIME.C/sstrftime)
+ 90Dec21 Attempt at copyToFile (MSG3.C/copyToFile,showMessages)
+ 90Dec13 Added call-waiting disable (INPUT.C/iChar)
+

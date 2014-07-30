@@ -1,0 +1,414 @@
+        ********
+        CITANEWS/A national newsletter for room-based BBS systems
+        ********
+        Issue No. 2
+        June 1987
+        
+        Compiled and sort of edited by Steve Yelvington 
+        (George Jetson @ The Lake US 612 426 1374)
+        
+        In this issue:
+        
+        * NETWORKING GOES INTERNATIONAL
+        * AN EIGHT-BIT ATARI CITADEL WORK-ALIKE
+        * A LOOK AT CITADEL-286
+        * NEWS FROM DALLAS/FORT WORTH
+        * A NEW VERSION OF THE ST CITADEL
+        * PLANS FOR CITADEL TO "TALK" TO USENET
+
+BUT FIRST, A WORD FROM OUR SPONSOR
+
+        This is the second issue of CitaNews, which we hope will
+continue as a monthly publication for all room-based BBS systems.
+Submissions for the next issue may be made at the Lake (US
+612-426-1374), which maintains somewhat erratic hours but is up most
+of the time. The Lake is in networking mode (C86-compatible) from 3
+a.m. to 3:45 a.m. daily, and can handle net-uploads and downloads.
+
+        We had more stuff than would fit in this issue, so you can be
+sure there will be another.
+
+Now, on with the show....
+
+CITADEL NETWORKING CROSSES WORLD'S LONGEST UNDEFENDED BORDER
+
+        Hue, Jr.'s Citadel-86 network (now supported by STadel and
+Amigados Citadel-68k) "went international" when the first recorded
+network mail crossed the Canada-U.S. border with this message:
+
+   87May16 4:55 am from Bruce MacKay @BOA! in Mail> to George Jetson
+Hi Steve.  Going to try this net again.  Let me know if this gets through 
+OK. George Seto tells me that 3.0c is in testing.  FANTASTIC!!!  I'm going to 
+sit up and watch this one go through tonight.  Can't sleep.  Talk to you 
+later. Bye. (Getting my 5 min. Warning message.)  See you later. 
+
+
+        So, the isn't much, but then, Alexander Graham Bell had to
+make do with "Watson, come here...." The message is mail from Bruce's
+system near Halifax, Nova Scotia, sent to the Lake in White Bear
+Lake, Minnesota.  The process was reversed a few days later with
+netmail sent from Images at Twilight in Bloomington, Minnesota, to
+Bruce's system. 
+
+        BOA! and the Lake are Atari ST systems running Orc's STadel;
+Images is an Amiga 1000 running Jay Johnson's Citadel-68K.
+        Nova Scotia now sports three Atari ST Citadels (BOA!, Lair and
+STuBBS), sharing rooms via the network. 
+
+TAKING THE LONG ROUTE
+
+        Last month, we mentioned that a message-routing scheme was
+being tested at Hue, Jr.'s Citadel-86 Test System (US 612-866-1804).
+We're happy to report that it's working just fine, allowing a group of
+New York State Citadels to share a private room for sysops'
+discussions with a group of Minnesota Citadels. Here's how it works:
+Messages posted on a local network node are shared with other local
+nodes in the usual point-to-point fashion. A regional "spine" system
+forwards all the messages it collects from local systems to another
+"spine" in another region. The second "spine" then distributes the
+messages to its local affiliates.
+        Thus a message from an Atari ST system in New York
+would wend its way through two Citadel-86 systems before arriving at
+Images at Twilight, an Amiga system in Minnesota.
+        Currently, only Citadel-86 systems can be "spines," but any
+Citadel supporting the C86 network can participate as a "peon."
+        If you're interested in participating (on your nickel, of
+course), contact Test System.
+        Sysops can visit the shared room and enter networked messages
+by contacting the sysop of any participating Citadel. Among them are:
+ Utica College, New York (US 315-792-3187)
+ Spies in the Wire, New York (US 914-666-3997)
+ Images at Twilight, Minnesota (US 612-884-7951)
+ Pell, Minnesota (US 612-377-9239)
+ The Lake, Minnesota (US 612-426-1374)
+
+KEEPER OF THE GREAT LIST
+
+        Andy Meyer is assembling the all-time world's record list of
+Citadels (a list that tends to grow on you). If you're putting up a
+Citadel, or if you're not on the current CITADEL.LST file, contact
+Andy at Sony Technical Citadel, US 201-930-6483. He also can be
+contacted through the shared sysops' room mentioned above. Andy wants
+to know the system's name, number, hours, policy (open, closed, etc.),
+and software including version number.
+
+A CITADEL WORK-ALIKE FOR EIGHT-BIT ATARIS
+
+        ATKeep is a Citadel-like BBS system for eight-bit Ataris. We
+visited ATKeep #1 several weeks ago and found it to be very
+un-Citadel-ish, but we had logged in as an inexperienced user. Brent
+Barrett, author of the software, advises that the "expert" level is
+highly similar to the CP/M version of Citadel.
+
+        ATKeep runs under SpartaDOS and requires BASIC XE and 128K
+of RAM. ATKeep 1 is US 916-726-4989; ATKeep 2 is US 916-723-4585.
+
+        The following is condensed from the official ATKeep history:
+        -----
+        Brent Barrett, newly out of high school and *very* interested in
+the new telecommunications world he had found, discovered a "different"
+type of BBS.  This BBS was called a "Citadel" and it was such a unique
+experience for him that he decided he just *had* to have it for his
+machine. 
+         Owning only a TI-99/4A and an Atari 800Xl, he opted for the
+Atari, since he had more support hardware for that machine.  Spending
+hours, even days at a time coding the original "shell" of the BBS, he
+sprang forth with MBBBS version 1.0 on March 24th, 1986. 
+        MBBBS (Message Base Bulletin Board System) was very
+primitive when compared to ATKeep 7.0, or even 4.0 for that matter. 
+        MBBBS was changed to Atari Keep, or, ATKeep for short, around
+version the time version 4.0 was released (June 15, 1986). 
+The name was given to the system by Robert Louis Zeppa, who,
+unfortunately, passed away not to long after that time. 
+        ATKeep went through version changes very
+quickly, let me try to run down what each version was like:
+ 
+
+        1.0 (MBBBS): This system was *extremely* bare-bones.  Its
+entire command set consisted of:
+ <C>hat <E>nter msg <G>oto <K>nown rooms <M>sg to SYSOP <N>ew read
+<R>ead sequentially <T>erminate <?>menu <.G>oto
+        The system was limited to 25 rooms, and the sysop
+needed to take the system down and use a text editor to set up each
+room. MBBBS was written to work with the Atari 1030 or XM301 modems,
+and no others.  300 baud.  2.0 (MBBBS): An aide "menu" was added, and
+so was the <S>kip command (although it functioned differently from
+Citadel's skip, and still does). 
+
+        3.0 (MBBBS): ATKeep code was rewritten and a few bells and
+whistles were thrown in.
+
+        4.0 (ATKeep): <.E>nter <R>oom was added, as was a cosysop
+menu level which allowed, amung other things, the changing of account
+names (a *very* complex process back then).  <.E>nter <P>assword was
+also added to allow password changes.  
+
+        5.0 (ATKeep): More extended commands, such as <.T>erminate
+and <.R>ead were added.  You no longer had to <.G>oto a hidden room
+each time you wanted to visit it with 5.0.
+
+        6.0 (ATKeep): Another major code re-write, and all the
+extended commands were put into the system.  All <.R>ead options and
+all <.E>nter options (cosysops still had to make name changes,
+however).  Still limited to 300 baud and the 1030 or XM301.
+
+        7.0 (ATKeep): This is the version (7.20) currently running.
+7.0 finally took the aide and cosysop commands out of a menu section
+and put them into extended commands, where they belonged.  It also
+added a SYSOP level command set.  Users were no longer "users"
+"aides" or "cosysops," they had become level "A" (SYSOP) through
+level "Z" (READ ONLY).  The system had become extremely complex.
+Public, hidden OR password protected PRIVATE rooms.  Each room now
+had its own access level (thus keeping people of lower level from
+getting in EVEN if they knew the room name).  Each room was assigned
+a RWRT (or Read WRiTe status), which determined who could enter
+messages in it, and whether or not public or private messages, or
+both were to be allowed.
+
+        The biggest improvment of all: the system was no longer
+limited to the 1030 or XM301 modem -- it had been rewritten to
+accomodate the 850 or PRC interface allowing use of ANY Hayes
+compatible modem.  Thus, ATKeep went 1200 baud for the first time.
+Version 8.0 is currently under construction, its main feature will be
+its modular design.  It will allow the "chaining" of programs limited
+only by the individual system's storage space. 
+
+        -----
+
+CITADEL-286, A COUSIN FROM OUT EAST
+
+        Farokh Irani @ Electronic New York submitted the following
+description of his BBS system:
+
+        Citadel-286 is based on Hue, Jr's Citadel-86.  I picked the
+name Citadel-286 mainly because I wass writing it on an IBM PC/AT
+(even though there is nothing that requires the 80286 cpu) and
+because Epson came out with the FX-286 as the replacement to the
+FX-100, so...
+
+        There's a lot of major changes that I did that are behind the
+scenes, so I'll spare you'all from reading about it. Major visible
+changes: Citadel-286 requires both a name and a password in order to
+log in.  I also changed the command parser so that it is now possible
+to backspace over uncompleted commands.  IE, if you wanted to press
+".Read" and instead you pressed ".Enter", the backspace will wipe out
+the "Enter", leaving you at the ".".  You can also back up over that,
+if you like.  Editing text that you are entering is now easier.
+While entering the text, ^w (control-w) wipes out the previous word
+and ^u (control-u) wipes out the previous sentence.
+
+         Citadel-286, can, at the Sysops choice, be a "dating"
+board.  It's not super, but it's there, and it works, and while
+there's always people saying get rid of it, others say keep it.  Well
+it's there, but no one is forced to use it (unlike the good ol' DYMs
+of yore).  Citadel-286 can have "voting" rooms.  Users can read and
+enter votes that the Sysop makes available.  Votes can be one-shot or
+can be taken as many times as a user wants.
+
+        There are currently four BBS running Citadel-286.  One is
+mine, called Electronic New York @ (914) 735-9362.  The others are
+AfterImages System "A" @ (516) 661Ä9284, Utopia BBS @ (516) 669Ä8885,
+and The Generic BBS @ (201) 389-8473.
+
+        As for the future, I am looking into adding Hue, Jr's latest
+network code into Citadel-286. But, instead of merging the code into
+the system, I'm going to make a stand alone program.  Then,
+multi-user.  Now, that'll be fun :-).
+
+        ------
+
+NOTES FROM THE LONE STAR STATE
+
+        What's it like to move from lush Seattle, where it virtually
+rains Citadels, to the relative BBS desert of Texas? Maher Maso,
+sysop of The Gates of Mordecai and The Fifth Dimension, wrote an
+account for CitaNews. Take it away, Maher:
+
+        Running Citadel since mid-'82 in Seattle, it was disturbing to me
+to have to take my System down to move to Texas.  The Gates of
+Mordecai Citadel ran from mid-'82 to July '83.  In the one year of
+operation, The Gates ran as a private/limited access system.  It had
+a lot of the Citadel sysops in the area as well as the more adult
+users.  It was one of the best BBS systems that I have seen then and
+now.  The users of the Gates were one of a kind.  Most were 'original'
+modem users (remember, way back, when no one knew what a modem was?). 
+Anyway, let me get on with it.  If you wish to see a history of systems
+back then, there is a file on some of the systems that was written
+by T'an T'u that does a good job (you can find it on The Gates by
+typing .Hhistory)
+
+        Needless to say, I moved down to Dallas and took Citadel with
+me (Bill Williams took over the Gates, renamed it The Hermitage and
+basically had the same system/users).  Well, Dallas is a nice place,
+but guess what? Most of the people down here have never heard of a
+'room system'. 
+
+        The first few months of running The Gates was very difficult.
+To someone that was used to using Fido and RBBS's, Citadel was a
+whole new concept. Took a while for most of the users to understand
+it (some just gave up).
+
+        The Gates of Mordecai stayed private through the move, and I
+felt a need for a public system.  So, The Fifth Dimension was
+created.  Both the Gates and The Fifth Dimension first ran on
+Kaypro's.  Now, the Fifth Dimension runs on an IBM compatible, has 64
+megs of files and runs Ms-dos Citadel (not to be confused with
+Citadel-86).
+
+        During this time, I was involved in putting up 4 other
+systems, one of which is now down and the other is a business only
+system.  So, we have my 2 systems and 2 other systems in the
+Dallas/Fort Worth area.  Below you will find the info and numbers for
+them.
+
+        The Gates of Mordecai:  First Texas Citadel (or room system).
+Runs on a Kaypro 10 at 300/1200/2400, has a 22 meg hard drive, and is
+very very modified.  It runs with bye (KMD, GOTO'S, online Games,
+LUX, etc..) and has some extra features. Don't want to list them
+all, but the main ones are: Verbose options, .EE in any room, .RH or
+.EH commands (hangs up after a certain event), .RP (read program
+descriptions).  This is modified from the original cp/m Citadel. Most
+modifications can be found on Bob Perigo's or Kerry Kyes systems in
+Seattle. Both of these sysops along with myself have made most of the
+modifications to our code.  Limited networking between the three
+systems takes place.  (214)416-6382 24hrs 300/1200/2400 cp/m private.
+
+        The Fifth Dimension: This is my other system.  MS-DOS, 64
+megs, 2400 baud, and many other features. This is an open system and
+any user can log in.  It has a 1.2 meg message base, limited access
+hallways and groups and soon to have networking.  Complete hallway
+devoted to upload/download rooms.  Xmodem and ymodem capable.
+(214)416-6833 300/1200/2400 24hrs MS-DOS public.
+
+        Westide:  This is Fort Worth's first Citadel.  Runs on a
+Tandy 1000 at 300/1200. Same software as The Fifth.  Has
+uploads/downloads also.  (817)244-3885 300/1200 24hrs MS-DOS public.
+
+        Polaris (not to be confused with the old Seattle Polaris by
+T'an T'u.  Gaming type CP/M Citadel.  Version from Minni.  Lots of
+features stripped out.  300/1200 baud.  (214)750-6374 300/1200 24hrs
+CP/M private.
+
+        -----
+
+ATARI ST CITADEL GOES INTO VERSION 3.0C
+
+        Version 3.0c of Citadel-68(st) (known to its close friends as
+STadel) has moved up to version 3.0c. We haven't seen it yet here at
+the Lake, but there will be a full report in next month's CitaNews.
+
+        The program is available from downloading in STadel] at Pell
+(US 612-377-9239) or in ST Citadel] at the Lake (US 612-426-1374), or
+it can be obtained on 3.5-inch microfloppies for $5 by contacting orc
+in Mail> at Pell.
+
+        Some networking bugs are squashed, some feeping creatures
+have moved in (including the +/- command from Stonehenge), but the
+most important change is "event handling." 
+
+        Without getting technical, here's the gist of it:
+
+        Orc (David Parsons) has added to STadel an ability to "time
+out," run external programs, then restart itself. Multiple timeouts
+can be scheduled, for multiple external programs. This eventually
+will allow the networking code to be removed from STadel, keeping the
+basic executable code very small. It also will allow alternative
+networking -- and not necessarily Citadel networking.
+
+        With those hooks in place, we move to.....
+
+
+A USENET INTERFACE FOR CITADEL 
+
+        Usenet is the national computer network used by Grand Poobahs
+of the Inner Technoid Circle. It automatically transfers messages,
+documents and programs as Unix systems around the country call each
+other nightly under control of a program called UUCP (Unix --> Unix
+Copy Program). (Unix is a multitasking operating system for
+minicomputers that comes from AT&T.) Usenet has gateways to the
+scientific community's ARPAnet and BITnet.
+
+        Dalnefre' (Dale Schumacher) is working on a preliminary UUCP
+"clone" interface that may be used in conjunction with STadel. A test
+version now exists. When it works, orc @ Pell (US 612 377 9239) will
+(hopefully) also have a Usenet address: 
+
+        ihnp4!meccts!zeke!stag!pell!orc 
+  
+        The plan is for the program to be ported to MS-DOS and
+work with Citadel-86 as well. We hope.
+
+        Here is Dale's description of the process, from a message he
+prepared for Usenet:
+
+        The gateway will work is as follows... The Citadel BBS will
+exit to a batch process which will execute the CITUMAIL mail server
+program. Citadel already supports a network of its own, so the UUCP
+gateway will simply be a virtual Citadel net node called "UUCP".
+Citadel will never try to call this node, but will create the normal
+networking control file.  The mail server will use this control file
+to extract outgoing mail messages from the Citadel message base, add
+UUCP headers to them, and create the control file that UUCP expects
+to see. 
+        The mail server, as a master, will call a normal UUCP node
+and deliver the mail.  It then allows role-reversal and accepts
+incomming mail.  The server reformats the mail message according to
+Citadel conventions and uses the control file to deliver the mail by
+intergrating it into the Citadel message base.
+         Citadel messages are currently limited to 7500 characters,
+so messages must be kept small. Later upgrades will support dumping
+large messages into an external file and sending an appropriate
+message to the intended recipient, but for now long messages will be
+truncated.
+        One last note...  Since many of the Citadel systems will not
+initially be registered nodes, use of explicit bang-paths is strongly
+encouraged.  When the gateway has been tested and appears to work
+properly, a version of STadel which includes this feature will be
+distributed through as many channels as possible.  You may also want
+to call Pell (STadel) directly at (612) 377-9239, 300/1200 baud,
+24hrs (except when orc is programming).
+
+        -----
+
+        Dale Schumacher may be contacted via Usenet at:
+        zeke!stag!syntel!dal 
+ 
+
+AMIGA SYSTEMS GET FRIENDLY
+        
+        Sy Borg, sysop of Images at Twilight, an Amiga-based Citadel
+in Bloomington, Minnesota (US 612-884-7951), sent us this note:
+
+        Images is room sharing with two systems halfway across the
+country.  The Amiga! room is presently being shared by Compucations
+of Santa Barbara, California, and Saint of Kansas City, Missouri.
+This is an experiment to find out differing attitudes towards the
+machines in different areas of the country and to speed the
+dissemination of the latest software and hardware news nationwide.
+We are also sharing the Want Ads room, as well as a room that is
+dedicated to the discussion of Compact Disc digital audio systems.
+So far we have had pretty much successful results and, phone bill
+permitting, we will continue with the nationwide room sharing.  
+
+        Meanwhile, at the Phoenix (US 612-459-8095), home of the Amiga
+version of Citadel, Jay Johnson (Stallion) reports that he's going to
+take it easy this summer and see what the world looks like away from
+the keyboard. Thus no major changes in the program are expected soon.
+If you want to try your hand at it, the source code is available in
+Aztec and Lattice C versions from the Phoenix.
+
+COMING SOON IN CITANEWS
+
+        * A look at NeoCitadel, a Turbo Pascal program for PC clones.
+We'd also like to hear from anyone associated with Acropolis, also a
+Turbo system.
+        * A report from New Jersey, if one can make it past the tin
+cans they use for telephones out there. Line noise? You don't know the
+half of it.
+        * Floors, hallways and the amazing disappearing mailroom:
+Mutant Citadels stalk the landscape. Stay tuned....
+------------------------------------------------------------------
+(end of file)
+
+                                         
+                                                                                                                                                                                                                                                                                       

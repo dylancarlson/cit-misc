@@ -1,0 +1,71 @@
+    95Apr11 From ET @ ESOTERICA TERRAIN, Seattle
+  
+ FREEJACK...you asked about when Esoterica Terrain first went online, and the 
+software it used on the Commodore. 
+  
+ Esoterica Terrain was originally a suboard as the South Quarter of COMPASS, 
+which was both a BBS and a system type.  It was a menu driven  system...and 
+went online I think in 1982.  Which well before there were any Citadels running
+on DOS machine.  Cit only ran in a simple form on CP/M in those days.  NO one 
+was using IBMs for running boards in those days so far as I can remember till 
+Stonehenge went online...Which is actually a Citadel. 
+  
+ Esoterica Terrain moved to being the board's name a few years later when a 
+room system called, CHATeau went online.  In between was a BBS named Eugene's 
+House, which was run on an pre-Version of the CHATeau. This was called, 
+GYPSY-XL.  It had a built in terminal....which allowed GYPSY-XL sysops to grab 
+messages off of other GYPSY-XL systems, and put them on the calling sysop's own
+board...and in a selected room.  It a type of highly selective networking.  
+That was popular system at the type with a number of them all associated. 
+  
+ The CHATeau was an advancement, though dropped the pseudo-netting feature, and
+utilized a one meg floppy drive, which was a bit faster, and a lot bigger.  Was
+as large as most Citadels. And was considerably more user-friendly.  And it 
+provided such features as in-message dice-rolls, which strongly supported D&D 
+gaming, and other such things.  It had LEVELS of halls, which could indivually 
+be remotely sysops.  So it was popular to assign halls on the CHATeaus online 
+to remote sysops, where they could run them exactly as if they had their own 
+BBS.  Cit supports NOTHING like this.  Also the CHATeau scrolled rooms 
+independantly.  This allowed for a MUCH STRONGER support of serious topic 
+rooms, or informational rooms.  Citadel only supports one-liner twit type 
+messages, where one-liners scroll out the serious topic rooms, leaving them 
+with no messages. 
+  
+ The CHATeau running version of Esoterica Terrain could have rooms with long 
+messages telling about peronal experiences with alternate states of 
+consciousness...which could remain in the room for months.  New users would be 
+inspired to contribute following suit...if they had something comparable to 
+offer.  That just can't happen on a Citadel...because it is actually a single 
+room system with false partitions, the oneline rules.  Because of the logic 
+behind its construction, Citadel mostly supports twit 
+messages.....unfortunately. 
+  
+ In spite of the CHATeau being more supportive of my needs I setup a Cit on an 
+XT....and had it online through a line switcher...a year....Before I switched 
+the name of it from ET BBS to Esoterica Terrain. 
+  
+ There was a serious problem with the 3.5" disk Commodore drive in that I could
+not effectively back up the data disk. None of the few disk copiers available 
+would provide a fully working copy of the BBS files.  They were encryped (for 
+the sake of encrypted mail) and some messages would crash the system on backed 
+up copies.  So I knew the board would come down when the single disk wore out.
+It lasted years!  Was amazing.  Unfortunately, all my callers strongly frefered
+the CHATeau as much as I did myself, and inspite of its being relatively slow. 
+  
+ YES...Ray is now of the Citadel business.  I am using his final version of 
+TurboCit.  It is a good clean working version...and incorporates a routing 
+feature which was my idea.  It picks up the location of the boards from the 
+message headers, and keeps tab on which connection the messages are coming in 
+faster through.  He had argued that huge paths in all other system's messages 
+were unnecessary...and he was right. 
+  
+ What I would PREFER to see is a WINDOWS based OFF-LINE reader/writer system 
+that had Citadel as its basis.  Where in a single prime-time, many people could
+call...each being connected only a few minutes.  "That would be so cool!"  I 
+might do up one some day, maybe.  I programed all my Commodore BBS software and
+connecting terminals.....from scratched.  With the Cit no one is programing 
+anything from a blank screen....and that's where a Windows based Cit would have
+to start.  I think VB could do it.  But I don't have time for it right now. And
+would need a 150$ .VBX to do it.  The COMMUNICATIONS package that comes with 
+even the Pro version is not up to the task.  But I know of a third party .VBX 
+that is.  Maybe I will do it some day....and maybe not. 
